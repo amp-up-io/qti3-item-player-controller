@@ -1,1 +1,1 @@
-# player-controller
+# qti3-player-controller
