@@ -1,1 +1,1 @@
-# qti3-player-controller
+# QTI 3 Item Player Controller
