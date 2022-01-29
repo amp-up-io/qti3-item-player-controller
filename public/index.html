@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link href="<%= BASE_URL %>assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="<%= BASE_URL %>assets/css/styles.css" rel="stylesheet" type="text/css" />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script src="<%= BASE_URL %>assets/js/bootstrap.bundle.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  <script src="webcomponents/webcomponents-loader.js"></script>
+  <script>
+    if (!window.customElements) { document.write('<!--'); }
+  </script>
+  <script src="webcomponents/custom-elements-es5-adapter.js"></script>
+  <!-- ! DO NOT REMOVE THIS COMMENT, WE NEED ITS CLOSING MARKER -->
+</head>
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+</html>
