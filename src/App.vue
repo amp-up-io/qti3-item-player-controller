@@ -102,7 +102,7 @@ export default {
       isBtnPreviousDisabled: false,
       isBtnNextDisabled: false,
       currentItem: 0,
-      maxItems: 102,
+      maxItems: 79,
       /*
        * Qti3Player component instance
        */
@@ -144,7 +144,7 @@ export default {
        *   qti3-player-container-padding-4 { padding: 1.5rem; }
        *   qti3-player-container-padding-5 { padding: 3rem; }
        */
-      containerPaddingClass: 'qti3-player-container-padding-0',
+      containerPaddingClass: 'qti3-player-container-padding-2',
       /*
        * Test's Item Session Control Factory
        */
@@ -167,12 +167,6 @@ export default {
 
   methods: {
 
-    handleStart () {
-      this.isTestStarted = true
-      this.currentPanel = 'items'
-      this.loadFirstItem()
-    },
-
     initialize () {
       this.updateButtonState()
       // Load items
@@ -186,6 +180,12 @@ export default {
       this.sessionControl.setShowFeedback(true)
       // Initialize item state hashmap
       this.itemStates = new Map()
+    },
+
+    handleStart () {
+      this.isTestStarted = true
+      this.currentPanel = 'items'
+      this.loadFirstItem()
     },
 
     handleNextItem () {
@@ -487,14 +487,17 @@ export default {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 section {
   display: -webkit-flex;
   display: flex;
+  /* Set flex axis to vertical */
   flex-direction: column;
-  height: 100vh;
-  background: var(--bs-gray-200);
+  /* Height = viewport height */
+  min-height: 100vh;
+  background: var(--bs-gray-300);
 }
 
 header {
@@ -502,17 +505,16 @@ header {
 }
 
 main.test-controller-container {
-  /* flex=1 will fill whole space left if no flex value are set to other children*/
-  flex-grow: 1;
+  flex: 1 1 auto;
   overflow: auto;
-  min-height: 7em;
+  height: 5em;
   width: 100%;
 }
 
 /* Inner item panel */
 .test-controller-content {
   margin: 10px 0;
-  background: var(--bs-gray-200);
+  background: var(--bs-gray-300);
   /*border: 1px solid #2196F3; */
 }
 
@@ -521,9 +523,9 @@ main.test-controller-container {
   margin: 20px auto;
 }
 
-
 footer {
   padding: 1em;
+  /* Make sure the foot always displays at bottom of the viewport */
   min-height: 3em;
 }
 </style>

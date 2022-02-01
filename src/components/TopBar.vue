@@ -80,7 +80,7 @@
               <!-- container padding settings -->
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:0')">QTI 3 Player - Padding 0
-                <span ref="menuItemContainerPadding0" class="ms-1 checkmark menu-container-checked">
+                <span ref="menuItemContainerPadding0" class="ms-1 checkmark menu-container-unchecked">
                   <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
                 </span></a>
               </li>
@@ -90,7 +90,7 @@
                 </span></a>
               </li>
               <li><a class="dropdown-item padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:2')">QTI 3 Player - Padding 2
-                <span ref="menuItemContainerPadding2" class="ms-1 checkmark menu-container-unchecked">
+                <span ref="menuItemContainerPadding2" class="ms-1 checkmark menu-container-checked">
                   <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
                 </span></a>
               </li>
