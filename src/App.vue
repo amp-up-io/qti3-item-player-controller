@@ -161,7 +161,11 @@ export default {
        * 'individual' --> invoke Qti3Player's endAttempt method
        * 'simultaneous' --> invoke Qti3Player's suspendAttempt method
        */
-      submissionMode: 'simultaneous'
+      testSubmissionMode: 'simultaneous',
+      /*
+       * An item can override submission mode
+       */
+      itemSubmissionMode: null
     }
   },
 
@@ -232,7 +236,7 @@ export default {
     },
 
     isSubmissionModeIndividual () {
-      return this.submissionMode === 'individual'
+      return this.itemSubmissionMode === 'individual'
     },
 
     handleEndAttemptCompleted (data) {
@@ -277,11 +281,19 @@ export default {
       if (index === null) return
       if ((index < 0) || (index > this.maxItems-1)) return
 
+      // Set current item submission mode
+      this.itemSubmissionMode = this.computeItemSubmissionMode(this.items[index])
+
       // Build a configuration
       const configuration = this.getConfiguration(this.items[index].guid)
 
       // Load the item with the configuration
       this.qti3Player.loadItemFromXml(this.items[index].xml, configuration)
+    },
+
+    computeItemSubmissionMode (itemObject) {
+      if ('submissionMode' in itemObject) return itemObject.submissionMode
+      return this.testSubmissionMode
     },
 
     setTestStateItemState (state) {
