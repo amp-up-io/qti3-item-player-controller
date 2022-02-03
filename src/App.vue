@@ -49,7 +49,7 @@
     </main>
 
     <!-- Only display this when we are displaying items -->
-    <footer v-show="currentPanel == 'items'" class="bg-light border-top">
+    <footer v-show="currentPanel == 'items'" class="navbar bg-dark navbar-top-shadow">
       <BottomBar
         ref="bottombar"
         :is-previous-disabled="isBtnPreviousDisabled"
@@ -161,7 +161,7 @@ export default {
        * 'individual' --> invoke Qti3Player's endAttempt method
        * 'simultaneous' --> invoke Qti3Player's suspendAttempt method
        */
-      submissionMode: 'individual'
+      submissionMode: 'simultaneous'
     }
   },
 
