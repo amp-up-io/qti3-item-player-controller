@@ -102,7 +102,7 @@ export default {
       isBtnPreviousDisabled: false,
       isBtnNextDisabled: false,
       currentItem: 0,
-      maxItems: 79,
+      maxItems: 80,
       /*
        * Qti3Player component instance
        */
