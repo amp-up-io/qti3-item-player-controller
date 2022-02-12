@@ -18,7 +18,7 @@
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.2",
     "core-js": "^3.6.5",
-    "qti3-item-player": "^0.2.31",
+    "qti3-item-player": "^0.2.32",
     "sweetalert2": "^11.3.4",
     "vue": "^2.6.11"
   },
