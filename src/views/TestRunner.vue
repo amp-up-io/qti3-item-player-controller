@@ -155,6 +155,8 @@ export default {
       // Find the test
       this.test = new TestFactory().getById(id)
 
+      // If we can't find a test, disable the UI.
+      // @TODO Show a 404 page?
       if (this.test === undefined) {
         this.isBtnPreviousDisabled = true
         this.isBtnNextDisabled = true
@@ -172,9 +174,6 @@ export default {
       this.pnp = new PnpFactory()
       // Load sessionControl
       this.sessionControl = new SessionControlFactory()
-      // Tell player to validate responses
-      // this.sessionControl.setValidateResponses(true)
-      this.sessionControl.setShowFeedback(true)
       // Initialize item state hashmap
       this.itemStates = new Map()
       // Load the first item!
@@ -271,9 +270,12 @@ export default {
       if (index === null) return
       if ((index < 0) || (index > this.maxItems-1)) return
 
-console.log('this.items[index]:', index, this.items[index])
       // Set current item submission mode
       this.itemSubmissionMode = this.computeItemSubmissionMode(this.items[index])
+
+      // Update sessionControl with item/test properties
+      this.sessionControl.setValidateResponses(this.items[index].sessionControl.validateResponses)
+      this.sessionControl.setShowFeedback(this.items[index].sessionControl.showFeedback)
 
       // Build a configuration
       const configuration = this.getConfiguration(this.items[index].guid)
@@ -283,7 +285,7 @@ console.log('this.items[index]:', index, this.items[index])
     },
 
     computeItemSubmissionMode (itemObject) {
-      if ('submissionMode' in itemObject) return itemObject.submissionMode
+      if ('sessionControl' in itemObject) return itemObject.sessionControl.submissionMode
       return this.testSubmissionMode
     },
 
@@ -350,8 +352,6 @@ console.log('this.items[index]:', index, this.items[index])
       this.qti3Player.cssColorClass = this.colorClass = colorClass
       // Set pnp to this textAppearance color style
       this.pnp.setColorStyle(colorClass)
-
-      console.log('this.pnp.getColorStyle()', this.pnp.getColorStyle())
     },
 
     /**

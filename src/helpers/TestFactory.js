@@ -6,9 +6,30 @@ const tests = [
     "description": "Demonstrates QTI3 Player adaptive items with a \"card\" style, a qti-end-attempt controller bar and item cloning.",
     "count": "3",
     "items": [
-      "card-08a-baseline",
-      "adaptivecard-08c-showexample",
-      "adaptivecard-08b-solvethis"
+      {
+        "identifier": "card-08a-baseline",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "adaptivecard-08c-showexample",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "adaptivecard-08b-solvethis",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      }
     ]
   },
   {
@@ -17,12 +38,54 @@ const tests = [
     "description": "Demonstrates QTI3 Player support for all Level 2 conformance tests of Shared CSS.",
     "count": "6",
     "items": [
-      "i19b-shared-css-vocab-1",
-      "i19b-shared-css-vocab-2",
-      "i19b-shared-css-vocab-3",
-      "i19b-shared-css-vocab-4",
-      "i19b-shared-css-vocab-5",
-      "i19b-shared-css-vocab-6"
+      {
+        "identifier": "i19b-shared-css-vocab-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-4",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-5",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-6",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
     ]
   }
 ]
