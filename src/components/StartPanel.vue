@@ -1,7 +1,9 @@
 <template>
   <div class="row m-auto">
     <div class="col-6 offset-3 shadow-sm p-5 bg-light bg-gradient border border-2 rounded-3">
+      <h4 class="text-break">{{ title }}</h4>
       <p class="fs-4">{{maxItems}} Questions</p>
+      <p>{{ description }}</p>
       <button type="button" @click="handleStartClick" class="btn btn-primary btn-lg">Start</button>
     </div>
   </div>
@@ -12,7 +14,9 @@ export default {
   name: 'StartPanel',
 
   props: {
-    maxItems: Number
+    title: String,
+    description: String,
+    maxItems: String
   },
 
   methods: {

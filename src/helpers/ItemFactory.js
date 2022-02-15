@@ -532,8 +532,22 @@ export class ItemFactory {
     return this
   }
 
-  load () {
+  loadAll () {
     return this.items
+  }
+
+  loadItems (identifiers) {
+    let items = []
+    
+    identifiers.forEach((identifier) => {
+      let itemIndex = this.items.findIndex(item => item.identifier == identifier)
+
+      if (itemIndex < 0) return
+      // Found the item.  Add it to our result
+      items.push(this.items[itemIndex])
+    }, this)
+
+    return items
   }
 
 }

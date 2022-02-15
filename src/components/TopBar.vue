@@ -1,9 +1,11 @@
 <template>
   <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-bottom-shadow">
     <div class="container-fluid">
-      <div class="navbar-brand">
-        <img src="@/assets/amp-up-io.svg" class="bi me-2" width="32" height="32" alt=""/>
-        Test Runner
+      <div class="navbar-brand router-link">
+        <router-link :to="{ name: 'Home', params: { } }">
+          <img src="@/assets/amp-up-io.svg" class="bi me-2" width="32" height="32" alt=""/>
+          Test Runner
+        </router-link>
       </div>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -122,8 +124,6 @@ export default {
   name: 'TopBar',
 
   props: {
-    currentItem: Number,
-    maxItems: Number
   },
 
   data () {
@@ -280,5 +280,13 @@ export default {
 
 .menu-container-checked {
   display: inline;
+}
+
+.navbar-brand.router-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-brand.router-link a.router-link-exact-active {
 }
 </style>
