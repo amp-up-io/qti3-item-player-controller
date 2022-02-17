@@ -655,6 +655,62 @@ const tests = [
         }
       }
     ]
+  },
+  {
+    "id": "8",
+    "title": "L2 - Q12 Inline Choice Interaction",
+    "description": "Demonstrates QTI3 Player support for all Level 2 Q12 - Inline Choice Interaction conformance tests.",
+    "count": "6",
+    "items": [
+      {
+        "identifier": "q12-inline-choice-interaction",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q12-inline-choice-composite",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q12-inline-choice-mathml",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q12-inline-choice-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q12-inline-choice-sv-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q12-inline-choice-sv-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      }
+    ]
   }
 ]
 
