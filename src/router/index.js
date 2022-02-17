@@ -7,19 +7,19 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/start/:id',
-    name: 'Start',
-    component: Start,
-    meta: {
-      title: 'Start Test Page'
-    }
-  },
-  {
     path: '/',
     name: 'Home',
     component: Home,
     meta: {
       title: 'Test Runner Home'
+    }
+  },
+  {
+    path: '/start/:id',
+    name: 'Start',
+    component: Start,
+    meta: {
+      title: 'Start Test Page'
     }
   },
   {
@@ -35,9 +35,14 @@ const routes = [
   }
 ]
 
+// Make this work when deployed to a /testrunner/ folder in production
+const publicPath = process.env.NODE_ENV === 'production'
+    ? '/testrunner/'
+    : '/'
+
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: publicPath,
   routes
 })
 

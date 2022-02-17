@@ -1,6 +1,6 @@
 <template>
 <div class="home">
-  <section>
+  <section class="bg-gray">
     <SkipNav skipid="#main" />
     <header>
       <TopBarApp
@@ -101,7 +101,6 @@ section {
   flex-direction: column;
   /* Height = viewport height */
   min-height: 100vh;
-  background: var(--bs-gray-300);
 }
 
 header {
@@ -113,6 +112,14 @@ main.test-controller-container {
   overflow: auto;
   height: 5em;
   width: 100%;
+}
+
+.bg-lightan {
+  background: linear-gradient(to bottom, rgba(33,90,231,0.1) 30%, #fff 100%);
+}
+
+.bg-gray {
+  background: var(--bs-gray-300);
 }
 
 /* Inner start test panel */

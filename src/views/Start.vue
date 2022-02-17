@@ -1,6 +1,6 @@
 <template>
   <div class="start">
-    <section>
+    <section class="bg-gray">
       <SkipNav skipid="#main" />
       <header>
         <TopBarApp
