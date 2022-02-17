@@ -275,7 +275,7 @@ const tests = [
   {
     "id": "4",
     "title": "L1 - Q2 Choice Interaction - Single Cardinality",
-    "description": "Demonstrates QTI3 Player support for all Level 1 Q2- Choice Interaction - Single Cardinality conformance tests.",
+    "description": "Demonstrates QTI3 Player support for all Level 1 Q2 - Choice Interaction - Single Cardinality conformance tests.",
     "count": "18",
     "items": [
       {
@@ -419,6 +419,238 @@ const tests = [
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "L1 - Q2 Choice Interaction - Multiple Cardinality",
+    "description": "Demonstrates QTI3 Player support for all Level 1 Q2 - Choice Interaction - Multiple Cardinality conformance tests.",
+    "count": "18",
+    "items": [
+      {
+        "identifier": "q2-choice-interaction-multiple-cardinality",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-2a",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-2b",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-2c",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-2d",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3a",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3b",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3c",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3d",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3e",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3f",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3g",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3h",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3i",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3j",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3k",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-3l",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "L2 - Q2 Choice Interaction - Single Cardinality",
+    "description": "Demonstrates QTI3 Player support for all Level 2 Q2 - Choice Interaction - Single Cardinality conformance tests.",
+    "count": "4",
+    "items": [
+      {
+        "identifier": "q2-choice-interaction-single-sv-4a",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-4b",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-4c",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-4d",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "L2 - Q2 Choice Interaction - Multiple Cardinality",
+    "description": "Demonstrates QTI3 Player support for all Level 2 Q2 - Choice Interaction - Multiple Cardinality conformance tests.",
+    "count": "4",
+    "items": [
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-4a",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-4b",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-4c",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-multiple-sv-4d",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
           "submissionMode": "individual"
         }
       }
