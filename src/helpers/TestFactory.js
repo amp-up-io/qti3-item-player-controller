@@ -107,7 +107,7 @@ const tests = [
   {
     "id": "3",
     "title": "L1 - Q20 Text Entry Interaction",
-    "description": "Demonstrates QTI3 Player support for all Level 1 conformance tests of Q2- Text Entry Interaction.  Note: The <strong>last item</strong> demonstrates a composite item that includes all permutations of qti-text-entry-interaction qti-input-width shared vocabulary.",
+    "description": "Demonstrates QTI3 Player support for all Level 1 conformance tests of Q20 - Text Entry Interaction.  Note: The <strong>last item</strong> demonstrates a composite item that includes all permutations of qti-text-entry-interaction qti-input-width shared vocabulary.",
     "count": "20",
     "items": [
       {
@@ -264,6 +264,158 @@ const tests = [
       },
       {
         "identifier": "q20-textentry-composite",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "L1 - Q2 Choice Interaction - Single Cardinality",
+    "description": "Demonstrates QTI3 Player support for all Level 1 Q2- Choice Interaction - Single Cardinality conformance tests.",
+    "count": "18",
+    "items": [
+      {
+        "identifier": "q2-choice-interaction-single-cardinality",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-2a",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-2b",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-2c",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-2d",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3a",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3b",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3c",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3d",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3e",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3f",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3g",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3h",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3i",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3j",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3k",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q2-choice-interaction-single-sv-3l",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,
