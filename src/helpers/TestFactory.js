@@ -52,7 +52,7 @@ const tests = [
     "id": "2",
     "title": "L2 - I19b Shared Layout and Styling CSS",
     "description": "Demonstrates QTI3 Player support for all Level 2 conformance tests of Shared Layout and Styling CSS.",
-    "count": "6",
+    "count": "8",
     "items": [
       {
         "identifier": "i19b-shared-css-vocab-1",
@@ -96,6 +96,22 @@ const tests = [
       },
       {
         "identifier": "i19b-shared-css-vocab-6",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-7",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-8",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,
