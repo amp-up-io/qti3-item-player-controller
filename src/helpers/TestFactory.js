@@ -594,6 +594,54 @@ const tests = [
   },
   {
     "id": "6",
+    "title": "L1 - Q5 Extended Text Interaction",
+    "description": "Demonstrates QTI3 Player support for all Level 1 Q5 - Extended Text Interaction conformance tests.",
+    "count": "5",
+    "items": [
+      {
+        "identifier": "q5-extended-text-base-type-string",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q5-extendedtext-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q5-extendedtext-sv-2a",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q5-extendedtext-sv-2b",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q5-extendedtext-sv-2c",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "7",
     "title": "L2 - Q2 Choice Interaction - Single Cardinality",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q2 - Choice Interaction - Single Cardinality conformance tests.",
     "count": "4",
@@ -633,7 +681,7 @@ const tests = [
     ]
   },
   {
-    "id": "7",
+    "id": "8",
     "title": "L2 - Q2 Choice Interaction - Multiple Cardinality",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q2 - Choice Interaction - Multiple Cardinality conformance tests.",
     "count": "4",
@@ -673,7 +721,7 @@ const tests = [
     ]
   },
   {
-    "id": "8",
+    "id": "9",
     "title": "L2 - Q12 Inline Choice Interaction",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q12 - Inline Choice Interaction conformance tests.",
     "count": "6",
