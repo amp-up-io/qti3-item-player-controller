@@ -4,7 +4,7 @@ const tests = [
     "id": "1",
     "title": "Example QTI3 Adaptive / Templated Items",
     "description": "<p>This demonstrates QTI3 Player's capabilities with QTI3 adaptive items, QTI3 item templating, inline and modal feedback, and more. QTI3 Player implements these items with a \"card\" style, an qti-end-attempt controller bar, and a \"New Question\" button to produce a new item clone.</p><p>The last item in this set is the  \"Monty Hall (Take 2)\" adaptive item.</p>",
-    "count": "5",
+    "count": "8",
     "items": [
       {
         "identifier": "card-08a-baseline",
@@ -31,7 +31,7 @@ const tests = [
         }
       },
       {
-        "identifier": "MontyHallTake2",
+        "identifier": "Example05-feedbackBlock-adaptive-qti3-card",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,
@@ -39,13 +39,37 @@ const tests = [
         }
       },
       {
-        "identifier": "Example05-feedbackBlock-adaptive-qti3-card",
+        "identifier": "Example03-feedbackBlock-solution-qti3",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,
           "submissionMode": "simultaneous"
         }
-      }
+      },
+      {
+        "identifier": "template_image",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "ms-choice-templated-qti3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "MontyHallTake2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
     ]
   },
   {
@@ -722,6 +746,30 @@ const tests = [
   },
   {
     "id": "9",
+    "title": "L2 - Q5 Extended Text Interaction",
+    "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q5 - Extended Text Interaction conformance tests.</p><p>These items demonstration format=\"plain\", format=\"xhtml\" (rich text editor) extended text embodiments, pattern masking, and character counter shared vocabulary.</p>",
+    "count": "2",
+    "items": [
+      {
+        "identifier": "q5-extendedtext-sv-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q5-extendedtext-sv-4",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "10",
     "title": "L2 - Q12 Inline Choice Interaction",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q12 - Inline Choice Interaction conformance tests.",
     "count": "6",
