@@ -3,7 +3,7 @@ const tests = [
   {
     "id": "1",
     "title": "Example QTI3 Adaptive / Templated Items",
-    "description": "<p>This demonstrates QTI3 Player's capabilities with QTI3 adaptive items, QTI3 item templating, inline and modal feedback, and more. QTI3 Player implements these items with a \"card\" style, an qti-end-attempt controller bar, and a \"New Question\" button to produce a new item clone.</p><p>The last item in this set is the  \"Monty Hall (Take 2)\" adaptive item.</p>",
+    "description": "<p>This demonstrates QTI3 Player's capabilities with QTI3 adaptive items, QTI3 item templating, inline and modal feedback, and more. QTI3 Player implements these items with a \"card\" style, a qti-end-attempt controller bar, and a \"New Question\" button to produce a new item clone.</p><p>The last item in this set is the  \"Monty Hall (Take 2)\" adaptive item.</p>",
     "count": "8",
     "items": [
       {
