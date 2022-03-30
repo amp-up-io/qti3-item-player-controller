@@ -7,114 +7,9 @@
           Test Runner
         </router-link>
       </div>
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
+      <button class="btn btn-outline-secondary" type="button" id="offcanvasSettingsLabel" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettingsPanel" aria-controls="offcanvasSettingsPanel">
+        Settings
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <div class="navbar-nav">
-          <div class="btn-group nav-item">
-            <button type="button" class="btn btn-light dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-              Settings
-            </button>
-            <ul id="settingsDropdown" class="dropdown-menu dropdown-menu-end dropdown-menu-start text-small shadow" aria-labelledby="dropdownUser2">
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:default')"> Colors - Default
-                <span class="ms-1 checkmark menu-container-checked" data-color="colors:default">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:default-reverse')">Colors - Default Reverse
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:default-reverse">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:highcontrast')">Colors - High Contrast
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:highcontrast">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:highcontrast-reverse')">Colors - High Contrast Reverse
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:highcontrast-reverse">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:blackrose')">Colors - Black on Rose
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:blackrose">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:roseblack')">Colors - Rose on Black
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:roseblack">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:mgraydgray')">Colors - Medium Gray on Dark Gray
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:mgraydgray">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:dgraymgray')">Colors - Dark Gray on Medium Gray
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:dgraymgray">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:yellowblue')">Colors - Yellow on Blue
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:yellowblue">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item color-item" href="#" @click.prevent="handleMenuClick('colors:blueyellow')">Colors - Blue on Yellow
-                <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:blueyellow">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <!-- container settings -->
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#" @click.prevent="handleMenuClick('container:fluid')">QTI 3 Player - Full Width
-                <span ref="menuItemContainerFluid" class="ms-1 menu-container-checked">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item" href="#" @click.prevent="handleMenuClick('container:responsive')">QTI 3 Player - Responsive
-                <span ref="menuItemContainerResponsive" class="ms-1 menu-container-unchecked">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <!-- container padding settings -->
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:0')">QTI 3 Player - Padding 0
-                <span ref="menuItemContainerPadding0" class="ms-1 checkmark menu-container-unchecked">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:1')">QTI 3 Player - Padding 1
-                <span ref="menuItemContainerPadding1" class="ms-1 checkmark menu-container-unchecked">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:2')">QTI 3 Player - Padding 2
-                <span ref="menuItemContainerPadding2" class="ms-1 checkmark menu-container-checked">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:3')">QTI 3 Player - Padding 3
-                <span ref="menuItemContainerPadding3" class="ms-1 checkmark menu-container-unchecked">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:4')">QTI 3 Player - Padding 4
-                <span ref="menuItemContainerPadding4" class="ms-1 checkmark menu-container-unchecked">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-              <li><a class="dropdown-item padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:5')">QTI 3 Player - Padding 5
-                <span ref="menuItemContainerPadding5" class="ms-1 checkmark menu-container-unchecked">
-                  <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                </span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   </nav>
 </template>
@@ -272,14 +167,6 @@ export default {
 <style>
 .navbar-bottom-shadow {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
-}
-
-.menu-container-unchecked {
-  display: none;
-}
-
-.menu-container-checked {
-  display: inline;
 }
 
 .navbar-brand.router-link a {
