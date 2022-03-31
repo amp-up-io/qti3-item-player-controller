@@ -4,9 +4,6 @@
     <header>
       <TopBar
         ref="topbar"
-        @menuColorClick="handleMenuColorClick"
-        @menuContainerClick="handleMenuContainerClick"
-        @menuContainerPaddingClick="handleMenuContainerPaddingClick"
       />
     </header>
 
@@ -27,6 +24,7 @@
           @notifyQti3SuspendAttemptCompleted="handleSuspendAttemptCompleted"
           @notifyQti3EndAttemptCompleted="handleEndAttemptCompleted"
           @notifyQti3ItemAlertEvent="displayItemAlertEvent"
+          @notifyQti3ItemCatalogEvent="handleItemCatalogEvent"
         />
 
       </div>
@@ -43,6 +41,13 @@
         @nextItem="handleNextItem"
       />
     </footer>
+
+    <SettingsPanel
+      @menuColorClick="handleMenuColorClick"
+      @menuContainerClick="handleMenuContainerClick"
+      @menuContainerPaddingClick="handleMenuContainerPaddingClick"
+      @menuPnpChange="handlePnpChange"
+    />
   </section>
 </template>
 
@@ -50,6 +55,7 @@
 import TopBar from '@/components/TopBar'
 import BottomBar from '@/components/BottomBar'
 import SkipNav from '@/components/SkipNav'
+import SettingsPanel from '@/components/SettingsPanel'
 import { TestFactory } from '@/helpers/TestFactory'
 import { ItemFactory } from '@/helpers/ItemFactory'
 import { PnpFactory } from '@/helpers/PnpFactory'
@@ -69,6 +75,7 @@ export default {
     Qti3Player,
     TopBar,
     BottomBar,
+    SettingsPanel,
     SkipNav
   },
 
@@ -374,6 +381,25 @@ export default {
     },
 
     /**
+     * @description Handle ad-hoc pnp support click events from the
+     * Settings menu component.
+     * @param {String} pnpEvent - examples:
+     *                            'glossary-off', // turn off glossary
+     *                            'ktlang:es', // turn on Spanish translations
+     *                            'sbacGlossaryIllustration-on'
+     */
+    handlePnpChange (pnpEvent) {
+      // The evaluatePnpEvent method returns true if we can
+      // identify the event AND the event causes a change in
+      // the current Pnp that should trigger a catalog rebind.
+      if (!this.pnp.evaluatePnpEvent(pnpEvent)) return
+      // 1) Set the QTI3 Player pnp with our updated pnp.
+      this.qti3Player.setItemContextPnp(this.pnp.getPnp())
+      // 2) Force QTI3 Player to bind the Catalog.
+      this.qti3Player.bindCatalog()
+    },
+
+    /**
      * @description Display any messages in the validationMessages array.
      * Side effect: disable the appropriate navigation button.
      * @param {Array} validationMessages
@@ -424,6 +450,32 @@ export default {
             timerProgressBar: true
           })
       })
+    },
+
+    /**
+     * @description Handler for QTI item catalog events such as 'glossary' events.
+     * @param {Object} event - object containing a catalog event payload
+     * Sample event schema:
+     * {
+     *   type: "glossary",
+     *   term: "acronym",
+     *   catalogIdRef: "glosscat",
+     *   data: [
+     *     {
+     *       support: "glossary-on-screen",
+     *       card: {
+     *         content: ""<p>An abbreviation.</p>"",
+     *         properties: {
+     *           name: "qti-html-content"
+     *         }
+     *       }
+     *     }
+     *     ... additional supports in catalog based on PNP ...
+     *   ]
+     * }
+     */
+    handleItemCatalogEvent (event) {
+      console.log('[ItemCatalogEvent][Type: ' + event.type + ']', event)
     },
 
     /**
