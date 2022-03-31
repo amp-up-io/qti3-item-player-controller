@@ -135,24 +135,124 @@
           <li class="border-top my-2"></li>
 
           <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#pnp-collapse" aria-expanded="false">
               PNP Supports
             </button>
-            <div class="collapse" id="orders-collapse">
+            <div class="collapse" id="pnp-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li class="mb-1 mt-2 ms-3">
-                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account2-collapse" aria-expanded="false">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#glossary-collapse" aria-expanded="false">
                     Glossary
                   </button>
-                  <div class="collapse mt-1" id="account2-collapse">
+                  <div class="collapse mt-1" id="glossary-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('glossary:on')">On
+                      <li><a class="link-dark rounded glossary-item" href="#" @click.prevent="handleMenuClick('glossary:off')">Off
+                        <span ref="menuItemGlossaryOff" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded glossary-item" href="#" @click.prevent="handleMenuClick('glossary:on')">On
                         <span ref="menuItemGlossaryOn" class="ms-1 checkmark menu-container-checked">
                           <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
                         </span></a>
                       </li>
-                      <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('glossary:off')">Off
-                        <span ref="menuItemGlossaryOff" class="ms-1 checkmark menu-container-unchecked">
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#kt-collapse" aria-expanded="false">
+                    Keyword Translation
+                  </button>
+                  <div class="collapse mt-1" id="kt-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:off')">Off
+                        <span ref="menuItemKtLangOff" class="ms-1 checkmark menu-container-checked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:ar')">Arabic
+                        <span ref="menuItemKtLangAR" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:my')">Burmese
+                        <span ref="menuItemKtLangMY" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:yue')">Cantonese
+                        <span ref="menuItemKtLangYUE" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:tl')">Filipino (Ilokano + Tagalog)
+                        <span ref="menuItemKtLangTL" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:hmn')">Hmong
+                        <span ref="menuItemKtLangHMN" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:ko')">Korean
+                        <span ref="menuItemKtLangKO" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:cmn')">Mandarin
+                        <span ref="menuItemKtLangCMN" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:pa')">Punjabi
+                        <span ref="menuItemKtLangPA" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:ru')">Russian
+                        <span ref="menuItemKtLangRU" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:so')">Somali
+                        <span ref="menuItemKtLangSO" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:es')">Spanish
+                        <span ref="menuItemKtLangES" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:uk')">Ukrainian
+                        <span ref="menuItemKtLangUK" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:vi')">Vietnamese
+                        <span ref="menuItemKtLangVI" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#illgloss-collapse" aria-expanded="false">
+                    Illustrated Glossary
+                  </button>
+                  <div class="collapse mt-1" id="illgloss-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a class="link-dark rounded glossary-item" href="#" @click.prevent="handleMenuClick('sbacGlossaryIllustration:off')">Off
+                        <span ref="menuItemGlossaryIllustrationOff" class="ms-1 checkmark menu-container-checked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded glossary-item" href="#" @click.prevent="handleMenuClick('sbacGlossaryIllustration:on')">On
+                        <span ref="menuItemGlossaryIllustrationOn" class="ms-1 checkmark menu-container-unchecked">
                           <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
                         </span></a>
                       </li>
@@ -195,7 +295,6 @@ export default {
     },
 
     handleMenuClick (param) {
-      console.log('got menu click:', param)
       let colorClass = null
 
       switch (param) {
@@ -279,6 +378,88 @@ export default {
           this.showCheck(this.$refs.menuItemGlossaryOff)
           this.$emit('menuPnpChange', 'glossary-off')
           break
+        case 'ktlang:off':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangOff)
+          this.$emit('menuPnpChange', 'ktlang-off')
+          break
+        case 'ktlang:ar':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangAR)
+          this.$emit('menuPnpChange', 'ktlang-ar')
+          break
+        case 'ktlang:my':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangMY)
+          this.$emit('menuPnpChange', 'ktlang-my')
+          break
+        case 'ktlang:yue':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangYUE)
+          this.$emit('menuPnpChange', 'ktlang-yue')
+          break
+        case 'ktlang:tl':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangTL)
+          this.$emit('menuPnpChange', 'ktlang-tl')
+          break
+        case 'ktlang:hmn':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangHMN)
+          this.$emit('menuPnpChange', 'ktlang-hmn')
+          break
+        case 'ktlang:ko':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangKO)
+          this.$emit('menuPnpChange', 'ktlang-ko')
+          break
+        case 'ktlang:cmn':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangCMN)
+          this.$emit('menuPnpChange', 'ktlang-cmn')
+          break
+        case 'ktlang:pa':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangPA)
+          this.$emit('menuPnpChange', 'ktlang-pa')
+          break
+        case 'ktlang:ru':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangRU)
+          this.$emit('menuPnpChange', 'ktlang-ru')
+          break
+        case 'ktlang:so':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangSO)
+          this.$emit('menuPnpChange', 'ktlang-so')
+          break
+        case 'ktlang:es':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangES)
+          this.$emit('menuPnpChange', 'ktlang-es')
+          break
+        case 'ktlang:uk':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangUK)
+          this.$emit('menuPnpChange', 'ktlang-uk')
+          break
+        case 'ktlang:vi':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangVI)
+          this.$emit('menuPnpChange', 'ktlang-vi')
+          break
+        case 'sbacGlossaryIllustration:on':
+          // For ext:sbacGlossaryIllustration - on
+          this.hideCheck(this.$refs.menuItemGlossaryIllustrationOff)
+          this.showCheck(this.$refs.menuItemGlossaryIllustrationOn)
+          this.$emit('menuPnpChange', 'sbacGlossaryIllustration-on')
+          break
+        case 'sbacGlossaryIllustration:off':
+          // For ext:sbacGlossaryIllustration - off
+          this.hideCheck(this.$refs.menuItemGlossaryIllustrationOn)
+          this.showCheck(this.$refs.menuItemGlossaryIllustrationOff)
+          this.$emit('menuPnpChange', 'sbacGlossaryIllustration-off')
+          break
         default:
       }
 
@@ -311,6 +492,14 @@ export default {
 
     removeAllContainerPaddingChecks () {
       this.paddingMenuItems.forEach((item) => {
+        const el = item.querySelector('span.checkmark')
+        if (el == null) return
+        this.hideCheck(el)
+      }, this)
+    },
+
+    removeAllKeywordTranslationChecks () {
+      this.ktMenuItems.forEach((item) => {
         const el = item.querySelector('span.checkmark')
         if (el == null) return
         this.hideCheck(el)
