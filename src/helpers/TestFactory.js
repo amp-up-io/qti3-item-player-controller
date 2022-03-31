@@ -823,6 +823,30 @@ const tests = [
         }
       }
     ]
+  },
+  {
+    "id": "11",
+    "title": "L2 - Catalog - Glossary and Keyword Translation",
+    "description": "Demonstrates QTI3 Player support for QtiCatalogInfo + PNP glossary-on-screen, keyword-translation, and ext:sbac-glossary-illustration supports.",
+    "count": "2",
+    "items": [
+      {
+        "identifier": "a13-a15-captions-glossary",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "sbac-200-51246-partial",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
   }
 ]
 
