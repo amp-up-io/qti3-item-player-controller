@@ -71,72 +71,8 @@
           <li class="border-top my-2"></li>
 
           <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#container-collapse" aria-expanded="false">
-              Container Width
-            </button>
-            <div class="collapse" id="container-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a class="link-dark rounded" href="#" @click.prevent="handleMenuClick('container:fluid')">QTI 3 Player - Full Width
-                  <span ref="menuItemContainerFluid" class="ms-1 menu-container-checked">
-                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                  </span></a>
-                </li>
-                <li><a class="link-dark rounded" href="#" @click.prevent="handleMenuClick('container:responsive')">QTI 3 Player - Responsive
-                  <span ref="menuItemContainerResponsive" class="ms-1 menu-container-unchecked">
-                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                  </span></a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="border-top my-2"></li>
-
-          <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#padding-collapse" aria-expanded="false">
-              Container Padding
-            </button>
-            <div class="collapse" id="padding-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:0')">QTI 3 Player - Padding 0
-                  <span ref="menuItemContainerPadding0" class="ms-1 checkmark menu-container-unchecked">
-                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                  </span></a>
-                </li>
-                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:1')">QTI 3 Player - Padding 1
-                  <span ref="menuItemContainerPadding1" class="ms-1 checkmark menu-container-unchecked">
-                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                  </span></a>
-                </li>
-                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:2')">QTI 3 Player - Padding 2
-                  <span ref="menuItemContainerPadding2" class="ms-1 checkmark menu-container-checked">
-                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                  </span></a>
-                </li>
-                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:3')">QTI 3 Player - Padding 3
-                  <span ref="menuItemContainerPadding3" class="ms-1 checkmark menu-container-unchecked">
-                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                  </span></a>
-                </li>
-                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:4')">QTI 3 Player - Padding 4
-                  <span ref="menuItemContainerPadding4" class="ms-1 checkmark menu-container-unchecked">
-                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                  </span></a>
-                </li>
-                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:5')">QTI 3 Player - Padding 5
-                  <span ref="menuItemContainerPadding5" class="ms-1 checkmark menu-container-unchecked">
-                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
-                  </span></a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="border-top my-2"></li>
-
-          <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#pnp-collapse" aria-expanded="false">
-              PNP Supports
+              PNP Settings
             </button>
             <div class="collapse" id="pnp-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -262,6 +198,69 @@
               </ul>
             </div>
           </li>
+
+          <li class="border-top my-2"></li>
+
+          <li class="mb-2">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#container-collapse" aria-expanded="false">
+              Container Width
+            </button>
+            <div class="collapse" id="container-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a class="link-dark rounded" href="#" @click.prevent="handleMenuClick('container:fluid')">QTI 3 Player - Full Width
+                  <span ref="menuItemContainerFluid" class="ms-1 menu-container-checked">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded" href="#" @click.prevent="handleMenuClick('container:responsive')">QTI 3 Player - Responsive
+                  <span ref="menuItemContainerResponsive" class="ms-1 menu-container-unchecked">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#padding-collapse" aria-expanded="false">
+              Container Padding
+            </button>
+            <div class="collapse" id="padding-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:0')">QTI 3 Player - Padding 0
+                  <span ref="menuItemContainerPadding0" class="ms-1 checkmark menu-container-unchecked">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:1')">QTI 3 Player - Padding 1
+                  <span ref="menuItemContainerPadding1" class="ms-1 checkmark menu-container-unchecked">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:2')">QTI 3 Player - Padding 2
+                  <span ref="menuItemContainerPadding2" class="ms-1 checkmark menu-container-checked">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:3')">QTI 3 Player - Padding 3
+                  <span ref="menuItemContainerPadding3" class="ms-1 checkmark menu-container-unchecked">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:4')">QTI 3 Player - Padding 4
+                  <span ref="menuItemContainerPadding4" class="ms-1 checkmark menu-container-unchecked">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded padding-item" href="#" @click.prevent="handleMenuClick('containerpadding:5')">QTI 3 Player - Padding 5
+                  <span ref="menuItemContainerPadding5" class="ms-1 checkmark menu-container-unchecked">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
         </ul>
       </div>
 
@@ -530,12 +529,6 @@ export default {
   border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-.bi {
-  vertical-align: -.125em;
-  pointer-events: none;
-  fill: currentColor;
 }
 
 .dropdown-toggle { outline: 0; }
