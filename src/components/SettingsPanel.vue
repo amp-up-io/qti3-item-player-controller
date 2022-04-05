@@ -122,13 +122,28 @@
                           <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
                         </span></a>
                       </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:en')">English
+                        <span ref="menuItemKtLangEN" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
                       <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:tl')">Filipino (Ilokano + Tagalog)
                         <span ref="menuItemKtLangTL" class="ms-1 checkmark menu-container-unchecked">
                           <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
                         </span></a>
                       </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:de')">German
+                        <span ref="menuItemKtLangDE" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
                       <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:hmn')">Hmong
                         <span ref="menuItemKtLangHMN" class="ms-1 checkmark menu-container-unchecked">
+                          <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded kt-item" href="#" @click.prevent="handleMenuClick('ktlang:ja')">Japanese
+                        <span ref="menuItemKtLangJA" class="ms-1 checkmark menu-container-unchecked">
                           <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
                         </span></a>
                       </li>
@@ -397,15 +412,30 @@ export default {
           this.showCheck(this.$refs.menuItemKtLangYUE)
           this.$emit('menuPnpChange', 'ktlang-yue')
           break
+        case 'ktlang:en':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangEN)
+          this.$emit('menuPnpChange', 'ktlang-en')
+          break
         case 'ktlang:tl':
           this.removeAllKeywordTranslationChecks()
           this.showCheck(this.$refs.menuItemKtLangTL)
           this.$emit('menuPnpChange', 'ktlang-tl')
           break
+        case 'ktlang:de':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangDE)
+          this.$emit('menuPnpChange', 'ktlang-de')
+          break
         case 'ktlang:hmn':
           this.removeAllKeywordTranslationChecks()
           this.showCheck(this.$refs.menuItemKtLangHMN)
           this.$emit('menuPnpChange', 'ktlang-hmn')
+          break
+        case 'ktlang:ja':
+          this.removeAllKeywordTranslationChecks()
+          this.showCheck(this.$refs.menuItemKtLangJA)
+          this.$emit('menuPnpChange', 'ktlang-ja')
           break
         case 'ktlang:ko':
           this.removeAllKeywordTranslationChecks()
