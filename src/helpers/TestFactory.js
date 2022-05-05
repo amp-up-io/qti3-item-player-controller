@@ -826,6 +826,54 @@ const tests = [
   },
   {
     "id": "11",
+    "title": "L2 - Q15 Order Interaction",
+    "description": "Demonstrates QTI3 Player support for all Level 2 Q15 - Order Interaction conformance tests.",
+    "count": "5",
+    "items": [
+      {
+        "identifier": "q15-order-example-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q15-order-example-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q15-order-example-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q15-order-interaction-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q15-order-interaction-sv-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "12",
     "title": "L2 - Catalog - Glossary and Keyword Translation",
     "description": "Demonstrates QTI3 Player support for QtiCatalogInfo + PNP glossary-on-screen, keyword-translation, and ext:sbac-glossary-illustration supports.",
     "count": "2",

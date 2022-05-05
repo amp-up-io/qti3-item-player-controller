@@ -87,7 +87,7 @@ export class PnpFactory {
         colorStyle: this.constants.COLOR_DEFAULT
       },
       glossaryOnScreen: true,
-      // Set to ISO 639-1 code when not ''
+      // Set to ISO 639 code when not ''
       keywordTranslationLanguage: '',
       extSbacGlossaryIllustration: false,
       layoutSingleColumn: false // unsupported
