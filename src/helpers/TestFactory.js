@@ -827,9 +827,17 @@ const tests = [
   {
     "id": "11",
     "title": "L2 - Q15 Order Interaction",
-    "description": "Demonstrates QTI3 Player support for all Level 2 Q15 - Order Interaction conformance tests.",
-    "count": "5",
+    "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q15 - Order Interaction conformance tests.</p><p>In addition, the first item in this set demonstates Order choice shuffling.</p>",
+    "count": "6",
     "items": [
+      {
+        "identifier": "q15-order-example-4",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
       {
         "identifier": "q15-order-example-1",
         "sessionControl": {
