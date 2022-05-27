@@ -69,11 +69,67 @@ const tests = [
           "validateResponses": false,
           "submissionMode": "simultaneous"
         }
-      },
+      }
     ]
   },
   {
     "id": "2",
+    "title": "QTI Roundtable - June 2022 Example Items",
+    "description": "<p>This is a collection of demonstration items for the June 2022 QTI Roundtable which focuses on QTI features commonly used in Formative/Classroom assessment settings.</p></p>These items demonstrate QTI3 Player's capabilities with adaptive items, item templating, math variable templating, scoring, inline / block / modal feedback, and more.</p>",
+    "count": "6",
+    "items": [
+      {
+        "identifier": "template_image",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "ms-choice-templated-qti3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "Example05-feedbackBlock-adaptive-qti3-card",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "card-08a-baseline",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "adaptivecard-08c-showexample",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      },
+      {
+        "identifier": "adaptivecard-08b-solvethis",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "simultaneous"
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
     "title": "L2 - I19b Shared Layout and Styling CSS",
     "description": "Demonstrates QTI3 Player support for all Level 2 conformance tests of Shared Layout and Styling CSS.",
     "count": "8",
@@ -145,7 +201,7 @@ const tests = [
     ]
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "L1 - Q20 Text Entry Interaction",
     "description": "Demonstrates QTI3 Player support for all Level 1 conformance tests of Q20 - Text Entry Interaction.  Note: The <strong>last item</strong> demonstrates a composite item that includes all permutations of qti-text-entry-interaction qti-input-width shared vocabulary.",
     "count": "20",
@@ -313,7 +369,7 @@ const tests = [
     ]
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "L1 - Q2 Choice Interaction - Single Cardinality",
     "description": "Demonstrates QTI3 Player support for all Level 1 Q2 - Choice Interaction - Single Cardinality conformance tests.",
     "count": "18",
@@ -465,7 +521,7 @@ const tests = [
     ]
   },
   {
-    "id": "5",
+    "id": "6",
     "title": "L1 - Q2 Choice Interaction - Multiple Cardinality",
     "description": "Demonstrates QTI3 Player support for all Level 1 Q2 - Choice Interaction - Multiple Cardinality conformance tests.",
     "count": "18",
@@ -617,7 +673,7 @@ const tests = [
     ]
   },
   {
-    "id": "6",
+    "id": "7",
     "title": "L1 - Q5 Extended Text Interaction",
     "description": "Demonstrates QTI3 Player support for all Level 1 Q5 - Extended Text Interaction conformance tests.",
     "count": "5",
@@ -665,7 +721,7 @@ const tests = [
     ]
   },
   {
-    "id": "7",
+    "id": "8",
     "title": "L2 - Q2 Choice Interaction - Single Cardinality",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q2 - Choice Interaction - Single Cardinality conformance tests.",
     "count": "4",
@@ -705,7 +761,7 @@ const tests = [
     ]
   },
   {
-    "id": "8",
+    "id": "9",
     "title": "L2 - Q2 Choice Interaction - Multiple Cardinality",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q2 - Choice Interaction - Multiple Cardinality conformance tests.",
     "count": "4",
@@ -745,7 +801,7 @@ const tests = [
     ]
   },
   {
-    "id": "9",
+    "id": "10",
     "title": "L2 - Q5 Extended Text Interaction",
     "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q5 - Extended Text Interaction conformance tests.</p><p>These items demonstration format=\"plain\", format=\"xhtml\" (rich text editor) extended text embodiments, pattern masking, and character counter shared vocabulary.</p>",
     "count": "2",
@@ -769,7 +825,7 @@ const tests = [
     ]
   },
   {
-    "id": "10",
+    "id": "11",
     "title": "L2 - Q12 Inline Choice Interaction",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q12 - Inline Choice Interaction conformance tests.",
     "count": "6",
@@ -825,7 +881,7 @@ const tests = [
     ]
   },
   {
-    "id": "11",
+    "id": "12",
     "title": "L2 - Q15 Order Interaction",
     "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q15 - Order Interaction conformance tests.</p><p>In addition, the first item in this set demonstates Order choice shuffling.</p>",
     "count": "6",
@@ -881,7 +937,7 @@ const tests = [
     ]
   },
   {
-    "id": "12",
+    "id": "13",
     "title": "L2 - Catalog - Glossary and Keyword Translation",
     "description": "Demonstrates QTI3 Player support for QtiCatalogInfo + PNP glossary-on-screen, keyword-translation, and ext:sbac-glossary-illustration supports.",
     "count": "2",
