@@ -959,6 +959,62 @@ const tests = [
         }
       }
     ]
+  },
+  {
+    "id": "14",
+    "title": "Adam Collection",
+    "description": "A small collection of items for Adam.",
+    "count": "6",
+    "items": [
+      {
+        "identifier": "Ch5_Modeling_6_r3.0",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "Ch5_Modeling_5_v2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "Ch5_Modeling_4_q1_r3.0",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "Ch5_Modeling_4_q2_r3.0",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "Ch5_Modeling_4_q3_r3.0",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "Ch5_Modeling_3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
   }
 ]
 

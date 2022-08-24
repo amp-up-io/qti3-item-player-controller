@@ -642,6 +642,276 @@ const items = [
     "guid": "0000-0014-0004",
     "submissionMode": "individual",
     "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" identifier=\"q15-order-interaction-sv-2\" title=\"Order Interaction - (SV 2) - orderable-target orientation options\" adaptive=\"false\" time-dependent=\"false\"><qti-response-declaration identifier=\"RESPONSE1\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE2\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE3\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE4\" cardinality=\"ordered\" base-type=\"identifier\" />  <qti-response-declaration identifier=\"RESPONSE5\" cardinality=\"ordered\" base-type=\"identifier\" />  <qti-response-declaration identifier=\"RESPONSE6\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE7\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE8\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE9\" cardinality=\"ordered\" base-type=\"identifier\" />  <qti-response-declaration identifier=\"RESPONSE10\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE11\" cardinality=\"ordered\" base-type=\"identifier\" />  <qti-response-declaration identifier=\"RESPONSE12\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"/><qti-item-body><p>Delivery systems may implement Order Interaction's in a manner where the choices are grouped together separately from a target area where the choices are ordered.  When they do so, the shared vocabulary is intended to provide clarity regarding the visual positioning of the orderable choices w/respect to the target area.</p><p>The following F1 drivers finished on the podium in the first ever Grand Prix of  Bahrain. Can you rearrange them into the correct finishing order?</p><hr /><p>Demonstrates <em>qti-choices-top</em>.</p><qti-order-interaction class=\"qti-choices-top\" response-identifier=\"RESPONSE1\"><qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-bottom</em>.</p>    <qti-order-interaction class=\"qti-choices-bottom\" response-identifier=\"RESPONSE2\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-left</em>.</p>    <qti-order-interaction class=\"qti-choices-left\" response-identifier=\"RESPONSE3\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction>       <p>Demonstrates <em>qti-choices-right</em>.</p>    <qti-order-interaction class=\"qti-choices-right\" response-identifier=\"RESPONSE4\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction><hr /><p>Demonstrates <em>qti-choices-top</em> and <em>orientation horizontal</em>.</p>    <qti-order-interaction class=\"qti-choices-top\" orientation=\"horizontal\" response-identifier=\"RESPONSE5\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction><p>Demonstrates <em>qti-choices-bottom</em> and <em>orientation horizontal</em>.</p>    <qti-order-interaction class=\"qti-choices-bottom\" orientation=\"horizontal\" response-identifier=\"RESPONSE6\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction><p>Demonstrates <em>qti-choices-left</em> and <em>orientation horizontal</em>.</p><qti-order-interaction class=\"qti-choices-left\" orientation=\"horizontal\" response-identifier=\"RESPONSE7\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction> <p>Demonstrates <em>qti-choices-right</em> and <em>orientation horizontal</em>.</p><qti-order-interaction class=\"qti-choices-right\" orientation=\"horizontal\" response-identifier=\"RESPONSE8\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>        <hr /> <p>Demonstrates <em>qti-choices-top</em> and <em>orientation vertical</em>.</p><qti-order-interaction class=\"qti-choices-top\" orientation=\"vertical\" response-identifier=\"RESPONSE9\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-bottom</em> and <em>orientation vertical</em>.</p><qti-order-interaction class=\"qti-choices-bottom\" orientation=\"vertical\" response-identifier=\"RESPONSE10\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-left</em> and <em>orientation vertical</em>.</p><qti-order-interaction class=\"qti-choices-left\" orientation=\"vertical\" response-identifier=\"RESPONSE11\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>       <p>Demonstrates <em>qti-choices-right</em> and <em>orientation vertical</em>.</p><qti-order-interaction class=\"qti-choices-right\" orientation=\"vertical\" response-identifier=\"RESPONSE12\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction></qti-item-body></qti-assessment-item>"
+  },
+  {
+    "identifier": "Ch5_Modeling_6_r3.0",
+    "guid": "0000-0015-0001",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?><qti-assessment-item
+xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+identifier="Ch5_Modeling_6_r3.0" title="Ch5_Modeling_6_r3.0"
+adaptive="false" time-dependent="false">
+<qti-response-declaration identifier="RESPONSE_1" cardinality="single" base-type="identifier">
+  <qti-correct-response>
+    <qti-value>4</qti-value>
+  </qti-correct-response>
+</qti-response-declaration>
+<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+  <qti-default-value>
+    <qti-value>0</qti-value>
+  </qti-default-value>
+</qti-outcome-declaration>
+<qti-outcome-declaration identifier="SCORE_MIN" cardinality="single" base-type="float">
+  <qti-default-value>
+    <qti-value>1</qti-value>
+  </qti-default-value>
+</qti-outcome-declaration>
+<qti-item-body>
+  <qti-choice-interaction class="lrn qti-labels-upper-alpha qti-input-control-hidden qti-labels-suffix-none" min-choices="0" max-choices="1" response-identifier="RESPONSE_1">
+    <qti-prompt>Once we have <code>outcome_stats</code> saved, which of these lines of codes $3.20 would return the median?</qti-prompt>
+    <qti-simple-choice identifier="0"><code>outcome$median</code></qti-simple-choice>
+    <qti-simple-choice identifier="1"><code>median$outcome_stats</code></qti-simple-choice>
+    <qti-simple-choice identifier="2"><span>I am an inline $Y_i = 0 + \\beta_1X_{1i} + \\beta_1X_{2i} + \\epsilon_i$ LaTeX expression.</span></qti-simple-choice>
+    <qti-simple-choice identifier="3"><span>I am a block/centered \\[Y_i = 0 + \\beta_1X_{1i} + \\beta_1X_{2i} + \\epsilon_i\\] LaTeX expression.</span></qti-simple-choice>
+    <qti-simple-choice identifier="4">The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.</qti-simple-choice>
+  </qti-choice-interaction>
+</qti-item-body>
+<qti-response-processing>
+<qti-response-condition>
+  <qti-response-if>
+    <qti-is-null>
+      <qti-variable identifier="RESPONSE_1"/>
+    </qti-is-null>
+    <qti-set-outcome-value identifier="SCORE">
+      <qti-base-value base-type="float">0</qti-base-value>
+    </qti-set-outcome-value>
+  </qti-response-if>
+  <qti-response-else-if>
+    <qti-match>
+      <qti-variable identifier="RESPONSE_1"/>
+      <qti-correct identifier="RESPONSE_1"/>
+    </qti-match>
+    <qti-set-outcome-value identifier="SCORE">
+      <qti-base-value base-type="float">1</qti-base-value>
+    </qti-set-outcome-value>
+  </qti-response-else-if>
+  <qti-response-else>
+    <qti-set-outcome-value identifier="SCORE">
+      <qti-variable identifier="SCORE_MIN"/>
+    </qti-set-outcome-value>
+  </qti-response-else>
+</qti-response-condition>
+</qti-response-processing>
+</qti-assessment-item>`
+  },
+  {
+    "identifier": "Ch5_Modeling_5_v2",
+    "guid": "0000-0015-0002",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item
+xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+identifier="Ch5_Modeling_5_v2" title="Ch5_Modeling_5_v2"
+adaptive="false" time-dependent="false">
+<qti-response-declaration identifier="RESPONSE_1" cardinality="multiple" base-type="identifier">
+  <qti-correct-response>
+    <qti-value>0</qti-value>
+  </qti-correct-response>
+</qti-response-declaration>
+<qti-response-declaration identifier="RESPONSE_2" cardinality="multiple" base-type="identifier">
+  <qti-correct-response>
+    <qti-value>4</qti-value>
+    <qti-value>3</qti-value>
+  </qti-correct-response>
+</qti-response-declaration>
+<qti-response-declaration identifier="RESPONSE_3" cardinality="multiple" base-type="identifier">
+  <qti-correct-response>
+    <qti-value>4</qti-value>
+    <qti-value>3</qti-value>
+  </qti-correct-response>
+</qti-response-declaration>
+<qti-response-declaration identifier="RESPONSE_4" cardinality="multiple" base-type="identifier">
+  <qti-correct-response>
+    <qti-value>4</qti-value>
+    <qti-value>3</qti-value>
+  </qti-correct-response>
+</qti-response-declaration>
+<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+  <qti-default-value>
+    <qti-value>0</qti-value>
+  </qti-default-value>
+</qti-outcome-declaration>
+<qti-outcome-declaration identifier="SCORE_1" cardinality="single" base-type="float">
+  <qti-default-value>
+    <qti-value>0</qti-value>
+  </qti-default-value>
+</qti-outcome-declaration>
+<qti-outcome-declaration identifier="SCORE_2" cardinality="single" base-type="float">
+  <qti-default-value>
+    <qti-value>0</qti-value>
+  </qti-default-value>
+</qti-outcome-declaration>
+<qti-item-body>
+<div class="qti-layout-row">
+<div class="qti-layout-col12">
+  <qti-choice-interaction class="lrn qti-labels-upper-alpha qti-input-control-hidden qti-labels-suffix-none" min-choices="0" max-choices="0" response-identifier="RESPONSE_1">
+    <qti-prompt>How is the median the \"middle\" of the distribution? (Check all that apply.)</qti-prompt>
+    <qti-simple-choice identifier="0">If all data points in the distribution are arranged in order, there are an equal number of data points below and above the median.</qti-simple-choice>
+    <qti-simple-choice identifier="1">If all data points in the distribution are arranged in order, there are an equal number of variables below and above the median.</qti-simple-choice>
+    <qti-simple-choice identifier="2">The sum of the values below the median is equal to the sum of the values above the median.</qti-simple-choice>
+    <qti-simple-choice identifier="3">The median balances the amount of error below and above it.</qti-simple-choice>
+    <qti-simple-choice identifier="4">The deviations above and below the median always sum to 0.</qti-simple-choice>
+  </qti-choice-interaction>
+
+  <qti-choice-interaction class="lrn qti-labels-upper-alpha qti-input-control-hidden qti-labels-suffix-none" min-choices="0" max-choices="0" response-identifier="RESPONSE_2">
+<qti-prompt>How is the mean the \"middle\" of the distribution? (Check all that apply.)</qti-prompt>
+<qti-simple-choice identifier="0">If all data points in the distribution are arranged in order, there are an equal number of data points below and above the mean.</qti-simple-choice>
+<qti-simple-choice identifier="1">If all data points in the distribution are arranged in order, there are an equal number of variables below and above the mean.</qti-simple-choice>
+<qti-simple-choice identifier="2">The sum of the values below the mean is equal to the sum of the values above the mean.</qti-simple-choice>
+<qti-simple-choice identifier="3">The mean balances the amount of error below and above it.</qti-simple-choice>
+<qti-simple-choice identifier="4">The deviations below and above the mean always sum to 0.</qti-simple-choice>
+  </qti-choice-interaction>
+  </div>
+</div>
+</qti-item-body>
+<qti-response-processing>
+<qti-response-condition>
+  <qti-response-if>
+    <qti-match>
+      <qti-variable identifier="RESPONSE_1"/>
+      <qti-correct identifier="RESPONSE_1"/>
+    </qti-match>
+    <qti-set-outcome-value identifier="SCORE_1">
+      <qti-base-value base-type="float">1</qti-base-value>
+    </qti-set-outcome-value>
+  </qti-response-if>
+  <qti-response-else>
+    <qti-set-outcome-value identifier="SCORE_1">
+      <qti-base-value base-type="float">0</qti-base-value>
+    </qti-set-outcome-value>
+  </qti-response-else>
+</qti-response-condition>
+<qti-response-condition>
+  <qti-response-if>
+    <qti-match>
+      <qti-variable identifier="RESPONSE_2"/>
+      <qti-correct identifier="RESPONSE_2"/>
+    </qti-match>
+    <qti-set-outcome-value identifier="SCORE_2">
+      <qti-base-value base-type="float">1</qti-base-value>
+    </qti-set-outcome-value>
+  </qti-response-if>
+  <qti-response-else>
+    <qti-set-outcome-value identifier="SCORE_2">
+      <qti-base-value base-type="float">0</qti-base-value>
+    </qti-set-outcome-value>
+  </qti-response-else>
+</qti-response-condition>
+<qti-set-outcome-value identifier="SCORE">
+  <qti-sum>
+    <qti-variable identifier="SCORE_1"/>
+    <qti-variable identifier="SCORE_2"/>
+  </qti-sum>
+</qti-set-outcome-value>
+</qti-response-processing>
+</qti-assessment-item>`
+  },
+  {
+    "identifier": "Ch5_Modeling_4_q1_r3.0",
+    "guid": "0000-0015-0003",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item
+xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+adaptive="false" time-dependent="false"
+identifier="Ch5_Modeling_4_q1_r3.0" title="Ch5_Modeling_4_q1_r3.0">
+<qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE" />
+<qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+<qti-item-body>
+<div class="qti-layout-row">
+<div class="qti-layout-col12">
+  <p><img alt="A histogram of the distribution of GradePredict in Fingers. It is skewed to the left, with most of the scores falling between 3.5 and 4.0,  and only a couple of scores below 3.0." height="368" src="https://assets.learnosity.com/organisations/430/bad15dff-01bb-4bff-8658-29b65de4b8f2.png" width="500"></p>
+  <p>Which do you think is a better one-number model?&nbsp;The median or the mean?</p>
+<qti-text-entry-interaction class="qti-input-width-72" data-maxlength="50" data-spellcheck="true" response-identifier="RESPONSE"/>
+</div>
+</div>
+</qti-item-body>
+</qti-assessment-item>`
+  },
+  {
+    "identifier": "Ch5_Modeling_4_q2_r3.0",
+    "guid": "0000-0015-0004",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item
+xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+adaptive="false" time-dependent="false"
+identifier="Ch5_Modeling_4_q2_r3.0" title="Ch5_Modeling_4_q2_r3.0">
+<qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE" />
+<qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+<qti-item-body>
+<div class="qti-layout-row">
+<div class="qti-layout-col12">
+  <p>&nbsp;</p>
+  <img alt="A histogram of the distribution of Thumb in Fingers. The values are roughly normally distributed." height="361" src="https://assets.learnosity.com/organisations/430/ba80a371-5659-492a-990d-6aa96cfdfef0.png" width="500">
+  <p>Which do you think is a better one-number model?&nbsp;The median or the mean?</p>
+<qti-text-entry-interaction class="qti-input-width-72" data-maxlength="50" response-identifier="RESPONSE"/>
+</div>
+</div>
+</qti-item-body>
+</qti-assessment-item>`
+  },
+  {
+    "identifier": "Ch5_Modeling_4_q3_r3.0",
+    "guid": "0000-0015-0005",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item
+xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+adaptive="false" time-dependent="false"
+identifier="Ch5_Modeling_4_q3_r3.0" title="Ch5_Modeling_4_q3_r3.0">
+<qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE" />
+<qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+<qti-item-body>
+<div class="qti-layout-row">
+<div class="qti-layout-col12">
+  <p>&nbsp;</p>
+  <p><img alt="A histogram of the distribution of Age in Fingers. The distribution is roughly bimodal and skewed to the right." height="359" src="https://assets.learnosity.com/organisations/430/2b62e299-841e-4dd2-8527-0157b96864de.png" width="513"></p>
+  <p>Which do you think is a better one-number model?&nbsp;The median or the mean?</p>
+<qti-text-entry-interaction class="qti-input-width-72" response-identifier="RESPONSE" data-maxlength="50"/>
+</div>
+</div>
+</qti-item-body>
+</qti-assessment-item>`
+  },
+  {
+    "identifier": "Ch5_Modeling_3",
+    "guid": "0000-0015-0006",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+adaptive="false"  time-dependent="false"
+identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
+<qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE_1"/>
+<qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+<qti-item-body>
+<div class="qti-layout-row">
+<div class="qti-layout-col12">
+  <qti-extended-text-interaction class="lrn qti-height-lines-3 qti-counter-up" expected-length="200" format="plain" data-toolbar-buttons="cut,copy,paste" data-lrn-show-word-limit="visible" data-spellcheck="true" response-identifier="RESPONSE_1">
+    <qti-prompt>
+      With the simple distribution discussed above (5, 5, 5, 10, 20), we could come up with reasons to favor both the median and the mean. In what sense might the median be a better model for this distribution? In what sense might the mean be a better model?
+    </qti-prompt>
+  </qti-extended-text-interaction>
+</div>
+</div>
+</qti-item-body>
+</qti-assessment-item>`
   }
 ]
 
