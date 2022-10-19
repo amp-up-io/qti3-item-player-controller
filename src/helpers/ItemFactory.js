@@ -672,7 +672,7 @@ adaptive="false" time-dependent="false">
     <qti-prompt>Once we have <code>outcome_stats</code> saved, which of these lines of codes $3.20 would return the median?</qti-prompt>
     <qti-simple-choice identifier="0"><code>outcome$median</code></qti-simple-choice>
     <qti-simple-choice identifier="1"><code>median$outcome_stats</code></qti-simple-choice>
-    <qti-simple-choice identifier="2"><span>I am an inline $Y_i = 0 + \\beta_1X_{1i} + \\beta_1X_{2i} + \\epsilon_i$ LaTeX expression.</span></qti-simple-choice>
+    <qti-simple-choice identifier="2"><span>I am an inline $$Y_i = 0 + \\beta_1X_{1i} + \\beta_1X_{2i} + \\epsilon_i$$ LaTeX expression.</span></qti-simple-choice>
     <qti-simple-choice identifier="3"><span>I am a block/centered \\[Y_i = 0 + \\beta_1X_{1i} + \\beta_1X_{2i} + \\epsilon_i\\] LaTeX expression.</span></qti-simple-choice>
     <qti-simple-choice identifier="4">The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.</qti-simple-choice>
   </qti-choice-interaction>
