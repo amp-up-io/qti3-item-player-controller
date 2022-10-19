@@ -120,6 +120,10 @@ export default {
        *   qti3-player-color-blueyellow
        *   qti3-player-color-dgraymgray
        *   qti3-player-color-mgraydgray
+       *   qti3-player-color-blackcyan
+       *   qti3-player-color-cyanblack
+       *   qti3-player-color-blackcream
+       *   qti3-player-color-creamblack
        */
       colorClass: 'qti3-player-color-default',
       /*

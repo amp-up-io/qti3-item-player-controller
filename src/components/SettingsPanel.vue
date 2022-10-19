@@ -64,6 +64,26 @@
                     <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
                   </span></a>
                 </li>
+                <li><a class="link-dark rounded color-item" href="#" @click.prevent="handleMenuClick('colors:blackcyan')">Black on Cyan
+                  <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:blackcyan">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded color-item" href="#" @click.prevent="handleMenuClick('colors:cyanblack')">Cyan on Black
+                  <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:cyanblack">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded color-item" href="#" @click.prevent="handleMenuClick('colors:blackcream')">Black on Cream
+                  <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:blackcream">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
+                <li><a class="link-dark rounded color-item" href="#" @click.prevent="handleMenuClick('colors:creamblack')">Cream on Black
+                  <span class="ms-1 checkmark menu-container-unchecked" data-color="colors:creamblack">
+                    <img src="@/assets/check-solid.svg" class="bi" width="14" height="14"/>
+                  </span></a>
+                </li>
               </ul>
             </div>
           </li>
@@ -341,6 +361,18 @@ export default {
           break
         case 'colors:blueyellow':
           colorClass = 'qti3-player-color-blueyellow'
+          break
+        case 'colors:blackcyan':
+          colorClass = 'qti3-player-color-blackcyan'
+          break
+        case 'colors:cyanblack':
+          colorClass = 'qti3-player-color-cyanblack'
+          break
+        case 'colors:blackcream':
+          colorClass = 'qti3-player-color-blackcream'
+          break
+        case 'colors:creamblack':
+          colorClass = 'qti3-player-color-creamblack'
           break
         case 'container:fluid':
           this.showCheck(this.$refs.menuItemContainerFluid)
