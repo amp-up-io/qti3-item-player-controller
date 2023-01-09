@@ -8,15 +8,15 @@
       />
     </header>
 
-    <!-- Available Tests Page -->
+    <!-- Available Collections Page -->
     <main id="main" class="test-controller-container container">
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <div class="start-test-content">
-            <h1 class="visually-hidden">Test Samples Page</h1>
+            <h1 class="visually-hidden">Available Collections Page</h1>
             <div class="card">
               <div class="card-header" aria-hidden="true">
-                Available Tests
+                Available Collections
               </div>
               <div class="card-body">
                 <table class="table table-sm">
