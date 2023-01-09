@@ -826,6 +826,46 @@ const tests = [
   },
   {
     "id": "11",
+    "title": "L2 - Q11 Hot Text Interaction",
+    "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q11 - Hot Text Interaction conformance tests.</p>",
+    "count": "4",
+    "items": [
+      {
+        "identifier": "hot-text-example-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "hot-text-example-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q11-hottext-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q11-hottext-sv-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "12",
     "title": "L2 - Q12 Inline Choice Interaction",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q12 - Inline Choice Interaction conformance tests.",
     "count": "6",
@@ -881,7 +921,7 @@ const tests = [
     ]
   },
   {
-    "id": "12",
+    "id": "13",
     "title": "L2 - Q15 Order Interaction",
     "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q15 - Order Interaction conformance tests.</p><p>In addition, the first item in this set demonstates Order choice shuffling.</p>",
     "count": "6",
@@ -937,7 +977,7 @@ const tests = [
     ]
   },
   {
-    "id": "13",
+    "id": "14",
     "title": "L2 - Catalog - Glossary and Keyword Translation",
     "description": "Demonstrates QTI3 Player support for QtiCatalogInfo + PNP glossary-on-screen, keyword-translation, and ext:sbac-glossary-illustration supports.",
     "count": "2",
@@ -961,7 +1001,7 @@ const tests = [
     ]
   },
   {
-    "id": "14",
+    "id": "50",
     "title": "Adam Collection",
     "description": "A small collection of items for Adam.",
     "count": "6",
