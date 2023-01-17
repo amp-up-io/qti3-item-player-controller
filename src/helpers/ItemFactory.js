@@ -1079,6 +1079,359 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         </qti-hottext-interaction>    
       </qti-item-body>
     </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-1",
+    "guid": "0000-0017-0001",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-2",
+    "guid": "0000-0017-0002",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-3",
+    "guid": "0000-0017-0003",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-4",
+    "guid": "0000-0017-0004",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-5",
+    "guid": "0000-0017-0005",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="multiple">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="0">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-6",
+    "guid": "0000-0017-0006",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="multiple">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="singlle" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="0">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-7",
+    "guid": "0000-0017-0007",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="multiple">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="0">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-8",
+    "guid": "0000-0017-0008",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="multiple">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="0">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-9",
+    "guid": "0000-0017-0009",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-10",
+    "guid": "0000-0017-0010",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="singlle" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-3" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-11",
+    "guid": "0000-0017-0011",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2 qti-input-control-hidden" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-12",
+    "guid": "0000-0017-0012",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-3 qti-input-control-hidden" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-13",
+    "guid": "0000-0017-0013",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" adaptive="false" identifier="元二を送る" time-dependent="false" title="元二を送る" xml:lang="ja">
+      <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+        <qti-correct-response>
+          <qti-value>友人</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+      <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/ac4de79c-c6e0-4608-83a5-13e9d8408b25/Items/Kanbun/kanbun.css" type="text/css"/>
+      <qti-item-body>
+        <div class="qti-height-112 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+          <p>次の漢詩を読んで設問に答えよ。</p>
+          <blockquote>
+            <div class="kanbun okurigana-sinking">
+              <p><span class="unit"><span class="kanji">渭</span></span><span class="has-okurigana unit"><span class="kanji">城</span><span class="kunten okurigana"><sup>ノ</sup></span></span><span class="unit"><span class="kanji">朝</span></span><span class="unit"><span class="kanji">雨</span></span><span class="has-okurigana unit"><span class="kanji">浥</span><span class="kunten okurigana"><sup>ス</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">軽</span></span><span class="has-okurigana unit"><span class="kanji">塵</span><span class="kunten okurigana"><sup>ヲ</sup></span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span></p><p><span class="unit"><span class="kanji">客</span></span><span class="unit"><span class="kanji">舎</span></span><span class="unit"><span class="kanji">青</span></span><span class="unit"><span class="kanji">青</span></span><span class="unit"><span class="kanji">柳</span></span><span class="unit"><span class="kanji">色</span></span><span class="has-okurigana unit"><span class="kanji">新</span><span class="kunten okurigana"><sup>タナリ</sup></span></span></p><p><span class="has-okurigana unit"><span class="kanji">勧</span><span class="kunten okurigana"><sup>ム</sup></span><span class="kunten kaeriten"><sub>レ</sub></span></span><span class="has-okurigana unit"><span class="kanji">君</span><span class="kunten okurigana"><sup>ニ</sup></span></span><span class="has-okurigana unit"><span class="kanji">更</span><span class="kunten okurigana"><sup>ニ</sup></span></span><span class="has-okurigana unit"><span class="kanji">尽</span><span class="kunten okurigana"><sup>クセ</sup></span></span><span class="unit"><span class="kanji">一</span></span><span class="has-okurigana unit"><span class="kanji">杯</span><span class="kunten okurigana"><sup>ノ</sup></span></span><span class="unit"><span class="kanji">酒</span></span></p><p><span class="has-okurigana unit"><span class="kanji">西</span><span class="kunten okurigana"><sup>ノカタ</sup></span></span><span class="has-okurigana unit"><span class="kanji">出</span><span class="kunten okurigana"><sup>ズレバ</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">陽</span></span><span class="has-okurigana unit"><span class="kanji">関</span><span class="kunten okurigana"><sup>ヲ</sup></span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span><span class="has-okurigana unit"><span class="kanji">無</span><span class="kunten okurigana"><sup>カラン</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">故</span></span><span class="unit"><span class="kanji">人</span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span></p>
+            </div>
+          </blockquote>
+          <qti-choice-interaction class="qti-labels-cjk-ideographic" max-choices="1" response-identifier="RESPONSE" shuffle="false">
+            <qti-prompt> 故人の意味は、つぎの二つのどちらか。選べ。 </qti-prompt>
+            <qti-simple-choice identifier="亡くなった人">亡くなった人</qti-simple-choice>
+            <qti-simple-choice identifier="友人">友人</qti-simple-choice>
+          </qti-choice-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
   }
 ]
 

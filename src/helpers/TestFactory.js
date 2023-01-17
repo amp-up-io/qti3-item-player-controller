@@ -1001,6 +1001,118 @@ const tests = [
     ]
   },
   {
+    "id": "15",
+    "title": "Explorations of Vertical Writing and QTI 3",
+    "description": "<p>Demonstrates QTI3 Player support for vertical writing, ruby annotations, and styling of Japanese text.</p><p>This also introduces new shared css and shared interaction vocabulary for QtiChoiceInteraction.",
+    "count": "13",
+    "items": [
+      {
+        "identifier": "vertical-choice-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-4",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-5",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-6",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-7",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-8",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-9",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-10",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-11",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-12",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-13",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
     "id": "50",
     "title": "Adam Collection",
     "description": "A small collection of items for Adam.",
