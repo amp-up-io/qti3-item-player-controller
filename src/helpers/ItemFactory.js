@@ -1432,6 +1432,36 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         </div>
       </qti-item-body>
     </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-inlinechoice-14",
+    "guid": "0000-0017-0014",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="仁和寺にある法師" title="国語　徒然草　仁和寺にある法師" adaptive="false" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+            <qti-correct-response>
+                <qti-value>あらまほしき</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+          <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+            <p>選択肢から言葉を選んで原文を復元せよ。</p>
+            <blockquote class="qti-margin-t-3">
+              <p>仁和寺にある法師、年寄るまで石清水を拝まざりければ、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣でけり。極楽寺・高良などを拝みて、かばかりと心得て帰りにけり。</p>
+              <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過ぎて尊くこそおはしけれ。そも、参りたる人ごとに山へ登りしは、何事かありけん、ゆかしかりしかど、神へ参るこそ本意なれと思ひて、山までは見ず」とぞ言ひける。</p>
+              <p>少しのことにも、先達は<qti-inline-choice-interaction class="qti-input-width-3 qti3-player-listbox-height-24" data-prompt="選" response-identifier="RESPONSE" shuffle="false">
+                    <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                    <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                    <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                  </qti-inline-choice-interaction>事なり。
+              </p>
+            </blockquote>
+          </div>
+        </qti-item-body>
+    </qti-assessment-item>`
   }
 ]
 

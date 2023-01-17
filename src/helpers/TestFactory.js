@@ -1003,8 +1003,8 @@ const tests = [
   {
     "id": "15",
     "title": "Explorations of Vertical Writing and QTI 3",
-    "description": "<p>Demonstrates QTI3 Player support for vertical writing, ruby annotations, and styling of Japanese text.</p><p>This also introduces new shared css and shared interaction vocabulary for QtiChoiceInteraction.",
-    "count": "13",
+    "description": "<p>Demonstrates QTI3 Player support for vertical writing, ruby annotations, and styling of Japanese text.</p><p>This also introduces new shared css and shared interaction vocabulary for QtiChoiceInteraction and QtiInlineChoiceInteraction.",
+    "count": "14",
     "items": [
       {
         "identifier": "vertical-choice-1",
@@ -1104,6 +1104,14 @@ const tests = [
       },
       {
         "identifier": "vertical-choice-13",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-inlinechoice-14",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,
