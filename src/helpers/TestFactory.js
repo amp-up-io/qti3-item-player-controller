@@ -978,6 +978,54 @@ const tests = [
   },
   {
     "id": "14",
+    "title": "L2 - Q15 Hotspot Interaction",
+    "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q10 - Hotspot Interaction conformance tests.</p>",
+    "count": "5",
+    "items": [
+      {
+        "identifier": "q10-hotspot-example-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q10-hotspot-example-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q10-hotspot-example-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q10-hotspot-interaction-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q10-hotspot-interaction-sv-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "15",
     "title": "L2 - Catalog - Glossary and Keyword Translation",
     "description": "Demonstrates QTI3 Player support for QtiCatalogInfo + PNP glossary-on-screen, keyword-translation, and ext:sbac-glossary-illustration supports.",
     "count": "2",
@@ -1001,7 +1049,7 @@ const tests = [
     ]
   },
   {
-    "id": "15",
+    "id": "16",
     "title": "Explorations of Vertical Writing and QTI 3",
     "description": "<p>Demonstrates QTI3 Player support for vertical writing, ruby annotations, and styling of Japanese text.</p><p>This also introduces new shared css and shared interaction vocabulary for QtiChoiceInteraction and QtiInlineChoiceInteraction.",
     "count": "14",
