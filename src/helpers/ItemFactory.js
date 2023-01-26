@@ -1081,6 +1081,46 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
+    "identifier": "q11-hottext-sv-3",
+    "guid": "0000-0016-0005",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q11-hottext-sv-1" title="Q11 Hottext - (SV 1) - input control hidden" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+        <qti-correct-response>
+          <qti-value>B</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+        <p><strong>Demonstrates single cardinality, qti-unselected-hidden</strong></p>
+        
+        <qti-hottext-interaction class="qti-unselected-hidden" max-choices="1" response-identifier="RESPONSE">
+          <qti-prompt>
+            <p>
+              Select the error in the following passage of text (or <em>No Error</em> if there is none).
+            </p>
+          </qti-prompt>
+          <p>
+            Sponsors of the Olympic Games <qti-hottext identifier="A">who bought</qti-hottext>
+            advertising time on United States television <qti-hottext identifier="B">includes</qti-hottext><qti-hottext identifier="C">at least</qti-hottext> a dozen international firms <qti-hottext identifier="D">whose</qti-hottext> names are familiar to American consumers.
+            <qti-hottext identifier="E">No error.</qti-hottext>
+          </p>
+        </qti-hottext-interaction>  
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
+  },
+  {
     "identifier": "vertical-choice-1",
     "guid": "0000-0017-0001",
     "submissionMode": "individual",
@@ -1122,7 +1162,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-                <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                <qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE" shuffle="false" max-choices="1">
                   <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
@@ -1149,7 +1189,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-                <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="1">
                   <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
@@ -1176,7 +1216,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-                <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
                   <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
@@ -1191,6 +1231,33 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
   {
     "identifier": "vertical-choice-5",
     "guid": "0000-0017-0005",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-6",
+    "guid": "0000-0017-0006",
     "submissionMode": "individual",
     "xml": `<?xml version="1.0" encoding="UTF-8"?>
     <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
@@ -1216,8 +1283,35 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "vertical-choice-6",
-    "guid": "0000-0017-0006",
+    "identifier": "vertical-choice-7",
+    "guid": "0000-0017-0007",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="multiple">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="singlle" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE" shuffle="false" max-choices="0">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-8",
+    "guid": "0000-0017-0008",
     "submissionMode": "individual",
     "xml": `<?xml version="1.0" encoding="UTF-8"?>
     <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
@@ -1243,8 +1337,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "vertical-choice-7",
-    "guid": "0000-0017-0007",
+    "identifier": "vertical-choice-9",
+    "guid": "0000-0017-0009",
     "submissionMode": "individual",
     "xml": `<?xml version="1.0" encoding="UTF-8"?>
     <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
@@ -1270,8 +1364,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "vertical-choice-8",
-    "guid": "0000-0017-0008",
+    "identifier": "vertical-choice-10",
+    "guid": "0000-0017-0010",
     "submissionMode": "individual",
     "xml": `<?xml version="1.0" encoding="UTF-8"?>
     <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
@@ -1285,60 +1379,6 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
-                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
-                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
-                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
-                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
-                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
-                </qti-choice-interaction>
-            </div>
-        </qti-item-body>
-    </qti-assessment-item>`
-  },
-  {
-    "identifier": "vertical-choice-9",
-    "guid": "0000-0017-0009",
-    "submissionMode": "individual",
-    "xml": `<?xml version="1.0" encoding="UTF-8"?>
-    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
-        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
-        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
-            <qti-correct-response>
-                <qti-value>俳句</qti-value>
-            </qti-correct-response>
-        </qti-response-declaration>
-        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
-        <qti-item-body>
-            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
-                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
-                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
-                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
-                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
-                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
-                </qti-choice-interaction>
-            </div>
-        </qti-item-body>
-    </qti-assessment-item>`
-  },
-  {
-    "identifier": "vertical-choice-10",
-    "guid": "0000-0017-0010",
-    "submissionMode": "individual",
-    "xml": `<?xml version="1.0" encoding="UTF-8"?>
-    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
-        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
-        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
-            <qti-correct-response>
-                <qti-value>俳句</qti-value>
-            </qti-correct-response>
-        </qti-response-declaration>
-        <qti-outcome-declaration base-type="float" cardinality="singlle" identifier="SCORE"/>
-        <qti-item-body>
-            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-3" response-identifier="RESPONSE" shuffle="false" max-choices="1">
                   <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
@@ -1365,7 +1405,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2 qti-input-control-hidden" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2" response-identifier="RESPONSE" shuffle="false" max-choices="1">
                   <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
@@ -1380,6 +1420,60 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
   {
     "identifier": "vertical-choice-12",
     "guid": "0000-0017-0012",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="singlle" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-3" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-13",
+    "guid": "0000-0017-0013",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
+        title="季語を必要とするのは和歌か俳句か" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" identifier="RESPONSE" cardinality="single">
+            <qti-correct-response>
+                <qti-value>俳句</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+            <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2 qti-input-control-hidden" response-identifier="RESPONSE" shuffle="false" max-choices="1">
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
+                  <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
+                  <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
+                  <qti-simple-choice identifier="川柳">川柳</qti-simple-choice>
+                  <qti-simple-choice identifier="都都逸">都都逸</qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-choice-14",
+    "guid": "0000-0017-0014",
     "submissionMode": "individual",
     "xml": `<?xml version="1.0" encoding="UTF-8"?>
     <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" identifier="季語"
@@ -1405,8 +1499,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "vertical-choice-13",
-    "guid": "0000-0017-0013",
+    "identifier": "vertical-choice-15",
+    "guid": "0000-0017-0015",
     "submissionMode": "individual",
     "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" adaptive="false" identifier="元二を送る" time-dependent="false" title="元二を送る" xml:lang="ja">
       <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
@@ -1434,8 +1528,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "vertical-inlinechoice-14",
-    "guid": "0000-0017-0014",
+    "identifier": "vertical-inlinechoice-16",
+    "guid": "0000-0017-0016",
     "submissionMode": "individual",
     "xml": `<?xml version="1.0" encoding="UTF-8"?>
     <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"

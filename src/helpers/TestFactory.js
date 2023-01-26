@@ -828,7 +828,7 @@ const tests = [
     "id": "11",
     "title": "L2 - Q11 Hot Text Interaction",
     "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q11 - Hot Text Interaction conformance tests.</p>",
-    "count": "4",
+    "count": "5",
     "items": [
       {
         "identifier": "hot-text-example-1",
@@ -861,7 +861,15 @@ const tests = [
           "validateResponses": true,
           "submissionMode": "individual"
         }
-      }
+      },
+      {
+        "identifier": "q11-hottext-sv-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
     ]
   },
   {
@@ -1052,7 +1060,7 @@ const tests = [
     "id": "16",
     "title": "Explorations of Vertical Writing and QTI 3",
     "description": "<p>Demonstrates QTI3 Player support for vertical writing, ruby annotations, and styling of Japanese text.</p><p>This also introduces new shared css and shared interaction vocabulary for QtiChoiceInteraction and QtiInlineChoiceInteraction.",
-    "count": "14",
+    "count": "16",
     "items": [
       {
         "identifier": "vertical-choice-1",
@@ -1159,7 +1167,23 @@ const tests = [
         }
       },
       {
-        "identifier": "vertical-inlinechoice-14",
+        "identifier": "vertical-choice-14",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-choice-15",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-inlinechoice-16",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,
