@@ -1089,7 +1089,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
-      identifier="q11-hottext-sv-1" title="Q11 Hottext - (SV 1) - input control hidden" 
+      identifier="q11-hottext-sv-3" title="Q11 Hottext - (SV 3) - unselected hidden" 
       adaptive="false" time-dependent="false">
       <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
         <qti-correct-response>
@@ -1112,7 +1112,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           </qti-prompt>
           <p>
             Sponsors of the Olympic Games <qti-hottext identifier="A">who bought</qti-hottext>
-            advertising time on United States television <qti-hottext identifier="B">includes</qti-hottext><qti-hottext identifier="C">at least</qti-hottext> a dozen international firms <qti-hottext identifier="D">whose</qti-hottext> names are familiar to American consumers.
+            advertising time on United States television <qti-hottext identifier="B">includes</qti-hottext>
+            <qti-hottext identifier="C">at least</qti-hottext> a dozen international firms <qti-hottext identifier="D">whose</qti-hottext> names are familiar to American consumers.
             <qti-hottext identifier="E">No error.</qti-hottext>
           </p>
         </qti-hottext-interaction>  
@@ -1136,7 +1137,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1145,6 +1146,24 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
                 </qti-choice-interaction>
             </div>
         </qti-item-body>
+        <qti-catalog-info>
+          <qti-catalog id="kigo">
+            <qti-card support="glossary-on-screen">
+              <qti-html-content>
+                <div class="qti-height-32 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                  特定の季節を表す言葉
+                </div>
+              </qti-html-content>
+            </qti-card>
+            <qti-card support="keyword-translation">
+              <qti-card-entry xml:lang="en">
+                <qti-html-content>
+                  <p><strong><emphasis>Kigo</emphasis></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+                </qti-html-content>
+              </qti-card-entry>
+            </qti-card>
+          </qti-catalog>
+        </qti-catalog-info>
     </qti-assessment-item>`
   },
   {
@@ -1163,7 +1182,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1172,6 +1191,24 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
                 </qti-choice-interaction>
             </div>
         </qti-item-body>
+        <qti-catalog-info>
+        <qti-catalog id="kigo">
+          <qti-card support="glossary-on-screen">
+            <qti-html-content>
+              <div class="qti-height-32 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                特定の季節を表す言葉
+              </div>
+            </qti-html-content>
+          </qti-card>
+          <qti-card support="keyword-translation">
+            <qti-card-entry xml:lang="en">
+              <qti-html-content>
+                <p><strong><emphasis>Kigo</emphasis></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+              </qti-html-content>
+            </qti-card-entry>
+          </qti-card>
+        </qti-catalog>
+      </qti-catalog-info>
     </qti-assessment-item>`
   },
   {
@@ -1190,7 +1227,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1199,6 +1236,24 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
                 </qti-choice-interaction>
             </div>
         </qti-item-body>
+        <qti-catalog-info>
+        <qti-catalog id="kigo">
+          <qti-card support="glossary-on-screen">
+            <qti-html-content>
+              <div class="qti-height-32 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                特定の季節を表す言葉
+              </div>
+            </qti-html-content>
+          </qti-card>
+          <qti-card support="keyword-translation">
+            <qti-card-entry xml:lang="en">
+              <qti-html-content>
+                <p><strong><emphasis>Kigo</emphasis></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+              </qti-html-content>
+            </qti-card-entry>
+          </qti-card>
+        </qti-catalog>
+      </qti-catalog-info>
     </qti-assessment-item>`
   },
   {
@@ -1217,7 +1272,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1226,6 +1281,24 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
                 </qti-choice-interaction>
             </div>
         </qti-item-body>
+        <qti-catalog-info>
+        <qti-catalog id="kigo">
+          <qti-card support="glossary-on-screen">
+            <qti-html-content>
+              <div class="qti-height-32 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                特定の季節を表す言葉
+              </div>
+            </qti-html-content>
+          </qti-card>
+          <qti-card support="keyword-translation">
+            <qti-card-entry xml:lang="en">
+              <qti-html-content>
+                <p><strong><emphasis>Kigo</emphasis></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+              </qti-html-content>
+            </qti-card-entry>
+          </qti-card>
+        </qti-catalog>
+      </qti-catalog-info>
     </qti-assessment-item>`
   },
   {
@@ -1253,6 +1326,24 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
                 </qti-choice-interaction>
             </div>
         </qti-item-body>
+        <qti-catalog-info>
+        <qti-catalog id="kigo">
+          <qti-card support="glossary-on-screen">
+            <qti-html-content>
+              <div class="qti-height-32 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+                特定の季節を表す言葉
+              </div>
+            </qti-html-content>
+          </qti-card>
+          <qti-card support="keyword-translation">
+            <qti-card-entry xml:lang="en">
+              <qti-html-content>
+                <p><strong><emphasis>Kigo</emphasis></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+              </qti-html-content>
+            </qti-card-entry>
+          </qti-card>
+        </qti-catalog>
+      </qti-catalog-info>
     </qti-assessment-item>`
   },
   {
