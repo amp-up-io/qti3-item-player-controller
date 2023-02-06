@@ -1649,6 +1649,98 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
+    "identifier": "vertical-textentry-17",
+    "guid": "0000-0017-0017",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="vertical-textentry-17" title="国語　徒然草　仁和寺にある法師" adaptive="false" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE">
+            <qti-correct-response>
+                <qti-value>あらまほしき</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+          <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+            <p>選択肢から言葉を選んで原文を復元せよ。</p>
+            <blockquote class="qti-margin-t-3">
+              <p>仁和寺にある法師、年寄るまで石清水を拝まざりければ、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣でけり。極楽寺・高良などを拝みて、かばかりと心得て帰りにけり。</p>
+              <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過ぎて尊くこそおはしけれ。そも、参りたる人ごとに山へ登りしは、何事かありけん、ゆかしかりしかど、神へ参るこそ本意なれと思ひて、山までは見ず」とぞ言ひける。</p>
+              <p>少しのことにも、先達は<qti-text-entry-interaction class="qti-input-width-6 qti-orientation-vertical" placeholder-text="選択" response-identifier="RESPONSE"/>事なり。
+              </p>
+            </blockquote>
+          </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-textentry-18",
+    "guid": "0000-0017-0018",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="vertical-textentry-18" title="国語　徒然草　仁和寺にある法師" adaptive="false" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE">
+            <qti-correct-response>
+                <qti-value>あらまほしき</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE1"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE2"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE3"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE4"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE5"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE6"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE7"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE8"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE9"/>
+        <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE10"/>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+          <div class="qti-height-112 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+            <p>
+              これは、qti-text-entry-interaction の垂直方向のオプションを示しています。
+            </p>
+            <div class="qti-margin-t-0">
+              <p>
+                default vertical height: <qti-text-entry-interaction class=" qti-orientation-vertical" response-identifier="RESPONSE6" />
+              </p>
+              <p>
+                qti-input-width-1 :<qti-text-entry-interaction class="qti-input-width-1 qti-orientation-vertical"  response-identifier="RESPONSE" />
+              </p>
+              <p>
+                qti-input-width-2 :<qti-text-entry-interaction class="qti-input-width-2 qti-orientation-vertical"  response-identifier="RESPONSE1" />
+              </p>
+              <p>
+                qti-input-width-3 :<qti-text-entry-interaction class="qti-input-width-3 qti-orientation-vertical"  response-identifier="RESPONSE2" />
+              </p>
+              <p>
+                qti-input-width-4 :<qti-text-entry-interaction class="qti-input-width-4 qti-orientation-vertical"  response-identifier="RESPONSE3" />
+              </p>
+              <p>
+                qti-input-width-5 :<qti-text-entry-interaction class="qti-input-width-5 qti-orientation-vertical"  response-identifier="RESPONSE4" />
+              </p>
+              <p>
+                qti-input-width-6 :<qti-text-entry-interaction class="qti-input-width-6 qti-orientation-vertical"  response-identifier="RESPONSE5" />
+              </p>
+              <p>
+                qti-input-width-10:<qti-text-entry-interaction class="qti-input-width-10 qti-orientation-vertical"  response-identifier="RESPONSE7" />
+              </p>
+              <p>
+                qti-input-width-15:<qti-text-entry-interaction class="qti-input-width-15 qti-orientation-vertical"  response-identifier="RESPONSE8" />
+              </p>
+              <p>
+                qti-input-width-20:<qti-text-entry-interaction class="qti-input-width-20 qti-orientation-vertical"  response-identifier="RESPONSE9" />
+              </p>
+              <p>
+                qti-input-width-25:<qti-text-entry-interaction class="qti-input-width-25 qti-orientation-vertical"  response-identifier="RESPONSE10" />
+              </p>
+            </div>
+          </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
     "identifier": "q10-hotspot-example-1",
     "guid": "0000-0018-0001",
     "submissionMode": "individual",
