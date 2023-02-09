@@ -1137,7 +1137,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1182,7 +1182,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1227,7 +1227,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1272,7 +1272,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1317,7 +1317,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1362,7 +1362,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1389,7 +1389,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1416,7 +1416,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1443,7 +1443,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1470,7 +1470,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1497,7 +1497,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1524,7 +1524,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-3" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1551,7 +1551,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2 qti-input-control-hidden" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1578,7 +1578,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-3 qti-input-control-hidden" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの二つのどちらか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1663,7 +1663,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
         <qti-item-body>
           <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-            <p>選択肢から言葉を選んで原文を復元せよ。</p>
+            <p>空欄に言葉を入れて原文を復元せよ。</p>
             <blockquote class="qti-margin-t-3">
               <p>仁和寺にある法師、年寄るまで石清水を拝まざりければ、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣でけり。極楽寺・高良などを拝みて、かばかりと心得て帰りにけり。</p>
               <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過ぎて尊くこそおはしけれ。そも、参りたる人ごとに山へ登りしは、何事かありけん、ゆかしかりしかど、神へ参るこそ本意なれと思ひて、山までは見ず」とぞ言ひける。</p>
