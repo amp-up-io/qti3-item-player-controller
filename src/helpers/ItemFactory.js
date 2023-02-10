@@ -1699,10 +1699,10 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
               </p>
               <p>
                 qti-input-width-3 :<qti-inline-choice-interaction class="qti-input-width-3 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE2">
-                  <qti-inline-choice identifier="あいなき">あいな</qti-inline-choice>
-                  <qti-inline-choice identifier="あらまほしき">あらま</qti-inline-choice>
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
-                 </qti-inline-choice-interaction>
+               </qti-inline-choice-interaction>
               </p>
               <p>
                 qti-input-width-4 :<qti-inline-choice-interaction class="qti-input-width-4 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE3">
