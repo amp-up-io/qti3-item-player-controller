@@ -1649,12 +1649,122 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "vertical-textentry-17",
+    "identifier": "vertical-inlinechoice-17",
     "guid": "0000-0017-0017",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="vertical-inlinechoice-17" title="国語　徒然草　仁和寺にある法師" adaptive="false" time-dependent="false" xml:lang="ja">
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+            <qti-correct-response>
+                <qti-value>あらまほしき</qti-value>
+            </qti-correct-response>
+        </qti-response-declaration>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE1"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE2"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE3"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE4"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE5"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE6"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE7"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE8"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE9"/>
+        <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE10"/>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+        <qti-item-body>
+          <div class="qti-height-112 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
+            <p>
+              これは、qti-inline-choice-interaction の垂直方向のオプションを示しています。
+            </p>
+            <div class="qti-margin-t-0">
+              <p>
+                default vertical height: <qti-inline-choice-interaction class=" qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE6">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-1 :<qti-inline-choice-interaction class="qti-input-width-1 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-2 :<qti-inline-choice-interaction class="qti-input-width-2 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE1">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-3 :<qti-inline-choice-interaction class="qti-input-width-3 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE2">
+                  <qti-inline-choice identifier="あいなき">あいな</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらま</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-4 :<qti-inline-choice-interaction class="qti-input-width-4 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE3">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-5 :<qti-inline-choice-interaction class="qti-input-width-5 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE4">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-6 :<qti-inline-choice-interaction class="qti-input-width-6 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE5">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-10:<qti-inline-choice-interaction class="qti-input-width-10 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE7">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-15:<qti-inline-choice-interaction class="qti-input-width-15 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE8">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-20:<qti-inline-choice-interaction class="qti-input-width-20 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE9">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+              <p>
+                qti-input-width-25:<qti-inline-choice-interaction class="qti-input-width-25 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE10">
+                  <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
+                  <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
+                  <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
+                 </qti-inline-choice-interaction>
+              </p>
+            </div>
+          </div>
+        </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-textentry-18",
+    "guid": "0000-0017-0018",
     "submissionMode": "individual",
     "xml": `<?xml version="1.0" encoding="UTF-8"?>
     <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="vertical-textentry-17" title="国語　徒然草　仁和寺にある法師" adaptive="false" time-dependent="false" xml:lang="ja">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="vertical-textentry-18" title="国語　徒然草　仁和寺にある法師" adaptive="false" time-dependent="false" xml:lang="ja">
         <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE">
             <qti-correct-response>
                 <qti-value>あらまほしき</qti-value>
@@ -1675,11 +1785,11 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "vertical-textentry-18",
-    "guid": "0000-0017-0018",
+    "identifier": "vertical-textentry-19",
+    "guid": "0000-0017-0019",
     "xml": `<?xml version="1.0" encoding="UTF-8"?>
     <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="vertical-textentry-18" title="国語　徒然草　仁和寺にある法師" adaptive="false" time-dependent="false" xml:lang="ja">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="vertical-textentry-19" title="国語　徒然草　仁和寺にある法師" adaptive="false" time-dependent="false" xml:lang="ja">
         <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE">
             <qti-correct-response>
                 <qti-value>あらまほしき</qti-value>
