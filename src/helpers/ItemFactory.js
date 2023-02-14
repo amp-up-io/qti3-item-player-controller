@@ -1777,7 +1777,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             <blockquote class="qti-margin-t-3">
               <p>仁和寺にある法師、年寄るまで石清水を拝まざりければ、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣でけり。極楽寺・高良などを拝みて、かばかりと心得て帰りにけり。</p>
               <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過ぎて尊くこそおはしけれ。そも、参りたる人ごとに山へ登りしは、何事かありけん、ゆかしかりしかど、神へ参るこそ本意なれと思ひて、山までは見ず」とぞ言ひける。</p>
-              <p>少しのことにも、先達は<qti-text-entry-interaction class="qti-input-width-6 qti-orientation-vertical" placeholder-text="選択" response-identifier="RESPONSE"/>事なり。
+              <p>少しのことにも、先達は<qti-text-entry-interaction class="qti-input-width-6 qti-orientation-vertical" placeholder-text="ここに記入する" response-identifier="RESPONSE"/>事なり。
               </p>
             </blockquote>
           </div>
