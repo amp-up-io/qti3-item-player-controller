@@ -1637,7 +1637,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             <blockquote class="qti-margin-t-3">
               <p>仁和寺にある法師、年寄るまで石清水を拝まざりければ、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣でけり。極楽寺・高良などを拝みて、かばかりと心得て帰りにけり。</p>
               <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過ぎて尊くこそおはしけれ。そも、参りたる人ごとに山へ登りしは、何事かありけん、ゆかしかりしかど、神へ参るこそ本意なれと思ひて、山までは見ず」とぞ言ひける。</p>
-              <p>少しのことにも、先達は<qti-inline-choice-interaction class="qti-input-width-6 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE" shuffle="false">
+              <p>少しのことにも、先達は<qti-inline-choice-interaction class="qti-input-width-6 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE" shuffle="false">
                             <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                             <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                             <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
@@ -1677,77 +1677,77 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             </p>
             <div class="qti-margin-t-0">
               <p>
-                default vertical height: <qti-inline-choice-interaction class=" qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE6">
+                default vertical height: <qti-inline-choice-interaction class=" qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE6">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-1 :<qti-inline-choice-interaction class="qti-input-width-1 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE">
+                qti-input-width-1 :<qti-inline-choice-interaction class="qti-input-width-1 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-2 :<qti-inline-choice-interaction class="qti-input-width-2 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE1">
+                qti-input-width-2 :<qti-inline-choice-interaction class="qti-input-width-2 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE1">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-3 :<qti-inline-choice-interaction class="qti-input-width-3 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE2">
+                qti-input-width-3 :<qti-inline-choice-interaction class="qti-input-width-3 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE2">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-4 :<qti-inline-choice-interaction class="qti-input-width-4 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE3">
+                qti-input-width-4 :<qti-inline-choice-interaction class="qti-input-width-4 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE3">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-5 :<qti-inline-choice-interaction class="qti-input-width-5 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE4">
+                qti-input-width-5 :<qti-inline-choice-interaction class="qti-input-width-5 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE4">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-6 :<qti-inline-choice-interaction class="qti-input-width-6 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE5">
+                qti-input-width-6 :<qti-inline-choice-interaction class="qti-input-width-6 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE5">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-10:<qti-inline-choice-interaction class="qti-input-width-10 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE7">
+                qti-input-width-10:<qti-inline-choice-interaction class="qti-input-width-10 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE7">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-15:<qti-inline-choice-interaction class="qti-input-width-15 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE8">
+                qti-input-width-15:<qti-inline-choice-interaction class="qti-input-width-15 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE8">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-20:<qti-inline-choice-interaction class="qti-input-width-20 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE9">
+                qti-input-width-20:<qti-inline-choice-interaction class="qti-input-width-20 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE9">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
                  </qti-inline-choice-interaction>
               </p>
               <p>
-                qti-input-width-25:<qti-inline-choice-interaction class="qti-input-width-25 qti-orientation-vertical qti3-player-listbox-height-28" data-prompt="選択" response-identifier="RESPONSE10">
+                qti-input-width-25:<qti-inline-choice-interaction class="qti-input-width-25 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE10">
                   <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                   <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
                   <qti-inline-choice identifier="わろき">わろき</qti-inline-choice>
