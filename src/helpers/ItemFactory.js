@@ -1137,7 +1137,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1182,7 +1182,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1227,7 +1227,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1272,7 +1272,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb data-catalog-idref="kigo">季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1317,7 +1317,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1362,7 +1362,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1389,7 +1389,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1416,7 +1416,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1443,7 +1443,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1470,7 +1470,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" response-identifier="RESPONSE" shuffle="false" max-choices="0">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1497,7 +1497,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1524,7 +1524,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-3" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1551,7 +1551,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-2 qti-input-control-hidden" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1578,7 +1578,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic qti-choices-stacking-3 qti-input-control-hidden" response-identifier="RESPONSE" shuffle="false" max-choices="1">
-                  <qti-prompt><ruby><rb>季語</rb><rt>きご</rt></ruby>を必要とするのは、つぎの五つのどれか。選べ。</qti-prompt>
+                  <qti-prompt><ruby><rb>季語</rb><rt>きこ&#x3099;</rt></ruby>を必要とするのは、つき&#x3099;の五つのと&#x3099;れか。選へ&#x3099;。</qti-prompt>
                   <qti-simple-choice identifier="俳句">俳句</qti-simple-choice>
                   <qti-simple-choice identifier="和歌">和歌</qti-simple-choice>
                   <qti-simple-choice identifier="狂歌">狂歌</qti-simple-choice>
@@ -1603,14 +1603,14 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/ac4de79c-c6e0-4608-83a5-13e9d8408b25/Items/Kanbun/kanbun.css" type="text/css"/>
       <qti-item-body>
         <div class="qti-height-112 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-          <p>次の漢詩を読んで設問に答えよ。</p>
+          <p>次の漢詩を読んて&#x3099;設問に答えよ。</p>
           <blockquote>
             <div class="kanbun okurigana-sinking">
-              <p><span class="unit"><span class="kanji">渭</span></span><span class="has-okurigana unit"><span class="kanji">城</span><span class="kunten okurigana"><sup>ノ</sup></span></span><span class="unit"><span class="kanji">朝</span></span><span class="unit"><span class="kanji">雨</span></span><span class="has-okurigana unit"><span class="kanji">浥</span><span class="kunten okurigana"><sup>ス</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">軽</span></span><span class="has-okurigana unit"><span class="kanji">塵</span><span class="kunten okurigana"><sup>ヲ</sup></span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span></p><p><span class="unit"><span class="kanji">客</span></span><span class="unit"><span class="kanji">舎</span></span><span class="unit"><span class="kanji">青</span></span><span class="unit"><span class="kanji">青</span></span><span class="unit"><span class="kanji">柳</span></span><span class="unit"><span class="kanji">色</span></span><span class="has-okurigana unit"><span class="kanji">新</span><span class="kunten okurigana"><sup>タナリ</sup></span></span></p><p><span class="has-okurigana unit"><span class="kanji">勧</span><span class="kunten okurigana"><sup>ム</sup></span><span class="kunten kaeriten"><sub>レ</sub></span></span><span class="has-okurigana unit"><span class="kanji">君</span><span class="kunten okurigana"><sup>ニ</sup></span></span><span class="has-okurigana unit"><span class="kanji">更</span><span class="kunten okurigana"><sup>ニ</sup></span></span><span class="has-okurigana unit"><span class="kanji">尽</span><span class="kunten okurigana"><sup>クセ</sup></span></span><span class="unit"><span class="kanji">一</span></span><span class="has-okurigana unit"><span class="kanji">杯</span><span class="kunten okurigana"><sup>ノ</sup></span></span><span class="unit"><span class="kanji">酒</span></span></p><p><span class="has-okurigana unit"><span class="kanji">西</span><span class="kunten okurigana"><sup>ノカタ</sup></span></span><span class="has-okurigana unit"><span class="kanji">出</span><span class="kunten okurigana"><sup>ズレバ</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">陽</span></span><span class="has-okurigana unit"><span class="kanji">関</span><span class="kunten okurigana"><sup>ヲ</sup></span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span><span class="has-okurigana unit"><span class="kanji">無</span><span class="kunten okurigana"><sup>カラン</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">故</span></span><span class="unit"><span class="kanji">人</span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span></p>
+              <p><span class="unit"><span class="kanji">渭</span></span><span class="has-okurigana unit"><span class="kanji">城</span><span class="kunten okurigana"><sup>ノ</sup></span></span><span class="unit"><span class="kanji">朝</span></span><span class="unit"><span class="kanji">雨</span></span><span class="has-okurigana unit"><span class="kanji">浥</span><span class="kunten okurigana"><sup>ス</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">軽</span></span><span class="has-okurigana unit"><span class="kanji">塵</span><span class="kunten okurigana"><sup>ヲ</sup></span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span></p><p><span class="unit"><span class="kanji">客</span></span><span class="unit"><span class="kanji">舎</span></span><span class="unit"><span class="kanji">青</span></span><span class="unit"><span class="kanji">青</span></span><span class="unit"><span class="kanji">柳</span></span><span class="unit"><span class="kanji">色</span></span><span class="has-okurigana unit"><span class="kanji">新</span><span class="kunten okurigana"><sup>タナリ</sup></span></span></p><p><span class="has-okurigana unit"><span class="kanji">勧</span><span class="kunten okurigana"><sup>ム</sup></span><span class="kunten kaeriten"><sub>レ</sub></span></span><span class="has-okurigana unit"><span class="kanji">君</span><span class="kunten okurigana"><sup>ニ</sup></span></span><span class="has-okurigana unit"><span class="kanji">更</span><span class="kunten okurigana"><sup>ニ</sup></span></span><span class="has-okurigana unit"><span class="kanji">尽</span><span class="kunten okurigana"><sup>クセ</sup></span></span><span class="unit"><span class="kanji">一</span></span><span class="has-okurigana unit"><span class="kanji">杯</span><span class="kunten okurigana"><sup>ノ</sup></span></span><span class="unit"><span class="kanji">酒</span></span></p><p><span class="has-okurigana unit"><span class="kanji">西</span><span class="kunten okurigana"><sup>ノカタ</sup></span></span><span class="has-okurigana unit"><span class="kanji">出</span><span class="kunten okurigana"><sup>ス&#x3099;レハ&#x3099;</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">陽</span></span><span class="has-okurigana unit"><span class="kanji">関</span><span class="kunten okurigana"><sup>ヲ</sup></span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span><span class="has-okurigana unit"><span class="kanji">無</span><span class="kunten okurigana"><sup>カラン</sup></span><span class="kunten kaeriten"><sub>二</sub></span></span><span class="unit"><span class="kanji">故</span></span><span class="unit"><span class="kanji">人</span><span class="kunten kaeriten"><sub class="ichiten">一</sub></span></span></p>
             </div>
           </blockquote>
           <qti-choice-interaction class="qti-labels-cjk-ideographic" max-choices="1" response-identifier="RESPONSE" shuffle="false">
-            <qti-prompt> 故人の意味は、つぎの二つのどちらか。選べ。 </qti-prompt>
+            <qti-prompt> 故人の意味は、つき&#x3099;の二つのと&#x3099;ちらか。選へ&#x3099;。 </qti-prompt>
             <qti-simple-choice identifier="亡くなった人">亡くなった人</qti-simple-choice>
             <qti-simple-choice identifier="友人">友人</qti-simple-choice>
           </qti-choice-interaction>
@@ -1633,10 +1633,10 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
         <qti-item-body>
           <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
-            <p>選択肢から言葉を選んで原文を復元せよ。</p>
+            <p>選択肢から言葉を選んて&#x3099;原文を復元せよ。</p>
             <blockquote class="qti-margin-t-3">
-              <p>仁和寺にある法師、年寄るまで石清水を拝まざりければ、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣でけり。極楽寺・高良などを拝みて、かばかりと心得て帰りにけり。</p>
-              <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過ぎて尊くこそおはしけれ。そも、参りたる人ごとに山へ登りしは、何事かありけん、ゆかしかりしかど、神へ参るこそ本意なれと思ひて、山までは見ず」とぞ言ひける。</p>
+              <p>仁和寺にある法師、年寄るまて&#x3099;石清水を拝まさ&#x3099;りけれは&#x3099;、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣て&#x3099;けり。極楽寺・高良なと&#x3099;を拝みて、かは&#x3099;かりと心得て帰りにけり。</p>
+              <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過き&#x3099;て尊くこそおはしけれ。そも、参りたる人こ&#x3099;とに山へ登りしは、何事かありけん、ゆかしかりしかと&#x3099;、神へ参るこそ本意なれと思ひて、山まて&#x3099;は見す&#x3099;」とそ&#x3099;言ひける。</p>
               <p>少しのことにも、先達は<qti-inline-choice-interaction class="qti-input-width-6 qti-orientation-vertical qti3-player-listbox-height-32" data-prompt="選択" response-identifier="RESPONSE" shuffle="false">
                             <qti-inline-choice identifier="あいなき">あいなき</qti-inline-choice>
                             <qti-inline-choice identifier="あらまほしき">あらまほしき</qti-inline-choice>
@@ -1673,7 +1673,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
           <div class="qti-height-112 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
             <p>
-              これは、qti-inline-choice-interaction の垂直方向のオプションを示しています。
+              これは、qti-inline-choice-interaction の垂直方向のオフ&#x309A;ションを示しています。
             </p>
             <div class="qti-margin-t-0">
               <p>
@@ -1775,8 +1775,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
             <p>空欄に言葉を入れて原文を復元せよ。</p>
             <blockquote class="qti-margin-t-3">
-              <p>仁和寺にある法師、年寄るまで石清水を拝まざりければ、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣でけり。極楽寺・高良などを拝みて、かばかりと心得て帰りにけり。</p>
-              <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過ぎて尊くこそおはしけれ。そも、参りたる人ごとに山へ登りしは、何事かありけん、ゆかしかりしかど、神へ参るこそ本意なれと思ひて、山までは見ず」とぞ言ひける。</p>
+              <p>仁和寺にある法師、年寄るまて&#x3099;石清水を拝まさ&#x3099;りけれは&#x3099;、心うく覚えて、ある時思ひ立ちて、たゞひとり、徒歩より詣て&#x3099;けり。極楽寺・高良なと&#x3099;を拝みて、かは&#x3099;かりと心得て帰りにけり。</p>
+              <p>さて、かたへの人にあひて、「年比思ひつること、果し侍りぬ。聞きしにも過き&#x3099;て尊くこそおはしけれ。そも、参りたる人こ&#x3099;とに山へ登りしは、何事かありけん、ゆかしかりしかと&#x3099;、神へ参るこそ本意なれと思ひて、山まて&#x3099;は見す&#x3099;」とそ&#x3099;言ひける。</p>
               <p>少しのことにも、先達は<qti-text-entry-interaction class="qti-input-width-6 qti-orientation-vertical" placeholder-text="ここに記入する" response-identifier="RESPONSE"/>事なり。
               </p>
             </blockquote>
@@ -1809,7 +1809,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <qti-item-body>
           <div class="qti-height-112 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
             <p>
-              これは、qti-text-entry-interaction の垂直方向のオプションを示しています。
+              これは、qti-text-entry-interaction の垂直方向のオフ&#x309A;ションを示しています。
             </p>
             <div class="qti-margin-t-0">
               <p>
