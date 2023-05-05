@@ -1158,7 +1158,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             <qti-card support="keyword-translation">
               <qti-card-entry xml:lang="en">
                 <qti-html-content>
-                  <p><strong><em>Kigo</em></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+                  <p><strong><em>Kigo</em></strong> (季語, <strong><em>"season word"</em></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
                 </qti-html-content>
               </qti-card-entry>
             </qti-card>
@@ -1203,7 +1203,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <qti-card support="keyword-translation">
             <qti-card-entry xml:lang="en">
               <qti-html-content>
-                <p><strong><em>Kigo</em></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+                <p><strong><em>Kigo</em></strong> (季語, <strong><em>"season word"</em></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
               </qti-html-content>
             </qti-card-entry>
           </qti-card>
@@ -1248,7 +1248,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <qti-card support="keyword-translation">
             <qti-card-entry xml:lang="en">
               <qti-html-content>
-                <p><strong><em>Kigo</em></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+                <p><strong><em>Kigo</em></strong> (季語, <strong><em>"season word"</em></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
               </qti-html-content>
             </qti-card-entry>
           </qti-card>
@@ -1293,7 +1293,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <qti-card support="keyword-translation">
             <qti-card-entry xml:lang="en">
               <qti-html-content>
-                <p><strong><em>Kigo</em></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+                <p><strong><em>Kigo</em></strong> (季語, <strong><em>"season word"</em></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
               </qti-html-content>
             </qti-card-entry>
           </qti-card>
@@ -1338,7 +1338,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <qti-card support="keyword-translation">
             <qti-card-entry xml:lang="en">
               <qti-html-content>
-                <p><strong><em>Kigo</em></strong> (季語, <strong><emphasis>"season word"</emphasis></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
+                <p><strong><em>Kigo</em></strong> (季語, <strong><em>"season word"</em></strong>) is a word or phrase associated with a particular season, used in traditional forms of Japanese poetry.</p>
               </qti-html-content>
             </qti-card-entry>
           </qti-card>
