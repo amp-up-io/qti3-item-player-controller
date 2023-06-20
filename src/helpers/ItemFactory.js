@@ -1851,6 +1851,252 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
+    "identifier": "vertical-ext-text-20",
+    "guid": "0000-0017-0020",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="vertical-ext-text-20" title="徒然草・第45段" adaptive="false" time-dependent="false" xml:lang="ja">
+      <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" external-scored="human" identifier="SCORE"/>
+      <qti-item-body>
+        <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti-float-right">
+          <p>全文を現代語に訳せ。</p>
+          <blockquote>
+            <p>公世の二位のせうとに、良覚僧正と聞えしは、極めて腹あしき人なりけり。</p>
+            <p>坊の傍に、大きなる榎の木のありければ、人、「榎木僧正」とぞ言ひける。この名然るべからずとて、かの木を伐られにけり。その根のありければ、「きりくひの僧正」と言ひけり。いよいよ腹立ちて、きりくひを掘り捨てたりければ、その跡大きなる堀にてありければ、「堀池僧正」とぞ言ひける。</p>
+          </blockquote>
+          <p>現代語訳</p>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-3 qti-writing-orientation-vertical-rl"
+            expected-length="100" format="plain" placeholder-text="現代語訳"
+            response-identifier="RESPONSE">
+            <qti-prompt>format="plain" qti-height-lines-3</qti-prompt>
+          </qti-extended-text-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-ext-text-21",
+    "guid": "0000-0017-0021",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="vertical-ext-text-21" title="徒然草・第45段" adaptive="false" time-dependent="false" xml:lang="ja">
+      <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" external-scored="human" identifier="SCORE"/>
+      <qti-item-body>
+        <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti-float-right">
+          <p>全文を現代語に訳せ。</p>
+          <blockquote>
+            <p>公世の二位のせうとに、良覚僧正と聞えしは、極めて腹あしき人なりけり。</p>
+            <p>坊の傍に、大きなる榎の木のありければ、人、「榎木僧正」とぞ言ひける。この名然るべからずとて、かの木を伐られにけり。その根のありければ、「きりくひの僧正」と言ひけり。いよいよ腹立ちて、きりくひを掘り捨てたりければ、その跡大きなる堀にてありければ、「堀池僧正」とぞ言ひける。</p>
+          </blockquote>
+          <p>現代語訳</p>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-6 qti-writing-orientation-vertical-rl"
+            format="plain" placeholder-text="現代語訳"
+            response-identifier="RESPONSE">
+            <qti-prompt>format="plain" qti-height-lines-6</qti-prompt>
+          </qti-extended-text-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-ext-text-22",
+    "guid": "0000-0017-0022",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="vertical-ext-text-22" title="徒然草・第45段" adaptive="false" time-dependent="false" xml:lang="ja">
+      <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" external-scored="human" identifier="SCORE"/>
+      <qti-item-body>
+        <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti-float-right">
+          <p>全文を現代語に訳せ。</p>
+          <blockquote>
+            <p>公世の二位のせうとに、良覚僧正と聞えしは、極めて腹あしき人なりけり。</p>
+            <p>坊の傍に、大きなる榎の木のありければ、人、「榎木僧正」とぞ言ひける。この名然るべからずとて、かの木を伐られにけり。その根のありければ、「きりくひの僧正」と言ひけり。いよいよ腹立ちて、きりくひを掘り捨てたりければ、その跡大きなる堀にてありければ、「堀池僧正」とぞ言ひける。</p>
+          </blockquote>
+          <p>現代語訳</p>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-15 qti-writing-orientation-vertical-rl"
+            format="plain" placeholder-text="現代語訳"
+            response-identifier="RESPONSE">
+            <qti-prompt>format="plain" qti-height-lines-15</qti-prompt>
+          </qti-extended-text-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-ext-text-23",
+    "guid": "0000-0017-0023",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="vertical-ext-text-23" title="徒然草・第45段" adaptive="false" time-dependent="false" xml:lang="ja">
+      <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="string"/>
+      <qti-response-declaration identifier="RESPONSE2" cardinality="single" base-type="string"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" external-scored="human" identifier="SCORE"/>
+      <qti-item-body>
+        <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti-float-right">
+          <p>全文を現代語に訳せ。</p>
+          <blockquote>
+            <p>公世の二位のせうとに、良覚僧正と聞えしは、極めて腹あしき人なりけり。</p>
+            <p>坊の傍に、大きなる榎の木のありければ、人、「榎木僧正」とぞ言ひける。この名然るべからずとて、かの木を伐られにけり。その根のありければ、「きりくひの僧正」と言ひけり。いよいよ腹立ちて、きりくひを掘り捨てたりければ、その跡大きなる堀にてありければ、「堀池僧正」とぞ言ひける。</p>
+          </blockquote>
+          <p>現代語訳</p>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-3 qti-counter-up qti-writing-orientation-vertical-rl"
+            format="plain" placeholder-text="現代語訳" expected-length="200"
+            response-identifier="RESPONSE1">
+            <qti-prompt>format="plain" qti-counter-up</qti-prompt>
+          </qti-extended-text-interaction>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-3 qti-counter-down qti-writing-orientation-vertical-rl"
+            format="plain" placeholder-text="現代語訳" expected-length="200"
+            response-identifier="RESPONSE2">
+            <qti-prompt>format="plain" qti-counter-down</qti-prompt>
+          </qti-extended-text-interaction>
+          </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-ext-text-24",
+    "guid": "0000-0017-0024",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="vertical-ext-text-24" title="徒然草・第45段" adaptive="false" time-dependent="false" xml:lang="ja">
+      <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" external-scored="human" identifier="SCORE"/>
+      <qti-item-body>
+        <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti-float-right">
+          <p>全文を現代語に訳せ。</p>
+          <blockquote>
+            <p>公世の二位のせうとに、良覚僧正と聞えしは、極めて腹あしき人なりけり。</p>
+            <p>坊の傍に、大きなる榎の木のありければ、人、「榎木僧正」とぞ言ひける。この名然るべからずとて、かの木を伐られにけり。その根のありければ、「きりくひの僧正」と言ひけり。いよいよ腹立ちて、きりくひを掘り捨てたりければ、その跡大きなる堀にてありければ、「堀池僧正」とぞ言ひける。</p>
+          </blockquote>
+          <p>現代語訳</p>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-3 qti-writing-orientation-vertical-rl"
+            expected-length="100" format="xhtml"
+            response-identifier="RESPONSE">
+            <qti-prompt>format="xhtml" qti-height-lines-3</qti-prompt>
+          </qti-extended-text-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-ext-text-25",
+    "guid": "0000-0017-0025",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="vertical-ext-text-25" title="徒然草・第45段" adaptive="false" time-dependent="false" xml:lang="ja">
+      <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" external-scored="human" identifier="SCORE"/>
+      <qti-item-body>
+        <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti-float-right">
+          <p>全文を現代語に訳せ。</p>
+          <blockquote>
+            <p>公世の二位のせうとに、良覚僧正と聞えしは、極めて腹あしき人なりけり。</p>
+            <p>坊の傍に、大きなる榎の木のありければ、人、「榎木僧正」とぞ言ひける。この名然るべからずとて、かの木を伐られにけり。その根のありければ、「きりくひの僧正」と言ひけり。いよいよ腹立ちて、きりくひを掘り捨てたりければ、その跡大きなる堀にてありければ、「堀池僧正」とぞ言ひける。</p>
+          </blockquote>
+          <p>現代語訳</p>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-6 qti-writing-orientation-vertical-rl"
+            format="xhtml"
+            response-identifier="RESPONSE">
+            <qti-prompt>format="xhtml" qti-height-lines-6</qti-prompt>
+          </qti-extended-text-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-ext-text-26",
+    "guid": "0000-0017-0026",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="vertical-ext-text-26" title="徒然草・第45段" adaptive="false" time-dependent="false" xml:lang="ja">
+      <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" external-scored="human" identifier="SCORE"/>
+      <qti-item-body>
+        <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti-float-right">
+          <p>全文を現代語に訳せ。</p>
+          <blockquote>
+            <p>公世の二位のせうとに、良覚僧正と聞えしは、極めて腹あしき人なりけり。</p>
+            <p>坊の傍に、大きなる榎の木のありければ、人、「榎木僧正」とぞ言ひける。この名然るべからずとて、かの木を伐られにけり。その根のありければ、「きりくひの僧正」と言ひけり。いよいよ腹立ちて、きりくひを掘り捨てたりければ、その跡大きなる堀にてありければ、「堀池僧正」とぞ言ひける。</p>
+          </blockquote>
+          <p>現代語訳</p>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-15 qti-writing-orientation-vertical-rl"
+            format="xhtml"
+            response-identifier="RESPONSE">
+            <qti-prompt>format="xhtml" qti-height-lines-15</qti-prompt>
+          </qti-extended-text-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "vertical-ext-text-27",
+    "guid": "0000-0017-0027",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="vertical-ext-text-27" title="徒然草・第45段" adaptive="false" time-dependent="false" xml:lang="ja">
+      <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="string"/>
+      <qti-response-declaration identifier="RESPONSE2" cardinality="single" base-type="string"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" external-scored="human" identifier="SCORE"/>
+      <qti-item-body>
+        <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti-float-right">
+          <p>全文を現代語に訳せ。</p>
+          <blockquote>
+            <p>公世の二位のせうとに、良覚僧正と聞えしは、極めて腹あしき人なりけり。</p>
+            <p>坊の傍に、大きなる榎の木のありければ、人、「榎木僧正」とぞ言ひける。この名然るべからずとて、かの木を伐られにけり。その根のありければ、「きりくひの僧正」と言ひけり。いよいよ腹立ちて、きりくひを掘り捨てたりければ、その跡大きなる堀にてありければ、「堀池僧正」とぞ言ひける。</p>
+          </blockquote>
+          <p>現代語訳</p>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-3 qti-counter-up qti-writing-orientation-vertical-rl"
+            format="xhtml" expected-length="200"
+            response-identifier="RESPONSE1">
+            <qti-prompt>format="xhtml" qti-counter-up</qti-prompt>
+          </qti-extended-text-interaction>
+          <qti-extended-text-interaction 
+            class="qti-height-lines-3 qti-counter-down qti-writing-orientation-vertical-rl"
+            format="xhtml" expected-length="200"
+            response-identifier="RESPONSE2">
+            <qti-prompt>format="xhtml" qti-counter-down</qti-prompt>
+          </qti-extended-text-interaction>
+          </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
     "identifier": "q10-hotspot-example-1",
     "guid": "0000-0018-0001",
     "submissionMode": "individual",

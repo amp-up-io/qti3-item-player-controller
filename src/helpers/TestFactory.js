@@ -1059,8 +1059,8 @@ const tests = [
   {
     "id": "16",
     "title": "Explorations of Vertical Writing and QTI 3",
-    "description": "<p>Demonstrates QTI3 Player support for vertical writing, ruby annotations, and styling of Japanese text.</p><p>This also introduces new shared css and shared interaction vocabulary for QtiChoiceInteraction, QtiInlineChoiceInteraction, and QtiTextEntryInteraction.",
-    "count": "19",
+    "description": "<p>Demonstrates QTI3 Player support for vertical writing, ruby annotations, and styling of Japanese text.</p><p>This also introduces new shared css and shared interaction vocabulary for QtiChoiceInteraction, QtiInlineChoiceInteraction, QtiTextEntryInteraction, and QtiExtendedTextInteraction.",
+    "count": "27",
     "items": [
       {
         "identifier": "vertical-choice-1",
@@ -1213,7 +1213,71 @@ const tests = [
           "validateResponses": false,
           "submissionMode": "individual"
         }
-      }
+      },
+      {
+        "identifier": "vertical-ext-text-20",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-ext-text-21",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-ext-text-22",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-ext-text-23",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-ext-text-24",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-ext-text-25",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-ext-text-26",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "vertical-ext-text-27",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }      
     ]
   },
   {
