@@ -1994,7 +1994,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <p>現代語訳</p>
           <qti-extended-text-interaction 
             class="qti-height-lines-3 qti-writing-orientation-vertical-rl"
-            expected-length="100" format="xhtml"
+            format="xhtml"
             response-identifier="RESPONSE">
             <qti-prompt>format="xhtml" qti-height-lines-3</qti-prompt>
           </qti-extended-text-interaction>
