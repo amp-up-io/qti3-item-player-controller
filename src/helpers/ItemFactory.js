@@ -2375,6 +2375,359 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         </div>
       </qti-item-body>
     </qti-assessment-item>`
+  },
+  {
+    "identifier": "match-example-1",
+    "guid": "0000-0019-0001",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="utf-8" standalone="no"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      adaptive="false" identifier="match-example-1" time-dependent="false" title="Match Example 1">
+    <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>C R</qti-value>
+        <qti-value>D M</qti-value>
+        <qti-value>L M</qti-value>
+        <qti-value>P T</qti-value>
+      </qti-correct-response>
+      <qti-mapping default-value="0">
+        <qti-map-entry map-key="C R" mapped-value="1"/>
+        <qti-map-entry map-key="D M" mapped-value="0.5"/>
+        <qti-map-entry map-key="L M" mapped-value="0.5"/>
+        <qti-map-entry map-key="P T" mapped-value="1"/>
+      </qti-mapping>
+    </qti-response-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+      <qti-default-value>
+        <qti-value>0.0</qti-value>
+      </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+      <qti-match-interaction max-associations="4" response-identifier="RESPONSE">
+        <qti-prompt>Match the following characters to the Shakespeare play they appeared in:</qti-prompt>
+        <qti-simple-match-set>
+          <qti-simple-associable-choice id="c1" identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+          <qti-simple-associable-choice id="c2" identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+          <qti-simple-associable-choice id="c3" identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+          <qti-simple-associable-choice id="c4" identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+        </qti-simple-match-set>
+        <qti-simple-match-set>
+          <qti-simple-associable-choice id="c5" identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+          <qti-simple-associable-choice id="c6" identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+          <qti-simple-associable-choice id="c7" identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+        </qti-simple-match-set>
+      </qti-match-interaction>
+    </qti-item-body>
+    <qti-response-processing>
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-is-null>
+            <qti-variable identifier="RESPONSE"/>
+          </qti-is-null>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-base-value base-type="float">0.0</qti-base-value>
+          </qti-set-outcome-value>
+        </qti-response-if>
+        <qti-response-else>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-map-response identifier="RESPONSE"/>
+          </qti-set-outcome-value>
+        </qti-response-else>
+      </qti-response-condition>
+    </qti-response-processing>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "match-example-2",
+    "guid": "0000-0019-0002",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      adaptive="false" identifier="match-example-2" time-dependent="false" title="Match Example 2">
+    <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>r2 h1</qti-value>
+        <qti-value>r2 h3</qti-value>
+        <qti-value>r4 h3</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+      <qti-default-value>
+        <qti-value>0</qti-value>
+      </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+      <div>
+        <p>Which properties do the following animal classes have?</p>
+    
+        <qti-match-interaction max-associations="3" response-identifier="RESPONSE">
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="r1" match-max="0">
+              <p>Asexual</p>
+            </qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="r2" match-max="0">
+              <p>Endothermic</p>
+            </qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="r3" match-max="0">
+              <p>Possess Gills</p>
+            </qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="r4" match-max="0">
+              <p>Bear Live Young</p>
+            </qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="h1" match-max="2">Birds</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="h2" match-max="2">Reptiles</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="h3" match-max="2">Mammals</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+      </div>
+      <p class="ets-direction_paragraph">Select all choices that apply.</p>
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q13-match-interaction-sv-1",
+    "guid": "0000-0019-0003",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="utf-8" standalone="no"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q13-match-interaction-sv-1" title="Match - (SV 1) - choice-target positioning" 
+      time-dependent="false" adaptive="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1" />
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE2" />
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE3" />
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE4" />
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>0.0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+    
+        <p>
+          Delivery systems may implement Match Interaction's in a <em>visual non-tabular</em> fashion.  When they do so, the shared 
+          vocabulary is intended to provide clarity regarding the visual positioning of the two Simple Match Sets.
+        </p>
+        
+        <p>
+          The following examples demonstrate shared vocabulary describing the visual orientation of the list of match <em>choices</em>; i.e., the 
+          choices of the first Simple Match Set, in relation to the list of match targets; i.e., the choices of the second Simple Match Set.
+        </p>
+        
+        <qti-match-interaction class="qti-choices-top" max-associations="4" response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates qti-choices-top</qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+        
+        <qti-match-interaction class="qti-choices-bottom" max-associations="4" response-identifier="RESPONSE2">
+          <qti-prompt>Demonstrates qti-choices-bottom</qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+    
+        <qti-match-interaction class="qti-choices-left" max-associations="4" response-identifier="RESPONSE3">
+          <qti-prompt>Demonstrates qti-choices-left</qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+        
+        <qti-match-interaction class="qti-choices-right" max-associations="4" response-identifier="RESPONSE4">
+          <qti-prompt>Demonstrates qti-choices-right</qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+        
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q13-match-interaction-sv-2",
+    "guid": "0000-0019-0004",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="utf-8" standalone="no"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q13-match-interaction-sv-2" title="Match - (SV 2) - match tabular" 
+      time-dependent="false" adaptive="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1" />
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE2" />
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE3" />
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>0.0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+    
+        <p>
+          Delivery systems may implement Match Interaction's in a <em>visual Tabular</em> fashion.  When they do so, the shared 
+          vocabulary is intended to provide visual styles and content to improve interoperability and visual consistency.
+        </p>
+        
+        <p>
+          Setting class to <strong>qti-match-tabular</strong> renders a visual table with the choices of the first Simple 
+          Match Set as the table Row headings, and the choices of the second Simple Match Set as the table Column headings.
+          Class <strong>qti-header-hidden</strong>, and data- attribute <strong>data-first-column-header</strong> are only 
+          relevant when <strong>qti-match-tabular</strong> is specified.
+        </p>
+        
+        <qti-match-interaction class="qti-match-tabular" max-associations="4" response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates qti-match-tabular</qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+        
+        <qti-match-interaction class="qti-match-tabular qti-header-hidden" max-associations="4" response-identifier="RESPONSE2">
+          <qti-prompt>Demonstrates qti-match-tabular and qti-header-hidden</qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+    
+        <qti-match-interaction class="qti-match-tabular" data-first-column-header="Characters" max-associations="4" response-identifier="RESPONSE3">
+          <qti-prompt>Demonstrates qti-match-tabular and data-first-column-header="Characters"</qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+        
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q13-match-interaction-sv-3",
+    "guid": "0000-0019-0005",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="utf-8" standalone="no"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q13-match-interaction-sv-3" title="Match - (SV 3) - custom messages" 
+      time-dependent="false" adaptive="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1" />
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE2" />
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE3" />
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>0.0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+    
+        <p>
+          A Delivery Platform's <em>default</em> min-association and max-association constraint violation messages are left to the 
+          Delivery Platform.  Platform <em>default</em> constraint violation messages may be overriden by using 
+          the <strong>data-max-selections-message</strong> and <strong>data-min-selections-message</strong> attributes accordingly.
+        </p>
+        
+        <qti-match-interaction max-associations="4" data-max-selections-message="You cannot make more than 4 matches!" response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates <em>max-associations=4 and custom data-max-selections-message</em></qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="0" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="0" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="0" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="0" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+        
+        <qti-match-interaction max-associations="4" min-associations="2" data-min-selections-message="You must make at least 2 matches!" response-identifier="RESPONSE2">
+          <qti-prompt>Demonstrates <em>min-associations=2 and custom data-min-selections-message</em></qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+        
+      </qti-item-body>
+    </qti-assessment-item>`
   }
 ]
 

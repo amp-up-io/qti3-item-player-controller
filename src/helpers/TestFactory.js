@@ -1281,6 +1281,54 @@ const tests = [
     ]
   },
   {
+    "id": "17",
+    "title": "L2 - Q13 Match Interaction",
+    "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q13 - Match Interaction conformance tests.</p>",
+    "count": "5",
+    "items": [
+      {
+        "identifier": "match-example-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "match-example-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q13-match-interaction-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q13-match-interaction-sv-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q13-match-interaction-sv-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
     "id": "50",
     "title": "Adam Collection",
     "description": "A small collection of items for Adam.",
