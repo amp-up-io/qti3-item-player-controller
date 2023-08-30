@@ -1329,6 +1329,70 @@ const tests = [
     ]
   },
   {
+    "id": "18",
+    "title": "L2 - Q6 Gap Match Interaction",
+    "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q6 - Gap Match Interaction conformance tests.</p>",
+    "count": "7",
+    "items": [
+      {
+        "identifier": "gap-match-example-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "gap-match-example-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "gap-match-example-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q6-gap-match-interaction-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q6-gap-match-interaction-sv-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q6-gap-match-interaction-sv-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q6-gap-match-interaction-sv-4",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
     "id": "50",
     "title": "Adam Collection",
     "description": "A small collection of items for Adam.",

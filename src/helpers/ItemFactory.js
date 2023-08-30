@@ -2728,7 +2728,528 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         
       </qti-item-body>
     </qti-assessment-item>`
-  }
+  },
+  {
+    "identifier": "gap-match-example-1",
+    "guid": "0000-0020-0001",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="gap-match-example-1" title="Gap Match Example 1"
+      time-dependent="false" adaptive="false">
+      <qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+        <qti-correct-response>
+          <qti-value>W G1</qti-value>
+          <qti-value>Su G2</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="-1" lower-bound="0">
+          <qti-map-entry map-key="W G1" mapped-value="1"/>
+          <qti-map-entry map-key="Su G2" mapped-value="2"/>
+        </qti-mapping>
+      </qti-response-declaration>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        <qti-gap-match-interaction max-associations="0" response-identifier="RESPONSE">
+        <qti-prompt>Identify the missing words in this famous quote from Shakespeare's Richard III.</qti-prompt>
+          <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+          <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+          <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+          <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+          <blockquote>
+            <p>
+              Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+              Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+              And all the clouds that lour'd upon our house<br/>
+              In the deep bosom of the ocean buried.
+            </p>
+          </blockquote>
+        </qti-gap-match-interaction>
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response.xml"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "gap-match-example-2",
+    "guid": "0000-0020-0002",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v3p0/schema/xsd/mathml3.xsd" 
+      identifier="gap-match-example-2" title="Gap Match Example 2" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE">
+        <qti-correct-response>
+          <qti-value>s1 t1</qti-value>
+          <qti-value>s2 t3</qti-value>
+          <qti-value>s3 t5</qti-value>
+          <qti-value>s4 t2</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="0" lower-bound="0.00" upper-bound="4">
+          <qti-map-entry map-key="s1 t1" mapped-value="1"/>
+          <qti-map-entry map-key="s1 t3" mapped-value="1"/>
+          <qti-map-entry map-key="s1 t5" mapped-value="1"/>
+          <qti-map-entry map-key="s1 t7" mapped-value="1"/>
+          <qti-map-entry map-key="s2 t1" mapped-value="1"/>
+          <qti-map-entry map-key="s2 t3" mapped-value="1"/>
+          <qti-map-entry map-key="s2 t5" mapped-value="1"/>
+          <qti-map-entry map-key="s2 t7" mapped-value="1"/>
+          <qti-map-entry map-key="s3 t1" mapped-value="1"/>
+          <qti-map-entry map-key="s3 t3" mapped-value="1"/>
+          <qti-map-entry map-key="s3 t5" mapped-value="1"/>
+          <qti-map-entry map-key="s3 t7" mapped-value="1"/>
+          <qti-map-entry map-key="s4 t2" mapped-value="1"/>
+          <qti-map-entry map-key="s4 t4" mapped-value="1"/>
+          <qti-map-entry map-key="s4 t6" mapped-value="1"/>
+          <qti-map-entry map-key="s4 t8" mapped-value="1"/>
+        </qti-mapping>
+      </qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+        <div>
+          <p>Indicate whether each of the following numbers is rational or irrational.</p>
+        </div>
+        <qti-gap-match-interaction max-associations="4" response-identifier="RESPONSE">
+          <qti-gap-text identifier="s1" match-max="1">
+            <span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="ee to the power of zero" display="inline" overflow="scroll"><mstyle><mrow><msup><mrow><mi>e</mi></mrow><mrow><mn>0</mn></mrow></msup></mrow></mstyle></math></span>
+          </qti-gap-text>
+          <qti-gap-text identifier="s2" match-max="1">
+            <span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="cosine of pie" display="inline" overflow="scroll"><mstyle><mrow><mrow><mi>cos</mi><mrow><mo>(</mo><mi>π</mi><mo>)</mo></mrow></mrow></mrow></mstyle></math></span>
+          </qti-gap-text>
+          <qti-gap-text identifier="s3" match-max="1">
+            <span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="fraction, numerator absolute value of negative twenty one, denominator 3" display="inline" overflow="scroll"><mstyle><mrow><mfrac><mrow><mo>|</mo><mo>−</mo><mn>21</mn><mo>|</mo></mrow><mrow><mn>3</mn></mrow></mfrac></mrow></mstyle></math></span>
+          </qti-gap-text>
+          <qti-gap-text identifier="s4" match-max="1">
+            <span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="square root of 5" display="inline" overflow="scroll"><mstyle><mrow><msqrt><mrow><mn>5</mn></mrow></msqrt></mrow></mstyle></math></span>
+          </qti-gap-text>
+          
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th/>
+                  <th><strong>Category 1: Rational</strong></th>
+                  <th><strong>Category 2: Irrational</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th/>
+                  <td><p><qti-gap identifier="t1"/></p></td>
+                  <td><p><qti-gap identifier="t2"/></p></td>
+                </tr>
+                <tr>
+                  <th/>
+                  <td><p><qti-gap identifier="t3"/></p></td>
+                  <td><p><qti-gap identifier="t4"/></p></td>
+                </tr>
+                <tr>
+                  <th/>
+                  <td><p><qti-gap identifier="t5"/></p></td>
+                  <td><p><qti-gap identifier="t6"/></p></td>
+                </tr>
+                <tr>
+                  <th/>
+                  <td><p><qti-gap identifier="t7"/></p></td>
+                  <td><p><qti-gap identifier="t8"/></p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </qti-gap-match-interaction>
+        <div>
+          <p>Move each number to the response area for the appropriate category.</p>
+        </div>
+      </qti-item-body>
+      <qti-response-processing>
+        <qti-response-condition>
+          <qti-response-if>
+            <qti-is-null><qti-variable identifier="RESPONSE"/></qti-is-null>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">0.00</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-if>
+          <qti-response-else-if>
+            <qti-gte>
+              <qti-map-response identifier="RESPONSE"/>
+              <qti-base-value base-type="float">4</qti-base-value>
+            </qti-gte>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-subtract>
+                <qti-map-response identifier="RESPONSE"/>
+                <qti-base-value base-type="float">0</qti-base-value>
+              </qti-subtract>
+            </qti-set-outcome-value>
+          </qti-response-else-if>
+          <qti-response-else>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">0.00</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-else>
+        </qti-response-condition>
+      </qti-response-processing>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "gap-match-example-3",
+    "guid": "0000-0020-0003",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="gap-match-example-3" title="Gap Match Example 3" adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE">
+        <qti-correct-response>
+          <qti-value>s1 t1</qti-value>
+          <qti-value>s5 t2</qti-value>
+          <qti-value>s2 t3</qti-value>
+          <qti-value>s3 t4</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="0" lower-bound="0.00" upper-bound="4">
+          <qti-map-entry map-key="s1 t1" mapped-value="1"/>
+          <qti-map-entry map-key="s5 t2" mapped-value="1"/>
+          <qti-map-entry map-key="s2 t3" mapped-value="1"/>
+          <qti-map-entry map-key="s3 t4" mapped-value="1"/>
+        </qti-mapping>
+      </qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+        <div>
+          <p>Complete the following sentences using the words or phrases provided. Not all words or phrases will be used and some words or phrases may be used more than once.</p>
+        </div>
+        <qti-gap-match-interaction max-associations="4" response-identifier="RESPONSE">
+          <qti-gap-text identifier="s1" match-max="0">Earth</qti-gap-text>
+          <qti-gap-text identifier="s2" match-max="0">Mars</qti-gap-text>
+          <qti-gap-text identifier="s3" match-max="0">Mercury</qti-gap-text>
+          <qti-gap-text identifier="s4" match-max="0">the Moon</qti-gap-text>
+          <qti-gap-text identifier="s5" match-max="0">the Sun</qti-gap-text>
+          <div>
+            <p>One full revolution of <qti-gap identifier="t1"/> around <qti-gap identifier="t2"/> takes 365.25 days. Because <qti-gap identifier="t3"/> is farther out from the center of the solar system, the planet takes almost 687 days to complete its orbit, far longer than the orbit of <qti-gap class="ets-target" identifier="t4"/> , which is 88 days.</p>
+          </div>
+         </qti-gap-match-interaction>
+         <div>
+           <p>Select a choice and move it to a blank.</p>
+         </div>
+      </qti-item-body>
+      <qti-response-processing>
+        <qti-response-condition>
+          <qti-response-if>
+            <qti-is-null><qti-variable identifier="RESPONSE"/></qti-is-null>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">0.00</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-if>
+          <qti-response-else-if>
+            <qti-gte>
+              <qti-map-response identifier="RESPONSE"/>
+              <qti-base-value base-type="float">4</qti-base-value>
+            </qti-gte>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-subtract><qti-map-response identifier="RESPONSE"/><qti-base-value base-type="float">3</qti-base-value></qti-subtract>
+            </qti-set-outcome-value>
+          </qti-response-else-if>
+          <qti-response-else>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">0.00</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-else>
+        </qti-response-condition>
+      </qti-response-processing>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q6-gap-match-interaction-sv-1",
+    "guid": "0000-0020-0004",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q6-gap-match-interaction-sv-1" title="Gap Match - (SV 1) - choice-gap positioning" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="directedPair">
+        <qti-correct-response>
+          <qti-value>W G1</qti-value>
+          <qti-value>Su G2</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="-1" lower-bound="0">
+          <qti-map-entry map-key="W G1" mapped-value="1"/>
+          <qti-map-entry map-key="Su G2" mapped-value="2"/>
+        </qti-mapping>
+      </qti-response-declaration>
+      <qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="directedPair"/>
+      <qti-response-declaration identifier="RESPONSE3" cardinality="multiple" base-type="directedPair"/>
+      <qti-response-declaration identifier="RESPONSE4" cardinality="multiple" base-type="directedPair"/>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        
+        <p>
+          The following examples demonstrate shared vocabulary describing the visual orientation of the list of gap match <em>choices</em>; i.e., the 
+          qti-gap-text elements, in relation to the gap match targets; i.e., the HTML content containing the qti-gap's.
+        </p>
+        
+        <qti-gap-match-interaction class="qti-choices-top" max-associations="0" response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates qti-choices-top</qti-prompt>
+          <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+          <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+          <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+          <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+          <blockquote>
+            <p>
+              Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+              Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+              And all the clouds that lour'd upon our house<br/>
+              In the deep bosom of the ocean buried.
+            </p>
+          </blockquote>
+        </qti-gap-match-interaction>
+        
+        <qti-gap-match-interaction class="qti-choices-bottom" max-associations="0" response-identifier="RESPONSE2">
+          <qti-prompt>Demonstrates qti-choices-bottom</qti-prompt>
+          <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+          <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+          <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+          <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+          <blockquote>
+            <p>
+              Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+              Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+              And all the clouds that lour'd upon our house<br/>
+              In the deep bosom of the ocean buried.
+            </p>
+          </blockquote>
+        </qti-gap-match-interaction>
+    
+        <qti-gap-match-interaction class="qti-choices-left" max-associations="0" response-identifier="RESPONSE3">
+          <qti-prompt>Demonstrates qti-choices-left</qti-prompt>
+          <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+          <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+          <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+          <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+          <blockquote>
+            <p>
+              Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+              Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+              And all the clouds that lour'd upon our house<br/>
+              In the deep bosom of the ocean buried.
+            </p>
+          </blockquote>
+        </qti-gap-match-interaction>
+        
+        <qti-gap-match-interaction class="qti-choices-right" max-associations="0" response-identifier="RESPONSE4">
+          <qti-prompt>Demonstrates qti-choices-right</qti-prompt>
+          <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+          <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+          <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+          <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+          <blockquote>
+            <p>
+              Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+              Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+              And all the clouds that lour'd upon our house<br/>
+              In the deep bosom of the ocean buried.
+            </p>
+          </blockquote>
+        </qti-gap-match-interaction>
+        
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q6-gap-match-interaction-sv-2",
+    "guid": "0000-0020-0005",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q6-gap-match-interaction-sv-2" title="Gap Match - (SV 2) - container width" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="directedPair">
+        <qti-correct-response>
+          <qti-value>W G1</qti-value>
+          <qti-value>Su G2</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="-1" lower-bound="0">
+          <qti-map-entry map-key="W G1" mapped-value="1"/>
+          <qti-map-entry map-key="Su G2" mapped-value="2"/>
+        </qti-mapping>
+      </qti-response-declaration>
+      <qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="directedPair"/>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        
+        <p>
+          A common implementation of the gap match interaction is to place the gap choices in a so-called "gap choices container".  
+          If the gap choices are implemented with responsive design, then one can achieve a visual equivalent of gap choices stacking 
+          by manipulating the gap choices container width.    
+        </p>
+        
+        <div class="qti-layout-row">
+          <div class="qti-layout-col5">
+        
+            <qti-gap-match-interaction class="qti-choices-top" max-associations="2" data-choices-container-width="200" response-identifier="RESPONSE1">
+              <qti-prompt>Demonstrates qti-choices-top and  data-choices-container-width="200"</qti-prompt>
+              <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+              <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+              <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+              <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+              <blockquote>
+                <p>
+                  Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+                  Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+                  And all the clouds that lour'd upon our house<br/>
+                  In the deep bosom of the ocean buried.
+                </p>
+              </blockquote>
+            </qti-gap-match-interaction>
+       
+          </div>
+        </div>
+        <div class="qti-layout-row">
+          <div class="qti-layout-col9">
+        
+            <qti-gap-match-interaction class="qti-choices-left" max-associations="2" data-choices-container-width="100" response-identifier="RESPONSE2">
+              <qti-prompt>Demonstrates qti-choices-left and  data-choices-container-width="100"</qti-prompt>
+              <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+              <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+              <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+              <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+              <blockquote>
+                <p>
+                  Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+                  Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+                  And all the clouds that lour'd upon our house<br/>
+                  In the deep bosom of the ocean buried.
+                </p>
+              </blockquote>
+            </qti-gap-match-interaction>
+    
+          </div>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q6-gap-match-interaction-sv-3",
+    "guid": "0000-0020-0006",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q6-gap-match-interaction-sv-3" title="Gap Match - (SV 3) - custom messages" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="directedPair">
+        <qti-correct-response>
+          <qti-value>W G1</qti-value>
+          <qti-value>Su G2</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="-1" lower-bound="0">
+          <qti-map-entry map-key="W G1" mapped-value="1"/>
+          <qti-map-entry map-key="Su G2" mapped-value="2"/>
+        </qti-mapping>
+      </qti-response-declaration>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        
+        <p>
+          A Delivery Platform's <em>default</em> min-association and max-association constraint violation messages are left to the 
+          Delivery Platform.  Platform <em>default</em> constraint violation messages may be overriden by using 
+          the <strong>data-max-selections-message</strong> and <strong>data-min-selections-message</strong> attributes accordingly.
+        </p>
+        
+        <div class="qti-layout-row">
+          <div class="qti-layout-col9">
+    
+            <qti-gap-match-interaction max-associations="1" min-associations="1" data-max-selections-message="You've selected too many" data-min-selections-message="You haven't selected enough" response-identifier="RESPONSE1">
+              <qti-prompt>Demonstrates data-max|min-selections-messages</qti-prompt>
+              <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+              <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+              <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+              <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+              <blockquote>
+                <p>
+                  Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+                  Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+                  And all the clouds that lour'd upon our house<br/>
+                  In the deep bosom of the ocean buried.
+                </p>
+              </blockquote>
+            </qti-gap-match-interaction>
+    
+          </div>
+        </div>
+        
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q6-gap-match-interaction-sv-4",
+    "guid": "0000-0020-0007",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q6-gap-match-interaction-sv-4" title="Gap Match - (SV 4) - gap widths" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="directedPair" />
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        
+        <p>
+          To specify gap element widths, use the class attribute and qti-input-width-1|2|3|4|6|10|15|20|72
+          The gap element widths are intended to provide a general visual impression. By default, in the absence of any shared 
+          vocabulary, the presentation width of a gap element is left to the Delivery Platform.
+        </p>
+       
+        <div class="qti-layout-row">
+          <div class="qti-layout-col12">
+    
+            <qti-gap-match-interaction class="qti-choices-top" max-associations="0" response-identifier="RESPONSE1">
+              <qti-prompt>Demonstrates all gap element qti-input-width's: 1|2|3|4|6|10|15|20|72</qti-prompt>
+              <qti-gap-text identifier="gt1" match-max="1">M</qti-gap-text>
+              <qti-gap-text identifier="gt2" match-max="1">MM</qti-gap-text>
+              <qti-gap-text identifier="gt3" match-max="1">MMM</qti-gap-text>
+              <qti-gap-text identifier="gt4" match-max="1">MMMM</qti-gap-text>
+              <qti-gap-text identifier="gt6" match-max="1">MMMMMM</qti-gap-text>
+              <p>
+                qti-input-width-1 :  <qti-gap class="qti-input-width-1" identifier="G1"/><br/>
+                qti-input-width-2 :  <qti-gap class="qti-input-width-2" identifier="G2"/><br/>
+                qti-input-width-3 :  <qti-gap class="qti-input-width-3" identifier="G3"/><br/>
+                qti-input-width-4 :  <qti-gap class="qti-input-width-4" identifier="G4"/><br/>
+                qti-input-width-6 :  <qti-gap class="qti-input-width-6" identifier="G6"/><br/>
+                qti-input-width-10 : <qti-gap class="qti-input-width-10" identifier="G10"/><br/>
+                qti-input-width-15 : <qti-gap class="qti-input-width-15" identifier="G15"/><br/>
+                qti-input-width-20 : <qti-gap class="qti-input-width-20" identifier="G20"/><br/>
+                qti-input-width-72 : <qti-gap class="qti-input-width-72" identifier="G72"/>
+              </p>
+            </qti-gap-match-interaction>
+        
+          </div>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
 ]
 
 /* eslint-enable */
