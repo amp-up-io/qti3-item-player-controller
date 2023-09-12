@@ -1385,7 +1385,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
                 <qti-value>俳句</qti-value>
             </qti-correct-response>
         </qti-response-declaration>
-        <qti-outcome-declaration base-type="float" cardinality="singlle" identifier="SCORE"/>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE" shuffle="false" max-choices="0">
@@ -1412,7 +1412,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
                 <qti-value>俳句</qti-value>
             </qti-correct-response>
         </qti-response-declaration>
-        <qti-outcome-declaration base-type="float" cardinality="singlle" identifier="SCORE"/>
+        <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
         <qti-item-body>
             <div class="qti-height-96 qti3-player-writing-mode-vertical-rl qti3-player-float-right">
                 <qti-choice-interaction class="qti-labels-cjk-ideographic" response-identifier="RESPONSE" shuffle="false" max-choices="0">
