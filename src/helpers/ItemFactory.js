@@ -2695,7 +2695,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           Delivery Platform.  Platform <em>default</em> constraint violation messages may be overriden by using 
           the <strong>data-max-selections-message</strong> and <strong>data-min-selections-message</strong> attributes accordingly.
         </p>
-        
+    
         <qti-match-interaction max-associations="4" data-max-selections-message="You cannot make more than 4 matches!" response-identifier="RESPONSE1">
           <qti-prompt>Demonstrates <em>max-associations=4 and custom data-max-selections-message</em></qti-prompt>
           <qti-simple-match-set>
@@ -2710,7 +2710,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
           </qti-simple-match-set>
         </qti-match-interaction>
-        
+    
         <qti-match-interaction max-associations="4" min-associations="2" data-min-selections-message="You must make at least 2 matches!" response-identifier="RESPONSE2">
           <qti-prompt>Demonstrates <em>min-associations=2 and custom data-min-selections-message</em></qti-prompt>
           <qti-simple-match-set>
@@ -2725,7 +2725,32 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
           </qti-simple-match-set>
         </qti-match-interaction>
-        
+    
+        <div>
+          <hr />
+        </div>
+    
+        <p>
+          The max-associations attribute is optional and defaults to a value of 1 when unspecified.  The following interaction has no 
+          max-associations attribute and no data-max-selections-message attribute.   Consequently, a Delivery Platform must trigger its
+          <em>default</em> max-associations message when the candidate attempts to make more than 1 match in the following interaction.
+        </p>
+    
+        <qti-match-interaction response-identifier="RESPONSE3">
+          <qti-prompt>Demonstrates default max-associations when more than 1 match is made.</qti-prompt>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+          </qti-simple-match-set>
+          <qti-simple-match-set>
+            <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+            <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+          </qti-simple-match-set>
+        </qti-match-interaction>
+    
       </qti-item-body>
     </qti-assessment-item>`
   },
@@ -2753,7 +2778,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
       <qti-item-body>
         <qti-gap-match-interaction max-associations="0" response-identifier="RESPONSE">
-        <qti-prompt>Identify the missing words in this famous quote from Shakespeare's Richard III.</qti-prompt>
+          <qti-prompt>Identify the missing words in this famous quote from Shakespeare's Richard III.</qti-prompt>
           <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
           <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
           <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
@@ -3104,7 +3129,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <div class="qti-layout-row">
           <div class="qti-layout-col5">
         
-            <qti-gap-match-interaction class="qti-choices-top" max-associations="2" data-choices-container-width="200" response-identifier="RESPONSE1">
+            <qti-gap-match-interaction class="qti-choices-top" max-associations="0" data-choices-container-width="200" response-identifier="RESPONSE1">
               <qti-prompt>Demonstrates qti-choices-top and  data-choices-container-width="200"</qti-prompt>
               <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
               <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
@@ -3125,7 +3150,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <div class="qti-layout-row">
           <div class="qti-layout-col9">
         
-            <qti-gap-match-interaction class="qti-choices-left" max-associations="2" data-choices-container-width="100" response-identifier="RESPONSE2">
+            <qti-gap-match-interaction class="qti-choices-left" max-associations="0" data-choices-container-width="100" response-identifier="RESPONSE2">
               <qti-prompt>Demonstrates qti-choices-left and  data-choices-container-width="100"</qti-prompt>
               <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
               <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
@@ -3167,11 +3192,21 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <qti-map-entry map-key="Su G2" mapped-value="2"/>
         </qti-mapping>
       </qti-response-declaration>
+      <qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="directedPair">
+        <qti-correct-response>
+          <qti-value>W G1</qti-value>
+          <qti-value>Su G2</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="-1" lower-bound="0">
+          <qti-map-entry map-key="W G1" mapped-value="1"/>
+          <qti-map-entry map-key="Su G2" mapped-value="2"/>
+        </qti-mapping>
+      </qti-response-declaration>
       <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
       <qti-item-body>
         
         <p>
-          A Delivery Platform's <em>default</em> min-association and max-association constraint violation messages are left to the 
+          A Delivery Platform's <em>default</em> min-associations and max-associations constraint violation messages are left to the 
           Delivery Platform.  Platform <em>default</em> constraint violation messages may be overriden by using 
           the <strong>data-max-selections-message</strong> and <strong>data-min-selections-message</strong> attributes accordingly.
         </p>
@@ -3181,6 +3216,37 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     
             <qti-gap-match-interaction max-associations="1" min-associations="1" data-max-selections-message="You've selected too many" data-min-selections-message="You haven't selected enough" response-identifier="RESPONSE1">
               <qti-prompt>Demonstrates data-max|min-selections-messages</qti-prompt>
+              <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+              <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+              <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+              <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+              <blockquote>
+                <p>
+                  Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+                  Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+                  And all the clouds that lour'd upon our house<br/>
+                  In the deep bosom of the ocean buried.
+                </p>
+              </blockquote>
+            </qti-gap-match-interaction>
+    
+          </div>
+        </div>
+        
+        <div>
+          <hr />
+        </div>
+        
+        <p>
+          The max-associations attribute is optional and defaults to a value of 1 when unspecified.  The following interaction has no 
+          max-associations attribute and no data-max-selections-message attribute.   Consequently, a Delivery Platform must trigger its
+          <em>default</em> max-associations message when the candidate attempts to make more than 1 match in the following interaction.
+        </p>
+    
+        <div class="qti-layout-row">
+          <div class="qti-layout-col9">
+    
+            <qti-gap-match-interaction response-identifier="RESPONSE2">
               <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
               <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
               <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
@@ -3250,6 +3316,494 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       </qti-item-body>
     </qti-assessment-item>`
   },
+  {
+    "identifier": "graphic-gap-match-item1",
+    "guid": "0000-0021-0000",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="graphic-gap-match-item1" title="Q8 GGM Images - Airport Tags" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE">
+        <qti-correct-response>
+          <qti-value>GLA A</qti-value>
+          <qti-value>EDI B</qti-value>
+          <qti-value>MAN C</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="-1" lower-bound="0">
+          <qti-map-entry map-key="GLA A" mapped-value="1"/>
+          <qti-map-entry map-key="EDI B" mapped-value="1"/>
+          <qti-map-entry map-key="MAN C" mapped-value="1"/>
+        </qti-mapping>
+      </qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+      <qti-item-body>
+        <div>
+          <p>The International Air Transport Association assigns three-letter codes to identify airports worldwide. For example, London Heathrow has code LHR.</p>
+        </div>
+        <div>
+          <qti-graphic-gap-match-interaction max-associations="0" response-identifier="RESPONSE">
+            <qti-prompt>
+              <p>Some of the labels on the following diagram are missing: can you identify the correct three-letter codes for the unlabelled airports?</p>
+            </qti-prompt>
+            <img alt="Map of the United Kingdom" height="280" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/c6f3031f-7205-4444-8769-851904f42ed6/images/ukairtags.png" width="206"/>
+            <qti-gap-img identifier="CBG" match-max="1">
+              <img alt="The initials CBG" height="11" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/c6f3031f-7205-4444-8769-851904f42ed6/images/cbg.png" width="25"/>
+            </qti-gap-img>
+            <qti-gap-img identifier="EBG" match-max="1">
+              <img alt="The initials EBG" height="11" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/c6f3031f-7205-4444-8769-851904f42ed6/images/ebg.png" width="25"/>
+            </qti-gap-img>
+            <qti-gap-img identifier="EDI" match-max="1">
+              <img alt="The initials EDI" height="11" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/c6f3031f-7205-4444-8769-851904f42ed6/images/edi.png" width="25"/>
+            </qti-gap-img>
+            <qti-gap-img identifier="GLA" match-max="1">
+              <img alt="The initials GLA" height="11" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/c6f3031f-7205-4444-8769-851904f42ed6/images/gla.png" width="25"/>
+            </qti-gap-img>
+            <qti-gap-img identifier="MAN" match-max="1">
+              <img alt="The initials MAN" height="11" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/c6f3031f-7205-4444-8769-851904f42ed6/images/man.png" width="25"/>
+            </qti-gap-img>
+            <qti-gap-img identifier="MCH" match-max="1">
+              <img alt="The initials MCH" height="11" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/c6f3031f-7205-4444-8769-851904f42ed6/images/mch.png" width="25"/>
+            </qti-gap-img>
+            <qti-associable-hotspot coords="6,100,43,125" identifier="A" match-max="1" shape="rect"></qti-associable-hotspot>
+            <qti-associable-hotspot coords="118,95,162,120" identifier="B" match-max="1" shape="rect"></qti-associable-hotspot>
+            <qti-associable-hotspot coords="57,158,99,183" identifier="C" match-max="1" shape="rect"></qti-associable-hotspot>
+          </qti-graphic-gap-match-interaction>
+        </div>
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response.xml"/> 
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "graphic-gap-match-item2",
+    "guid": "0000-0021-0001",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="graphic-gap-match-item2" title="Q8 GGM Text - Airport Tags" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+        <qti-correct-response>
+          <qti-value>GLA A</qti-value>
+          <qti-value>EDI B</qti-value>
+          <qti-value>MAN C</qti-value>
+        </qti-correct-response>
+        <qti-mapping lower-bound="0" default-value="-1">
+          <qti-map-entry map-key="GLA A" mapped-value="1"/>
+          <qti-map-entry map-key="EDI B" mapped-value="1"/>
+          <qti-map-entry map-key="MAN C" mapped-value="1"/>
+        </qti-mapping>
+      </qti-response-declaration>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        <p> The International Air Transport Association assigns three-letter codes to identify airports worldwide. For example, London Heathrow has code LHR.</p>
+        <qti-graphic-gap-match-interaction max-associations="0" response-identifier="RESPONSE">
+          <qti-prompt>
+            <p>Some of the labels on the following diagram are missing: can you identify the correct three-letter codes for the unlabelled airports?</p>
+          </qti-prompt>
+          <img alt="Map of the United Kingdom" height="280" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/c6f3031f-7205-4444-8769-851904f42ed6/images/ukairtags.png" width="206"/>
+          <qti-gap-text identifier="CBG" match-max="1"><span>CBG</span></qti-gap-text>
+          <qti-gap-text identifier="EDI" match-max="1"><span>EDI</span></qti-gap-text>
+          <qti-gap-text identifier="GLA" match-max="1"><span>GLA</span></qti-gap-text>
+          <qti-gap-text identifier="MAN" match-max="1"><span>MAN</span></qti-gap-text>
+          <qti-gap-text identifier="MCH" match-max="1"><span>MCH</span></qti-gap-text>
+          <qti-associable-hotspot identifier="A" match-max="1" shape="rect" coords="6,100,43,125"/>
+          <qti-associable-hotspot identifier="B" match-max="1" shape="rect" coords="118,95,162,120"/>
+          <qti-associable-hotspot identifier="C" match-max="1" shape="rect" coords="57,158,99,183"/>      
+        </qti-graphic-gap-match-interaction>
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response.xml"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q8-graphic-gap-match-sv-1",
+    "guid": "0000-0021-0002",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q8-graphic-gap-match-sv-1" title="Q8 GGM - (SV 1) - choice-gap positioning"  
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1">
+        <qti-correct-response>
+          <qti-value>DraggerD B</qti-value>
+          <qti-value>DraggerC C</qti-value>
+          <qti-value>DraggerA D</qti-value>
+          <qti-value>DraggerB A</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE2"/>
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE3"/>
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE4"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+      <qti-item-body>
+        <p>Place the events onto the correct place on the timeline below.</p>
+        
+        <qti-graphic-gap-match-interaction class="qti-choices-top" max-associations="0" response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates qti-choices-top</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        <qti-graphic-gap-match-interaction class="qti-choices-bottom" max-associations="0" response-identifier="RESPONSE2">
+          <qti-prompt>Demonstrates qti-choices-bottom</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        <qti-graphic-gap-match-interaction class="qti-choices-left" max-associations="0" response-identifier="RESPONSE3">
+          <qti-prompt>Demonstrates qti-choices-left</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        <qti-graphic-gap-match-interaction class="qti-choices-right" max-associations="0" response-identifier="RESPONSE4">
+          <qti-prompt>Demonstrates qti-choices-right</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q8-graphic-gap-match-sv-2",
+    "guid": "0000-0021-0003",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q8-graphic-gap-match-sv-2" title="Q8 GGM - (SV 2) - container width"
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1">
+        <qti-correct-response>
+          <qti-value>DraggerD B</qti-value>
+          <qti-value>DraggerC C</qti-value>
+          <qti-value>DraggerA D</qti-value>
+          <qti-value>DraggerB A</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE2"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+      <qti-item-body>
+        <div>
+          
+        <qti-graphic-gap-match-interaction class="qti-choices-top" max-associations="0" data-choices-container-width="188" response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates qti-choices-top and data-choices-container-width="188"</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        <br/>
+        
+        <qti-graphic-gap-match-interaction class="qti-choices-left" max-associations="0" data-choices-container-width="100" response-identifier="RESPONSE2">
+          <qti-prompt>Demonstrates qti-choices-left and data-choices-container-width="100"</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q8-graphic-gap-match-sv-3",
+    "guid": "0000-0021-0004",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q8-graphic-gap-match-sv-3" title="Q8 GGM - (SV 3) - custom messages"
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1">
+        <qti-correct-response>
+          <qti-value>DraggerD B</qti-value>
+          <qti-value>DraggerC C</qti-value>
+          <qti-value>DraggerA D</qti-value>
+          <qti-value>DraggerB A</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE2" />
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+      <qti-item-body>
+        <div>
+    
+        <qti-graphic-gap-match-interaction class="qti-choices-top" data-choices-container-width="376" max-associations="2" min-associations="1" data-max-selections-message="You've selected too many!" data-min-selections-message="More selections, please! You need at least one." response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates qti-choices-top and data-max-selections-message and data-min-selections-message</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+    
+        </div>
+        
+        <div>
+          <hr />
+        </div>
+        
+        <p>
+          The max-associations attribute is optional and defaults to a value of 1 when unspecified.  The following interaction has no 
+          max-associations attribute and no data-max-selections-message attribute.   Consequently, a Delivery Platform must trigger its
+          <em>default</em> max-associations message when the candidate attempts to make more than 1 match in the following interaction.
+        </p>
+        
+        <div>
+    
+        <qti-graphic-gap-match-interaction response-identifier="RESPONSE2">
+          <qti-prompt>Demonstrates default max-associations when more than 1 match is made.</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+    
+        </div>
+        
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "q8-graphic-gap-match-sv-4",
+    "guid": "0000-0021-0005",
+    "submissionMode": "individual",
+    "xml": `<?xml version="1.0" encoding="UTF-8"?>
+    <qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="q8-graphic-gap-match-sv-4" title="Q8 GGM - (SV 4) - theming"
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1"/> 
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE2"/>   
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE3"/>  
+      <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE4"/> 
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+      <qti-item-body>
+        <div>
+    
+        <qti-graphic-gap-match-interaction class="qti-choices-top qti-selections-dark" max-associations="0" data-choices-container-width="376" response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates qti-choices-top and qti-selections-dark</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        <br />
+        
+        <qti-graphic-gap-match-interaction class="qti-choices-top qti-selections-light" max-associations="0" data-choices-container-width="376" response-identifier="RESPONSE2">
+          <qti-prompt>Demonstrates qti-choices-top and qti-selections-light</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        <br />
+    
+        <qti-graphic-gap-match-interaction class="qti-choices-top qti-selections-dark qti-unselected-hidden" max-associations="0" data-choices-container-width="376" response-identifier="RESPONSE3">
+          <qti-prompt>Demonstrates qti-choices-top and qti-selections-dark and qti-unselected-hidden</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        <br />
+    
+        <qti-graphic-gap-match-interaction class="qti-choices-top qti-selections-light qti-unselected-hidden" max-associations="0" data-choices-container-width="376" response-identifier="RESPONSE4">
+          <qti-prompt>Demonstrates qti-choices-top and qti-selections-light and qti-unselected-hidden</qti-prompt>
+          <img alt="timeline" height="326" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/timeline-558.png" width="558"/>
+          <qti-gap-img identifier="DraggerA" match-max="1">
+            <img alt="a-cw" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/a-cw.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerB" match-max="1">
+            <img alt="b-ww2" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/b-ww2.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerC" match-max="1">
+            <img alt="c-vietnam" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/c-vietnam.png" width="78" />
+          </qti-gap-img>
+          <qti-gap-img identifier="DraggerD" match-max="1">
+            <img alt="d-bay" height="63" src="https://storage.googleapis.com/bank-dev-ampup/c/da43c1c2-a26a-40d8-b8d8-cab32d5cd573/ba791058-7123-4ede-ae4f-832b8e25166d/b00a58f2-931d-4492-a97f-99b27ea28892/images/d-bay.png" width="78" />
+          </qti-gap-img>
+          <qti-associable-hotspot coords="55,256,135,321" identifier="A" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="190,256,270,321" identifier="B" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="309,256,389,321" identifier="C" match-max="1" shape="rect"/>
+          <qti-associable-hotspot coords="450,256,530,321" identifier="D" match-max="1" shape="rect"/>
+        </qti-graphic-gap-match-interaction>
+        
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  }
 ]
 
 /* eslint-enable */

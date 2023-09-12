@@ -1393,6 +1393,62 @@ const tests = [
     ]
   },
   {
+    "id": "19",
+    "title": "L2 - Q8 Graphic Gap Match Interaction",
+    "description": "<p>Demonstrates QTI3 Player support for all Level 2 Q8 - Graphic Gap Match Interaction conformance tests.</p>",
+    "count": "6",
+    "items": [
+      {
+        "identifier": "graphic-gap-match-item1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "graphic-gap-match-item2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q8-graphic-gap-match-sv-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q8-graphic-gap-match-sv-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q8-graphic-gap-match-sv-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "q8-graphic-gap-match-sv-4",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
     "id": "50",
     "title": "Adam Collection",
     "description": "A small collection of items for Adam.",
