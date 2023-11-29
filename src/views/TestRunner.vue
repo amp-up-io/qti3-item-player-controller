@@ -311,6 +311,8 @@ export default {
     getConfiguration (guid) {
       const configuration = {}
 
+      configuration.status = 'interacting'
+
       // Fetch prior state from Test State
       const state = this.getTestStateItemState(guid)
       if (typeof state !== 'undefined') configuration.state = state
