@@ -145,6 +145,10 @@ export default {
        */
       pnp: null,
       /*
+       * PCI configuration default
+       */
+      pciContext: { renderer2p0: './assets/pci/pci.html' },
+      /*
        * From the set of: { 'individual' | 'simultaneous' }
        * This is used to tell the Qti3Player whether or not
        * we want to run response processing when we navigate
@@ -309,6 +313,11 @@ export default {
     },
 
     getConfiguration (guid) {
+      console.log('Vue.prototype.$VUE_APP_CONFIGURATION', this.$VUE_APP_CONFIGURATION)
+      const context = this.$VUE_APP_CONFIGURATION
+      // Save the pci context
+      this.pciContext.renderer2p0 = context?.cfg?.pciContext?.renderer2p0 || '/assets/pci/pci.html'
+
       const configuration = {}
 
       configuration.status = 'interacting'
@@ -321,6 +330,7 @@ export default {
       configuration.guid = guid
       configuration.pnp = this.pnp.getPnp()
       configuration.sessionControl = this.sessionControl.getSessionControl()
+      configuration.pciContext = this.pciContext
 
       return configuration
     },
