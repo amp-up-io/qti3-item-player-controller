@@ -1,6 +1,6 @@
 <template>
-  <div class="row m-auto">
-    <div class="col-6 offset-3 shadow-sm p-5 bg-light bg-gradient border border-2 rounded-3">
+  <div class="card">
+    <div class="card-body">
       <h4 class="text-break">{{ title }}</h4>
       <p class="fs-4">{{maxItems}} Questions</p>
       <p v-html="description"></p>
