@@ -10,7 +10,7 @@
 
       <!-- Start Test Page -->
       <main id="main" class="test-controller-container container-fluid">
-        <div class="start-test-content">
+        <div class="main-content">
           <h1 class="visually-hidden">Start Test Page</h1>
           <div v-for="(test,index) in tests" :key="index">
             <div v-if="test.id == id">

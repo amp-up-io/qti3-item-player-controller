@@ -1,17 +1,22 @@
 <template>
   <section>
     <SkipNav skipid="#main" />
-    <header>
+    <header v-show="currentPanel == 'item'">
       <TopBar
         ref="topbar"
       />
     </header>
 
-    <!-- Item Canvas -->
-    <main id="main" class="test-controller-container container-fluid">
-      <div class="test-controller-content">
-        <h1 class="visually-hidden">Item {{currentItem+1}} of {{maxItems}}</h1>
+    <header v-show="currentPanel == 'end'">
+      <TopBarApp
+        ref="topbarapp"
+      />
+    </header>
 
+    <main id="main" class="test-controller-container container-fluid">
+
+      <div v-show="currentPanel == 'item'" class="test-controller-content">
+        <h1 class="visually-hidden">Item {{currentItem+1}} of {{maxItems}}</h1>
         <Qti3Player
           ref="qti3player"
           :container-class="containerClass"
@@ -26,19 +31,34 @@
           @notifyQti3ItemAlertEvent="displayItemAlertEvent"
           @notifyQti3ItemCatalogEvent="handleItemCatalogEvent"
         />
-
       </div>
+
+      <div v-show="currentPanel == 'end'" class="main-content">
+        <EndPanel
+          ref="endpanel"
+          :title="testTitle"
+          :testItems="testItems"
+          :countItems="maxItems"
+          @restart="handleRestart"
+          @navigateitem="handleNavigateItem"
+        />
+      </div>
+
     </main>
 
-    <footer class="navbar bg-dark navbar-top-shadow">
+    <footer v-show="currentPanel == 'item'" class="navbar bg-dark navbar-top-shadow">
       <BottomBar
         ref="bottombar"
         :is-previous-disabled="isBtnPreviousDisabled"
         :is-next-disabled="isBtnNextDisabled"
+        :is-goto-disabled="isBtnGotoDisabled"
         :current-item="currentItem"
         :max-items="maxItems"
+        :testItems="testItems"
         @previousItem="handlePrevItem"
         @nextItem="handleNextItem"
+        @gotoItem="handleGotoItem"
+        @gotoEnd="handleGotoEnd"
       />
     </footer>
 
@@ -53,13 +73,14 @@
 
 <script>
 import TopBar from '@/components/TopBar'
+import TopBarApp from '@/components/TopBarApp'
 import BottomBar from '@/components/BottomBar'
 import SkipNav from '@/components/SkipNav'
 import SettingsPanel from '@/components/SettingsPanel'
-import { TestFactory } from '@/helpers/TestFactory'
-import { ItemFactory } from '@/helpers/ItemFactory'
+import EndPanel from '@/components/EndPanel'
 import { PnpFactory } from '@/helpers/PnpFactory'
 import { SessionControlFactory } from '@/helpers/SessionControlFactory'
+import { TestControllerUtilities } from '@/helpers/TestControllerUtilities'
 
 // The Qti3Player component and built-in CSS
 import Qti3Player from 'qti3-item-player'
@@ -74,20 +95,27 @@ export default {
   components: {
     Qti3Player,
     TopBar,
+    TopBarApp,
     BottomBar,
     SettingsPanel,
-    SkipNav
+    SkipNav,
+    EndPanel
   },
 
   data () {
     return {
       test: null,
       id: null,
+      /*
+       * Manage display of Test Runner UI or End Panel
+       */
+      currentPanel: 'item',
       /* ===========================================================
        * Various app state variables to manage the Test Runner's UI.
        * =========================================================== */
       isBtnPreviousDisabled: true,
       isBtnNextDisabled: true,
+      isBtnGotoDisabled: true,
       currentItem: -1,
       maxItems: 0,
       /*
@@ -98,10 +126,6 @@ export default {
        * Save/Restore a candidate's item state here
        */
       itemStates: null,
-      /*
-       * This is our list of items, item XML, item GUID's
-       */
-      items: null,
       /*
        * From the set of:
        *   qti3-player-container-fluid ***DEFAULT***
@@ -160,7 +184,16 @@ export default {
       /*
        * An item can override submission mode
        */
-      itemSubmissionMode: null
+      itemSubmissionMode: null,
+      /* ============================================
+       * State variables to manage the EndPanel's UI.
+       * ============================================ */
+      testTitle: '',
+      testItems: [],
+      /*
+       * Test Controller Utilities
+       */
+       TC: null
     }
   },
 
@@ -168,31 +201,37 @@ export default {
 
     initialize (id) {
       // Find the test
-      this.test = new TestFactory().getById(id)
+      this.test = this.TC.getTestById(id)
 
       // If we can't find a test, disable the UI.
       // @TODO Show a 404 page?
       if (this.test === undefined) {
         this.isBtnPreviousDisabled = true
         this.isBtnNextDisabled = true
+        this.isBtnGotoDisabled = true
         this.currentItem = -1
         this.maxItems = 0
+        this.testTitle = ''
         return
       }
 
       // Found a test.
+      this.id = id
       this.currentItem = 0
       this.maxItems = this.test.count*1
-      // Get items in this test.  Pass the list of identifiers.
-      this.items = new ItemFactory().loadItems(this.test.items)
+      this.testTitle = this.test.title
+      this.testItems = this.test.items
+      // Load items in this collection.  Pass the list of identifiers.
+      this.TC.loadItems(this.test.items)
       // Load pnp
       this.pnp = new PnpFactory()
       // Load sessionControl
       this.sessionControl = new SessionControlFactory()
       // Initialize item state hashmap
       this.itemStates = new Map()
+
       // Load the first item!
-      this.loadItemAtIndex(this.currentItem)
+      this.loadFirstItem()
       this.updateButtonState()
     },
 
@@ -211,7 +250,23 @@ export default {
       this.initiateNavigatePrevItem()
     },
 
+    handleGotoItem (data) {
+      // data param contains info about the goto item
+      this.toggleButtonDisabled('goto', true)
+      this.initiateNavigateItem('navigateItem', data)
+    },
+    
+    handleGotoEnd () {
+      this.toggleButtonDisabled('goto', true)
+      this.initiateNavigateEnd()
+    },
+
     initiateNavigateNextItem () {
+      // Have we reached the last item in the section?
+      if ((this.currentItem + 1) === this.maxItems) {
+        return this.initiateNavigateEnd()
+      }
+
       if (this.isSubmissionModeIndividual())
         this.qti3Player.endAttempt('navigateNextItem')
       else
@@ -237,6 +292,79 @@ export default {
       this.currentItem -= 1
       this.loadItemAtIndex(this.currentItem)
       this.updateButtonState()
+    },
+
+    initiateNavigateItem (target, data) {
+      // Save the data object - which includes itemIdentifier and
+      // index in the collection.
+      this.TC.setNavigateItemData(data)
+
+      if (this.isSubmissionModeIndividual())
+        this.qti3Player.endAttempt(target)
+      else
+        this.qti3Player.suspendAttempt(target)
+    },
+
+    navigateItem () {
+      console.log(`[NavigateItem][Identifier:${this.TC.getNavigateItemData().identifier}]`)
+      this.gotoItem()
+    },
+
+    gotoItem () {
+      this.currentItem = this.TC.getNavigateItemData().index
+      this.loadItemAtIndex(this.currentItem)
+      this.updateButtonState()
+    },
+
+    initiateNavigateEnd () {
+      console.log('[NavigateEnd]')
+
+      if (this.isSubmissionModeIndividual())
+        this.qti3Player.endAttempt('navigateEnd')
+      else
+        this.qti3Player.suspendAttempt('navigateEnd')
+    },
+
+    navigateEnd () {
+      console.log('[NavigateReview]')
+
+      // Load itemStates into TC
+      this.TC.setItemStates(this.itemStates)
+      
+      // Compute Summary Report
+      const report = 
+        this.TC.computeSummary(
+          this.test.id,
+          this.testItems,
+          this.testTitle
+        )
+
+      // Inject report into End Panel
+      this.$refs.endpanel.setUnanswered(report.unanswered)
+      this.$refs.endpanel.setItemSummary(report.summary)
+  
+      // Show the End page
+      this.currentPanel = 'end'
+
+      // Reset the ItemPlayer
+      this.qti3Player.resetItem()
+    },
+
+    handleRestart () {
+      // Reset current item index to the first item
+      this.currentItem = 0
+      // Display the player
+      this.currentPanel = 'item'
+      // Load first item!
+      this.loadFirstItem()
+      this.updateButtonState()
+    },
+
+    handleNavigateItem (data) {
+      this.TC.setNavigateItemData(data)
+      // Display the player
+      this.currentPanel = 'item'
+      this.navigateItem()
     },
 
     isSubmissionModeIndividual () {
@@ -272,6 +400,15 @@ export default {
           this.navigatePrevItem()
           break
 
+        case 'navigateItem':
+        case 'navigateEnd':
+          if (this.isInvalidResponses(data.state.validationMessages, 'goto')) return
+          if (data.target === 'navigateItem')
+            this.navigateItem()
+          else
+            this.navigateEnd()
+
+          break
         default:
           // Unknown action --> NOOP
       }
@@ -285,18 +422,20 @@ export default {
       if (index === null) return
       if ((index < 0) || (index > this.maxItems-1)) return
 
+      const item = this.TC.getItemAtIndex(index)
+
       // Set current item submission mode
-      this.itemSubmissionMode = this.computeItemSubmissionMode(this.items[index])
+      this.itemSubmissionMode = this.computeItemSubmissionMode(item)
 
       // Update sessionControl with item/test properties
-      this.sessionControl.setValidateResponses(this.items[index].sessionControl.validateResponses)
-      this.sessionControl.setShowFeedback(this.items[index].sessionControl.showFeedback)
+      this.sessionControl.setValidateResponses(item.sessionControl.validateResponses)
+      this.sessionControl.setShowFeedback(item.sessionControl.showFeedback)
 
       // Build a configuration
-      const configuration = this.getConfiguration(this.items[index].guid)
+      const configuration = this.getConfiguration(item.guid)
 
       // Load the item with the configuration
-      this.qti3Player.loadItemFromXml(this.items[index].xml, configuration)
+      this.qti3Player.loadItemFromXml(item.xml, configuration)
     },
 
     computeItemSubmissionMode (itemObject) {
@@ -313,7 +452,6 @@ export default {
     },
 
     getConfiguration (guid) {
-      console.log('Vue.prototype.$VUE_APP_CONFIGURATION', this.$VUE_APP_CONFIGURATION)
       const context = this.$VUE_APP_CONFIGURATION
       // Save the pci context
       this.pciContext.renderer2p0 = context?.cfg?.pciContext?.renderer2p0 || '/assets/pci/pci.html'
@@ -338,13 +476,11 @@ export default {
     updateButtonState () {
       this.updateNextButtonState(this.currentItem)
       this.updatePrevButtonState(this.currentItem)
+      // Enable goto button
+      this.toggleButtonDisabled('goto', false)
     },
 
-    updateNextButtonState (currentItem) {
-      if (currentItem + 1 === this.maxItems) {
-        this.isBtnNextDisabled = true
-        return
-      }
+    updateNextButtonState () {
       this.isBtnNextDisabled = false
     },
 
@@ -357,11 +493,17 @@ export default {
     },
 
     toggleButtonDisabled (buttonRef, disable) {
-      if (buttonRef === 'next') {
-        this.isBtnNextDisabled = disable
-        return
+      switch (buttonRef) {
+        case 'next':
+          this.isBtnNextDisabled = disable
+          break
+        case 'prev':
+          this.isBtnPreviousDisabled = disable
+          break
+        case 'goto':
+          this.isBtnGotoDisabled = disable
+          break
       }
-      if (buttonRef === 'prev') this.isBtnPreviousDisabled = disable
     },
 
     /**
@@ -517,6 +659,8 @@ export default {
   },
 
   created () {
+    // Initialize Test Controller Utilities
+    this.TC = new TestControllerUtilities()
   },
 
   mounted () {
