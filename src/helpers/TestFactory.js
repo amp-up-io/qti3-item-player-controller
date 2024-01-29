@@ -129,78 +129,6 @@ const tests = [
     ]
   },
   {
-    "id": "3",
-    "title": "L2 - I19b Shared Layout and Styling CSS",
-    "description": "Demonstrates QTI3 Player support for all Level 2 conformance tests of Shared Layout and Styling CSS.",
-    "count": "8",
-    "items": [
-      {
-        "identifier": "i19b-shared-css-vocab-1",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      },
-      {
-        "identifier": "i19b-shared-css-vocab-2",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      },
-      {
-        "identifier": "i19b-shared-css-vocab-3",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      },
-      {
-        "identifier": "i19b-shared-css-vocab-4",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      },
-      {
-        "identifier": "i19b-shared-css-vocab-5",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      },
-      {
-        "identifier": "i19b-shared-css-vocab-6",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      },
-      {
-        "identifier": "i19b-shared-css-vocab-7",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      },
-      {
-        "identifier": "i19b-shared-css-vocab-8",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      }
-    ]
-  },
-  {
     "id": "4",
     "title": "L1 - Q20 Text Entry Interaction",
     "description": "Demonstrates QTI3 Player support for all Level 1 conformance tests of Q20 - Text Entry Interaction.  Note: The <strong>last item</strong> demonstrates a composite item that includes all permutations of qti-text-entry-interaction qti-input-width shared vocabulary.",
@@ -721,6 +649,78 @@ const tests = [
     ]
   },
   {
+    "id": "3",
+    "title": "L2 - I19b Shared Layout and Styling CSS",
+    "description": "Demonstrates QTI3 Player support for all Level 2 conformance tests of Shared Layout and Styling CSS.",
+    "count": "8",
+    "items": [
+      {
+        "identifier": "i19b-shared-css-vocab-1",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-2",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-3",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-4",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-5",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-6",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-7",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "i19b-shared-css-vocab-8",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
     "id": "8",
     "title": "L2 - Q2 Choice Interaction - Single Cardinality",
     "description": "Demonstrates QTI3 Player support for all Level 2 Q2 - Choice Interaction - Single Cardinality conformance tests.",
@@ -1058,7 +1058,7 @@ const tests = [
   },
   {
     "id": "16",
-    "title": "Explorations of Vertical Writing and QTI 3",
+    "title": "Explorations of Vertical Writing and QTI3",
     "description": "<p>Demonstrates QTI3 Player support for vertical writing, ruby annotations, and styling of Japanese text.</p><p>This also introduces new shared css and shared interaction vocabulary for QtiChoiceInteraction, QtiInlineChoiceInteraction, QtiTextEntryInteraction, and QtiExtendedTextInteraction.",
     "count": "27",
     "items": [
@@ -1440,6 +1440,46 @@ const tests = [
       },
       {
         "identifier": "q8-graphic-gap-match-sv-4",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Example QTI3 Portable Custom Interactions",
+    "description": "<p>Demonstrates QTI3 Player support for Portable Custom Interactions (PCI's).  With QTI3, PCI's are now promoted to first-class interactions with the <code>&lt;qti-portable-custom-interaction&gt;</code> element.</p>",
+    "count": "4",
+    "items": [
+      {
+        "identifier": "edmentum-pci-graphing",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "measuringPh",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "cito-pci-vanilla",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "likert-OAT-PCI",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,

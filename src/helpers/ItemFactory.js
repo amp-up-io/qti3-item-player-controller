@@ -3803,6 +3803,144 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         </div>
       </qti-item-body>
     </qti-assessment-item>`
+  },
+  {
+    "identifier": "edmentum-pci-graphing",
+    "guid": "0000-0022-0000",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="edmentum-pci-graphing" time-dependent="false" title="Edmentum PCI Graphing" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+     <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"></qti-response-declaration>
+     <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"></qti-outcome-declaration>
+     <qti-item-body>
+        <div class="qti-layout-row">
+          <div class="qti-layout-col12">
+            <qti-portable-custom-interaction custom-interaction-type-identifier="urn:edmentum.com:pci:2019:graphInteraction" data-height="360" data-prompt="Use the drawing tool(s) to form the correct answer on the provided graph." data-show-axes="true" data-width="360" data-x="-10,10" data-x-step="1" data-y="-10,10" data-y-step="1" module="graphInteraction" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/48b563e3-dc61-48b1-8833-2569a93d7e0d/">
+              <qti-interaction-markup>
+                <div class="qti-padding-2">
+                  <div class="graphInteraction">
+                    <div class="graph-interaction">
+                      <div class="graph-interaction__prompt"></div>
+                      <div class="graph-interaction__canvas"></div>
+                    </div>
+                  </div>
+                </div>
+              </qti-interaction-markup>
+            </qti-portable-custom-interaction>
+          </div>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "measuringPh",
+    "guid": "0000-0022-0001",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="measuringPh" time-dependent="false" title="Exploring the measurement of pH using red cabbage extract" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+      <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE"></qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>1.0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+        <div>
+          <h1>Measuring pH</h1>
+          <p>Did you know that red cabbage juice can be used to determine if a liquid is an acid or a base? </p>
+          <qti-portable-custom-interaction class="hmh-tap-border-rounded" custom-interaction-type-identifier="urn:fdc:hmhco.com:pci:tapToReveal" data-tap-message="Tap to reveal the color of the solution" data-toggle="true" module="tap" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/ab7d1888-4b0b-43df-a137-7aac18d24e72/">
+            <qti-prompt>
+              <p>Add 30ml of red cabbage solution to 100ml of each of the solutions below.</p>
+              <p>Observe the color change.</p> 
+              <p>Click to see if your solution became the expected color.</p>
+            </qti-prompt>
+            <qti-interaction-markup>
+              <section class="border">
+                <div role="grid">
+                  <div role="row">
+                    <figure role="gridcell">
+                      <figcaption>
+                        <h5>Baking Soda</h5>
+                      </figcaption>
+                      <img alt="Baking soda solution turns bright blue." class="tap" src="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/ab7d1888-4b0b-43df-a137-7aac18d24e72/baking_soda.svg"/>
+                    </figure>
+                    <figure role="gridcell">
+                      <figcaption>
+                        <h5>Vinegar</h5>
+                      </figcaption>
+                      <img alt="Vinegar turns pink." class="tap" src="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/ab7d1888-4b0b-43df-a137-7aac18d24e72/vinegar.svg"/>
+                    </figure>
+                    <figure role="gridcell">
+                      <figcaption>
+                        <h5>Ammonia</h5>
+                      </figcaption>
+                      <img alt="Ammonia turns light green." class="tap" src="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/ab7d1888-4b0b-43df-a137-7aac18d24e72/ammonia.svg"/>
+                    </figure>
+                  </div>
+                </div>
+              </section>
+            </qti-interaction-markup>
+          </qti-portable-custom-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "cito-pci-vanilla",
+    "guid": "0000-0022-0002",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="cito-pci-vanilla" time-dependent="false" title="CITO Vanilla PCI" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+      <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"></qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+         <qti-value>1.0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+        <div>
+          <qti-portable-custom-interaction custom-interaction-type-identifier="HelloWorld" data-height="200" data-question="What percentage is colored green?" data-title="Percentages" data-width="200" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/faa19061-13bf-40eb-8156-0788de4d4469/">
+            <qti-interaction-modules primary-configuration="modules/module_resolution.json">
+              <qti-interaction-module id="vanilla" primary-path="modules/vanilla2.js"></qti-interaction-module>
+            </qti-interaction-modules>
+            <qti-interaction-markup>
+              <div class="qti-hidden assets">
+                <img alt="procenten" id="pctn" src="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/faa19061-13bf-40eb-8156-0788de4d4469/assets/procenten.png"/>
+              </div>
+            </qti-interaction-markup>
+          </qti-portable-custom-interaction>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "likert-OAT-PCI",
+    "guid": "0000-0022-0003",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="likert-OAT-PCI" label="PCI likert" time-dependent="false" title="PCI likert" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+      <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE"></qti-response-declaration>
+      <qti-item-body>
+        <div class="qti-layout-row">
+          <div class="qti-layout-col-12">
+            <qti-portable-custom-interaction custom-interaction-type-identifier="urn:oat:pci:likert" data-label-max="max" data-label-min="min" data-level="5" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/de08735b-c075-4086-995f-8b549156f13e/i150107567172373/">
+              <qti-interaction-modules primary-configuration="../oat-pci.json">
+                <qti-interaction-module id="imsSamplePciLikert_runtime_js_imsSamplePciLikert" primary-path="../imsSamplePciLikert/runtime/js/imsSamplePciLikert.js"></qti-interaction-module>
+                <qti-interaction-module id="imsSamplePciLikert_runtime_js_renderer" primary-path="../imsSamplePciLikert/runtime/js/renderer.js"></qti-interaction-module>
+                <qti-interaction-module id="jquery_2_1_1"></qti-interaction-module>
+              </qti-interaction-modules>
+              <qti-interaction-markup>
+                <div class="imsSamplePciLikert">
+                  <div class="prompt"></div>
+                  <ul class="likert"></ul>
+                  <div class="qti-hidden assets">
+                    <img alt="thumb down" class="ThumbDown" src="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/de08735b-c075-4086-995f-8b549156f13e/imsSamplePciLikert/runtime/assets/ThumbDown.png"/>
+                    <img alt="thumb up" class="ThumbUp" src="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/de08735b-c075-4086-995f-8b549156f13e/imsSamplePciLikert/runtime/assets/ThumbUp.png"/>
+                    <img alt="" class="bg" src="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/de08735b-c075-4086-995f-8b549156f13e/imsSamplePciLikert/runtime/css/img/bg.png"/>
+                  </div>
+                </div>
+              </qti-interaction-markup>
+            </qti-portable-custom-interaction>
+          </div>
+        </div>
+      </qti-item-body>
+    </qti-assessment-item>`
   }
 ]
 
