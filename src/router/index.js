@@ -19,7 +19,7 @@ const routes = [
     name: 'Start',
     component: Start,
     meta: {
-      title: 'Start Test Page'
+      title: 'Start Collection Page'
     }
   },
   {
