@@ -107,7 +107,6 @@
     },
   
     mounted () {
-      this.setQuestionSummary()
     },
   
     beforeDestroy () {
