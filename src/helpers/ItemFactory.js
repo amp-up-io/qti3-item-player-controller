@@ -3809,8 +3809,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "guid": "0000-0022-0000",
     "submissionMode": "individual",
     "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="edmentum-pci-graphing" time-dependent="false" title="Edmentum PCI Graphing" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
-     <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"></qti-response-declaration>
-     <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"></qti-outcome-declaration>
+     <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+     <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
      <qti-item-body>
         <div class="qti-layout-row">
           <div class="qti-layout-col12">
@@ -3836,7 +3836,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "guid": "0000-0022-0001",
     "submissionMode": "individual",
     "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="measuringPh" time-dependent="false" title="Exploring the measurement of pH using red cabbage extract" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
-      <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE"></qti-response-declaration>
+      <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE"/>
       <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
         <qti-default-value>
           <qti-value>1.0</qti-value>
@@ -3884,11 +3884,52 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "cito-pci-vanilla",
+    "identifier": "fractions-no-dependencies",
     "guid": "0000-0022-0002",
     "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="fractions-no-dependencies" time-dependent="false" title="Simple Shaded Grid Interaction with no module dependencies" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd">
+      <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE">
+        <qti-correct-response> <qti-value>6</qti-value> </qti-correct-response>
+      </qti-response-declaration>
+      <qti-response-declaration base-type="integer" cardinality="single" identifier="EXAMPLE"/>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>0.0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+        <div>
+          Mary is saving to buy a birthday present for her mother. Every week she counts the money she has saved into piles of $5. At the end of the first week Mary had saved $10 and was planning to buy her mother a present worth $30.
+          <p> </p>
+          She represented this in the following shaded chart with a shaded square for every $5 saved and a target of $30.
+          <p> </p>
+          <qti-portable-custom-interaction custom-interaction-type-identifier="urn:fdc:hmhco.com:pci:shading" data-active="0" data-controls="none" data-dimension1_initial="3" data-dimension2_initial="2" data-element_diameter="60" data-render="grid" data-selected="0.0,1.0" data-selected_color="red" data-unselected_color="white" data-value="numShaded" response-identifier="EXAMPLE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/b110b173-a4a7-4ec2-8dff-4988395da848/">
+            <qti-interaction-modules>
+              <qti-interaction-module fallback-path="modules/shading.js" id="shading" primary-path="modules/shadingXX.js"/>
+            </qti-interaction-modules>
+            <qti-interaction-markup>
+            </qti-interaction-markup>
+          </qti-portable-custom-interaction>
+          <p>By the second week she has already saved the exact amount she planned on spending on the present ($30) and is trying to work out if she will be able to afford a more expensive present costing $45.</p>
+          <p>To help her do this use the buttons below to create a chart representing $45 assuming that each square represents $5 and then click to shade the fraction of the chart representing the amount saved in two weeks.</p>
+          <qti-portable-custom-interaction custom-interaction-type-identifier="urn:fdc:hmhco.com:pci:shading" data-controls="full" data-dimension1_initial="2" data-dimension2_initial="2" data-element_diameter="60" data-render="grid" data-selected_color="red" data-unselected_color="white" data-value="numShaded" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/b110b173-a4a7-4ec2-8dff-4988395da848/">
+            <qti-interaction-modules>
+              <qti-interaction-module fallback-path="modules/shading.js" id="shading" primary-path="modules/shadingYY.js"/>
+            </qti-interaction-modules>
+            <qti-interaction-markup>
+            </qti-interaction-markup>
+          </qti-portable-custom-interaction>
+        </div>
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "cito-pci-vanilla",
+    "guid": "0000-0022-0003",
+    "submissionMode": "individual",
     "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="cito-pci-vanilla" time-dependent="false" title="CITO Vanilla PCI" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
-      <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"></qti-response-declaration>
+      <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
       <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
         <qti-default-value>
          <qti-value>1.0</qti-value>
@@ -3912,10 +3953,10 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
   },
   {
     "identifier": "likert-OAT-PCI",
-    "guid": "0000-0022-0003",
+    "guid": "0000-0022-0004",
     "submissionMode": "individual",
     "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="likert-OAT-PCI" label="PCI likert" time-dependent="false" title="PCI likert" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
-      <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE"></qti-response-declaration>
+      <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE"/>
       <qti-item-body>
         <div class="qti-layout-row">
           <div class="qti-layout-col-12">
