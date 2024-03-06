@@ -4,7 +4,182 @@ const items = [
     "identifier": "card-08a-baseline",
     "guid": "0000-0009-0002a",
     "submissionMode": "simultaneous",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd \" identifier=\"card-08a-baseline\" title=\"card 08a baseline\" adaptive=\"false\" time-dependent=\"false\"><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE\"/><qti-response-declaration base-type=\"float\" cardinality=\"single\" identifier=\"RESPONSE_FLOAT\" /><qti-response-declaration base-type=\"boolean\" cardinality=\"single\" identifier=\"EndAttempt\" /><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\" normal-maximum=\"1\" normal-minimum=\"0\"><qti-default-value><qti-value>0</qti-value>  </qti-default-value></qti-outcome-declaration><!-- Define a feedback variable; its baseType is \"identifier\" so that it can contain the identifier of the feedback message --><qti-outcome-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"FEEDBACK\" /><!-- Define a variable used to display the student's response in feedback --><qti-outcome-declaration base-type=\"string\" cardinality=\"single\" identifier=\"FEEDBACK_RESPONSE\" /><qti-template-declaration identifier=\"SALESPRICE\" cardinality=\"single\" base-type=\"float\" math-variable=\"false\" param-variable=\"false\"/><qti-template-declaration identifier=\"TAX_PERCENT\" cardinality=\"single\" base-type=\"float\" math-variable=\"false\" param-variable=\"false\"/><qti-template-declaration identifier=\"SALESTAX\" cardinality=\"single\" base-type=\"float\" math-variable=\"false\" param-variable=\"false\"/><qti-template-declaration identifier=\"TOTAL\" cardinality=\"single\" base-type=\"float\" math-variable=\"false\" param-variable=\"false\"/><qti-template-processing><qti-set-template-value identifier=\"SALESPRICE\"><qti-integer-to-float><qti-random-integer min=\"2\" max=\"99\" step=\"1\"/></qti-integer-to-float></qti-set-template-value><qti-set-template-value identifier=\"TAX_PERCENT\"><qti-divide><qti-random-integer min=\"300\" max=\"700\" step=\"25\"/><qti-base-value base-type=\"float\">100</qti-base-value></qti-divide></qti-set-template-value><qti-set-template-value identifier=\"SALESTAX\"><qti-divide><qti-variable identifier=\"TAX_PERCENT\"/><qti-base-value base-type=\"float\">100</qti-base-value></qti-divide></qti-set-template-value><qti-set-template-value identifier=\"TOTAL\"><qti-round-to rounding-mode=\"decimalPlaces\" figures=\"2\"><qti-product><qti-variable identifier=\"SALESTAX\"/><qti-variable identifier=\"SALESPRICE\"/></qti-product></qti-round-to></qti-set-template-value><qti-set-correct-response identifier=\"RESPONSE_FLOAT\"><qti-variable identifier=\"TOTAL\"/></qti-set-correct-response></qti-template-processing><qti-item-body><div class=\"qti-layout-row\"><div class=\"qti-layout-col8\"><div class=\"qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded\"><div class=\"qti3-player-item-card-body qti-padding-2\"><div class=\"qti-layout-row\"><div class=\"qti-layout-col8\"><p>Find the sales tax.</p><table class=\"table table-bordered\"><thead><tr><th class=\"qti-align-center\" colspan=\"3\">Sales Tax</th></tr><tr><th scope=\"col\" class=\"qti-align-center qti-width-1-3\">Selling Price</th><th scope=\"col\" class=\"qti-align-center qti-width-1-3\">Rate of Sales Tax</th><th scope=\"col\" class=\"qti-align-center qti-width-1-3\">Sales Tax</th></tr></thead><tbody><tr><td class=\"qti-align-center\">$<qti-printed-variable identifier=\"SALESPRICE\" format=\"%.2f\" /></td><td class=\"qti-align-center\"><qti-printed-variable identifier=\"TAX_PERCENT\"/>%</td><td class=\"qti-align-center\">?</td></tr></tbody></table><hr /></div></div><p>The sales tax is $ <qti-text-entry-interaction class=\"qti-input-width-6\" pattern-mask=\"([0-9.\\-]{0,8})\" response-identifier=\"RESPONSE\" /> .</p><p>Hint: the correct answer is $<qti-printed-variable identifier=\"TOTAL\" format=\"%.2f\"/></p></div><!-- /card-body --><div class=\"qti3-player-item-card-footer qti-height-14 qti-padding-2\"><qti-end-attempt-interaction title=\"Check Answer\" class=\"endattempt-controller-bar\" response-identifier=\"EndAttempt\" data-steps=\"1\" data-hideprogress=\"true\" data-hastemplates=\"true\"/></div><!-- /card-footer --></div><!-- /card --></div><div class=\"qti-layout-col4\"><div class=\"qti-well qti-margin-b-0\"><strong>About This Item</strong><p><small>This is the first of a set of three  \"Find the Sales Tax\" items which demonstrate various adaptive and templating capabilities of the QTI 3 Player component and of QTI itself.</small></p><p><small>In this item, QTI template processing generates variable values for a Selling Price, a Sales Tax Rate, and the correct answer for the given values.</small></p><p><small>Upon clicking the <strong>Check Answer</strong> button, QTI 3 Player runs response processing, evaluates the response, and produces Modal Feedback.</small></p><p class=\"qti-margin-b-0\"><small>Click <strong>New Question</strong> to generate a new \"Find the Sales Tax\" item and new template values.</small></p></div></div></div><!-- /row --></qti-item-body><qti-response-processing><!-- Save off the response so we can echo it back to the student in feedback - if needed --><qti-set-outcome-value identifier=\"FEEDBACK_RESPONSE\"><qti-variable identifier=\"RESPONSE\"/>  </qti-set-outcome-value><qti-response-condition><!-- Evaluate the response --><qti-response-if><qti-is-null><qti-variable identifier=\"RESPONSE\"/></qti-is-null><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-base-value base-type=\"identifier\">incorrect</qti-base-value></qti-set-outcome-value>  </qti-response-if>  <qti-response-else-if><!-- Check numeric equivalence --><qti-equal tolerance-mode=\"exact\"><!-- The value of RESPONSE is compared with the correct value identified in the RESPONSE declaration--><qti-custom-operator class=\"math.stringToFloat\"><qti-variable identifier=\"RESPONSE\"/></qti-custom-operator><qti-correct identifier=\"RESPONSE_FLOAT\"/></qti-equal><!-- Response is numerically equivalent to the correct response.  Now check form. --><qti-response-condition><qti-response-if><qti-pattern-match pattern=\"[0-9]*\\.[0-9]{2}\"><qti-variable identifier=\"RESPONSE\"/></qti-pattern-match><qti-set-outcome-value identifier=\"SCORE\">  <qti-base-value base-type=\"float\">1</qti-base-value></qti-set-outcome-value><qti-set-outcome-value identifier=\"FEEDBACK\">  <qti-base-value base-type=\"identifier\">correct</qti-base-value></qti-set-outcome-value></qti-response-if><qti-response-else><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-base-value base-type=\"identifier\">wrongformat</qti-base-value></qti-set-outcome-value></qti-response-else></qti-response-condition></qti-response-else-if><qti-response-else><!--Depending on whether the input matches the correct answer or not, FEEDBACK  is given the value of the identifier of the appropriate feedback message--><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-base-value base-type=\"identifier\">incorrect</qti-base-value></qti-set-outcome-value></qti-response-else></qti-response-condition></qti-response-processing><!-- Note how the identifiers in the following modalFeedback elements match those of the setOutcomeValue elements above --><qti-modal-feedback outcome-identifier=\"FEEDBACK\" show-hide=\"show\" identifier=\"correct\"><qti-content-body><p>Well done! Correct.</p></qti-content-body></qti-modal-feedback><qti-modal-feedback outcome-identifier=\"FEEDBACK\" show-hide=\"show\" identifier=\"wrongformat\">  <qti-content-body><p>Almost correct. You entered the correct sales tax amount, but in the <em>wrong format</em>.</p><p>You entered: <qti-printed-variable identifier=\"FEEDBACK_RESPONSE\" /></p><p>However, currency is expressed with exactly two digits after the decimal point.</p></qti-content-body></qti-modal-feedback><qti-modal-feedback outcome-identifier=\"FEEDBACK\" show-hide=\"show\" identifier=\"incorrect\"><qti-content-body><p>Sorry. Incorrect.</p></qti-content-body></qti-modal-feedback></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="card-08a-baseline" title="card 08a baseline" adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+      <qti-response-declaration base-type="float" cardinality="single" identifier="RESPONSE_FLOAT" />
+      <qti-response-declaration base-type="boolean" cardinality="single" identifier="EndAttempt" />
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE" normal-maximum="1" normal-minimum="0">
+        <qti-default-value>
+          <qti-value>0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <!-- Define a feedback variable; its baseType is "identifier" so that it can contain the identifier of the feedback message -->
+      <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="FEEDBACK" />
+      <!-- Define a variable used to display the student's response in feedback -->
+      <qti-outcome-declaration base-type="string" cardinality="single" identifier="FEEDBACK_RESPONSE" />
+      <qti-template-declaration identifier="SALESPRICE" cardinality="single" base-type="float" math-variable="false" param-variable="false"/>
+      <qti-template-declaration identifier="TAX_PERCENT" cardinality="single" base-type="float" math-variable="false" param-variable="false"/>
+      <qti-template-declaration identifier="SALESTAX" cardinality="single" base-type="float" math-variable="false" param-variable="false"/>
+      <qti-template-declaration identifier="TOTAL" cardinality="single" base-type="float" math-variable="false" param-variable="false"/>
+      <qti-template-processing>
+        <qti-set-template-value identifier="SALESPRICE">
+          <qti-integer-to-float>
+            <qti-random-integer min="2" max="99" step="1"/>
+          </qti-integer-to-float>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="TAX_PERCENT">
+          <qti-divide>
+            <qti-random-integer min="300" max="700" step="25"/>
+            <qti-base-value base-type="float">100</qti-base-value>
+          </qti-divide>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="SALESTAX">
+          <qti-divide>
+            <qti-variable identifier="TAX_PERCENT"/>
+            <qti-base-value base-type="float">100</qti-base-value>
+          </qti-divide>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="TOTAL">
+          <qti-round-to rounding-mode="decimalPlaces" figures="2">
+            <qti-product>
+              <qti-variable identifier="SALESTAX"/>
+              <qti-variable identifier="SALESPRICE"/>
+            </qti-product>
+          </qti-round-to>
+        </qti-set-template-value>
+        <qti-set-correct-response identifier="RESPONSE_FLOAT">
+          <qti-variable identifier="TOTAL"/>
+        </qti-set-correct-response>
+      </qti-template-processing>
+      <qti-item-body>
+        <div class="qti-layout-row">
+          <div class="qti-layout-col8">
+            <div class="qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded">
+              <div class="qti3-player-item-card-body qti-padding-2">
+                <div class="qti-layout-row">
+                  <div class="qti-layout-col8">
+                    <p>Find the sales tax.</p>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th class="qti-align-center" colspan="3">Sales Tax</th>
+                        </tr>
+                        <tr>
+                          <th scope="col" class="qti-align-center qti-width-1-3">Selling Price</th>
+                          <th scope="col" class="qti-align-center qti-width-1-3">Rate of Sales Tax</th>
+                          <th scope="col" class="qti-align-center qti-width-1-3">Sales Tax</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="qti-align-center">$<qti-printed-variable identifier="SALESPRICE" format="%.2f" /></td>
+                          <td class="qti-align-center"><qti-printed-variable identifier="TAX_PERCENT"/>%</td>
+                          <td class="qti-align-center">?</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr />
+                  </div>
+                </div>
+                <p>
+                  The sales tax is $ <qti-text-entry-interaction class="qti-input-width-6" pattern-mask="([0-9.\\-]{0,8})" response-identifier="RESPONSE" /> .</p><p>Hint: the correct answer is $<qti-printed-variable identifier="TOTAL" format="%.2f"/>
+                </p>
+              </div><!-- /card-body -->
+              <div class="qti3-player-item-card-footer qti-height-14 qti-padding-2">
+                <qti-end-attempt-interaction title="Check Answer" class="endattempt-controller-bar" response-identifier="EndAttempt" data-steps="1" data-hideprogress="true" data-hastemplates="true"/>
+              </div><!-- /card-footer -->
+            </div><!-- /card -->
+          </div>
+          <div class="qti-layout-col4">
+            <div class="qti-well qti-margin-b-0">
+              <strong>About This Item</strong>
+              <p>
+                <small>This is the first of a set of three  "Find the Sales Tax" items which demonstrate various adaptive and templating capabilities of the QTI 3 Player component and of QTI itself.</small>
+              </p>
+              <p>
+                <small>In this item, QTI template processing generates variable values for a Selling Price, a Sales Tax Rate, and the correct answer for the given values.</small>
+              </p>
+              <p>
+                <small>Upon clicking the <strong>Check Answer</strong> button, QTI 3 Player runs response processing, evaluates the response, and produces Modal Feedback.</small>
+              </p>
+              <p class="qti-margin-b-0">
+                <small>Click <strong>New Question</strong> to generate a new "Find the Sales Tax" item and new template values.</small>
+              </p>
+            </div>
+          </div>
+        </div><!-- /row -->
+      </qti-item-body>
+      <qti-response-processing>
+        <!-- Save off the response so we can echo it back to the student in feedback - if needed -->
+        <qti-set-outcome-value identifier="FEEDBACK_RESPONSE">
+          <qti-variable identifier="RESPONSE"/>
+        </qti-set-outcome-value>
+        <qti-response-condition>
+          <!-- Evaluate the response -->
+          <qti-response-if>
+            <qti-is-null>
+              <qti-variable identifier="RESPONSE"/>
+            </qti-is-null>
+            <qti-set-outcome-value identifier="FEEDBACK">
+              <qti-base-value base-type="identifier">incorrect</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-if>
+          <qti-response-else-if>
+            <!-- Check numeric equivalence -->
+            <qti-equal tolerance-mode="exact">
+              <!-- The value of RESPONSE is compared with the correct value identified in the RESPONSE declaration-->
+              <qti-custom-operator class="math.stringToFloat">
+                <qti-variable identifier="RESPONSE"/>
+              </qti-custom-operator>
+              <qti-correct identifier="RESPONSE_FLOAT"/>
+            </qti-equal>
+            <!-- Response is numerically equivalent to the correct response.  Now check form. -->
+            <qti-response-condition>
+              <qti-response-if>
+                <qti-pattern-match pattern="[0-9]*\\.[0-9]{2}">
+                  <qti-variable identifier="RESPONSE"/>
+                </qti-pattern-match>
+                <qti-set-outcome-value identifier="SCORE">
+                  <qti-base-value base-type="float">1</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                  <qti-base-value base-type="identifier">correct</qti-base-value>
+                </qti-set-outcome-value>
+              </qti-response-if>
+              <qti-response-else>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                  <qti-base-value base-type="identifier">wrongformat</qti-base-value>
+                </qti-set-outcome-value>
+              </qti-response-else>
+            </qti-response-condition>
+          </qti-response-else-if>
+          <qti-response-else>
+            <!--Depending on whether the input matches the correct answer or not, FEEDBACK  is given the value of the identifier of the appropriate feedback message-->
+            <qti-set-outcome-value identifier="FEEDBACK">
+              <qti-base-value base-type="identifier">incorrect</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-else>
+        </qti-response-condition>
+      </qti-response-processing>
+      <!-- Note how the identifiers in the following modalFeedback elements match those of the setOutcomeValue elements above -->
+      <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct">
+        <qti-content-body>
+          <p>Well done! Correct.</p>
+        </qti-content-body>
+      </qti-modal-feedback>
+      <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="wrongformat">
+        <qti-content-body>
+          <p>Almost correct. You entered the correct sales tax amount, but in the <em>wrong format</em>.</p>
+          <p>You entered: <qti-printed-variable identifier="FEEDBACK_RESPONSE" /></p>
+          <p>However, currency is expressed with exactly two digits after the decimal point.</p>
+        </qti-content-body>
+      </qti-modal-feedback>
+      <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect">
+        <qti-content-body>
+          <p>Sorry. Incorrect.</p>
+        </qti-content-body>
+      </qti-modal-feedback>
+    </qti-assessment-item>`
   },
   {
     "identifier": "adaptivecard-08c-showexample",
@@ -32,7 +207,128 @@ const items = [
   {
     "identifier": "template_image",
     "guid": "0000-0009-0003",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" identifier=\"template_image\" title=\"Transportation\" adaptive=\"false\" time-dependent=\"false\"><!-- Thanks to Mark Stickley for the excellent images! --> <qti-response-declaration identifier=\"RESPONSE\" cardinality=\"single\" base-type=\"integer\"/> <qti-response-declaration identifier=\"EndAttempt\" cardinality=\"single\" base-type=\"boolean\"/> <qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"/> <qti-outcome-declaration identifier=\"MAXSCORE\" cardinality=\"single\" base-type=\"float\"> <qti-default-value> <qti-value>1</qti-value> </qti-default-value> </qti-outcome-declaration> <!--Define a feedback variable; its baseType is \"identifier\" so that it can contain the identifier of the feedback message--> <qti-outcome-declaration identifier=\"FEEDBACK\" cardinality=\"single\" base-type=\"identifier\"/> <qti-template-declaration identifier=\"TRANSPORT\" cardinality=\"single\" base-type=\"identifier\" math-variable=\"false\" param-variable=\"false\"/> <qti-template-declaration identifier=\"SPEED\" cardinality=\"single\" base-type=\"integer\" math-variable=\"false\" param-variable=\"false\"/> <qti-template-processing> <qti-set-template-value identifier=\"TRANSPORT\"> <qti-random> <qti-multiple> <qti-base-value base-type=\"identifier\">plane</qti-base-value> <qti-base-value base-type=\"identifier\">train</qti-base-value> <qti-base-value base-type=\"identifier\">bus</qti-base-value> </qti-multiple> </qti-random> </qti-set-template-value> <qti-template-condition> <qti-template-if> <qti-match> <qti-variable identifier=\"TRANSPORT\"/> <qti-base-value base-type=\"identifier\">plane</qti-base-value> </qti-match> <qti-set-template-value identifier=\"SPEED\"> <qti-base-value base-type=\"integer\">600</qti-base-value> </qti-set-template-value> </qti-template-if> <qti-template-else-if> <qti-match> <qti-variable identifier=\"TRANSPORT\"/> <qti-base-value base-type=\"identifier\">train</qti-base-value> </qti-match> <qti-set-template-value identifier=\"SPEED\"> <qti-base-value base-type=\"integer\">200</qti-base-value> </qti-set-template-value> </qti-template-else-if> <qti-template-else> <qti-set-template-value identifier=\"SPEED\"> <qti-base-value base-type=\"integer\">50</qti-base-value> </qti-set-template-value> </qti-template-else> </qti-template-condition> <qti-set-correct-response identifier=\"RESPONSE\"> <qti-product> <qti-base-value base-type=\"integer\">3</qti-base-value> <qti-variable identifier=\"SPEED\"/> </qti-product> </qti-set-correct-response> </qti-template-processing><qti-item-body><div class=\"qti-layout-row\"><div class=\"qti-layout-col8\"><div class=\"qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded\"><div class=\"qti3-player-item-card-body qti-padding-2\"><h2>Mick's Travels</h2><p><qti-template-inline template-identifier=\"TRANSPORT\" show-hide=\"show\" identifier=\"plane\"><img src=\"https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/plane.png\" alt=\"Picture of a plane.\" width=\"100%\"/></qti-template-inline><qti-template-inline template-identifier=\"TRANSPORT\" show-hide=\"show\" identifier=\"train\"><img src=\"https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/train.png\" alt=\"Picture of a train\" width=\"100%\"/></qti-template-inline><qti-template-inline template-identifier=\"TRANSPORT\" show-hide=\"show\" identifier=\"bus\"><img src=\"https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/bus.png\" alt=\"Picture of a bus\" width=\"100%\"/></qti-template-inline></p><p>Mick travels at an average speed of <qti-printed-variable identifier=\"SPEED\"/> km/h.</p> <p>How far does he travel in 3 hours? <qti-text-entry-interaction class=\"qti-input-width-3\" pattern-mask=\"([0-9.\\-]{0,6})\" response-identifier=\"RESPONSE\" expected-length=\"8\"/> km.</p></div> <!-- /card-body --><div class=\"qti3-player-item-card-footer qti-height-14 qti-padding-2\"><qti-end-attempt-interaction title=\"Check Answer\" class=\"endattempt-controller-bar\" response-identifier=\"EndAttempt\" data-steps=\"1\" data-hideprogress=\"true\" data-hastemplates=\"true\" /></div> <!-- /card-footer --></div> <!-- /card --></div><div class=\"qti-layout-col4\"><div class=\"qti-well qti-margin-b-0\"><strong>About This Item</strong><p><small>Template processing is used to randomly compute 1 of 3 permutations (plane, train, bus) of this item.  QTI 3 Player performs the template computation, computes the correct answer, and displays the resulting computed template.  Upon clicking the <strong>Check Answer</strong> button, QTI 3 Player ends the attempt, scores the response, and displays modal feedback.</small></p><p class=\"qti-margin-b-0\"><small>The template variables - and the new correct answer - are re-computed each time you click the <strong>New Question</strong> button.</small></p></div></div></div><!-- /row --></qti-item-body><qti-response-processing> <qti-response-condition> <qti-response-if> <qti-match> <!--The value of RESPONSE is compared with the correct value identified in the RESPONSE declaration--> <qti-variable identifier=\"RESPONSE\"/> <qti-correct identifier=\"RESPONSE\"/> </qti-match> <qti-set-outcome-value identifier=\"SCORE\"> <qti-variable identifier=\"MAXSCORE\"/> </qti-set-outcome-value> <qti-set-outcome-value identifier=\"FEEDBACK\"> <qti-base-value base-type=\"identifier\">correct</qti-base-value> </qti-set-outcome-value> </qti-response-if> <qti-response-else> <!--Depending on whether the input matches the correct answer or not, FEEDBACK is given the value of the identifier of the appropriate feedback message--> <qti-set-outcome-value identifier=\"FEEDBACK\"> <qti-base-value base-type=\"identifier\">incorrect</qti-base-value> </qti-set-outcome-value> </qti-response-else> </qti-response-condition> </qti-response-processing> <!-- Note how the identifiers in the following modalFeedback elements match those of the setOutcomeValue elements above --> <qti-modal-feedback outcome-identifier=\"FEEDBACK\" show-hide=\"show\" identifier=\"correct\"> <qti-content-body>Well done! Correct.</qti-content-body> </qti-modal-feedback> <qti-modal-feedback outcome-identifier=\"FEEDBACK\" show-hide=\"show\" identifier=\"incorrect\"> <qti-content-body> Sorry. Incorrect.</qti-content-body></qti-modal-feedback></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="template_image" title="Transportation" adaptive="false" time-dependent="false">
+      <!-- Thanks to Mark Stickley for the excellent images! -->
+      <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="integer"/>
+      <qti-response-declaration identifier="EndAttempt" cardinality="single" base-type="boolean"/>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+        <qti-default-value><qti-value>1</qti-value></qti-default-value>
+      </qti-outcome-declaration>
+      <!--Define a feedback variable; its baseType is "identifier" so that it can contain the identifier of the feedback message-->
+      <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+      <qti-template-declaration identifier="TRANSPORT" cardinality="single" base-type="identifier" math-variable="false" param-variable="false"/>
+      <qti-template-declaration identifier="SPEED" cardinality="single" base-type="integer" math-variable="false" param-variable="false"/>
+      <qti-template-processing>
+        <qti-set-template-value identifier="TRANSPORT">
+          <qti-random>
+            <qti-multiple>
+              <qti-base-value base-type="identifier">plane</qti-base-value>
+              <qti-base-value base-type="identifier">train</qti-base-value>
+              <qti-base-value base-type="identifier">bus</qti-base-value>
+            </qti-multiple>
+          </qti-random>
+        </qti-set-template-value>
+        <qti-template-condition>
+          <qti-template-if>
+            <qti-match>
+              <qti-variable identifier="TRANSPORT"/>
+              <qti-base-value base-type="identifier">plane</qti-base-value>
+            </qti-match>
+            <qti-set-template-value identifier="SPEED">
+              <qti-base-value base-type="integer">600</qti-base-value>
+            </qti-set-template-value>
+          </qti-template-if>
+          <qti-template-else-if>
+            <qti-match>
+              <qti-variable identifier="TRANSPORT"/>
+              <qti-base-value base-type="identifier">train</qti-base-value>
+            </qti-match>
+            <qti-set-template-value identifier="SPEED">
+              <qti-base-value base-type="integer">200</qti-base-value>
+            </qti-set-template-value>
+          </qti-template-else-if>
+          <qti-template-else>
+            <qti-set-template-value identifier="SPEED">
+              <qti-base-value base-type="integer">50</qti-base-value>
+            </qti-set-template-value>
+          </qti-template-else>
+        </qti-template-condition>
+        <qti-set-correct-response identifier="RESPONSE">
+          <qti-product>
+            <qti-base-value base-type="integer">3</qti-base-value>
+            <qti-variable identifier="SPEED"/>
+          </qti-product>
+        </qti-set-correct-response>
+      </qti-template-processing>
+      <qti-item-body>
+        <div class="qti-layout-row">
+          <div class="qti-layout-col8">
+            <div class="qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded">
+              <div class="qti3-player-item-card-body qti-padding-2">
+                <h2>Mick's Travels</h2>
+                <p>
+                  <qti-template-inline template-identifier="TRANSPORT" show-hide="show" identifier="plane"><img src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/plane.png" alt="Picture of a plane." width="100%"/></qti-template-inline>
+                  <qti-template-inline template-identifier="TRANSPORT" show-hide="show" identifier="train"><img src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/train.png" alt="Picture of a train" width="100%"/></qti-template-inline>
+                  <qti-template-inline template-identifier="TRANSPORT" show-hide="show" identifier="bus"><img src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/bus.png" alt="Picture of a bus" width="100%"/></qti-template-inline>
+                </p>
+                <p>
+                  Mick travels at an average speed of <qti-printed-variable identifier="SPEED"/> km/h.
+                </p>
+                <p>
+                  How far does he travel in 3 hours? <qti-text-entry-interaction class="qti-input-width-3" pattern-mask="([0-9.\\-]{0,6})" response-identifier="RESPONSE" expected-length="8"/> km.
+                </p>
+              </div> <!-- /card-body -->
+              <div class="qti3-player-item-card-footer qti-height-14 qti-padding-2">
+                <qti-end-attempt-interaction title="Check Answer" class="endattempt-controller-bar" response-identifier="EndAttempt" data-steps="1" data-hideprogress="true" data-hastemplates="true" />
+              </div> <!-- /card-footer -->
+            </div> <!-- /card -->
+          </div>
+          <div class="qti-layout-col4">
+            <div class="qti-well qti-margin-b-0">
+              <strong>About This Item</strong>
+              <p>
+                <small>Template processing is used to randomly compute 1 of 3 permutations (plane, train, bus) of this item.  QTI 3 Player performs the template computation, computes the correct answer, and displays the resulting computed template.  Upon clicking the <strong>Check Answer</strong> button, QTI 3 Player ends the attempt, scores the response, and displays modal feedback.</small>
+              </p>
+              <p class="qti-margin-b-0">
+                <small>The template variables - and the new correct answer - are re-computed each time you click the <strong>New Question</strong> button.</small>
+              </p>
+            </div>
+          </div>
+        </div><!-- /row -->
+      </qti-item-body>
+      <qti-response-processing>
+        <qti-response-condition>
+          <qti-response-if>
+            <qti-match>
+              <!--The value of RESPONSE is compared with the correct value identified in the RESPONSE declaration-->
+              <qti-variable identifier="RESPONSE"/>
+              <qti-correct identifier="RESPONSE"/>
+            </qti-match>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-variable identifier="MAXSCORE"/>
+            </qti-set-outcome-value>
+            <qti-set-outcome-value identifier="FEEDBACK">
+              <qti-base-value base-type="identifier">correct</qti-base-value
+            </qti-set-outcome-value>
+          </qti-response-if>
+          <qti-response-else>
+            <!--Depending on whether the input matches the correct answer or not, FEEDBACK is given the value of the identifier of the appropriate feedback message-->
+            <qti-set-outcome-value identifier="FEEDBACK">
+              <qti-base-value base-type="identifier">incorrect</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-else>
+        </qti-response-condition>
+      </qti-response-processing>
+
+      <!-- Note how the identifiers in the following modalFeedback elements match those of the setOutcomeValue elements above -->
+      <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct">
+        <qti-content-body>Well done! Correct.</qti-content-body>
+      </qti-modal-feedback>
+      <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect">
+        <qti-content-body> Sorry. Incorrect.</qti-content-body>
+      </qti-modal-feedback>
+    </qti-assessment-item>`
   },
   {
     "identifier": "Example03-feedbackBlock-solution-qti3",
@@ -42,7 +338,156 @@ const items = [
   {
     "identifier": "ms-choice-templated-qti3",
     "guid": "0000-0009-0005",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <qti-assessment-item xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" identifier=\"ms-choice-templated-qti3\" time-dependent=\"false\" title=\"ms-choice-templated-qti3\" xml:lang=\"en\"> <qti-response-declaration base-type=\"identifier\" cardinality=\"multiple\" identifier=\"RESPONSE\"> <qti-correct-response> <qti-value>D</qti-value> <qti-value>E</qti-value> </qti-correct-response> </qti-response-declaration> <qti-response-declaration base-type=\"boolean\" cardinality=\"single\" identifier=\"EndAttempt\"/> <qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\" normal-maximum=\"1.0\" normal-minimum=\"0.0\"> <qti-default-value> <qti-value>0</qti-value> </qti-default-value> </qti-outcome-declaration> <qti-outcome-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"FEEDBACK\" /> <qti-template-declaration identifier=\"a\" cardinality=\"single\" base-type=\"integer\" math-variable=\"true\" param-variable=\"true\"/> <qti-template-declaration identifier=\"b\" cardinality=\"single\" base-type=\"integer\" math-variable=\"true\" param-variable=\"true\"/> <qti-template-declaration identifier=\"c\" cardinality=\"single\" base-type=\"integer\" math-variable=\"true\" param-variable=\"true\"/> <qti-template-declaration identifier=\"d\" cardinality=\"single\" base-type=\"integer\" math-variable=\"true\" param-variable=\"true\"/> <qti-template-processing> <qti-set-template-value identifier=\"a\"> <qti-random-integer min=\"2\" max=\"20\"/> </qti-set-template-value> <qti-set-template-value identifier=\"b\"> <qti-random-integer min=\"3\" max=\"13\"/> </qti-set-template-value> <qti-set-template-value identifier=\"c\"> <qti-integer-divide> <qti-variable identifier=\"a\"/> <qti-variable identifier=\"b\"/> </qti-integer-divide> </qti-set-template-value> <qti-set-template-value identifier=\"d\"> <qti-integer-modulus> <qti-variable identifier=\"a\"/> <qti-variable identifier=\"b\"/> </qti-integer-modulus> </qti-set-template-value> <qti-template-constraint> <qti-and> <qti-gt> <qti-variable identifier=\"a\"/> <qti-variable identifier=\"b\"/> </qti-gt> <qti-not> <qti-equal tolerance-mode=\"exact\"> <qti-variable identifier=\"c\"/> <qti-variable identifier=\"d\"/> </qti-equal> </qti-not> <qti-not> <qti-equal tolerance-mode=\"exact\"> <qti-variable identifier=\"d\"/> <qti-base-value base-type=\"integer\">0</qti-base-value> </qti-equal> </qti-not> </qti-and> </qti-template-constraint> </qti-template-processing><qti-item-body><div class=\"qti-layout-row\"><div class=\"qti-layout-col8\"><div class=\"qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded\"><div class=\"qti3-player-item-card-body qti-padding-2\"><qti-choice-interaction class=\"qti-labels-none\" shuffle=\"true\" max-choices=\"5\" min-choices=\"1\" response-identifier=\"RESPONSE\"> <qti-prompt> <p> Select <strong>all</strong> values equivalent to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac bevelled=\"false\"><mi>a</mi><mi>b</mi></mfrac></math>. </p> </qti-prompt> <qti-simple-choice identifier=\"A\"> <p> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac bevelled=\"false\"><mrow><mo>-</mo><mi>a</mi></mrow><mrow><mo>-</mo><mi>b</mi></mrow></mfrac></math> </p> </qti-simple-choice> <qti-simple-choice identifier=\"B\"> <p> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mi>d</mi><mfrac bevelled=\"false\"><mi>c</mi><mi>b</mi></mfrac></math> </p> </qti-simple-choice> <qti-simple-choice identifier=\"C\"> <p> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi><mfrac bevelled=\"false\"><mi>d</mi><mi>b</mi></mfrac></math> </p> </qti-simple-choice> <qti-simple-choice identifier=\"D\"> <p> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac bevelled=\"false\"><mrow><mo>-</mo><mi>a</mi></mrow><mrow><mo>-</mo><mi>b</mi></mrow></mfrac></math> </p> </qti-simple-choice> <qti-simple-choice identifier=\"E\"> <p> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mi>c</mi><mfrac bevelled=\"false\"><mi>d</mi><mi>b</mi></mfrac></math> </p> </qti-simple-choice> </qti-choice-interaction></div><!-- /card-body --><div class=\"qti3-player-item-card-footer qti-height-14 qti-padding-2\"><qti-end-attempt-interaction title=\"Check Answer\" class=\"endattempt-controller-bar\" response-identifier=\"EndAttempt\" data-steps=\"1\" data-hastemplates=\"true\" data-hideprogress=\"true\"/></div> <!-- /card-footer --></div> <!-- /card --></div><div class=\"qti-layout-col4\"><div class=\"qti-well qti-margin-b-0\"><strong>About This Item</strong><p><small>Template processing is used to compute four variables (numerator, denominator, quotient, and a remainder) with values that are constrained so that the prompt's numerator is always greater than the denominator.  The computed variable values are then \"stamped\" (using QTI's math variable templating capability) into the MathML expressions in the prompt and choices. The choices are then shuffled to randomize the order of the choices.</small></p><p class=\"qti-margin-b-0\"><small>The template variables are re-computed each time you click the <strong>New Question</strong> button.  This permits a virtually-infinite number of items from one QTI item XML definition - all handled by the QTI 3 Player component.</small></p></div></div></div><!-- /row --></qti-item-body><qti-response-processing><qti-response-condition><qti-response-if> <qti-match> <qti-variable identifier=\"RESPONSE\"/> <qti-correct identifier=\"RESPONSE\"/></qti-match><qti-set-outcome-value identifier=\"SCORE\"> <qti-base-value base-type=\"float\"> 1 </qti-base-value> </qti-set-outcome-value> <qti-set-outcome-value identifier=\"FEEDBACK\"> <qti-base-value base-type=\"identifier\">correct</qti-base-value> </qti-set-outcome-value> </qti-response-if> <qti-response-else> <qti-set-outcome-value identifier=\"SCORE\"> <qti-base-value base-type=\"float\"> 0 </qti-base-value> </qti-set-outcome-value> <qti-set-outcome-value identifier=\"FEEDBACK\"> <qti-base-value base-type=\"identifier\">incorrect</qti-base-value> </qti-set-outcome-value> </qti-response-else> </qti-response-condition> </qti-response-processing> <qti-modal-feedback outcome-identifier=\"FEEDBACK\" identifier=\"correct\" show-hide=\"show\"> <qti-content-body><div>Well done!</div></qti-content-body></qti-modal-feedback> <qti-modal-feedback outcome-identifier=\"FEEDBACK\" identifier=\"incorrect\" show-hide=\"show\"> <qti-content-body><div>Sorry, your answer is not correct.</div></qti-content-body></qti-modal-feedback></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="ms-choice-templated-qti3" time-dependent="false" title="ms-choice-templated-qti3" xml:lang="en">
+    <qti-response-declaration base-type="identifier" cardinality="multiple" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>D</qti-value>
+        <qti-value>E</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration base-type="boolean" cardinality="single" identifier="EndAttempt"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE" normal-maximum="1.0" normal-minimum="0.0">
+      <qti-default-value>
+        <qti-value>0</qti-value>
+      </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="FEEDBACK" />
+    <qti-template-declaration identifier="a" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+    <qti-template-declaration identifier="b" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+    <qti-template-declaration identifier="c" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+    <qti-template-declaration identifier="d" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+    <qti-template-processing>
+      <qti-set-template-value identifier="a">
+        <qti-random-integer min="2" max="20"/>
+      </qti-set-template-value>
+      <qti-set-template-value identifier="b">
+        <qti-random-integer min="3" max="13"/>
+      </qti-set-template-value>
+      <qti-set-template-value identifier="c">
+        <qti-integer-divide>
+          <qti-variable identifier="a"/>
+          <qti-variable identifier="b"/>
+        </qti-integer-divide>
+      </qti-set-template-value>
+      <qti-set-template-value identifier="d">
+        <qti-integer-modulus>
+          <qti-variable identifier="a"/>
+          <qti-variable identifier="b"/>
+        </qti-integer-modulus>
+      </qti-set-template-value>
+      <!-- Terminate template processing when the following constraints are true -->
+      <qti-template-constraint>
+        <qti-and>
+          <qti-gt>
+            <qti-variable identifier="a"/>
+            <qti-variable identifier="b"/>
+          </qti-gt>
+          <qti-not>
+            <qti-equal tolerance-mode="exact">
+              <qti-variable identifier="c"/>
+              <qti-variable identifier="d"/>
+            </qti-equal>
+          </qti-not>
+          <qti-not>
+            <qti-equal tolerance-mode="exact">
+              <qti-variable identifier="d"/>
+              <qti-base-value base-type="integer">0</qti-base-value>
+            </qti-equal>
+          </qti-not>
+        </qti-and>
+      </qti-template-constraint>
+    </qti-template-processing>
+    <qti-item-body>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col8">
+          <div class="qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded">
+            <div class="qti3-player-item-card-body qti-padding-2">
+              <qti-choice-interaction class="qti-labels-none" shuffle="true" max-choices="5" min-choices="1" response-identifier="RESPONSE">
+                <qti-prompt>
+                  <p>
+                    Select <strong>all</strong> values equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac bevelled="false"><mi>a</mi><mi>b</mi></mfrac></math>.
+                  </p>
+                </qti-prompt>
+                <qti-simple-choice identifier="A">
+                  <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="false"><mrow><mo>-</mo><mi>a</mi></mrow><mrow><mo>-</mo><mi>b</mi></mrow></mfrac></math>
+                  </p>
+                </qti-simple-choice>
+                <qti-simple-choice identifier="B">
+                  <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>d</mi><mfrac bevelled="false"><mi>c</mi><mi>b</mi></mfrac></math>
+                  </p>
+                </qti-simple-choice>
+                <qti-simple-choice identifier="C">
+                  <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mfrac bevelled="false"><mi>d</mi><mi>b</mi></mfrac></math>
+                  </p>
+                </qti-simple-choice>
+                <qti-simple-choice identifier="D">
+                  <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac bevelled="false"><mrow><mo>-</mo><mi>a</mi></mrow><mrow><mo>-</mo><mi>b</mi></mrow></mfrac></math>
+                  </p>
+                </qti-simple-choice>
+                <qti-simple-choice identifier="E">
+                  <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>c</mi><mfrac bevelled="false"><mi>d</mi><mi>b</mi></mfrac></math>
+                  </p>
+                </qti-simple-choice>
+              </qti-choice-interaction>
+            </div><!-- /card-body -->
+            <div class="qti3-player-item-card-footer qti-height-14 qti-padding-2">
+              <qti-end-attempt-interaction title="Check Answer" class="endattempt-controller-bar" response-identifier="EndAttempt" data-steps="1" data-hastemplates="true" data-hideprogress="true"/>
+            </div> <!-- /card-footer -->
+          </div> <!-- /card -->
+        </div>
+        <div class="qti-layout-col4">
+          <div class="qti-well qti-margin-b-0">
+            <strong>About This Item</strong>
+            <p>
+              <small>Template processing is used to compute four variables (numerator, denominator, quotient, and a remainder) with values that are constrained so that the prompt's numerator is always greater than the denominator.  The computed variable values are then "stamped" (using QTI's math variable templating capability) into the MathML expressions in the prompt and choices. The choices are then shuffled to randomize the order of the choices.</small>
+            </p>
+            <p class="qti-margin-b-0">
+              <small>The template variables are re-computed each time you click the <strong>New Question</strong> button.  This permits a virtually-infinite number of items from one QTI item XML definition - all handled by the QTI 3 Player component.</small>
+            </p>
+          </div>
+        </div>
+      </div><!-- /row -->
+    </qti-item-body>
+    <qti-response-processing>
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-match>
+            <qti-variable identifier="RESPONSE"/>
+            <qti-correct identifier="RESPONSE"/>
+          </qti-match>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-base-value base-type="float">1</qti-base-value>
+          </qti-set-outcome-value>
+          <qti-set-outcome-value identifier="FEEDBACK">
+            <qti-base-value base-type="identifier">correct</qti-base-value>
+          </qti-set-outcome-value>
+        </qti-response-if>
+        <qti-response-else>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-base-value base-type="float">0</qti-base-value>
+          </qti-set-outcome-value>
+          <qti-set-outcome-value identifier="FEEDBACK">
+            <qti-base-value base-type="identifier">incorrect</qti-base-value>
+          </qti-set-outcome-value>
+        </qti-response-else>
+      </qti-response-condition>
+    </qti-response-processing>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" identifier="correct" show-hide="show">
+      <qti-content-body>
+        <div>Well done!</div>
+      </qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" identifier="incorrect" show-hide="show">
+      <qti-content-body>
+        <div>Sorry, your answer is not correct.</div>
+      </qti-content-body>
+    </qti-modal-feedback>
+  </qti-assessment-item>`
   },
   {
     "identifier": "i19b-shared-css-vocab-1",
@@ -590,16 +1035,84 @@ const items = [
     "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<!-- This example adapted from the Smarter Balanced IRP, copyright Smarter Balanced. -->\r\n<qti-assessment-item \r\n  xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n  xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" \r\n  xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\"  \r\n  identifier=\"sbac-200-183300\" time-dependent=\"false\" title=\"sbac-200-183300\" xml:lang=\"en\">\r\n  <qti-response-declaration base-type=\"identifier\" cardinality=\"multiple\" identifier=\"RESPONSE\">\r\n    <qti-correct-response>\r\n      <qti-value>D<\/qti-value>\r\n      <qti-value>E<\/qti-value>\r\n    <\/qti-correct-response>\r\n  <\/qti-response-declaration>\r\n  <qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\" normal-maximum=\"1.0\" normal-minimum=\"0.0\">\r\n    <qti-default-value>\r\n      <qti-value>0<\/qti-value>\r\n    <\/qti-default-value>\r\n  <\/qti-outcome-declaration>\r\n  \r\n  <qti-outcome-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"FEEDBACK\" \/>\r\n  \r\n  <qti-item-body class=\"sbac sbac-global-item-catalog-ref\" data-catalog-idref=\"item-183300-global\">\r\n    <div class=\"qti-layout-row\">\r\n      <div class=\"qti-layout-col8 qti-layout-offset2\">\r\n        <div class=\"prompt\">\r\n          <strong>sbac-200-183300<\/strong><hr \/>\r\n          <p>\r\n            Select <strong>all<\/strong> values equivalent to <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mo>-<\/mo><mfrac bevelled=\"false\"><mi>10<\/mi><mi>7<\/mi><\/mfrac><\/math>.\r\n          <\/p>\r\n        <\/div>\r\n        <qti-choice-interaction class=\"sbac qti-labels-none\" shuffle=\"true\" max-choices=\"5\" min-choices=\"1\" response-identifier=\"RESPONSE\">\r\n          <qti-simple-choice identifier=\"A\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mfrac bevelled=\"false\"><mrow><mo>-<\/mo><mi>10<\/mi><\/mrow><mrow><mo>-<\/mo><mi>7<\/mi><\/mrow><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n          <qti-simple-choice identifier=\"B\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mo>-<\/mo><mi>3<\/mi><mfrac bevelled=\"false\"><mi>1<\/mi><mi>7<\/mi><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n          <qti-simple-choice identifier=\"C\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mi>1<\/mi><mfrac bevelled=\"false\"><mi>3<\/mi><mi>7<\/mi><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n          <qti-simple-choice identifier=\"D\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mo>-<\/mo><mfrac bevelled=\"false\"><mrow><mo>-<\/mo><mi>10<\/mi><\/mrow><mrow><mo>-<\/mo><mi>7<\/mi><\/mrow><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n          <qti-simple-choice identifier=\"E\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mo>-<\/mo><mi>1<\/mi><mfrac bevelled=\"false\"><mi>3<\/mi><mi>7<\/mi><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n      <\/div>\r\n    <\/div>\r\n  <\/qti-item-body>\r\n  <qti-response-processing>\r\n    <qti-response-condition>\r\n      <qti-response-if>\r\n        <qti-match>\r\n          <qti-variable identifier=\"RESPONSE\"\/>\r\n          <qti-correct identifier=\"RESPONSE\"\/>\r\n        <\/qti-match>\r\n        <qti-set-outcome-value identifier=\"SCORE\">\r\n          <qti-base-value base-type=\"float\">\r\n          1\r\n          <\/qti-base-value>\r\n        <\/qti-set-outcome-value>\r\n        <qti-set-outcome-value identifier=\"FEEDBACK\">\r\n\t  <qti-base-value base-type=\"identifier\">correct<\/qti-base-value>\r\n        <\/qti-set-outcome-value>\r\n      <\/qti-response-if>\r\n      <qti-response-else>\r\n        <qti-set-outcome-value identifier=\"SCORE\">\r\n          <qti-base-value base-type=\"float\">\r\n          0\r\n          <\/qti-base-value>\r\n        <\/qti-set-outcome-value>\r\n        <qti-set-outcome-value identifier=\"FEEDBACK\">\r\n          <qti-base-value base-type=\"identifier\">incorrect<\/qti-base-value>\r\n        <\/qti-set-outcome-value>\r\n      <\/qti-response-else>\r\n    <\/qti-response-condition>\r\n  <\/qti-response-processing>\r\n  <qti-modal-feedback outcome-identifier=\"FEEDBACK\" identifier=\"correct\" show-hide=\"show\">\r\n    <qti-content-body>\r\n      <div class=\"alert alert-success d-flex align-items-center\" role=\"alert\">\r\n        <i class=\"mdi mdi-check-circle mdi-24px\"><\/i>\r\n        <div class=\"mxl-feedback-inline-msg\">Well done!<\/div>\r\n      <\/div>\r\n    <\/qti-content-body>\r\n  <\/qti-modal-feedback>\r\n  <qti-modal-feedback outcome-identifier=\"FEEDBACK\" identifier=\"incorrect\" show-hide=\"show\">\r\n    <qti-content-body>\r\n      <div class=\"alert alert-danger d-flex align-items-center\" role=\"alert\">\r\n        <i class=\"mdi mdi-close-circle mdi-24px\"><\/i>\r\n        <div class=\"mxl-feedback-inline-msg\">\r\n          <p>Sorry, your answer is not correct.<\/p>\r\n        <\/div>\r\n      <\/div>\r\n    <\/qti-content-body>\r\n  <\/qti-modal-feedback>\r\n<\/qti-assessment-item>"
   },
   {
-    "identifier": "sbac-choice-templated-qti3",
-    "guid": "0000-0010-0002",
-    "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<!-- This example adapted from the Smarter Balanced IRP, copyright Smarter Balanced. -->\r\n<qti-assessment-item \r\n  xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n  xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" \r\n  xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\"  \r\n  identifier=\"sbac-200-183300-templated\" time-dependent=\"false\" title=\"sbac-200-183300-templated\" xml:lang=\"en\">\r\n  <qti-response-declaration base-type=\"identifier\" cardinality=\"multiple\" identifier=\"RESPONSE\">\r\n    <qti-correct-response>\r\n      <qti-value>D<\/qti-value>\r\n      <qti-value>E<\/qti-value>\r\n    <\/qti-correct-response>\r\n  <\/qti-response-declaration>\r\n  <qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\" normal-maximum=\"1.0\" normal-minimum=\"0.0\">\r\n    <qti-default-value>\r\n      <qti-value>0<\/qti-value>\r\n    <\/qti-default-value>\r\n  <\/qti-outcome-declaration>\r\n  \r\n  <qti-outcome-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"FEEDBACK\" \/>\r\n\r\n  <qti-template-declaration identifier=\"a\" cardinality=\"single\" base-type=\"integer\" math-variable=\"true\" param-variable=\"true\"\/>\r\n  <qti-template-declaration identifier=\"b\" cardinality=\"single\" base-type=\"integer\" math-variable=\"true\" param-variable=\"true\"\/>\r\n  <qti-template-declaration identifier=\"c\" cardinality=\"single\" base-type=\"integer\" math-variable=\"true\" param-variable=\"true\"\/>\r\n  <qti-template-declaration identifier=\"d\" cardinality=\"single\" base-type=\"integer\" math-variable=\"true\" param-variable=\"true\"\/>\r\n\r\n  <qti-template-processing>\r\n    <qti-set-template-value identifier=\"a\">\r\n      <qti-random-integer min=\"2\" max=\"20\"\/>\r\n    <\/qti-set-template-value>\r\n    <qti-set-template-value identifier=\"b\">\r\n      <qti-random-integer min=\"3\" max=\"13\"\/>\r\n    <\/qti-set-template-value>\r\n    <qti-set-template-value identifier=\"c\">   \r\n      <qti-integer-divide>\r\n        <qti-variable identifier=\"a\"\/>\r\n        <qti-variable identifier=\"b\"\/>\r\n      <\/qti-integer-divide>\r\n    <\/qti-set-template-value> \r\n    <qti-set-template-value identifier=\"d\">   \r\n      <qti-integer-modulus>\r\n        <qti-variable identifier=\"a\"\/>\r\n        <qti-variable identifier=\"b\"\/>\r\n      <\/qti-integer-modulus>\r\n    <\/qti-set-template-value>\r\n    <qti-template-constraint>\r\n      <qti-and>\r\n        <qti-gt>\r\n          <qti-variable identifier=\"a\"\/>\r\n          <qti-variable identifier=\"b\"\/>\r\n        <\/qti-gt>\r\n        <qti-not>\r\n          <qti-equal tolerance-mode=\"exact\">\r\n            <qti-variable identifier=\"c\"\/>\r\n            <qti-variable identifier=\"d\"\/>\r\n          <\/qti-equal>\r\n        <\/qti-not>\r\n        <qti-not>\r\n          <qti-equal tolerance-mode=\"exact\">\r\n            <qti-variable identifier=\"d\"\/>\r\n            <qti-base-value base-type=\"integer\">0<\/qti-base-value>\r\n          <\/qti-equal>\r\n        <\/qti-not>\r\n      <\/qti-and>\r\n    <\/qti-template-constraint>\r\n  <\/qti-template-processing>\r\n  \r\n  <qti-item-body class=\"sbac sbac-global-item-catalog-ref\" data-catalog-idref=\"item-183300-global\">\r\n    <div class=\"qti-layout-row\">\r\n      <div class=\"qti-layout-col8 qti-layout-offset2\">\r\n        <div class=\"prompt\">\r\n          <strong>sbac-200-183300 <em>with templating<\/em><\/strong><hr \/>\r\n          <p>\r\n            Select <strong>all<\/strong> values equivalent to <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mo>-<\/mo><mfrac bevelled=\"false\"><mi>a<\/mi><mi>b<\/mi><\/mfrac><\/math>.\r\n          <\/p>\r\n        <\/div>\r\n        <qti-choice-interaction class=\"sbac qti-labels-none\" shuffle=\"true\" max-choices=\"5\" min-choices=\"1\" response-identifier=\"RESPONSE\">\r\n          <qti-simple-choice identifier=\"A\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mfrac bevelled=\"false\"><mrow><mo>-<\/mo><mi>a<\/mi><\/mrow><mrow><mo>-<\/mo><mi>b<\/mi><\/mrow><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n          <qti-simple-choice identifier=\"B\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mo>-<\/mo><mi>d<\/mi><mfrac bevelled=\"false\"><mi>c<\/mi><mi>b<\/mi><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n          <qti-simple-choice identifier=\"C\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mi>c<\/mi><mfrac bevelled=\"false\"><mi>d<\/mi><mi>b<\/mi><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n          <qti-simple-choice identifier=\"D\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mo>-<\/mo><mfrac bevelled=\"false\"><mrow><mo>-<\/mo><mi>a<\/mi><\/mrow><mrow><mo>-<\/mo><mi>b<\/mi><\/mrow><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n          <qti-simple-choice identifier=\"E\">\r\n            <p>\r\n              <math xmlns=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mo>-<\/mo><mi>c<\/mi><mfrac bevelled=\"false\"><mi>d<\/mi><mi>b<\/mi><\/mfrac><\/math>\r\n            <\/p>\r\n          <\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n      <\/div>\r\n    <\/div>\r\n  <\/qti-item-body>\r\n  <qti-response-processing>\r\n    <qti-response-condition>\r\n      <qti-response-if>\r\n        <qti-match>\r\n          <qti-variable identifier=\"RESPONSE\"\/>\r\n          <qti-correct identifier=\"RESPONSE\"\/>\r\n        <\/qti-match>\r\n        <qti-set-outcome-value identifier=\"SCORE\">\r\n          <qti-base-value base-type=\"float\">\r\n          1\r\n          <\/qti-base-value>\r\n        <\/qti-set-outcome-value>\r\n        <qti-set-outcome-value identifier=\"FEEDBACK\">\r\n\t  <qti-base-value base-type=\"identifier\">correct<\/qti-base-value>\r\n        <\/qti-set-outcome-value>\r\n      <\/qti-response-if>\r\n      <qti-response-else>\r\n        <qti-set-outcome-value identifier=\"SCORE\">\r\n          <qti-base-value base-type=\"float\">\r\n          0\r\n          <\/qti-base-value>\r\n        <\/qti-set-outcome-value>\r\n        <qti-set-outcome-value identifier=\"FEEDBACK\">\r\n          <qti-base-value base-type=\"identifier\">incorrect<\/qti-base-value>\r\n        <\/qti-set-outcome-value>\r\n      <\/qti-response-else>\r\n    <\/qti-response-condition>\r\n  <\/qti-response-processing>\r\n  <qti-modal-feedback outcome-identifier=\"FEEDBACK\" identifier=\"correct\" show-hide=\"show\">\r\n    <qti-content-body>\r\n      <div class=\"alert alert-success d-flex align-items-center\" role=\"alert\">\r\n        <i class=\"mdi mdi-check-circle mdi-24px\"><\/i>\r\n        <div class=\"mxl-feedback-inline-msg\">Well done!<\/div>\r\n      <\/div>\r\n    <\/qti-content-body>\r\n  <\/qti-modal-feedback>\r\n  <qti-modal-feedback outcome-identifier=\"FEEDBACK\" identifier=\"incorrect\" show-hide=\"show\">\r\n    <qti-content-body>\r\n      <div class=\"alert alert-danger d-flex align-items-center\" role=\"alert\">\r\n        <i class=\"mdi mdi-close-circle mdi-24px\"><\/i>\r\n        <div class=\"mxl-feedback-inline-msg\">\r\n          <p>Sorry, your answer is not correct.<\/p>\r\n        <\/div>\r\n      <\/div>\r\n    <\/qti-content-body>\r\n  <\/qti-modal-feedback>\r\n<\/qti-assessment-item>"
-  },
-  {
     "identifier": "a13-a15-captions-glossary",
     "guid": "0000-0012-00001",
     "submissionMode": "simultaneous",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" identifier=\"a13-a15-captions-glossary\" title=\"A13-A15 Video, Captions, Glossary\" time-dependent=\"false\" xml:lang=\"en-US\" adaptive=\"false\"><qti-response-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"RESPONSE\"><qti-correct-response><qti-value>i2</qti-value></qti-correct-response></qti-response-declaration><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\"><qti-default-value><qti-value>1</qti-value></qti-default-value></qti-outcome-declaration><qti-item-body><div class=\"qti-layout-row\"><div class=\"qti-layout-col8\"><div class=\"qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded\"><div class=\"qti3-player-item-card-body qti-padding-2\"><div class=\"qti-layout-row\"><div class=\"qti-layout-col6\"><p>Watch the video below before answering the question.</p><video width=\"100%\" controls=\"true\" crossorigin=\"anonymous\"><source src=\"https://s3.amazonaws.com/grud-amp-bucket-1/items/1/6ec4a16c-ad40-4938-bcb3-24d5bac132c3/media/QTI2018.mp4\" type=\"video/mp4\"/><source src=\"https://s3.amazonaws.com/grud-amp-bucket-1/items/1/6ec4a16c-ad40-4938-bcb3-24d5bac132c3/media/QTI2018.ogg\" type=\"video/ogg\"/><track src=\"https://s3.amazonaws.com/grud-amp-bucket-1/items/1/6ec4a16c-ad40-4938-bcb3-24d5bac132c3/media/QTI2018captions.vtt\" kind=\"captions\" label=\"English\" srclang=\"en\"/></video></div><div class=\"qti-layout-col6\"><p>The letters on the man's sweatshirt are an <span data-catalog-idref=\"glosscat\">acronym</span> for which institution?</p><qti-choice-interaction class=\"sbac\" max-choices=\"1\" min-choices=\"1\" response-identifier=\"RESPONSE\"><qti-simple-choice identifier=\"i1\"><p>Question and Test Interoperability Standard</p></qti-simple-choice><qti-simple-choice identifier=\"i2\"><p>Rhode Island School of Design</p></qti-simple-choice><qti-simple-choice identifier=\"i3\"><p>Region 1 Storage Device</p></qti-simple-choice><qti-simple-choice identifier=\"i4\"><p>Learning Impact Leadership Institute</p></qti-simple-choice></qti-choice-interaction></div></div></div></div><!-- /card --></div><div class=\"qti-layout-col4\"><div class=\"qti-well qti-margin-b-0\"><strong>About This Item</strong><p><small>This demonstrates how a QTI3 delivery system binds <strong>Personal Needs and Preferences (PNP)</strong> settings and accessibility support content in a QTI3 \"Catalog\".</small></p><p><small>In this item, the word \"acronym\" has a glossary support in this item's Catalog.  <strong>Click the word \"acronym\"</strong> and the glossary definition appears!</small></p><p class=\"qti-margin-b-0\"><small>When this item\'s QTI3 XML is loaded, QTI3 Player analyzes the item\'s Catalog - along with current PNP Settings - to create the appropriate user experience.</small></p></div></div></div><!-- /row --></qti-item-body><qti-catalog-info><qti-catalog id=\"glosscat\"><qti-card support=\"glossary-on-screen\"><qti-html-content>An abbreviation usually created using the first letters of other words and pronounced as a word.</qti-html-content></qti-card></qti-catalog></qti-catalog-info><qti-response-processing template=\"https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml\"/></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="a13-a15-captions-glossary" title="A13-A15 Video, Captions, Glossary" time-dependent="false" xml:lang="en-US" adaptive="false">
+      <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+        <qti-correct-response>
+          <qti-value>i2</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>1</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+        <div class="qti-layout-row">
+          <div class="qti-layout-col8">
+            <div class="qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded">
+              <div class="qti3-player-item-card-body qti-padding-2">
+                <div class="qti-layout-row">
+                  <div class="qti-layout-col6">
+                    <p>
+                      Watch the video below before answering the question.
+                    </p>
+                    <video width="100%" controls="true" crossorigin="anonymous">
+                      <source src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/6ec4a16c-ad40-4938-bcb3-24d5bac132c3/media/QTI2018.mp4" type="video/mp4"/>
+                      <source src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/6ec4a16c-ad40-4938-bcb3-24d5bac132c3/media/QTI2018.ogg" type="video/ogg"/>
+                      <track src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/6ec4a16c-ad40-4938-bcb3-24d5bac132c3/media/QTI2018captions.vtt" kind="captions" label="English" srclang="en"/>
+                    </video>
+                  </div>
+                  <div class="qti-layout-col6">
+                    <p>
+                      The letters on the man's sweatshirt are an <span data-catalog-idref="glosscat">acronym</span> for which institution?
+                    </p>
+                    <qti-choice-interaction class="sbac" max-choices="1" min-choices="1" response-identifier="RESPONSE">
+                      <qti-simple-choice identifier="i1">
+                        <p>Question and Test Interoperability Standard</p>
+                      </qti-simple-choice>
+                      <qti-simple-choice identifier="i2">
+                        <p>Rhode Island School of Design</p>
+                      </qti-simple-choice>
+                      <qti-simple-choice identifier="i3">
+                        <p>Region 1 Storage Device</p>
+                      </qti-simple-choice>
+                      <qti-simple-choice identifier="i4">
+                        <p>Learning Impact Leadership Institute</p>
+                      </qti-simple-choice>
+                    </qti-choice-interaction>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /card -->
+          </div>
+          <div class="qti-layout-col4">
+            <div class="qti-well qti-margin-b-0">
+              <strong>About This Item</strong>
+              <p>
+                <small>This demonstrates how a QTI3 delivery system binds <strong>Personal Needs and Preferences (PNP)</strong> settings and accessibility support content in a QTI3 "Catalog".</small>
+              </p>
+              <p>
+                <small>In this item, the word "acronym" has a glossary support in this item's Catalog.  <strong>Click the word "acronym"</strong> and the glossary definition appears!</small>
+              </p>
+              <p class="qti-margin-b-0">
+                <small>When this item's QTI3 XML is loaded, QTI3 Player analyzes the item's Catalog - along with current PNP Settings - to create the appropriate user experience.</small>
+              </p>
+            </div>
+          </div>
+        </div><!-- /row -->
+      </qti-item-body>
+      <qti-catalog-info>
+        <qti-catalog id="glosscat">
+          <qti-card support="glossary-on-screen">
+            <qti-html-content>An abbreviation usually created using the first letters of other words and pronounced as a word.</qti-html-content>
+          </qti-card>
+        </qti-catalog>
+      </qti-catalog-info>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
   },
   {
     "identifier": "sbac-200-51246-partial",
