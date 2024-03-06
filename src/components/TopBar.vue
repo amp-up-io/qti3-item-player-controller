@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="navbar-brand router-link">
         <router-link :to="{ name: 'Home', params: { } }">
-          <img src="@/assets/amp-up-io.svg" class="me-2" width="32" height="32" alt=""/>
+          <img src="@/assets/amp-up-io.svg" class="me-2" width="32" height="32" title="Amp-up.io" alt=""/>
           Test Runner
         </router-link>
       </div>
