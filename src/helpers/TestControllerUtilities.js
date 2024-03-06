@@ -38,6 +38,10 @@ export class TestControllerUtilities {
     this.items = this.itemFactory.loadItems(testItemList)
   }
 
+  loadAllItems () {
+    this.items = this.itemFactory.loadAll()
+  }
+
   getNavigateItemData () {
     return this.navigateItemData
   }
