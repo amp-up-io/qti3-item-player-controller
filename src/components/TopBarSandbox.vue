@@ -4,7 +4,7 @@
       <div class="navbar-brand router-link">
         <router-link :to="{ name: 'Home', params: { } }">
           <img src="@/assets/amp-up-io.svg" class="me-2" width="32" height="32" title="Amp-up.io" alt=""/>
-          Test Runner Sandbox
+          QTI 3 Player Sandbox
         </router-link>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerSandbox" aria-controls="navbarTogglerSandbox" aria-expanded="false" aria-label="Toggle navigation">
