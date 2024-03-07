@@ -31,7 +31,7 @@
                           <img src="@/assets/check-solid.svg" width="14" height="14"/>
                         </span></a>
                       </li>
-                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="ms-choice-templated-qti3" @click.prevent="handleMenuClick">MS Choice Templated MathML
+                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="sbac-choice-templated-qti3" @click.prevent="handleMenuClick">MS Choice Templated MathML
                         <span class="menu-sample-unchecked">
                           <img src="@/assets/check-solid.svg" width="14" height="14"/>
                         </span></a>

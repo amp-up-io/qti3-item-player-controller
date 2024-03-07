@@ -51,7 +51,21 @@
                 />
               </div>
               <div class="card-footer">
-                <button class="btn btn-sm btn-outline-primary waves-effect waves-light" title="End the attempt and run Response Processing">End Attempt</button>
+                <button 
+                  ref="endattempt"
+                  class="btn btn-sm btn-outline-primary waves-effect waves-light" 
+                  @click.prevent="handleEndAttemptClick" 
+                  title="End the Attempt and run Response Processing">
+                  End Attempt
+                </button>
+                <button 
+                  v-if="hasTemplateProcessing"
+                  ref="newtemplate"
+                  class="ms-2 btn btn-sm btn-outline-secondary waves-effect waves-light" 
+                  @click.prevent="handleNewTemplateClick" 
+                  title="Run Template Processing">
+                  New Template
+                </button>
               </div>
             </div>
           </div>
@@ -121,9 +135,9 @@ export default {
        */
       qti3Player: null,
       /*
-       * Save/Restore a candidate's item state here
+       * Handle on the qti-assessment-item loaded into the qti3Player
        */
-      itemStates: null,
+      item: null,
       /*
        * From the set of:
        *   qti3-player-container-fluid ***DEFAULT***
@@ -171,23 +185,13 @@ export default {
        */
       pciContext: { renderer2p0: './assets/pci/pci.html' },
       /*
-       * From the set of: { 'individual' | 'simultaneous' }
-       * This is used to tell the Qti3Player whether or not
-       * we want to run response processing when we navigate
-       * away from an item.
-       * 'individual' --> invoke Qti3Player's endAttempt method
-       * 'simultaneous' --> invoke Qti3Player's suspendAttempt method
-       */
-      testSubmissionMode: 'simultaneous',
-      /*
        * An item can override submission mode
        */
-      itemSubmissionMode: null,
-      /* ============================================
-       * State variables to manage the EndPanel's UI.
-       * ============================================ */
-      testTitle: '',
-      testItems: [],
+      itemSubmissionMode: 'individual',
+      /*
+       * Keep track of whether or not item has qti-template-processing
+       */
+      hasTemplateProcessing: false,
       /*
        * Test Controller Utilities
        */
@@ -208,110 +212,16 @@ export default {
       this.TC.loadAllItems()
     },
 
-    initiateNavigateNextItem () {
-      // Have we reached the last item in the section?
-      if ((this.currentItem + 1) === this.maxItems) {
-        return this.initiateNavigateEnd()
-      }
-
+    handleEndAttemptClick () {
       if (this.isSubmissionModeIndividual())
-        this.qti3Player.endAttempt('navigateNextItem')
+        this.qti3Player.endAttempt('navigateNone')
       else
-        this.qti3Player.suspendAttempt('navigateNextItem')
+        this.qti3Player.suspendAttempt('navigateNone')
     },
 
-    navigateNextItem (state) {
-      console.log('[NavigateNextItem]', state)
-      this.currentItem += 1
-      this.loadItemAtIndex(this.currentItem)
-      this.updateButtonState()
-    },
-
-    initiateNavigatePrevItem () {
-      if (this.isSubmissionModeIndividual())
-        this.qti3Player.endAttempt('navigatePrevItem')
-      else
-        this.qti3Player.suspendAttempt('navigatePrevItem')
-    },
-
-    navigatePrevItem (state) {
-      console.log('[NavigatePrevItem]', state)
-      this.currentItem -= 1
-      this.loadItemAtIndex(this.currentItem)
-      this.updateButtonState()
-    },
-
-    initiateNavigateItem (target, data) {
-      // Save the data object - which includes itemIdentifier and
-      // index in the collection.
-      this.TC.setNavigateItemData(data)
-
-      if (this.isSubmissionModeIndividual())
-        this.qti3Player.endAttempt(target)
-      else
-        this.qti3Player.suspendAttempt(target)
-    },
-
-    navigateItem () {
-      console.log(`[NavigateItem][Identifier:${this.TC.getNavigateItemData().identifier}]`)
-      this.gotoItem()
-    },
-
-    gotoItem () {
-      this.currentItem = this.TC.getNavigateItemData().index
-      this.loadItemAtIndex(this.currentItem)
-      this.updateButtonState()
-    },
-
-    initiateNavigateEnd () {
-      console.log('[NavigateEnd]')
-
-      if (this.isSubmissionModeIndividual())
-        this.qti3Player.endAttempt('navigateEnd')
-      else
-        this.qti3Player.suspendAttempt('navigateEnd')
-    },
-
-    navigateEnd () {
-      console.log('[NavigateReview]')
-
-      // Load itemStates into TC
-      this.TC.setItemStates(this.itemStates)
-      
-      // Compute Summary Report
-      const report = 
-        this.TC.computeSummary(
-          this.test.id,
-          this.testItems,
-          this.testTitle
-        )
-
-      // Inject report into End Panel
-      this.$refs.endpanel.setUnanswered(report.unanswered)
-      this.$refs.endpanel.setItemSummary(report.summary)
-  
-      // Show the End page
-      this.currentPanel = 'end'
-
-      // Reset the ItemPlayer
-      this.qti3Player.resetItem()
-    },
-
-    handleRestart () {
-      // Reset current item index to the first item
-      this.currentItem = 0
-      // Display the player
-      this.currentPanel = 'item'
-      // Load first item!
-      this.loadFirstItem()
-      this.updateButtonState()
-    },
-
-    handleNavigateItem (data) {
-      this.TC.setNavigateItemData(data)
-      // Display the player
-      this.currentPanel = 'item'
-      this.navigateItem()
+    handleNewTemplateClick () {
+      if (this.item === null) return
+      this.item.newTemplate()
     },
 
     isSubmissionModeIndividual () {
@@ -329,35 +239,17 @@ export default {
     },
 
     evaluateResults (data) {
-      // Save our state
-      this.setTestStateItemState(data.state)
       // Perform next action
       this.next(data)
     },
 
     next (data) {
       switch (data.target) {
-        case 'navigateNextItem':
-          if (this.isInvalidResponses(data.state.validationMessages, 'next')) return
-          this.navigateNextItem()
-          break
-
-        case 'navigatePrevItem':
-          if (this.isInvalidResponses(data.state.validationMessages, 'prev')) return
-          this.navigatePrevItem()
-          break
-
-        case 'navigateItem':
-        case 'navigateEnd':
-          if (this.isInvalidResponses(data.state.validationMessages, 'goto')) return
-          if (data.target === 'navigateItem')
-            this.navigateItem()
-          else
-            this.navigateEnd()
-
+        case 'navigateNone':
+          if (this.isInvalidResponses(data.state.validationMessages)) return
           break
         default:
-          // Unknown action --> NOOP
+          // NOOP
       }
     },
 
@@ -387,7 +279,7 @@ export default {
       this.sessionControl.setShowFeedback(true)
 
       // Build a configuration
-      const configuration = this.getConfiguration('foobar')
+      const configuration = this.getConfiguration('sandbox')
 
       // Load the item with the configuration
       this.qti3Player.loadItemFromXml(this.itemXml, configuration)
@@ -491,14 +383,13 @@ export default {
      * @description Display any messages in the validationMessages array.
      * Side effect: disable the appropriate navigation button.
      * @param {Array} validationMessages
-     * @param {String} navigationDirection - 'next' | 'prev'
      * @return {Boolean} true if there are validationMessage, false if not
      */
-    isInvalidResponses (validationMessages, navigationDirection) {
+    isInvalidResponses (validationMessages) {
       if (!this.sessionControl.getValidateResponses()) return false
       if (validationMessages.length === 0) return false
       // Disable whichever nav button got us here
-      this.toggleButtonDisabled (navigationDirection, false)
+      //this.toggleButtonDisabled (navigationDirection, false)
       // Display validation messages
       this.displayInvalidResponseMessages(validationMessages)
       return true
@@ -583,7 +474,11 @@ export default {
      * component's loading of XML.
      */
     handleItemReady () {
-      // NOOP
+      this.item = this.qti3Player.getItem()
+      this.hasTemplateProcessing = 
+        (this.item.getTemplateProcessing() == null)
+          ? false
+          : true
     }
 
   },
