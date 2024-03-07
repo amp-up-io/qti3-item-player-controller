@@ -135,10 +135,6 @@ export default {
        */
       qti3Player: null,
       /*
-       * Handle on the qti-assessment-item loaded into the qti3Player
-       */
-      item: null,
-      /*
        * From the set of:
        *   qti3-player-container-fluid ***DEFAULT***
        *   qti3-player-container
@@ -220,8 +216,8 @@ export default {
     },
 
     handleNewTemplateClick () {
-      if (this.item === null) return
-      this.item.newTemplate()
+      if (!this.hasTemplateProcessing) return
+      this.qti3Player.newTemplate()
     },
 
     isSubmissionModeIndividual () {
@@ -474,11 +470,16 @@ export default {
      * component's loading of XML.
      */
     handleItemReady () {
-      this.item = this.qti3Player.getItem()
-      this.hasTemplateProcessing = 
-        (this.item.getTemplateProcessing() == null)
-          ? false
-          : true
+      const item = this.qti3Player.getItem()
+
+      // Update New Template button
+      if (item === null)
+        this.hasTemplateProcessing = false
+      else
+        this.hasTemplateProcessing = 
+          (item.getTemplateProcessing() == null)
+            ? false
+            : true
     }
 
   },
