@@ -10,6 +10,54 @@
         <ul id="samplesDropdown" class="list-unstyled ps-0">
 
           <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mc-collapse" aria-expanded="false">
+              Multiple Choice
+            </button>
+            <div class="collapse" id="mc-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mc-basic-collapse" aria-expanded="false">
+                    Basic
+                  </button>
+                  <div class="collapse mt-1" id="mc-basic-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="q2-choice-interaction-single-sv-1" @click.prevent="handleMenuClick">Unattended Luggage - SV1
+                        <span class="menu-sample-unchecked">
+                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mc-adv-collapse" aria-expanded="false">
+                    Advanced
+                  </button>
+                  <div class="collapse mt-1" id="mc-adv-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="q2-choice-interaction-single-sv-4a" @click.prevent="handleMenuClick">Unattended Luggage - Ctrl Hidden
+                        <span class="menu-sample-unchecked">
+                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="q2-choice-interaction-single-sv-4b" @click.prevent="handleMenuClick">Unattended Luggage - Orientation
+                        <span class="menu-sample-unchecked">
+                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
+                        </span></a>
+                      </li>
+                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="q2-choice-interaction-single-sv-4c" @click.prevent="handleMenuClick">Unattended Luggage - Stacking
+                        <span class="menu-sample-unchecked">
+                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
+                        </span></a>
+                      </li>                      
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#at-collapse" aria-expanded="false">
               Adaptive & Templated
             </button>
