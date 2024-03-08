@@ -2,7 +2,7 @@
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasSamplesPanel" aria-labelledby="offcanvasSamplesLabel" style="width: 320px;">
 
     <div class="offcanvas-header pb-2">
-      <span class="offcanvas-title fs-5 fw-semibold" id="offcanvasSamplesLabel">Item Samples</span>
+      <span class="offcanvas-title fs-5 fw-semibold" id="offcanvasSamplesLabel">QTI 3 Item Samples</span>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body pt-1">
@@ -21,11 +21,7 @@
                   </button>
                   <div class="collapse mt-1" id="mc-basic-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="q2-choice-interaction-single-sv-1" @click.prevent="handleMenuClick">Unattended Luggage - SV1
-                        <span class="menu-sample-unchecked">
-                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                        </span></a>
-                      </li>
+                      <Sample identifier="q2-choice-interaction-single-sv-1" title="Unattended Luggage - SV1" @sampleSelected="handleSampleSelected"/>
                     </ul>
                   </div>
                 </li>
@@ -35,21 +31,10 @@
                   </button>
                   <div class="collapse mt-1" id="mc-adv-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="q2-choice-interaction-single-sv-4a" @click.prevent="handleMenuClick">Unattended Luggage - Ctrl Hidden
-                        <span class="menu-sample-unchecked">
-                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                        </span></a>
-                      </li>
-                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="q2-choice-interaction-single-sv-4b" @click.prevent="handleMenuClick">Unattended Luggage - Orientation
-                        <span class="menu-sample-unchecked">
-                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                        </span></a>
-                      </li>
-                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="q2-choice-interaction-single-sv-4c" @click.prevent="handleMenuClick">Unattended Luggage - Stacking
-                        <span class="menu-sample-unchecked">
-                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                        </span></a>
-                      </li>                      
+                      <Sample identifier="q2-choice-interaction-single-sv-4a" title="Unattended Luggage - Ctrl Hidden" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-4b" title="Unattended Luggage - Orientation" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-4c" title="Unattended Luggage - Stacking" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-4d" title="Unattended Luggage - Custom Message" @sampleSelected="handleSampleSelected"/>
                     </ul>
                   </div>
                 </li>
@@ -69,24 +54,58 @@
                   </button>
                   <div class="collapse mt-1" id="templated-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="card-08a-baseline" @click.prevent="handleMenuClick">Find The Sales Tax
-                        <span class="menu-sample-unchecked">
-                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                        </span></a>
-                      </li>
-                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="template_image" @click.prevent="handleMenuClick">Mick's Travels
-                        <span class="menu-sample-unchecked">
-                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                        </span></a>
-                      </li>
-                      <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="sbac-choice-templated-qti3" @click.prevent="handleMenuClick">MS Choice Templated MathML
-                        <span class="menu-sample-unchecked">
-                          <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                        </span></a>
-                      </li>
+                      <Sample identifier="card-08a-baseline" title="Find The Sales Tax" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="template_image" title="Mick's Travels" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="sbac-choice-templated-qti3" title="MS Choice Templated MathML" @sampleSelected="handleSampleSelected"/>
                     </ul>
                   </div>
                 </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#hs-collapse" aria-expanded="false">
+              Hotspot
+            </button>
+            <div class="collapse mt-1" id="hs-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="q10-hotspot-example-1" title="Hotspot - Single Cardinality" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-example-2" title="Hotspot - Multiple Cardinality" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-example-3" title="Hotspot - Shapes" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-interaction-sv-1" title="Hotspot - Selections Theming" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-interaction-sv-2" title="Hotspot - Custom Messages" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#match-collapse" aria-expanded="false">
+              Match
+            </button>
+            <div class="collapse mt-1" id="match-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="match-example-1" title="Shakespeare Plays" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="match-example-2" title="Birds, Reptiles, Mammals" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q13-match-interaction-sv-1" title="Match - Positioning" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q13-match-interaction-sv-2" title="Match - Match Tabular" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q13-match-interaction-sv-3" title="Match - Custom Messages" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#gm-collapse" aria-expanded="false">
+              Gap Match
+            </button>
+            <div class="collapse mt-1" id="gm-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="gap-match-example-1" title="Shakespeare - Richard III" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="gap-match-example-3" title="Solar System" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="gap-match-example-2" title="Gap Match - MathML" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q6-gap-match-interaction-sv-1" title="Gap Match - Positioning" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q6-gap-match-interaction-sv-2" title="Gap Match - Container Width" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q6-gap-match-interaction-sv-3" title="Gap Match - Custom Messages" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
           </li>
@@ -97,16 +116,8 @@
             </button>
             <div class="collapse mt-1" id="catalog-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="a13-a15-captions-glossary" @click.prevent="handleMenuClick">Video Captions + Glossary
-                  <span class="menu-sample-unchecked">
-                    <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                  </span></a>
-                </li>
-                <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="sbac-200-51246-partial" @click.prevent="handleMenuClick">SBAC - Glossary + KT + IG
-                  <span class="menu-sample-unchecked">
-                    <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                  </span></a>
-                </li>
+                <Sample identifier="a13-a15-captions-glossary" title="Video Captions + Glossary" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="sbac-200-51246-partial" title="SBAC - Glossary + KT + IG" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
           </li>
@@ -117,11 +128,7 @@
             </button>
             <div class="collapse mt-1" id="pci-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a class="link-dark rounded item-sample-link" href="#" data-identifier="fractions-no-dependencies" @click.prevent="handleMenuClick">HMH Fractions PCI
-                  <span class="menu-sample-unchecked">
-                    <img src="@/assets/check-solid.svg" width="14" height="14"/>
-                  </span></a>
-                </li>
+                <Sample identifier="fractions-no-dependencies" title="HMH Fractions PCI" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
           </li>
@@ -134,8 +141,14 @@
 </template>
 
 <script>
+import Sample from '@/components/Sample'
+
 export default {
   name: 'SamplesPanel',
+
+  components: {
+    Sample
+  },
 
   props: {
   },
@@ -154,14 +167,16 @@ export default {
       if (samplesDropdown == null) return
     },
 
-    handleMenuClick (event) {
+    handleSampleSelected (data) {
       if (this.currentSelectedMenuElement !== null) {
         this.hideCheck(this.currentSelectedMenuElement.querySelector('span'))
+        this.hideHighlight(this.currentSelectedMenuElement)
       }
 
-      this.currentSelectedMenuElement = event.currentTarget
-      this.currentSelectedIdentifier = event.currentTarget.dataset.identifier
+      this.currentSelectedMenuElement = data.element
+      this.currentSelectedIdentifier = data.identifier
       this.showCheck(this.currentSelectedMenuElement.querySelector('span'))
+      this.showHighlight(this.currentSelectedMenuElement)
 
       // Notify listeners
       this.$emit('menuItemSelectedClick', this.currentSelectedIdentifier)
@@ -175,6 +190,14 @@ export default {
     hideCheck (element) {
       element.classList.remove('menu-sample-checked')
       element.classList.add('menu-sample-unchecked')
+    },
+
+    showHighlight (element) {
+      element.classList.add('sample-checked')
+    },
+
+    hideHighlight (element) {
+      element.classList.remove('sample-checked')
     }
 
   },
@@ -239,8 +262,13 @@ export default {
   margin-left: 1.25rem;
   text-decoration: none;
 }
+
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+
+.btn-toggle-nav a.sample-checked {
   background-color: #d2f4ea;
 }
 
