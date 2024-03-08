@@ -12,7 +12,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerSandbox">
       <button class="btn btn-outline-secondary me-2" type="button" id="offcanvasSamplesLabel" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSamplesPanel" aria-controls="offcanvasSamplesPanel">
-        Item Samples
+        <strong>QTI 3 Item Samples</strong>
       </button>
       <button class="btn btn-outline-secondary" type="button" id="offcanvasSettingsLabel" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettingsPanel" aria-controls="offcanvasSettingsPanel">
         Settings

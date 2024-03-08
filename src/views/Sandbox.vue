@@ -13,14 +13,14 @@
 
         <div class="row">
 
-          <div class="col-sm-4">
-            <div class="card sandbox-raised-panel">
+          <div class="col-lg-4">
+            <div class="card sandbox-raised-panel mb-2">
               
               <div class="card-body">
                 <h2 class="sandbox-item-xml-heading">Item XML</h2>
                 <textarea
                   v-model="itemXml"
-                  placeholder="Enter QTI 3 Item XML here.  The results will be rendered in QTI 3 Item Player to the right."
+                  placeholder="Enter QTI 3 Item XML here, or select an example from Item Samples."
                   class="form-control sandbox-item-xml-textarea"
                   rows="15"
                   autocomplete="off" 
@@ -31,7 +31,7 @@
             </div>
           </div>
 
-          <div class="col-sm-8">
+          <div class="col-lg-8">
 
             <div class="card">
               <div class="card-body sandbox-item-canvas">

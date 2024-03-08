@@ -1000,73 +1000,94 @@ const items = [
     <qti-response-declaration identifier="RESPONSE12" cardinality="single" base-type="identifier"/>
     <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
     <qti-item-body>
-    <p>Look at the text in the picture.  What does it say?</p>
-    <p><img src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/sign.png" alt="NEVER LEAVE LUGGAGE UNATTENDED"/></p><qti-choice-interaction class="qti-choices-stacking-4" max-choices="1" response-identifier="RESPONSE1"><qti-prompt>Demonstrates <em>qti-choices-stacking-4</em>.</qti-prompt><qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice><qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice><qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice><qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice></qti-choice-interaction><qti-choice-interaction class="qti-choices-stacking-3" max-choices="1" response-identifier="RESPONSE2"><qti-prompt>Demonstrates <em>qti-choices-stacking-3</em>.</qti-prompt><qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice><qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice><qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice><qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice></qti-choice-interaction><qti-choice-interaction class="qti-choices-stacking-2" max-choices="1" response-identifier="RESPONSE3"><qti-prompt>Demonstrates <em>qti-choices-stacking-2</em>.</qti-prompt><qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice><qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice><qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-1" max-choices="1" response-identifier="RESPONSE4">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-1</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-4 qti-orientation-horizontal" max-choices="1" response-identifier="RESPONSE5">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-4 and qti-orientation-horizontal</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-3 qti-orientation-horizontal" max-choices="1" response-identifier="RESPONSE6">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-3 and qti-orientation-horizontal</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-2 qti-orientation-horizontal" max-choices="1" response-identifier="RESPONSE7">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-2 and qti-orientation-horizontal</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-1 qti-orientation-horizontal" max-choices="1" response-identifier="RESPONSE8">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-1 and qti-orientation-horizontal</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-4 qti-orientation-vertical" max-choices="1" response-identifier="RESPONSE9">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-4 and qti-orientation-vertical</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-3 qti-orientation-vertical" max-choices="1" response-identifier="RESPONSE10">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-3 and qti-orientation-vertical</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-2 qti-orientation-vertical" max-choices="1" response-identifier="RESPONSE11">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-2 and qti-orientation-vertical</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
-    <qti-choice-interaction class="qti-choices-stacking-1 qti-orientation-vertical" max-choices="1" response-identifier="RESPONSE12">
-    <qti-prompt>Demonstrates <em>qti-choices-stacking-1 and qti-orientation-vertical</em>.</qti-prompt>
-    <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
-    <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
-    </qti-choice-interaction>
+      <p>Look at the text in the picture.  What does it say?</p>
+      <p>
+        <img src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/sign.png" alt="NEVER LEAVE LUGGAGE UNATTENDED"/>
+      </p>
+      <qti-choice-interaction class="qti-choices-stacking-4" max-choices="1" response-identifier="RESPONSE1">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-4</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-3" max-choices="1" response-identifier="RESPONSE2">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-3</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-2" max-choices="1" response-identifier="RESPONSE3">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-2</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-1" max-choices="1" response-identifier="RESPONSE4">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-1</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-4 qti-orientation-horizontal" max-choices="1" response-identifier="RESPONSE5">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-4 and qti-orientation-horizontal</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-3 qti-orientation-horizontal" max-choices="1" response-identifier="RESPONSE6">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-3 and qti-orientation-horizontal</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-2 qti-orientation-horizontal" max-choices="1" response-identifier="RESPONSE7">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-2 and qti-orientation-horizontal</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-1 qti-orientation-horizontal" max-choices="1" response-identifier="RESPONSE8">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-1 and qti-orientation-horizontal</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-4 qti-orientation-vertical" max-choices="1" response-identifier="RESPONSE9">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-4 and qti-orientation-vertical</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-3 qti-orientation-vertical" max-choices="1" response-identifier="RESPONSE10">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-3 and qti-orientation-vertical</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-2 qti-orientation-vertical" max-choices="1" response-identifier="RESPONSE11">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-2 and qti-orientation-vertical</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-1 qti-orientation-vertical" max-choices="1" response-identifier="RESPONSE12">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-1 and qti-orientation-vertical</em>.</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
+        </qti-choice-interaction>
     </qti-item-body>
     </qti-assessment-item>`
   },
@@ -1074,7 +1095,21 @@ const items = [
     "identifier": "q2-choice-interaction-single-sv-4d",
     "guid": "0000-0002-0004",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<qti-assessment-item\r\n    xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n    xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\"\r\n    identifier=\"q2-choice-interaction-single-sv-4d\" title=\"Choice Interaction - Single (SV 4d) - min Choices Messages\" \r\n    adaptive=\"false\" time-dependent=\"false\">\r\n    <qti-response-declaration identifier=\"RESPONSE1\" cardinality=\"single\" base-type=\"identifier\"\/>\r\n    <qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"\/>\r\n    <qti-item-body>\r\n        <p>\r\n            <img src=\"https:\/\/s3.amazonaws.com\/grud-amp-bucket-1\/items\/1\/a8c5bf34-f8fd-4a87-a098-0d7213292cb6\/images\/sign.png\" alt=\"NEVER LEAVE LUGGAGE UNATTENDED\"\/>\r\n        <\/p>\r\n\r\n        <qti-choice-interaction max-choices=\"1\" min-choices=\"1\" data-min-selections-message=\"Not enough selected! You must select one choice.\" response-identifier=\"RESPONSE1\">\r\n\t    <qti-prompt>Demonstrates min-choices=\"1\" and <em>custom data-min-selections-message.<\/em><\/qti-prompt>\r\n            <qti-simple-choice identifier=\"ChoiceA\">You must stay with your luggage at all times.<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"ChoiceB\">Do not let someone else look after your luggage.<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"ChoiceC\">Remember your luggage when you leave.<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\t\t\r\n    <\/qti-item-body>\r\n<\/qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"    identifier="q2-choice-interaction-single-sv-4d" title="Choice Interaction - Single (SV 4d) - min Choices Messages" adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="identifier"/>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        <p>
+          <img src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/sign.png" alt="NEVER LEAVE LUGGAGE UNATTENDED"/>
+        </p>
+        <qti-choice-interaction max-choices="1" min-choices="1" data-min-selections-message="Not enough selected! You must select one choice." response-identifier="RESPONSE1">
+          <qti-prompt>Demonstrates min-choices="1" and <em>custom data-min-selections-message.</em></qti-prompt>
+          <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+          <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+          <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+        </qti-choice-interaction>
+      </qti-item-body>
+    </qti-assessment-item>`
   },
   {
     "identifier": "q2-choice-interaction-multiple-sv-4a",
@@ -4773,7 +4808,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           </qti-simple-match-set>
         </qti-match-interaction>
       </div>
-      <p class="ets-direction_paragraph">Select all choices that apply.</p>
+      <p>Select all choices that apply.</p>
     </qti-item-body>
     <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
     </qti-assessment-item>`
@@ -5248,7 +5283,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <qti-gap-text identifier="s4" match-max="0">the Moon</qti-gap-text>
           <qti-gap-text identifier="s5" match-max="0">the Sun</qti-gap-text>
           <div>
-            <p>One full revolution of <qti-gap identifier="t1"/> around <qti-gap identifier="t2"/> takes 365.25 days. Because <qti-gap identifier="t3"/> is farther out from the center of the solar system, the planet takes almost 687 days to complete its orbit, far longer than the orbit of <qti-gap class="ets-target" identifier="t4"/> , which is 88 days.</p>
+            <p>One full revolution of <qti-gap identifier="t1"/> around <qti-gap identifier="t2"/> takes 365 days. Because <qti-gap identifier="t3"/> is farther out from the center of the solar system, the planet takes almost 687 days to complete its orbit, far longer than the orbit of <qti-gap class="ets-target" identifier="t4"/> , which is 88 days.</p>
           </div>
          </qti-gap-match-interaction>
          <div>
@@ -5269,7 +5304,10 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
               <qti-base-value base-type="float">4</qti-base-value>
             </qti-gte>
             <qti-set-outcome-value identifier="SCORE">
-              <qti-subtract><qti-map-response identifier="RESPONSE"/><qti-base-value base-type="float">3</qti-base-value></qti-subtract>
+              <qti-subtract>
+                <qti-map-response identifier="RESPONSE"/>
+                <qti-base-value base-type="float">3</qti-base-value>
+              </qti-subtract>
             </qti-set-outcome-value>
           </qti-response-else-if>
           <qti-response-else>
