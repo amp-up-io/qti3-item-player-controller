@@ -20,7 +20,7 @@
                 <h2 class="sandbox-item-xml-heading">Item XML</h2>
                 <textarea
                   v-model="itemXml"
-                  placeholder="Enter QTI 3 Item XML here, or select an example from Item Samples."
+                  placeholder="Enter QTI 3 Item XML here, or select an example from QTI 3 Item Samples."
                   class="form-control sandbox-item-xml-textarea"
                   rows="15"
                   autocomplete="off" 
@@ -585,7 +585,7 @@ footer {
 }
 
 .card-body.sandbox-item-canvas {
-  min-height: 100px;
+  min-height: 80px;
   padding: 0;
 }
 
