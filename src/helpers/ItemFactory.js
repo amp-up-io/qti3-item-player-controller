@@ -2937,31 +2937,281 @@ const items = [
     "identifier": "q15-order-example-1",
     "guid": "0000-0014-0000",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd \" identifier=\"q15-order-example-1\" title=\"Grand Prix of Bahrain\" adaptive=\"false\" time-dependent=\"false\"><qti-response-declaration identifier=\"RESPONSE\" cardinality=\"ordered\" base-type=\"identifier\"><qti-correct-response><qti-value>DriverC</qti-value><qti-value>DriverA</qti-value><qti-value>DriverB</qti-value></qti-correct-response></qti-response-declaration><qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"/><qti-item-body>  <qti-order-interaction response-identifier=\"RESPONSE\"><qti-prompt>The following F1 drivers finished on the podium in the first ever Grand Prix of Bahrain. Can you rearrange them into the correct finishing order from left to right, 1st, 2nd, and 3rd?</qti-prompt><qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction><p>Note: This conformance example has no QTI 3 shared presentation vocabulary.  Consequently, QTI 3 Player renders the <em>Order Interaction</em> above with QTI 3 Player defaults; i.e., as a series of choices with horizontal orientation.</p></qti-item-body><qti-response-processing template=\"https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml\"/></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="q15-order-example-1" title="Grand Prix of Bahrain" adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE" cardinality="ordered" base-type="identifier">
+        <qti-correct-response>
+          <qti-value>DriverC</qti-value>
+          <qti-value>DriverA</qti-value>
+          <qti-value>DriverB</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        <qti-order-interaction response-identifier="RESPONSE">
+          <qti-prompt>The following F1 drivers finished on the podium in the first ever Grand Prix of Bahrain. Can you rearrange them into the correct finishing order from left to right, 1st, 2nd, and 3rd?</qti-prompt>
+          <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+          <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+          <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+        </qti-order-interaction>
+        <p>
+          Note: This conformance example has no QTI 3 shared presentation vocabulary.  Consequently, QTI 3 Player renders the <em>Order Interaction</em> above with QTI 3 Player defaults; i.e., as a series of choices with horizontal orientation.
+        </p>
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
   },
   {
     "identifier": "q15-order-example-2",
     "guid": "0000-0014-0001",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd \" identifier=\"q15-order-example-2\" title=\"Grand Prix of Bahrain (horizontal)\" adaptive=\"false\" time-dependent=\"false\"><qti-response-declaration identifier=\"RESPONSE\" cardinality=\"ordered\" base-type=\"identifier\"><qti-correct-response><qti-value>DriverC</qti-value><qti-value>DriverA</qti-value><qti-value>DriverB</qti-value></qti-correct-response></qti-response-declaration><qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"/><qti-item-body><qti-order-interaction response-identifier=\"RESPONSE\" orientation=\"horizontal\"><qti-prompt>The following F1 drivers finished on the podium in the first ever Grand Prix of Bahrain. Can you rearrange them into the correct finishing order from left to right, 1st, 2nd, and 3rd?</qti-prompt><qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction><p>Note: The <em>orientation</em> of the layout of the drivers should be horizontal.</p></qti-item-body><qti-response-processing template=\"https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml\"/></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="q15-order-example-2" title="Grand Prix of Bahrain (horizontal)" adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE" cardinality="ordered" base-type="identifier">
+        <qti-correct-response>
+          <qti-value>DriverC</qti-value>
+          <qti-value>DriverA</qti-value>
+          <qti-value>DriverB</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        <qti-order-interaction response-identifier="RESPONSE" orientation="horizontal">
+          <qti-prompt>The following F1 drivers finished on the podium in the first ever Grand Prix of Bahrain. Can you rearrange them into the correct finishing order from left to right, 1st, 2nd, and 3rd?</qti-prompt>
+          <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+          <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+          <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+        </qti-order-interaction>
+        <p>Note: The <em>orientation</em> of the layout of the drivers should be horizontal.</p>
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
   },
   {
     "identifier": "q15-order-example-3",
     "guid": "0000-0014-0002",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd \" identifier=\"q15-order-example-3\" title=\"Grand Prix of Bahrain (vertical)\" adaptive=\"false\" time-dependent=\"false\"><qti-response-declaration identifier=\"RESPONSE\" cardinality=\"ordered\" base-type=\"identifier\"><qti-correct-response><qti-value>DriverC</qti-value><qti-value>DriverA</qti-value>    <qti-value>DriverB</qti-value>  </qti-correct-response></qti-response-declaration><qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"/><qti-item-body>  <qti-order-interaction response-identifier=\"RESPONSE\" orientation=\"vertical\"><qti-prompt>The following F1 drivers finished on the podium in the first ever Grand Prix of Bahrain. Can you rearrange them into the correct finishing order - from top to bottom - 1st, 2nd, and 3rd? </qti-prompt><qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction><p>Note: The <em>orientation</em> of the layout of the drivers should be vertical.</p></qti-item-body><qti-response-processing template=\"http://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml\"/></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="q15-order-example-3" title="Grand Prix of Bahrain (vertical)" adaptive="false" time-dependent="false">
+      <qti-response-declaration identifier="RESPONSE" cardinality="ordered" base-type="identifier">
+        <qti-correct-response>
+          <qti-value>DriverC</qti-value>
+          <qti-value>DriverA</qti-value>
+          <qti-value>DriverB</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+      <qti-item-body>
+        <qti-order-interaction response-identifier="RESPONSE" orientation="vertical">
+          <qti-prompt>The following F1 drivers finished on the podium in the first ever Grand Prix of Bahrain. Can you rearrange them into the correct finishing order - from top to bottom - 1st, 2nd, and 3rd? </qti-prompt>
+          <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+          <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+          <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+        </qti-order-interaction>
+        <p>Note: The <em>orientation</em> of the layout of the drivers should be vertical.</p>
+      </qti-item-body>
+      <qti-response-processing template="http://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
   },
   {
     "identifier": "q15-order-interaction-sv-1",
     "guid": "0000-0014-0003",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" identifier=\"q15-order-interaction-sv-1\" title=\"Order Interaction - (SV 1) - target label/suffix options\" adaptive=\"false\" time-dependent=\"false\"><qti-response-declaration identifier=\"RESPONSE1\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE2\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE3\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE4\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE5\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE6\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE7\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE8\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE9\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE10\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE11\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE12\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE13\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"/><qti-item-body><p>Delivery systems may implement Order Interaction's in a manner where the choices are grouped together separately from a target area where the choices are ordered. When they do so, the shared vocabulary is intended to provide a way for the delivery system to generate a label on each of the order targets.</p><p>The following F1 drivers finished on the podium in the first ever Grand Prix of Bahrain. Can you rearrange them into the correct finishing order?</p>          <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-none</em>.</p><qti-order-interaction class=\"qti-choices-top qti-labels-none\" response-identifier=\"RESPONSE1\"><qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-decimal</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-decimal\" response-identifier=\"RESPONSE2\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-lower-alpha</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-lower-alpha\" response-identifier=\"RESPONSE3\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>       <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-upper-alpha</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-upper-alpha\" response-identifier=\"RESPONSE4\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>        <hr />    <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-decimal</em> and <em>qti-labels-suffix-none</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-decimal qti-labels-suffix-none\" response-identifier=\"RESPONSE5\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>     <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-decimal</em> and <em>qti-labels-suffix-period</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-decimal qti-labels-suffix-period\" response-identifier=\"RESPONSE6\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>     <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-decimal</em> and <em>qti-labels-suffix-parenthesis</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-decimal qti-labels-suffix-parenthesis\" response-identifier=\"RESPONSE7\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>        <hr />    <p>Demonstrates <em>qti-choices-top</em> and  <em>qti-labels-lower-alpha</em> and <em>qti-labels-suffix-none</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-lower-alpha qti-labels-suffix-none\" response-identifier=\"RESPONSE8\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>     <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-lower-alpha</em> and <em>qti-labels-suffix-period</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-lower-alpha qti-labels-suffix-period\" response-identifier=\"RESPONSE9\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>     <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-lower-alpha</em> and <em>qti-labels-suffix-parenthesis</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-lower-alpha qti-labels-suffix-parenthesis\" response-identifier=\"RESPONSE10\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>         <hr />        <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-upper-alpha</em> and <em>qti-labels-suffix-none</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-upper-alpha qti-labels-suffix-none\" response-identifier=\"RESPONSE11\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>     <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-upper-alpha</em> and <em>qti-labels-suffix-period</em>.</p>    <qti-order-interaction class=\"qti-choices-top qti-labels-upper-alpha qti-labels-suffix-period\" response-identifier=\"RESPONSE12\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction><p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-upper-alpha</em> and <em>qti-labels-suffix-parenthesis</em>.</p><qti-order-interaction class=\"qti-choices-top qti-labels-upper-alpha qti-labels-suffix-parenthesis\" response-identifier=\"RESPONSE13\"><qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction></qti-item-body></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="q15-order-interaction-sv-1" title="Order Interaction - (SV 1) - target label/suffix options" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE2" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE3" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE4" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE5" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE6" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE7" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE8" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE9" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE10" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE11" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE12" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE13" cardinality="ordered" base-type="identifier"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+      <p>Delivery systems may implement Order Interaction's in a manner where the choices are grouped together separately from a target area where the choices are ordered. When they do so, the shared vocabulary is intended to provide a way for the delivery system to generate a label on each of the order targets.</p>
+      <p>The following F1 drivers finished on the podium in the first ever Grand Prix of Bahrain. Can you rearrange them into the correct finishing order?</p>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-none</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-none" response-identifier="RESPONSE1">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-decimal</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-decimal" response-identifier="RESPONSE2">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-lower-alpha</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-lower-alpha" response-identifier="RESPONSE3">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-upper-alpha</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-upper-alpha" response-identifier="RESPONSE4">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <hr />
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-decimal</em> and <em>qti-labels-suffix-none</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-decimal qti-labels-suffix-none" response-identifier="RESPONSE5">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-decimal</em> and <em>qti-labels-suffix-period</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-decimal qti-labels-suffix-period" response-identifier="RESPONSE6">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-decimal</em> and <em>qti-labels-suffix-parenthesis</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-decimal qti-labels-suffix-parenthesis" response-identifier="RESPONSE7">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <hr />
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-lower-alpha</em> and <em>qti-labels-suffix-none</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-lower-alpha qti-labels-suffix-none" response-identifier="RESPONSE8">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-lower-alpha</em> and <em>qti-labels-suffix-period</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-lower-alpha qti-labels-suffix-period" response-identifier="RESPONSE9">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-lower-alpha</em> and <em>qti-labels-suffix-parenthesis</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-lower-alpha qti-labels-suffix-parenthesis" response-identifier="RESPONSE10">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <hr />
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-upper-alpha</em> and <em>qti-labels-suffix-none</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-upper-alpha qti-labels-suffix-none" response-identifier="RESPONSE11">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-upper-alpha</em> and <em>qti-labels-suffix-period</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-upper-alpha qti-labels-suffix-period" response-identifier="RESPONSE12">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-top</em> and <em>qti-labels-upper-alpha</em> and <em>qti-labels-suffix-parenthesis</em>.</p>
+      <qti-order-interaction class="qti-choices-top qti-labels-upper-alpha qti-labels-suffix-parenthesis" response-identifier="RESPONSE13">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q15-order-interaction-sv-2",
     "guid": "0000-0014-0004",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" identifier=\"q15-order-interaction-sv-2\" title=\"Order Interaction - (SV 2) - orderable-target orientation options\" adaptive=\"false\" time-dependent=\"false\"><qti-response-declaration identifier=\"RESPONSE1\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE2\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE3\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE4\" cardinality=\"ordered\" base-type=\"identifier\" />  <qti-response-declaration identifier=\"RESPONSE5\" cardinality=\"ordered\" base-type=\"identifier\" />  <qti-response-declaration identifier=\"RESPONSE6\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE7\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE8\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE9\" cardinality=\"ordered\" base-type=\"identifier\" />  <qti-response-declaration identifier=\"RESPONSE10\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-response-declaration identifier=\"RESPONSE11\" cardinality=\"ordered\" base-type=\"identifier\" />  <qti-response-declaration identifier=\"RESPONSE12\" cardinality=\"ordered\" base-type=\"identifier\" /><qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"/><qti-item-body><p>Delivery systems may implement Order Interaction's in a manner where the choices are grouped together separately from a target area where the choices are ordered.  When they do so, the shared vocabulary is intended to provide clarity regarding the visual positioning of the orderable choices w/respect to the target area.</p><p>The following F1 drivers finished on the podium in the first ever Grand Prix of  Bahrain. Can you rearrange them into the correct finishing order?</p><hr /><p>Demonstrates <em>qti-choices-top</em>.</p><qti-order-interaction class=\"qti-choices-top\" response-identifier=\"RESPONSE1\"><qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-bottom</em>.</p>    <qti-order-interaction class=\"qti-choices-bottom\" response-identifier=\"RESPONSE2\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-left</em>.</p>    <qti-order-interaction class=\"qti-choices-left\" response-identifier=\"RESPONSE3\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice><qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction>       <p>Demonstrates <em>qti-choices-right</em>.</p>    <qti-order-interaction class=\"qti-choices-right\" response-identifier=\"RESPONSE4\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction><hr /><p>Demonstrates <em>qti-choices-top</em> and <em>orientation horizontal</em>.</p>    <qti-order-interaction class=\"qti-choices-top\" orientation=\"horizontal\" response-identifier=\"RESPONSE5\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction><p>Demonstrates <em>qti-choices-bottom</em> and <em>orientation horizontal</em>.</p>    <qti-order-interaction class=\"qti-choices-bottom\" orientation=\"horizontal\" response-identifier=\"RESPONSE6\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction><p>Demonstrates <em>qti-choices-left</em> and <em>orientation horizontal</em>.</p><qti-order-interaction class=\"qti-choices-left\" orientation=\"horizontal\" response-identifier=\"RESPONSE7\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction> <p>Demonstrates <em>qti-choices-right</em> and <em>orientation horizontal</em>.</p><qti-order-interaction class=\"qti-choices-right\" orientation=\"horizontal\" response-identifier=\"RESPONSE8\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>        <hr /> <p>Demonstrates <em>qti-choices-top</em> and <em>orientation vertical</em>.</p><qti-order-interaction class=\"qti-choices-top\" orientation=\"vertical\" response-identifier=\"RESPONSE9\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-bottom</em> and <em>orientation vertical</em>.</p><qti-order-interaction class=\"qti-choices-bottom\" orientation=\"vertical\" response-identifier=\"RESPONSE10\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>    <p>Demonstrates <em>qti-choices-left</em> and <em>orientation vertical</em>.</p><qti-order-interaction class=\"qti-choices-left\" orientation=\"vertical\" response-identifier=\"RESPONSE11\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice>      <qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice>    </qti-order-interaction>       <p>Demonstrates <em>qti-choices-right</em> and <em>orientation vertical</em>.</p><qti-order-interaction class=\"qti-choices-right\" orientation=\"vertical\" response-identifier=\"RESPONSE12\">      <qti-simple-choice identifier=\"DriverA\">Rubens Barrichello</qti-simple-choice><qti-simple-choice identifier=\"DriverB\">Jenson Button</qti-simple-choice>      <qti-simple-choice identifier=\"DriverC\">Michael Schumacher</qti-simple-choice></qti-order-interaction></qti-item-body></qti-assessment-item>"
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="q15-order-interaction-sv-2" title="Order Interaction - (SV 2) - orderable-target orientation options" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE2" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE3" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE4" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE5" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE6" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE7" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE8" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE9" cardinality="ordered" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE10" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE11" cardinality="ordered" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE12" cardinality="ordered" base-type="identifier"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+      <p>Delivery systems may implement Order Interaction's in a manner where the choices are grouped together separately from a target area where the choices are ordered.  When they do so, the shared vocabulary is intended to provide clarity regarding the visual positioning of the orderable choices w/respect to the target area.</p>
+      <p>The following F1 drivers finished on the podium in the first ever Grand Prix of  Bahrain. Can you rearrange them into the correct finishing order?</p><hr /><p>Demonstrates <em>qti-choices-top</em>.</p>
+      <qti-order-interaction class="qti-choices-top" response-identifier="RESPONSE1">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-bottom</em>.</p>
+      <qti-order-interaction class="qti-choices-bottom" response-identifier="RESPONSE2">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-left</em>.</p>
+      <qti-order-interaction class="qti-choices-left" response-identifier="RESPONSE3">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-right</em>.</p>
+      <qti-order-interaction class="qti-choices-right" response-identifier="RESPONSE4">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <hr />
+      <p>Demonstrates <em>qti-choices-top</em> and <em>orientation horizontal</em>.</p>
+      <qti-order-interaction class="qti-choices-top" orientation="horizontal" response-identifier="RESPONSE5">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-bottom</em> and <em>orientation horizontal</em>.</p>
+      <qti-order-interaction class="qti-choices-bottom" orientation="horizontal" response-identifier="RESPONSE6">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-left</em> and <em>orientation horizontal</em>.</p>
+      <qti-order-interaction class="qti-choices-left" orientation="horizontal" response-identifier="RESPONSE7">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-right</em> and <em>orientation horizontal</em>.</p>
+      <qti-order-interaction class="qti-choices-right" orientation="horizontal" response-identifier="RESPONSE8">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <hr />
+      <p>Demonstrates <em>qti-choices-top</em> and <em>orientation vertical</em>.</p>
+      <qti-order-interaction class="qti-choices-top" orientation="vertical" response-identifier="RESPONSE9">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-bottom</em> and <em>orientation vertical</em>.</p>
+      <qti-order-interaction class="qti-choices-bottom" orientation="vertical" response-identifier="RESPONSE10">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-left</em> and <em>orientation vertical</em>.</p>
+      <qti-order-interaction class="qti-choices-left" orientation="vertical" response-identifier="RESPONSE11">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+      <p>Demonstrates <em>qti-choices-right</em> and <em>orientation vertical</em>.</p>
+      <qti-order-interaction class="qti-choices-right" orientation="vertical" response-identifier="RESPONSE12">
+        <qti-simple-choice identifier="DriverA">Rubens Barrichello</qti-simple-choice>
+        <qti-simple-choice identifier="DriverB">Jenson Button</qti-simple-choice>
+        <qti-simple-choice identifier="DriverC">Michael Schumacher</qti-simple-choice>
+      </qti-order-interaction>
+    </qti-item-body>
+    </qti-assessment-item>`
   },
   {
     "identifier": "Ch5_Modeling_6_r3.0",

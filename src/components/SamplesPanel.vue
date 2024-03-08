@@ -73,7 +73,7 @@
                 <Sample identifier="q10-hotspot-example-1" title="Hotspot - Single Cardinality" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="q10-hotspot-example-2" title="Hotspot - Multiple Cardinality" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="q10-hotspot-example-3" title="Hotspot - Shapes" @sampleSelected="handleSampleSelected"/>
-                <Sample identifier="q10-hotspot-interaction-sv-1" title="Hotspot - Selections Theming" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-interaction-sv-1" title="Hotspot - Theming" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="q10-hotspot-interaction-sv-2" title="Hotspot - Custom Messages" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
@@ -106,6 +106,37 @@
                 <Sample identifier="q6-gap-match-interaction-sv-1" title="Gap Match - Positioning" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="q6-gap-match-interaction-sv-2" title="Gap Match - Container Width" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="q6-gap-match-interaction-sv-3" title="Gap Match - Custom Messages" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q6-gap-match-interaction-sv-4" title="Gap Match - Gap Widths" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ggm-collapse" aria-expanded="false">
+              Graphic Gap Match
+            </button>
+            <div class="collapse mt-1" id="ggm-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="graphic-gap-match-item1" title="Airport Tags" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q8-graphic-gap-match-sv-1" title="GGM - Positioning" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q8-graphic-gap-match-sv-2" title="GGM - Container Width" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q8-graphic-gap-match-sv-3" title="GGM - Custom Messages" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q8-graphic-gap-match-sv-4" title="GGM - Theming" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#order-collapse" aria-expanded="false">
+              Order
+            </button>
+            <div class="collapse mt-1" id="order-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="q15-order-example-1" title="Order - Default Orientation" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q15-order-example-2" title="Order - Horizontal" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q15-order-example-3" title="Order - Vertical" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q15-order-interaction-sv-1" title="Order - Choice Labels" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q15-order-interaction-sv-2" title="Order - Positioning" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
           </li>
@@ -128,7 +159,10 @@
             </button>
             <div class="collapse mt-1" id="pci-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <Sample identifier="fractions-no-dependencies" title="HMH Fractions PCI" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="fractions-no-dependencies" title="HMH - Fractions" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="measuringPh" title="HMH - Measuring Ph" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="edmentum-pci-graphing" title="Edmentum - Simple Drawing" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="likert-OAT-PCI" title="OAT - Likert" @sampleSelected="handleSampleSelected"/> 
               </ul>
             </div>
           </li>
