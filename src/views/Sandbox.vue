@@ -9,15 +9,21 @@
 
     <main id="main" class="test-controller-container container-fluid">
 
-      <div class="test-controller-content">
+      <div class="test-controller-content sandbox">
 
         <div class="row">
 
           <div class="col-lg-4">
             <div class="card sandbox-raised-panel mb-2">
+              <div class="card-header bg-transparent border-bottom">
+                <div class="d-flex flex-wrap">
+                    <div class="me-2">
+                        <h5 class="card-title mt-1 mb-0">Item XML</h5>
+                    </div>
+                </div>
+              </div>
               
               <div class="card-body">
-                <h2 class="sandbox-item-xml-heading">Item XML</h2>
                 <textarea
                   v-model="itemXml"
                   placeholder="Enter QTI 3 Item XML here, or select an example from QTI 3 Item Samples."
@@ -28,6 +34,7 @@
                   autocapitalize="off" 
                   spellcheck="false"></textarea>
               </div>
+
             </div>
           </div>
 
@@ -68,6 +75,7 @@
                 </button>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -191,7 +199,9 @@ export default {
       /*
        * Test Controller Utilities
        */
-       TC: null
+      TC: null,
+
+      endAttemptOutcomes: null
     }
   },
 
@@ -242,6 +252,7 @@ export default {
     next (data) {
       switch (data.target) {
         case 'navigateNone':
+          this.endAttemptOutcomes = data.state.outcomeVariables
           if (this.isInvalidResponses(data.state.validationMessages)) return
           break
         default:
@@ -615,4 +626,53 @@ textarea.sandbox-item-xml-textarea {
 textarea.sandbox-item-xml-textarea:hover {
   scrollbar-color: var(--bs-gray-400) #f1f1f1; /* thumb color on hover */
 }
+
+/*
+.card-title {
+  font-size: 15px;
+  margin: 0 0 7px 0;
+  font-weight: 600;
+}
+
+.card-header-tabs {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+  margin-bottom: -0.625rem;
+  border-bottom: 0;
+}
+
+.nav-tabs-custom {
+  border-bottom: 2px solid var(--bs-gray-300);
+}
+
+.nav-tabs-custom .nav-item {
+  position: relative;
+  color: var(--dark);
+  font-size: 0.8125rem;
+}
+
+.nav-tabs-custom .nav-item .nav-link {
+  border: none;
+}
+
+.nav-tabs-custom .nav-item .nav-link::after {
+  content: "";
+  background: var(--primary);
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  transition: all 250ms ease 0s;
+  transform: scale(0);
+}
+
+.nav-tabs-custom .nav-item .nav-link.active {
+  color: var(--primary);
+}
+
+.nav-tabs-custom .nav-item .nav-link.active::after {
+  transform: scale(1);
+}
+*/
 </style>
