@@ -167,6 +167,24 @@
             </div>
           </li>
 
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#css-collapse" aria-expanded="false">
+              Shared CSS Samples
+            </button>
+            <div class="collapse mt-1" id="css-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="i19b-shared-css-vocab-1" title="Shared CSS 1" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="i19b-shared-css-vocab-2" title="Shared CSS 2 (Layout)" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="i19b-shared-css-vocab-3" title="Shared CSS 3 (Margin/Padding)" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="i19b-shared-css-vocab-4" title="Shared CSS 4 (Display)" @sampleSelected="handleSampleSelected"/> 
+                <Sample identifier="i19b-shared-css-vocab-5" title="Shared CSS 5 (Height)" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="i19b-shared-css-vocab-6" title="Shared CSS 6 (Width)" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="i19b-shared-css-vocab-7" title="Shared CSS 7 (Indent Styles)" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="i19b-shared-css-vocab-8" title="Shared CSS 8 (List Styles)" @sampleSelected="handleSampleSelected"/> 
+              </ul>
+            </div>
+          </li>
+
         </ul>
       </div>
 
