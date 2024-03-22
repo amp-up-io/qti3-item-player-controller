@@ -36,6 +36,60 @@
               </div>
 
             </div>
+
+            <div class="card sandbox-raised-panel mb-2">
+              <div class="card-header bg-transparent border-bottom">
+              <div class="d-flex flex-wrap">
+                  <div class="me-2">
+                    <h5 class="card-title mt-1 mb-0">Item Controls</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                <button 
+                  ref="endattempt"
+                  class="btn btn-sm btn-outline-primary waves-effect waves-light"
+                  :disabled="isEndAttemptDisabled"
+                  @click.prevent="handleEndAttemptClick" 
+                  title="End the Attempt and run Response Processing">
+                  End Attempt
+                </button>
+                <button 
+                  v-if="hasTemplateProcessing"
+                  ref="newtemplate"
+                  class="ms-2 btn btn-sm btn-outline-secondary waves-effect waves-light" 
+                  @click.prevent="handleNewTemplateClick" 
+                  title="Run Template Processing">
+                  New Template
+                </button>
+                </p>
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    @click="handleValidateResponsesSwitch"
+                    id="switchValidateResponses"
+                    :disabled="isEndAttemptDisabled"
+                    checked
+                    >
+                  <label class="form-check-label" for="switchValidateResponses"><small>Validate Responses</small></label>
+                </div>
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    @click="handleShowFeedbackSwitch"
+                    id="switchShowFeedback" 
+                    :disabled="isEndAttemptDisabled"
+                    checked>
+                  <label class="form-check-label" for="switchShowFeedback"><small>Show Feedback</small></label>
+                </div>                
+                <DisplayState ref="displaystate"></DisplayState>
+              </div>
+            </div>
           </div>
 
           <div class="col-lg-8">
@@ -56,23 +110,6 @@
                   @notifyQti3ItemAlertEvent="displayItemAlertEvent"
                   @notifyQti3ItemCatalogEvent="handleItemCatalogEvent"
                 />
-              </div>
-              <div class="card-footer">
-                <button 
-                  ref="endattempt"
-                  class="btn btn-sm btn-outline-primary waves-effect waves-light" 
-                  @click.prevent="handleEndAttemptClick" 
-                  title="End the Attempt and run Response Processing">
-                  End Attempt
-                </button>
-                <button 
-                  v-if="hasTemplateProcessing"
-                  ref="newtemplate"
-                  class="ms-2 btn btn-sm btn-outline-secondary waves-effect waves-light" 
-                  @click.prevent="handleNewTemplateClick" 
-                  title="Run Template Processing">
-                  New Template
-                </button>
               </div>
             </div>
 
@@ -100,6 +137,7 @@ import TopBarSandbox from '@/components/TopBarSandbox'
 import SkipNav from '@/components/SkipNav'
 import SettingsPanel from '@/components/SettingsPanel'
 import SamplesPanel from '@/components/SamplesPanel'
+import DisplayState from '@/components/DisplayState'
 import { PnpFactory } from '@/helpers/PnpFactory'
 import { SessionControlFactory } from '@/helpers/SessionControlFactory'
 import { TestControllerUtilities } from '@/helpers/TestControllerUtilities'
@@ -119,7 +157,8 @@ export default {
     TopBarSandbox,
     SettingsPanel,
     SamplesPanel,
-    SkipNav
+    SkipNav,
+    DisplayState
   },
 
   watch: {
@@ -200,8 +239,12 @@ export default {
        * Test Controller Utilities
        */
       TC: null,
-
-      endAttemptOutcomes: null
+      /*
+       * Maintain Item Control State
+       */
+      isEndAttemptDisabled: true,
+      isCheckedShowFeedback: true,
+      isCheckedValidateResponses: true
     }
   },
 
@@ -219,6 +262,7 @@ export default {
     },
 
     handleEndAttemptClick () {
+      this.clearResults()
       if (this.isSubmissionModeIndividual())
         this.qti3Player.endAttempt('navigateNone')
       else
@@ -228,6 +272,27 @@ export default {
     handleNewTemplateClick () {
       if (!this.hasTemplateProcessing) return
       this.qti3Player.newTemplate()
+    },
+
+    handleValidateResponsesSwitch (event) {
+      this.isCheckedValidateResponses = !this.isCheckedValidateResponses
+      this.toggleSwitchChecked(event.currentTarget, this.isCheckedValidateResponses)
+      this.sessionControl.setValidateResponses(this.isCheckedValidateResponses)
+      this.qti3Player.loadItemContextFromConfiguration(this.getConfiguration())
+    },
+
+    handleShowFeedbackSwitch (event) {
+      this.isCheckedShowFeedback = !this.isCheckedShowFeedback
+      this.toggleSwitchChecked(event.currentTarget, this.isCheckedShowFeedback)
+      this.sessionControl.setShowFeedback(this.isCheckedShowFeedback)
+      this.qti3Player.loadItemContextFromConfiguration(this.getConfiguration())
+    },
+
+    toggleSwitchChecked (switchEl, isChecked) {
+      if (isChecked)
+        switchEl.setAttribute('checked','')
+      else
+        switchEl.removeAttribute('checked')
     },
 
     isSubmissionModeIndividual () {
@@ -252,41 +317,24 @@ export default {
     next (data) {
       switch (data.target) {
         case 'navigateNone':
-          this.endAttemptOutcomes = data.state.outcomeVariables
           if (this.isInvalidResponses(data.state.validationMessages)) return
+          this.$refs.displaystate.printState(data.state, this.qti3Player.getItem().isAdaptive)
           break
         default:
           // NOOP
       }
     },
 
-    loadItemAtIndex (index) {
-      if (index === null) return
-      if ((index < 0) || (index > this.maxItems-1)) return
-
-      const item = this.TC.getItemAtIndex(index)
-
-      // Set current item submission mode
-      this.itemSubmissionMode = this.computeItemSubmissionMode(item)
-
-      // Update sessionControl with item/test properties
-      this.sessionControl.setValidateResponses(item.sessionControl.validateResponses)
-      this.sessionControl.setShowFeedback(item.sessionControl.showFeedback)
-
-      // Build a configuration
-      const configuration = this.getConfiguration(item.guid)
-
-      // Load the item with the configuration
-      this.qti3Player.loadItemFromXml(item.xml, configuration)
-    },
-
     loadItemXml () {
-      // Update sessionControl with item/test properties
-      this.sessionControl.setValidateResponses(true)
-      this.sessionControl.setShowFeedback(true)
+      // Update sessionControl with item control properties
+      this.sessionControl.setValidateResponses(this.isCheckedValidateResponses)
+      this.sessionControl.setShowFeedback(this.isCheckedShowFeedback)
 
       // Build a configuration
-      const configuration = this.getConfiguration('sandbox')
+      const configuration = this.getConfiguration()
+
+      this.setDisableEndAttemptButton(true)
+      this.clearResults()
 
       // Load the item with the configuration
       this.qti3Player.loadItemFromXml(this.itemXml, configuration)
@@ -297,15 +345,7 @@ export default {
       return this.testSubmissionMode
     },
 
-    setTestStateItemState (state) {
-      this.itemStates.set(state.guid, state)
-    },
-
-    getTestStateItemState (guid) {
-      return this.itemStates.get(guid)
-    },
-
-    getConfiguration (guid) {
+    getConfiguration () {
       const context = this.$VUE_APP_CONFIGURATION
       // Save the pci context
       this.pciContext.renderer2p0 = context?.cfg?.pciContext?.renderer2p0 || '/assets/pci/pci.html'
@@ -313,18 +353,16 @@ export default {
       const configuration = {}
 
       configuration.status = 'interacting'
-
-      // Fetch prior state from Test State
-      const state = this.getTestStateItemState(guid)
-      if (typeof state !== 'undefined') configuration.state = state
-
-      // IMPORTANT: Stamp the item's tracking guid onto the configuration
-      configuration.guid = guid
+      configuration.guid = 'sandbox'
       configuration.pnp = this.pnp.getPnp()
       configuration.sessionControl = this.sessionControl.getSessionControl()
       configuration.pciContext = this.pciContext
 
       return configuration
+    },
+
+    clearResults () {
+      this.$refs.displaystate.clear()
     },
 
     /**
@@ -491,6 +529,21 @@ export default {
           (item.getTemplateProcessing() == null)
             ? false
             : true
+      
+      if (item === null) return
+
+      // Enable buttons and switches
+      this.setDisableEndAttemptButton(false)
+
+      if (item.isAdaptive) {
+        // Set validate responses off, and show feedback on
+        this.toggleSwitchChecked(document.getElementById('switchValidateResponses'), false)
+        this.toggleSwitchChecked(document.getElementById('switchShowFeedback'), true)
+      }
+    },
+
+    setDisableEndAttemptButton (isDisabled) {
+      this.isEndAttemptDisabled = isDisabled
     }
 
   },
