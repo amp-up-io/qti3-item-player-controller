@@ -309,7 +309,7 @@ const items = [
               <qti-variable identifier="MAXSCORE"/>
             </qti-set-outcome-value>
             <qti-set-outcome-value identifier="FEEDBACK">
-              <qti-base-value base-type="identifier">correct</qti-base-value
+              <qti-base-value base-type="identifier">correct</qti-base-value>
             </qti-set-outcome-value>
           </qti-response-if>
           <qti-response-else>
