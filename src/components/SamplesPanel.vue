@@ -43,6 +43,39 @@
           </li>
 
           <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ms-collapse" aria-expanded="false">
+              Multiple Select
+            </button>
+            <div class="collapse" id="ms-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mc-basic-collapse" aria-expanded="false">
+                    Basic
+                  </button>
+                  <div class="collapse mt-1" id="mc-basic-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q2-choice-interaction-multiple-sv-1" title="Water - SV1" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mc-adv-collapse" aria-expanded="false">
+                    Advanced
+                  </button>
+                  <div class="collapse mt-1" id="mc-adv-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q2-choice-interaction-multiple-sv-4a" title="Water - Ctrl Hidden" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-4b" title="Water - Orientation" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-4c" title="Water - Stacking" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-4d" title="Water - Custom Message" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#at-collapse" aria-expanded="false">
               Adaptive & Templated
             </button>

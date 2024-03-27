@@ -2129,25 +2129,224 @@ const items = [
     "identifier": "q2-choice-interaction-multiple-sv-4a",
     "guid": "0000-0003-0001",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<qti-assessment-item\r\n    xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n    xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\"\r\n    identifier=\"q2-choice-interaction-multiple-sv-4a\" title=\"Choice Interaction - Multiple (SV 4a) - input control options\" \r\n    adaptive=\"false\" time-dependent=\"false\">\r\n    <qti-response-declaration identifier=\"RESPONSE1\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE2\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\" \/>\r\n    <qti-item-body>\r\n        <p>Which of the following elements are used to form water?<\/p>\r\n        \r\n        <qti-choice-interaction class=\"qti-input-control-hidden\" max-choices=\"0\" response-identifier=\"RESPONSE1\">\r\n            <qti-prompt>Demonstrates <em>qti-input-control-hidden<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\" fixed=\"false\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\" fixed=\"false\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\" fixed=\"false\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\" fixed=\"false\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\" fixed=\"false\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\" fixed=\"false\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n        \r\n        <qti-choice-interaction class=\"qti-input-control-hidden qti-labels-none\" max-choices=\"0\" response-identifier=\"RESPONSE2\">\r\n            <qti-prompt>Demonstrates <em>qti-input-control-hidden qti-labels-none<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\" fixed=\"false\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\" fixed=\"false\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\" fixed=\"false\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\" fixed=\"false\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\" fixed=\"false\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\" fixed=\"false\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n        \r\n    <\/qti-item-body>\r\n<\/qti-assessment-item>"
+    "xml": `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"    identifier="q2-choice-interaction-multiple-sv-4a" title="Choice Interaction - Multiple (SV 4a) - input control options" 
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="identifier" />
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" />
+    <qti-item-body>
+      <p>Which of the following elements are used to form water?</p>
+      <qti-choice-interaction class="qti-input-control-hidden" max-choices="0" response-identifier="RESPONSE1">
+        <qti-prompt>Demonstrates <em>qti-input-control-hidden</em>.</qti-prompt>
+        <qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-input-control-hidden qti-labels-none" max-choices="0" response-identifier="RESPONSE2">
+        <qti-prompt>Demonstrates <em>qti-input-control-hidden qti-labels-none</em>.</qti-prompt>
+        <qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q2-choice-interaction-multiple-sv-4b",
     "guid": "0000-0003-0002",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<qti-assessment-item\r\n    xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n    xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\"\r\n    identifier=\"q2-choice-interaction-multiple-sv-4b\" title=\"Choice Interaction - Multiple (SV 4b)- orientation options\" \r\n    adaptive=\"false\" time-dependent=\"false\">\r\n    <qti-response-declaration identifier=\"RESPONSE1\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE2\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\" \/>\r\n    <qti-item-body>\r\n    \r\n        <qti-choice-interaction class=\"qti-orientation-horizontal\" max-choices=\"0\" response-identifier=\"RESPONSE1\">\r\n            <qti-prompt>Demonstrates <em>qti-orientation-horizontal<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\r\n        <qti-choice-interaction class=\"qti-orientation-vertical\" max-choices=\"0\" response-identifier=\"RESPONSE2\">\r\n            <qti-prompt>Demonstrates <em>qti-orientation-vertical<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\t\r\n    <\/qti-item-body>\r\n<\/qti-assessment-item>"
+    "xml": `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"    identifier="q2-choice-interaction-multiple-sv-4b" title="Choice Interaction - Multiple (SV 4b)- orientation options"
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="identifier" />
+    <qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="identifier" />
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" />
+    <qti-item-body>
+      <qti-choice-interaction class="qti-orientation-horizontal" max-choices="0" response-identifier="RESPONSE1">
+        <qti-prompt>Demonstrates <em>qti-orientation-horizontal</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-orientation-vertical" max-choices="0" response-identifier="RESPONSE2">
+        <qti-prompt>Demonstrates <em>qti-orientation-vertical</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q2-choice-interaction-multiple-sv-4c",
     "guid": "0000-0003-0003",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<qti-assessment-item\r\n    xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n    xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\"\r\n    identifier=\"q2-choice-interaction-multiple-sv-4c\" title=\"Choice Interaction - Multiple (SV 4c)- stacking options\" \r\n    adaptive=\"false\" time-dependent=\"false\">\r\n    <qti-response-declaration identifier=\"RESPONSE1\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE2\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE3\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE4\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE5\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE6\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE7\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE8\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-response-declaration identifier=\"RESPONSE9\" cardinality=\"multiple\" base-type=\"identifier\" \/>\r\n    <qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\" \/>\r\n    <qti-item-body>\r\n        <p>Which of the following elements are used to form water?<\/p>\r\n\t\t\r\n        <qti-choice-interaction class=\"qti-choices-stacking-5\" response-identifier=\"RESPONSE1\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-5<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\t\t\r\n        <qti-choice-interaction class=\"qti-choices-stacking-4\" response-identifier=\"RESPONSE2\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-4<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\t\t\r\n        <qti-choice-interaction class=\"qti-choices-stacking-3\" response-identifier=\"RESPONSE3\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-3<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\t\t\r\n        <qti-choice-interaction class=\"qti-choices-stacking-2\" response-identifier=\"RESPONSE4\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-2<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\t\t\r\n        <qti-choice-interaction class=\"qti-choices-stacking-1\" response-identifier=\"RESPONSE5\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-1<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\r\n        <qti-choice-interaction class=\"qti-choices-stacking-2 qti-orientation-horizontal\" response-identifier=\"RESPONSE6\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-2 and qti-orientation-horizontal<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\t\t\r\n        <qti-choice-interaction class=\"qti-choices-stacking-3 qti-orientation-horizontal\" response-identifier=\"RESPONSE7\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-3 and qti-orientation-horizontal<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\r\n        <qti-choice-interaction class=\"qti-choices-stacking-2 qti-orientation-vertical\" response-identifier=\"RESPONSE8\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-2 and qti-orientation-vertical<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\r\n        <qti-choice-interaction class=\"qti-choices-stacking-3 qti-orientation-vertical\" response-identifier=\"RESPONSE9\" max-choices=\"0\">\r\n            <qti-prompt>Demonstrates <em>qti-choices-stacking-3 and qti-orientation-vertical<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\r\n    <\/qti-item-body>\r\n<\/qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"    
+    identifier="q2-choice-interaction-multiple-sv-4c" title="Choice Interaction - Multiple (SV 4c)- stacking options"
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE3" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE4" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE5" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE6" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE7" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE8" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE9" cardinality="multiple" base-type="identifier"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" />
+    <qti-item-body>
+      <p>Which of the following elements are used to form water?</p>
+      <qti-choice-interaction class="qti-choices-stacking-5" response-identifier="RESPONSE1" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-5</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-4" response-identifier="RESPONSE2" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-4</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-3" response-identifier="RESPONSE3" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-3</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-2" response-identifier="RESPONSE4" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-2</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-1" response-identifier="RESPONSE5" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-1</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-2 qti-orientation-horizontal" response-identifier="RESPONSE6" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-2 and qti-orientation-horizontal</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-3 qti-orientation-horizontal" response-identifier="RESPONSE7" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-3 and qti-orientation-horizontal</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-2 qti-orientation-vertical" response-identifier="RESPONSE8" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-2 and qti-orientation-vertical</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <qti-choice-interaction class="qti-choices-stacking-3 qti-orientation-vertical" response-identifier="RESPONSE9" max-choices="0">
+        <qti-prompt>Demonstrates <em>qti-choices-stacking-3 and qti-orientation-vertical</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q2-choice-interaction-multiple-sv-4d",
     "guid": "0000-0003-0004",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<qti-assessment-item\r\n    xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n    xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\"\r\n    identifier=\"q2-choice-interaction-multiple-sv-4d\" title=\"Choice Interaction - Multiple (SV 4d) - max\/min Choices Messages\" \r\n    adaptive=\"false\" time-dependent=\"false\">\r\n    <qti-response-declaration identifier=\"RESPONSE1\" cardinality=\"multiple\" base-type=\"identifier\"\/>\r\n    <qti-response-declaration identifier=\"RESPONSE2\" cardinality=\"multiple\" base-type=\"identifier\"\/>\r\n    <qti-response-declaration identifier=\"RESPONSE3\" cardinality=\"multiple\" base-type=\"identifier\"\/>\r\n    <qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"\/>\r\n    <qti-item-body>\r\n        <p>Which of the following elements are used to form water?<\/p>\r\n\t\t\r\n        <!-- Stacking specified here only to compress the presentation of the 6 choices -->\r\n        <qti-choice-interaction class=\"qti-choices-stacking-3\" data-max-selections-message=\"You've selected too many!\" response-identifier=\"RESPONSE1\" max-choices=\"2\">\r\n            <qti-prompt>Demonstrates max-choices=\"2\" and <em>custom data-max-selections-message<\/em>.<\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\r\n        <!-- Stacking specified here only to compress the presentation of the 6 choices -->\t\t\r\n        <qti-choice-interaction class=\"qti-choices-stacking-3\" response-identifier=\"RESPONSE2\" max-choices=\"2\">\r\n            <qti-prompt>Demonstrates max-choices=\"2\" and <em>default\/system Max Selections Message.<\/em><\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\r\n        <!-- Stacking specified here only to compress the presentation of the 6 choices -->\t\t\r\n        <qti-choice-interaction class=\"qti-choices-stacking-3\" data-min-selections-message=\"Not enough selected! Please select at least two.\" response-identifier=\"RESPONSE3\" max-choices=\"0\" min-choices=\"2\">\r\n            <qti-prompt>Demonstrates min-choices=\"2\" and <em>custom data-min-selections-message.<\/em><\/qti-prompt>\r\n            <qti-simple-choice identifier=\"H\">Hydrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"He\">Helium<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"C\">Carbon<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"O\">Oxygen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"N\">Nitrogen<\/qti-simple-choice>\r\n            <qti-simple-choice identifier=\"Cl\">Chlorine<\/qti-simple-choice>\r\n        <\/qti-choice-interaction>\r\n\t\t\r\n    <\/qti-item-body>\r\n<\/qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"    
+    identifier="q2-choice-interaction-multiple-sv-4d" title="Choice Interaction - Multiple (SV 4d) - max/min Choices Messages"
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE3" cardinality="multiple" base-type="identifier"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+      <p>Which of the following elements are used to form water?</p>
+      <!-- Stacking specified here only to compress the presentation of the 6 choices -->
+      <qti-choice-interaction class="qti-choices-stacking-3" data-max-selections-message="You've selected too many!" response-identifier="RESPONSE1" max-choices="2">
+        <qti-prompt>Demonstrates max-choices="2" and <em>custom data-max-selections-message</em>.</qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <!-- Stacking specified here only to compress the presentation of the 6 choices -->
+      <qti-choice-interaction class="qti-choices-stacking-3" response-identifier="RESPONSE2" max-choices="2">
+        <qti-prompt>Demonstrates max-choices="2" and <em>default/system Max Selections Message.</em></qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+      <!-- Stacking specified here only to compress the presentation of the 6 choices -->
+      <qti-choice-interaction class="qti-choices-stacking-3" data-min-selections-message="Not enough selected! Please select at least two." response-identifier="RESPONSE3" max-choices="0" min-choices="2">
+        <qti-prompt>Demonstrates min-choices="2" and <em>custom data-min-selections-message.</em></qti-prompt>
+        <qti-simple-choice identifier="H">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q12-inline-choice-interaction",
