@@ -315,13 +315,10 @@ export default {
     },
 
     next (data) {
-      switch (data.target) {
-        case 'navigateNone':
-          if (this.isInvalidResponses(data.state.validationMessages)) return
-          this.$refs.displaystate.printState(data.state, this.qti3Player.getItem().isAdaptive)
-          break
-        default:
-          // NOOP
+      // Target is null when the end attempt comes from an item's EndAttemptInteraction
+      if ((data.target === null) || (data.target === 'navigateNone')) {
+        if (this.isInvalidResponses(data.state.validationMessages)) return
+        this.$refs.displaystate.printState(data.state, this.qti3Player.getItem().isAdaptive)
       }
     },
 
@@ -433,8 +430,6 @@ export default {
     isInvalidResponses (validationMessages) {
       if (!this.sessionControl.getValidateResponses()) return false
       if (validationMessages.length === 0) return false
-      // Disable whichever nav button got us here
-      //this.toggleButtonDisabled (navigationDirection, false)
       // Display validation messages
       this.displayInvalidResponseMessages(validationMessages)
       return true
