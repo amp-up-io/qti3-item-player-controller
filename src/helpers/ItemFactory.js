@@ -2352,19 +2352,144 @@ const items = [
     "identifier": "q12-inline-choice-interaction",
     "guid": "0000-0007-0001",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<qti-assessment-item \r\n  xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" \r\n  xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n  xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\" \r\n  identifier=\"inline-choice-1\" title=\"Richard III (Take 2)\" adaptive=\"false\" time-dependent=\"false\">\r\n  <qti-response-declaration identifier=\"RESPONSE\" cardinality=\"single\" base-type=\"identifier\">\r\n    <qti-correct-response>\r\n      <qti-value>Y<\/qti-value>\r\n    <\/qti-correct-response>\r\n  <\/qti-response-declaration>\r\n  <qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"\/>\r\n  <qti-item-body>\r\n    <p>\r\n      Identify the missing word in this famous quote from Shakespeare's Richard III.\r\n    <\/p>\r\n    <blockquote>\r\n      <p>\r\n        Now is the winter of our discontent<br\/>\r\n        Made glorious summer by this sun of\r\n        <qti-inline-choice-interaction response-identifier=\"RESPONSE\">\r\n          <qti-inline-choice identifier=\"G\">Gloucester<\/qti-inline-choice>\r\n          <qti-inline-choice identifier=\"L\">Lancaster<\/qti-inline-choice>\r\n          <qti-inline-choice identifier=\"Y\">York<\/qti-inline-choice>\r\n        <\/qti-inline-choice-interaction>;<br\/>\r\n        And all the clouds that lour'd upon our house<br\/>\r\n        In the deep bosom of the ocean buried.\r\n      <\/p>\r\n    <\/blockquote>\r\n<\/qti-item-body>\r\n<qti-response-processing template=\"https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/rptemplates\/match_correct.xml\"\/>\r\n<\/qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+    identifier="inline-choice-1" title="Richard III (Take 2)" 
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+      <qti-correct-response>
+        <qti-value>Y</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+      <p>
+        Identify the missing word in this famous quote from Shakespeare's Richard III.
+      </p>
+      <blockquote>
+        <p>
+          Now is the winter of our discontent<br/>
+          Made glorious summer by this sun of <qti-inline-choice-interaction response-identifier="RESPONSE">
+            <qti-inline-choice identifier="G">Gloucester</qti-inline-choice>
+            <qti-inline-choice identifier="L">Lancaster</qti-inline-choice>
+            <qti-inline-choice identifier="Y">York</qti-inline-choice>
+          </qti-inline-choice-interaction>;<br/>
+          And all the clouds that lour'd upon our house<br/> 
+          In the deep bosom of the ocean buried.
+        </p>
+      </blockquote>
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q12-inline-choice-composite",
     "guid": "0000-0007-0002",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<qti-assessment-item \r\n  xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" \r\n  xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n  xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd\" \r\n  identifier=\"inline-choice-composite\" title=\"Richard III (Take 2) - Composite\" \r\n  adaptive=\"false\" time-dependent=\"false\">\r\n<qti-response-declaration identifier=\"RESPONSE\" cardinality=\"single\" base-type=\"identifier\">\r\n  <qti-correct-response>\r\n    <qti-value>w<\/qti-value>\r\n  <\/qti-correct-response>\r\n<\/qti-response-declaration>\r\n<qti-response-declaration identifier=\"RESPONSE_1\" cardinality=\"single\" base-type=\"identifier\">\r\n  <qti-correct-response>\r\n    <qti-value>Y<\/qti-value>\r\n  <\/qti-correct-response>\r\n<\/qti-response-declaration>\r\n<qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"\/>\r\n<qti-item-body>\r\n  <p>\r\n    Identify the missing word in this famous quote from Shakespeare's Richard III.\r\n  <\/p>\r\n  <blockquote>\r\n    <p>\r\n      Now is the \r\n      <qti-inline-choice-interaction response-identifier=\"RESPONSE\">\r\n        <qti-inline-choice identifier=\"w\">winter<\/qti-inline-choice>\r\n        <qti-inline-choice identifier=\"s\">summer<\/qti-inline-choice>\r\n        <qti-inline-choice identifier=\"a\">autumn<\/qti-inline-choice>\r\n      <\/qti-inline-choice-interaction>\r\n      of our discontent<br\/>\r\n      Made glorious summer by this sun of\r\n      <qti-inline-choice-interaction response-identifier=\"RESPONSE_1\">\r\n        <qti-inline-choice identifier=\"G\">Gloucester<\/qti-inline-choice>\r\n        <qti-inline-choice identifier=\"L\">Lancaster<\/qti-inline-choice>\r\n        <qti-inline-choice identifier=\"Y\">York<\/qti-inline-choice>\r\n      <\/qti-inline-choice-interaction>;<br\/>\r\n      And all the clouds that lour'd upon our house\r\n      <br\/>\r\n      In the deep bosom of the ocean buried.\r\n    <\/p>\r\n  <\/blockquote>\r\n<\/qti-item-body>\r\n<qti-response-processing>\r\n  <qti-response-condition>\r\n    <qti-response-if>\r\n      <qti-match>\r\n        <qti-variable identifier=\"RESPONSE\"\/>\r\n        <qti-correct identifier=\"RESPONSE\"\/>\r\n      <\/qti-match>\r\n      <qti-set-outcome-value identifier=\"SCORE\">\r\n        <qti-sum>\r\n          <qti-variable identifier=\"SCORE\"\/>\r\n          <qti-base-value base-type=\"integer\">1<\/qti-base-value>\r\n        <\/qti-sum>\r\n      <\/qti-set-outcome-value>\r\n    <\/qti-response-if>\r\n  <\/qti-response-condition>\r\n  <qti-response-condition>\r\n    <qti-response-if>\r\n      <qti-match>\r\n        <qti-variable identifier=\"RESPONSE_1\"\/>\r\n        <qti-correct identifier=\"RESPONSE_1\"\/>\r\n      <\/qti-match>\r\n      <qti-set-outcome-value identifier=\"SCORE\">\r\n        <qti-sum>\r\n          <qti-variable identifier=\"SCORE\"\/>\r\n          <qti-base-value base-type=\"integer\">1<\/qti-base-value>\r\n        <\/qti-sum>\r\n      <\/qti-set-outcome-value>\r\n    <\/qti-response-if>\r\n  <\/qti-response-condition>\r\n<\/qti-response-processing>\r\n<\/qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"   
+    identifier="inline-choice-composite" title="Richard III (Take 2) - Composite"
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+      <qti-correct-response>
+        <qti-value>w</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE_1" cardinality="single" base-type="identifier">
+      <qti-correct-response>
+        <qti-value>Y</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+      <p>
+        Identify the missing word in this famous quote from Shakespeare's Richard III.
+      </p>
+      <blockquote>
+        <p>
+          Now is the <qti-inline-choice-interaction response-identifier="RESPONSE">
+          <qti-inline-choice identifier="w">winter</qti-inline-choice>
+          <qti-inline-choice identifier="s">summer</qti-inline-choice>
+          <qti-inline-choice identifier="a">autumn</qti-inline-choice>
+          </qti-inline-choice-interaction> of our discontent<br/>
+          Made glorious summer by this sun of <qti-inline-choice-interaction response-identifier="RESPONSE_1">
+          <qti-inline-choice identifier="G">Gloucester</qti-inline-choice>
+          <qti-inline-choice identifier="L">Lancaster</qti-inline-choice>
+          <qti-inline-choice identifier="Y">York</qti-inline-choice>
+          </qti-inline-choice-interaction>;<br/>
+          And all the clouds that lour'd upon our house<br/>
+          In the deep bosom of the ocean buried.
+        </p>
+      </blockquote>
+    </qti-item-body>
+    <qti-response-processing>
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-match>
+            <qti-variable identifier="RESPONSE"/>
+            <qti-correct identifier="RESPONSE"/>
+          </qti-match>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-sum>
+              <qti-variable identifier="SCORE"/>
+              <qti-base-value base-type="integer">1</qti-base-value>
+            </qti-sum>
+          </qti-set-outcome-value>
+        </qti-response-if>
+      </qti-response-condition>
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-match>
+            <qti-variable identifier="RESPONSE_1"/>
+            <qti-correct identifier="RESPONSE_1"/>
+          </qti-match>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-sum>
+              <qti-variable identifier="SCORE"/>
+              <qti-base-value base-type="integer">1</qti-base-value>
+            </qti-sum>
+          </qti-set-outcome-value>
+        </qti-response-if>
+      </qti-response-condition>
+    </qti-response-processing>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q12-inline-choice-mathml",
     "guid": "0000-0007-0003",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<qti-assessment-item \r\n  xmlns=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0\" \r\n  xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" \r\n  xmlns:m=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" \r\n  xsi:schemaLocation=\"http:\/\/www.imsglobal.org\/xsd\/imsqtiasi_v3p0 https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/schema\/xsd\/imsqti_asiv3p0_v1p0.xsd  http:\/\/www.w3.org\/1998\/Math\/MathML https:\/\/purl.imsglobal.org\/spec\/mathml\/v3p0\/schema\/xsd\/mathml3.xsd\" \r\n  identifier=\"inline-choice-mathml\" title=\"Inline Choice with MathML\" \r\n  adaptive=\"false\" time-dependent=\"false\">\r\n<qti-response-declaration identifier=\"RESPONSE\" cardinality=\"single\" base-type=\"identifier\">\r\n  <qti-correct-response>\r\n    <qti-value>choice2<\/qti-value>\r\n  <\/qti-correct-response>\r\n<\/qti-response-declaration>\r\n<qti-outcome-declaration identifier=\"SCORE\" cardinality=\"single\" base-type=\"float\"\/>\r\n<qti-item-body>\r\n  <p>Answer the question.<\/p>\r\n  <blockquote>\r\n    <p>\r\n      If\r\n      <math>\r\n        <mrow>\r\n          <mi>a<\/mi>\r\n          <mo>=<\/mo>\r\n          <mi>b<\/mi>\r\n        <\/mrow>\r\n      <\/math>\r\n      and\r\n      <math>\r\n        <mrow>\r\n          <mi>b<\/mi>\r\n          <mo>=<\/mo>\r\n          <mi>c<\/mi>\r\n        <\/mrow>\r\n      <\/math>\r\n      then\r\n      <qti-inline-choice-interaction response-identifier=\"RESPONSE\">\r\n        <qti-inline-choice identifier=\"choice1\">\r\n          <math>\r\n            <mrow>\r\n              <mi>x<\/mi>\r\n\t      <mo>=<\/mo>\r\n\t      <mi>y<\/mi>\r\n            <\/mrow>\r\n          <\/math>\r\n        <\/qti-inline-choice>\r\n        <qti-inline-choice identifier=\"choice2\">\r\n          <math>\r\n            <mrow>\r\n\t      <mi>a<\/mi>\r\n\t      <mo>=<\/mo>\r\n\t      <mi>c<\/mi>\r\n            <\/mrow>\r\n          <\/math>\r\n        <\/qti-inline-choice>\r\n        <qti-inline-choice identifier=\"choice3\">\r\n          <math>\r\n            <mrow>\r\n\t      <mi>b<\/mi>\r\n              <mo>=<\/mo>\r\n              <mi>d<\/mi>\r\n            <\/mrow>\r\n          <\/math>\r\n        <\/qti-inline-choice>\r\n      <\/qti-inline-choice-interaction>.\r\n    <\/p>\r\n  <\/blockquote>\r\n<\/qti-item-body>\r\n<qti-response-processing template=\"https:\/\/purl.imsglobal.org\/spec\/qti\/v3p0\/rptemplates\/match_correct.xml\"\/>\r\n<\/qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:m="http://www.w3.org/1998/Math/MathML"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd  http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v3p0/schema/xsd/mathml3.xsd"
+    identifier="inline-choice-mathml" title="Inline Choice with MathML"
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+      <qti-correct-response>
+        <qti-value>choice2</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+      <p>Answer the question.</p>
+      <blockquote>
+        <p>
+          If <math><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow></math> and <math><mrow><mi>b</mi><mo>=</mo><mi>c</mi></mrow></math> then 
+          <qti-inline-choice-interaction response-identifier="RESPONSE">
+            <qti-inline-choice identifier="choice1"><math><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow></math></qti-inline-choice>
+            <qti-inline-choice identifier="choice2"><math><mrow><mi>a</mi><mo>=</mo><mi>c</mi></mrow></math></qti-inline-choice>
+            <qti-inline-choice identifier="choice3"><math><mrow><mi>b</mi><mo>=</mo><mi>d</mi></mrow></math></qti-inline-choice>
+          </qti-inline-choice-interaction>.
+        </p>
+      </blockquote>
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q12-inline-choice-sv-1",

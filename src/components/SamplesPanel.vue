@@ -76,6 +76,22 @@
           </li>
 
           <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ic-collapse" aria-expanded="false">
+              Inline Choice
+            </button>
+            <div class="collapse mt-1" id="ic-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="q12-inline-choice-interaction" title="Richard III" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q12-inline-choice-composite" title="Richard III - Composite" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q12-inline-choice-mathml" title="Inline Choice - MathML" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q12-inline-choice-sv-1" title="Inline Choice - Widths" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q12-inline-choice-sv-2" title="Inline Choice - Custom Prompt" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q12-inline-choice-sv-3" title="Inline Choice - Custom Messages" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#at-collapse" aria-expanded="false">
               Adaptive & Templated
             </button>
