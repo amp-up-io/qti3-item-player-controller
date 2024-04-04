@@ -2513,42 +2513,265 @@ const items = [
     "identifier": "q5-extended-text-base-type-string",
     "guid": "0000-0011-0001",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" identifier=\"q5-extended-text-base-type-string\" title=\"Q5 - Extended Text Interaction - BaseType String\" adaptive=\"false\" time-dependent=\"false\"><qti-response-declaration identifier=\"RESPONSE\" cardinality=\"single\" base-type=\"string\"/><qti-item-body><p>A Haiku poem consists of 3 lines.  The first and last lines of a Haiku have 5 syllables while the middle line has 7 syllables.</p><qti-extended-text-interaction response-identifier=\"RESPONSE\"><qti-prompt>Write your own Haiku.</qti-prompt></qti-extended-text-interaction></qti-item-body></qti-assessment-item>"
+    "xml": `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+    identifier="q5-extended-text-base-type-string" title="Q5 - Extended Text Interaction - BaseType String" 
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+    <qti-item-body>
+      <p>A Haiku poem consists of 3 lines.  The first and last lines of a Haiku have 5 syllables while the middle line has 7 syllables.</p>
+      <qti-extended-text-interaction response-identifier="RESPONSE">
+        <qti-prompt>Write your own Haiku.</qti-prompt>
+      </qti-extended-text-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q5-extendedtext-sv-1",
     "guid": "0000-0011-0002",
-    "submissionMode": "individual","xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"   xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" adaptive=\"false\" time-dependent=\"false\" identifier=\"q5-extendedtext-sv-1\" title=\"Extended Text - (SV 1)\"><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE\" /><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\"/><qti-item-body><p>Read this postcard from your English pen-friend, Sam.</p><blockquote><p>Here is a postcard of my town. Please send me<br/> a postcard from your town.  What size is your<br/> town? What is the nicest part of your town?<br/>Where do you go in the evenings?<br/> Sam.</p></blockquote><qti-extended-text-interaction response-identifier=\"RESPONSE\"><qti-prompt>Write Sam a postcard. Answer the questions. Write 25-35 words.</qti-prompt></qti-extended-text-interaction></qti-item-body></qti-assessment-item>"
-  },
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+    adaptive="false" time-dependent="false" 
+    identifier="q5-extendedtext-sv-1" title="Extended Text - (SV 1)">
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-item-body>
+      <p>Read this postcard from your English pen-friend, Sam.</p>
+      <blockquote>
+        <p>
+          Here is a postcard of my town. Please send me<br/>
+          a postcard from your town.  What size is your<br/>
+          town? What is the nicest part of your town?<br/>
+          Where do you go in the evenings?<br/>
+          Sam.
+        </p>
+      </blockquote>
+      <qti-extended-text-interaction response-identifier="RESPONSE">
+        <qti-prompt>Write Sam a postcard. Answer the questions. Write 25-35 words.</qti-prompt>
+      </qti-extended-text-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
+ },
   {
     "identifier": "q5-extendedtext-sv-2a",
     "guid": "0000-0011-0003",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"   xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" adaptive=\"false\" time-dependent=\"false\" identifier=\"q5-extendedtext-sv-2a\" title=\"Extended Text - (SV 2a)\"><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE\" /><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\"/><qti-item-body><p>Read this postcard from your English pen-friend, Sam.</p><blockquote>      <p>Here is a postcard of my town. Please send me<br/> a postcard from your town. What size is your<br/> town? What is the nicest part of your town?<br/>Where do you go in the evenings?<br/> Sam.</p></blockquote><qti-extended-text-interaction class=\"qti-height-lines-3\" response-identifier=\"RESPONSE\"><qti-prompt><p>Demonstrates <em>qti-height-lines-3</em></p></qti-prompt></qti-extended-text-interaction></qti-item-body></qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+    adaptive="false" time-dependent="false" 
+    identifier="q5-extendedtext-sv-2a" title="Extended Text - (SV 2a)">
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-item-body>
+      <p>Read this postcard from your English pen-friend, Sam.</p>
+      <blockquote>
+        <p>Here is a postcard of my town. Please send me<br/>
+        a postcard from your town. What size is your<br/>
+        town? What is the nicest part of your town?<br/>
+        Where do you go in the evenings?<br/>
+        Sam.</p>
+      </blockquote>
+      <qti-extended-text-interaction class="qti-height-lines-3" response-identifier="RESPONSE">
+        <qti-prompt>
+          <p>Demonstrates <em>qti-height-lines-3</em></p>
+        </qti-prompt>
+      </qti-extended-text-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q5-extendedtext-sv-2b",
     "guid": "0000-0011-0004",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"   xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" adaptive=\"false\" time-dependent=\"false\" identifier=\"q5-extendedtext-sv-2b\" title=\"Extended Text - (SV 2b)\"><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE\" /><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\"/><qti-item-body><p>Read this postcard from your English pen-friend, Sam.</p><blockquote>      <p>Here is a postcard of my town. Please send me<br/> a postcard from your town. What size is your<br/> town? What is the nicest part of your town?<br/>Where do you go in the evenings?<br/> Sam.</p></blockquote><qti-extended-text-interaction class=\"qti-height-lines-6\" response-identifier=\"RESPONSE\"><qti-prompt><p>Demonstrates <em>qti-height-lines-6</em></p></qti-prompt></qti-extended-text-interaction></qti-item-body></qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+    adaptive="false" time-dependent="false"
+    identifier="q5-extendedtext-sv-2b" title="Extended Text - (SV 2b)">
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-item-body>
+      <p>Read this postcard from your English pen-friend, Sam.</p>
+      <blockquote>
+        <p>
+          Here is a postcard of my town. Please send me<br/>
+          a postcard from your town. What size is your<br/>
+          town? What is the nicest part of your town?<br/>
+          Where do you go in the evenings?<br/>
+          Sam.
+        </p>
+      </blockquote>
+      <qti-extended-text-interaction class="qti-height-lines-6" response-identifier="RESPONSE">
+        <qti-prompt>
+          <p>Demonstrates <em>qti-height-lines-6</em></p>
+        </qti-prompt>
+      </qti-extended-text-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q5-extendedtext-sv-2c",
     "guid": "0000-0011-0005",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"   xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" adaptive=\"false\" time-dependent=\"false\" identifier=\"q5-extendedtext-sv-2c\" title=\"Extended Text - (SV 2c)\"><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE\" /><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\"/><qti-item-body><p>Read this postcard from your English pen-friend, Sam.</p><blockquote>      <p>Here is a postcard of my town. Please send me<br/> a postcard from your town. What size is your<br/> town? What is the nicest part of your town?<br/>Where do you go in the evenings?<br/> Sam.</p></blockquote><qti-extended-text-interaction class=\"qti-height-lines-15\" response-identifier=\"RESPONSE\"><qti-prompt><p>Demonstrates <em>qti-height-lines-15</em></p></qti-prompt></qti-extended-text-interaction></qti-item-body></qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+    adaptive="false" time-dependent="false" 
+    identifier="q5-extendedtext-sv-2c" title="Extended Text - (SV 2c)">
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-item-body>
+      <p>Read this postcard from your English pen-friend, Sam.</p>
+      <blockquote>
+        <p>
+          Here is a postcard of my town. Please send me<br/>
+          a postcard from your town. What size is your<br/>
+          town? What is the nicest part of your town?<br/>
+          Where do you go in the evenings?<br/>
+          Sam.
+        </p>
+      </blockquote>
+      <qti-extended-text-interaction class="qti-height-lines-15" response-identifier="RESPONSE">
+        <qti-prompt>
+          <p>Demonstrates <em>qti-height-lines-15</em></p>
+        </qti-prompt>
+      </qti-extended-text-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q5-extendedtext-sv-3",
     "guid": "0000-0011-0006",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\"   adaptive=\"false\" time-dependent=\"false\" identifier=\"q5-extendedtext-sv-3\" title=\"Extended Text - (SV 3) - formats plain/xhtml, counters\"><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE1\"/><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE2\"/>  <qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE3\"/><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE4\"/>  <qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE5\"/>  <qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE6\"/>  <qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE7\"/><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE8\"/>  <qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE9\"/>    <qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE10\"/>  <qti-outcome-declaration base-type=\"integer\" cardinality=\"single\" identifier=\"SCORE\"/><qti-item-body><div class=\"qti-layout-row\"><div class=\"qti-layout-col8\"><p>Read this postcard from your English pen-friend, Sam.</p><div><object aria-label=\"Postcard from Sam.\"  aria-describedby=\"postcard-description\" data=\"https://grud-amp-bucket-1.s3.amazonaws.com/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/postcard.png\" type=\"image/png\" /><blockquote id=\"postcard-description\" class=\"qti-visually-hidden\"><p>Here is a postcard of my town. Please send me<br/> a postcard from your town. What size is your town? What is the nicest part of your town? Where do you go in the evenings? Sam.</p>End of Postcard.</blockquote></div><qti-extended-text-interaction class=\"qti-height-lines-3\" format=\"plain\" expected-length=\"200\" response-identifier=\"RESPONSE1\"><qti-prompt><p>Demonstrates qti-height-lines-3 format: plain</p></qti-prompt></qti-extended-text-interaction><qti-extended-text-interaction class=\"qti-height-lines-6\" format=\"plain\" expected-length=\"200\" response-identifier=\"RESPONSE2\">   <qti-prompt><p>Demonstrates qti-height-lines-6 format: plain</p></qti-prompt></qti-extended-text-interaction>                <qti-extended-text-interaction class=\"qti-height-lines-15\" format=\"plain\" expected-length=\"200\" response-identifier=\"RESPONSE3\">   <qti-prompt>     <p>       <br/>Demonstrates qti-height-lines-15 format: plain     </p>   </qti-prompt>        </qti-extended-text-interaction>        <qti-extended-text-interaction class=\"qti-height-lines-3\" format=\"xhtml\" expected-length=\"200\" response-identifier=\"RESPONSE4\">          <qti-prompt>            <p>              <br/>Demonstrates qti-height-lines-3 format: xhtml            </p>          </qti-prompt>        </qti-extended-text-interaction>                <qti-extended-text-interaction class=\"qti-height-lines-6\" format=\"xhtml\" expected-length=\"200\" response-identifier=\"RESPONSE5\">   <qti-prompt>     <p>       <br/>Demonstrates qti-height-lines-6 format: xhtml     </p>   </qti-prompt>        </qti-extended-text-interaction><qti-extended-text-interaction class=\"qti-height-lines-15\" format=\"xhtml\" expected-length=\"200\" response-identifier=\"RESPONSE6\">   <qti-prompt><p><br/>Demonstrates qti-height-lines-15 format: xhtml</p></qti-prompt></qti-extended-text-interaction><qti-extended-text-interaction class=\"qti-height-lines-3 qti-counter-down\" format=\"plain\" expected-length=\"200\" response-identifier=\"RESPONSE7\"><qti-prompt><p><br/>Demonstrates qti-height-lines-3, qti-counter-down, format: plain</p></qti-prompt></qti-extended-text-interaction><qti-extended-text-interaction class=\"qti-height-lines-3 qti-counter-up\" format=\"plain\" expected-length=\"200\" response-identifier=\"RESPONSE8\"><qti-prompt><p><br/>Demonstrates qti-height-lines-3, qti-counter-up, format: plain</p></qti-prompt></qti-extended-text-interaction><qti-extended-text-interaction class=\"qti-height-lines-3 qti-counter-down\" format=\"xhtml\" expected-length=\"200\" response-identifier=\"RESPONSE9\"><qti-prompt><p><br/>Demonstrates qti-height-lines-3, qti-counter-down, format: xhtml</p></qti-prompt></qti-extended-text-interaction><qti-extended-text-interaction class=\"qti-height-lines-3 qti-counter-up\" format=\"xhtml\" expected-length=\"200\" response-identifier=\"RESPONSE10\"><qti-prompt><p><br/>Demonstrates qti-height-lines-3, qti-counter-up, format: xhtml</p></qti-prompt></qti-extended-text-interaction></div></div></qti-item-body></qti-assessment-item>"
+    "xml": `<qti-assessment-item
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+    adaptive="false" time-dependent="false"
+    identifier="q5-extendedtext-sv-3" title="Extended Text - (SV 3) - formats plain/xhtml, counters">
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE1"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE2"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE3"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE4"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE5"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE6"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE7"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE8"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE9"/>
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE10"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-item-body>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col8">
+          <p>Read this postcard from your English pen-friend, Sam.</p>
+          <div>
+            <object aria-label="Postcard from Sam." aria-describedby="postcard-description" data="https://grud-amp-bucket-1.s3.amazonaws.com/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/postcard.png" type="image/png" />
+            <blockquote id="postcard-description" class="qti-visually-hidden">
+              <p>
+                Here is a postcard of my town. Please send me a postcard from your town. What 
+                size is your town? What is the nicest part of your town? Where do you go in 
+                the evenings? Sam.
+              </p>
+              End of Postcard.
+            </blockquote>
+          </div>
+          <qti-extended-text-interaction class="qti-height-lines-3" format="plain" expected-length="200" response-identifier="RESPONSE1">
+            <qti-prompt><p>Demonstrates qti-height-lines-3 format: plain</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-6" format="plain" expected-length="200" response-identifier="RESPONSE2">
+            <qti-prompt class="qti-margin-t-3"><p>Demonstrates qti-height-lines-6 format: plain</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-15" format="plain" expected-length="200" response-identifier="RESPONSE3">
+            <qti-prompt class="qti-margin-t-3"><p>Demonstrates qti-height-lines-15 format: plain</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-3" format="xhtml" expected-length="200" response-identifier="RESPONSE4">
+            <qti-prompt class="qti-margin-t-3"><p>Demonstrates qti-height-lines-3 format: xhtml</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-6" format="xhtml" expected-length="200" response-identifier="RESPONSE5">
+            <qti-prompt class="qti-margin-t-4"><p>Demonstrates qti-height-lines-6 format: xhtml</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-15" format="xhtml" expected-length="200" response-identifier="RESPONSE6">
+            <qti-prompt class="qti-margin-t-4"><p>Demonstrates qti-height-lines-15 format: xhtml</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-3 qti-counter-down" format="plain" expected-length="200" response-identifier="RESPONSE7">
+            <qti-prompt class="qti-margin-t-4"><p>Demonstrates qti-height-lines-3, qti-counter-down, format: plain</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-3 qti-counter-up" format="plain" expected-length="200" response-identifier="RESPONSE8">
+            <qti-prompt class="qti-margin-t-3"><p>Demonstrates qti-height-lines-3, qti-counter-up, format: plain</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-3 qti-counter-down" format="xhtml" expected-length="200" response-identifier="RESPONSE9">
+            <qti-prompt class="qti-margin-t-3"><p>Demonstrates qti-height-lines-3, qti-counter-down, format: xhtml</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+          <qti-extended-text-interaction class="qti-height-lines-3 qti-counter-up" format="xhtml" expected-length="200" response-identifier="RESPONSE10">
+            <qti-prompt class="qti-margin-t-3"><p>Demonstrates qti-height-lines-3, qti-counter-up, format: xhtml</p></qti-prompt>
+          </qti-extended-text-interaction>
+          
+        </div>
+      </div>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "q5-extendedtext-sv-4",
     "guid": "0000-0011-0007",
     "submissionMode": "individual",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><qti-assessment-item xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v3p0/schema/xsd/mathml3.xsd\" adaptive=\"false\" time-dependent=\"false\" identifier=\"q5-extendedtext-sv-4\" title=\"Extended Text - (SV 4) - patternmask\"><qti-response-declaration base-type=\"string\" cardinality=\"single\" identifier=\"RESPONSE\" /><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\"/><qti-item-body><p>Read this postcard from your English pen-friend, Sam.</p>    <div><object aria-label=\"Postcard from Sam.\" aria-describedby=\"postcard-description\" data=\"https://grud-amp-bucket-1.s3.amazonaws.com/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/postcard.png\" type=\"image/png\" /><blockquote id=\"postcard-description\" class=\"qti-visually-hidden\"><p>Here is a postcard of my town. Please send me<br/> a postcard from your town. What size is your<br/> town? What is the nicest part of your town?<br/>Where do you go in the evenings?<br/> Sam.</p>End of Postcard.</blockquote></div><p>qti-height-lines-3<br />format=\"plain\"<br />placeholder-text=\"Enter a decimal number...\"<br />pattern-mask=\"([0-9.]{0,6})\"<br />data-patternmask-message=\"Maximum of 6 digits or decimal points permitted\"<br/></p><qti-extended-text-interaction class=\"qti-height-lines-3\" placeholder-text=\"Enter a decimal number...\" pattern-mask=\"([0-9.]{0,6})\" data-patternmask-message=\"Maximum of 6 digits or decimal points permitted\" format=\"plain\" expected-length=\"6\" response-identifier=\"RESPONSE\"><qti-prompt><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>14</mn><mo class=\"sign\">\u00D7</mo><mrow><mi>tan</mi><mo>\u2061</mo><mfenced><mrow><mn>67</mn></mrow></mfenced></mrow></mrow></math> = </p></qti-prompt></qti-extended-text-interaction>  </qti-item-body></qti-assessment-item>"
+    "xml": `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v3p0/schema/xsd/mathml3.xsd"
+    adaptive="false" time-dependent="false" 
+    identifier="q5-extendedtext-sv-4" title="Extended Text - (SV 4) - patternmask">
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-item-body>
+      <p>Read this postcard from your English pen-friend, Sam.</p>
+      <div>
+        <object aria-label="Postcard from Sam." aria-describedby="postcard-description" data="https://grud-amp-bucket-1.s3.amazonaws.com/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/postcard.png" type="image/png"/>
+        <blockquote id="postcard-description" class="qti-visually-hidden">
+          <p>
+            Here is a postcard of my town. Please send me a postcard from your town. What size is your
+            town? What is the nicest part of your town? Where do you go in the evenings?
+            Sam.
+          </p>
+          End of Postcard.
+        </blockquote>
+      </div>
+      <p>
+        qti-height-lines-3<br />
+        format="plain"<br />
+        placeholder-text="Enter a decimal number..."<br />
+        pattern-mask="([0-9.]{0,6})"<br />
+        data-patternmask-message="Maximum of 6 digits or decimal points permitted"<br/>
+      </p>
+      <qti-extended-text-interaction 
+        class="qti-height-lines-3" 
+        placeholder-text="Enter a decimal number..." pattern-mask="([0-9.]{0,6})" 
+        data-patternmask-message="Maximum of 6 digits or decimal points permitted" 
+        format="plain" expected-length="6" response-identifier="RESPONSE">
+        <qti-prompt>
+          <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn><mo class="sign">\u00D7</mo><mrow><mi>tan</mi><mo>\u2061</mo><mfenced><mrow><mn>67</mn></mrow></mfenced></mrow></mrow></math> = </p>
+        </qti-prompt>
+      </qti-extended-text-interaction>
+    </qti-item-body>
+  </qti-assessment-item>`
   },
   {
     "identifier": "mc-calc5-qti3",

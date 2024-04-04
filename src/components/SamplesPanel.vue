@@ -114,6 +114,41 @@
           </li>
 
           <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#et-collapse" aria-expanded="false">
+              Extended Text
+            </button>
+            <div class="collapse" id="et-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#et-basic-collapse" aria-expanded="false">
+                    Basic
+                  </button>
+                  <div class="collapse mt-1" id="et-basic-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q5-extended-text-base-type-string" title="Plain" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q5-extendedtext-sv-1" title="Height - Default" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q5-extendedtext-sv-2a" title="Height - Lines 3" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q5-extendedtext-sv-2b" title="Height - Lines 6" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q5-extendedtext-sv-2c" title="Height - Lines 15" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#et-adv-collapse" aria-expanded="false">
+                    Advanced
+                  </button>
+                  <div class="collapse mt-1" id="et-adv-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q5-extendedtext-sv-3" title="Format Plain/XHTML - Counters" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q5-extendedtext-sv-4" title="Pattern Mask - Custom Message" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#hs-collapse" aria-expanded="false">
               Hotspot
             </button>
