@@ -150,15 +150,30 @@
 
           <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#hs-collapse" aria-expanded="false">
-              Hotspot
+              Hot Spot
             </button>
             <div class="collapse mt-1" id="hs-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <Sample identifier="q10-hotspot-example-1" title="Hotspot - Single Cardinality" @sampleSelected="handleSampleSelected"/>
-                <Sample identifier="q10-hotspot-example-2" title="Hotspot - Multiple Cardinality" @sampleSelected="handleSampleSelected"/>
-                <Sample identifier="q10-hotspot-example-3" title="Hotspot - Shapes" @sampleSelected="handleSampleSelected"/>
-                <Sample identifier="q10-hotspot-interaction-sv-1" title="Hotspot - Theming" @sampleSelected="handleSampleSelected"/>
-                <Sample identifier="q10-hotspot-interaction-sv-2" title="Hotspot - Custom Messages" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-example-1" title="Hot Spot - Single Cardinality" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-example-2" title="Hot Spot - Multiple Cardinality" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-example-3" title="Hot Spot - Shapes" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-interaction-sv-1" title="Hot Spot - Theming" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q10-hotspot-interaction-sv-2" title="Hot Spot - Custom Messages" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ht-collapse" aria-expanded="false">
+              Hot Text
+            </button>
+            <div class="collapse mt-1" id="ht-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="hot-text-example-1" title="Hot Text - Single Cardinality" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="hot-text-example-2" title="Hot Text - Multiple Cardinality" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q11-hottext-sv-1" title="Hot Text - Input Control Hidden" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q11-hottext-sv-2" title="Hot Text - Custom Messages" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="q11-hottext-sv-3" title="Hot Text - Unselected Hidden" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
           </li>
