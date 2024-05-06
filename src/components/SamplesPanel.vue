@@ -386,11 +386,12 @@
 
           <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#comp-collapse" aria-expanded="false">
-              Composite
+              Bootcamp Exercises
             </button>
             <div class="collapse mt-1" id="comp-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <Sample identifier="shakespeare-biography" title="Shakespeare Biography" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="stooges-match" title="Categorize Stooges" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
           </li>

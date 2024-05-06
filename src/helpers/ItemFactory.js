@@ -8141,7 +8141,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <qti-value>poet</qti-value>
         </qti-correct-response>
         <qti-mapping default-value="0">
-          <qti-map-entry map-key="poet" mapped-value="1"/>
+          <qti-map-entry case-sensitive="false" map-key="poet" mapped-value="1"/>
           <qti-map-entry map-key="playwright" mapped-value="1"/>
           <qti-map-entry map-key="writer" mapped-value="0.5"/>
         </qti-mapping>
@@ -8158,7 +8158,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         </p>
         <p>
           Date of birth:
-          <qti-inline-choice-interaction response-identifier="response_1">
+          <qti-inline-choice-interaction class="qti-input-width-10" response-identifier="response_1" shuffle="false">
             <qti-inline-choice identifier="choice_1">26 April 1564</qti-inline-choice>
             <qti-inline-choice identifier="choice_2">29 February 1664</qti-inline-choice>
             <qti-inline-choice identifier="choice_3">2 March 2010</qti-inline-choice>
@@ -8166,7 +8166,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         </p>
         <p>
           Date of death:
-          <qti-inline-choice-interaction response-identifier="response_2">
+          <qti-inline-choice-interaction class="qti-input-width-10" response-identifier="response_2" shuffle="false">
             <qti-inline-choice identifier="choice_4">23 April 1616</qti-inline-choice>
             <qti-inline-choice identifier="choice_5">24 April 1616</qti-inline-choice>
             <qti-inline-choice identifier="choice_6">25 April 1616</qti-inline-choice>
@@ -8240,6 +8240,37 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         </qti-response-condition>
       </qti-response-processing>
     </qti-assessment-item>`
+  },
+  {
+    "identifier": "stooges-match",
+    "guid": "0000-stooges-0001",
+    "submissionMode": "individual",    
+    xml: `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+    adaptive="false" identifier="match-stooges" time-dependent="false" title="Match Stooges">
+<qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE">
+  <qti-correct-response>
+    <qti-value>curly notsmart</qti-value>
+  </qti-correct-response>
+</qti-response-declaration>
+<qti-item-body>
+  <p>Categorize the Stooges!</p>
+  <qti-match-interaction class="" min-associations="0" max-associations="0" response-identifier="RESPONSE" shuffle="false">
+    <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="curly" match-max="0">Curly</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="moe" match-max="0">Moe</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="larry" match-max="0">Larry</qti-simple-associable-choice>
+    </qti-simple-match-set>
+    <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="bald" match-max="3">Bald</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="notsmart" match-max="3">Not Very Smart</qti-simple-associable-choice>
+    </qti-simple-match-set>
+  </qti-match-interaction>
+</qti-item-body>
+<qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>`
   }
 ]
 
