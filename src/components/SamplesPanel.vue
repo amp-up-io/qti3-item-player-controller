@@ -21,7 +21,29 @@
                   </button>
                   <div class="collapse mt-1" id="mc-basic-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <Sample identifier="q2-choice-interaction-single-sv-1" title="Unattended Luggage - SV1" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-1" title="Unattended Luggage" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mc-sv-collapse" aria-expanded="false">
+                    Shared Vocabulary
+                  </button>
+                  <div class="collapse mt-1" id="mc-sv-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q2-choice-interaction-single-sv-2a" title="Labels None" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-2b" title="Labels Decimal" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-2c" title="Labels Lower Alpha" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-2d" title="Labels Upper Alpha" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3a" title="Labels Lower Alpha - Suffix None" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3b" title="Labels Lower Alpha - Suffix Period" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3c" title="Labels Lower Alpha - Suffix Parenthesis" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3d" title="Labels Upper Alpha - Suffix None" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3e" title="Labels Upper Alpha - Suffix Period" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3f" title="Labels Upper Alpha - Suffix Parenthesis" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3g" title="Labels Decimal - Suffix None" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3h" title="Labels Decimal - Suffix Period" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-single-sv-3i" title="Labels Decimal - Suffix Parenthesis" @sampleSelected="handleSampleSelected"/>
                     </ul>
                   </div>
                 </li>
@@ -49,20 +71,42 @@
             <div class="collapse" id="ms-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li class="mb-1 mt-2 ms-3">
-                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mc-basic-collapse" aria-expanded="false">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ms-basic-collapse" aria-expanded="false">
                     Basic
                   </button>
-                  <div class="collapse mt-1" id="mc-basic-collapse">
+                  <div class="collapse mt-1" id="ms-basic-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <Sample identifier="q2-choice-interaction-multiple-sv-1" title="Water - SV1" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-1" title="Water Composition" @sampleSelected="handleSampleSelected"/>
                     </ul>
                   </div>
                 </li>
                 <li class="mb-1 mt-2 ms-3">
-                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#mc-adv-collapse" aria-expanded="false">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ms-sv-collapse" aria-expanded="false">
+                    Shared Vocabulary
+                  </button>
+                  <div class="collapse mt-1" id="ms-sv-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q2-choice-interaction-multiple-sv-2d" title="Labels None" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-2c" title="Labels Decimal" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-2a" title="Labels Lower Alpha" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-2b" title="Labels Upper Alpha" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3c" title="Labels Lower Alpha - Suffix None" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3b" title="Labels Lower Alpha - Suffix Period" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3a" title="Labels Lower Alpha - Suffix Parenthesis" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3f" title="Labels Upper Alpha - Suffix None" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3e" title="Labels Upper Alpha - Suffix Period" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3d" title="Labels Upper Alpha - Suffix Parenthesis" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3i" title="Labels Decimal - Suffix None" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3h" title="Labels Decimal - Suffix Period" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q2-choice-interaction-multiple-sv-3g" title="Labels Decimal - Suffix Parenthesis" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#ms-adv-collapse" aria-expanded="false">
                     Advanced
                   </button>
-                  <div class="collapse mt-1" id="mc-adv-collapse">
+                  <div class="collapse mt-1" id="ms-adv-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                       <Sample identifier="q2-choice-interaction-multiple-sv-4a" title="Water - Ctrl Hidden" @sampleSelected="handleSampleSelected"/>
                       <Sample identifier="q2-choice-interaction-multiple-sv-4b" title="Water - Orientation" @sampleSelected="handleSampleSelected"/>
