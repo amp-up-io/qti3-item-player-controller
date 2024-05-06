@@ -285,6 +285,62 @@
           </li>
 
           <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#te-collapse" aria-expanded="false">
+              Text Entry
+            </button>
+            <div class="collapse" id="te-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#te-basic-collapse" aria-expanded="false">
+                    Basic
+                  </button>
+                  <div class="collapse mt-1" id="te-basic-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q20-textentry-sv-1" title="Richard III" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#te-sv-collapse" aria-expanded="false">
+                    Shared Vocabulary
+                  </button>
+                  <div class="collapse mt-1" id="te-sv-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q20-textentry-sv-2a" title="Input Width 1" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2b" title="Input Width 2" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2c" title="Input Width 3" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2d" title="Input Width 4" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2j" title="Input Width 5" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2e" title="Input Width 6" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2f" title="Input Width 10" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2g" title="Input Width 15" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2h" title="Input Width 20" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2k" title="Input Width 25" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2l" title="Input Width 30" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2m" title="Input Width 35" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2n" title="Input Width 40" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2o" title="Input Width 45" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2p" title="Input Width 50" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-sv-2i" title="Input Width 72" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 mt-2 ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#te-adv-collapse" aria-expanded="false">
+                    Advanced
+                  </button>
+                  <div class="collapse mt-1" id="te-adv-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <Sample identifier="q20-textentry-sv-3" title="Pattern Mask - Custom Message" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="q20-textentry-composite" title="All Widths" @sampleSelected="handleSampleSelected"/>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#catalog-collapse" aria-expanded="false">
               Catalog - Glossary & Keyword
             </button>
@@ -328,6 +384,16 @@
             </div>
           </li>
 
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#comp-collapse" aria-expanded="false">
+              Composite
+            </button>
+            <div class="collapse mt-1" id="comp-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="shakespeare-biography" title="Shakespeare Biography" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
 
