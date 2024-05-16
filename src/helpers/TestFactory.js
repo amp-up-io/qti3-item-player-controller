@@ -1570,4 +1570,24 @@ export class TestFactory {
     return this.tests.find(test => test.id === id)
   }
 
+  pushNewTest (title, description, items) {
+    const id = Math.random().toString(16).slice(2);
+
+    tests.push({
+      id,
+      title,
+      description,
+      items: items.map(item => ({
+        "identifier": item.identifier,
+        "sessionControl": item.sessionControl || {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      })),
+      count: items.length.toString()
+    })
+
+    return id;
+  }
 }

@@ -8308,4 +8308,12 @@ export class ItemFactory {
     return items
   }
 
+  pushItem (xml) {
+    const identifier = xml.match(/identifier="([^"]+)"/)[1]
+    const guid = Math.random().toString(16).slice(2); 
+    const submissionMode = "simultaneous"
+
+    items.push({identifier, guid, submissionMode, xml});
+    return {identifier};
+  }
 }

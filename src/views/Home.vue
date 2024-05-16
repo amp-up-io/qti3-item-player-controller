@@ -33,6 +33,14 @@
                   </strong>
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab3" role="tab">
+                  <strong>
+                    <span class="d-block d-sm-none"><i class="far fa-list-alt"></i></span>
+                    <span class="d-none d-sm-block">Upload</span>
+                  </strong>
+                </a>
+              </li>
             </ul>
 
             <!-- Tab panes -->
@@ -81,6 +89,18 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
+              
+              <div class="tab-pane" id="tab3" role="tabpanel">
+                <label>
+                  Upload an .xml file containing a qti-assessment-item
+                  <input
+                    type="file"
+                    name="upload"
+                    accept="*.xml"
+                    @change="onFileChanged($event)"
+                  />
+                </label>
               </div>
             </div>
 
@@ -135,6 +155,17 @@ export default {
         }
       })
 
+    },
+    onFileChanged($event) {
+      const target = $event.target;
+      if (target && target.files && target.files[0]) {
+        const file = target.files[0];
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          console.log(e.target.result);
+        };
+        reader.readAsText(file);
+      }
     }
 
   },
@@ -145,6 +176,7 @@ export default {
 
   mounted () {
   }
+
 }
 </script>
 
