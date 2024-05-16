@@ -96,8 +96,8 @@
                   Upload an .xml file containing a qti-assessment-item
                   <input
                     type="file"
+                    webkitdirectory directory
                     name="upload"
-                    accept="*.xml"
                     @change="onFileChanged($event)"
                   />
                 </label>
@@ -116,6 +116,7 @@
 <script>
 import TopBarApp from '@/components/TopBarApp'
 import SkipNav from '@/components/SkipNav'
+import { ItemFactory } from '@/helpers/ItemFactory'
 import { TestFactory } from '@/helpers/TestFactory'
 
 export default {
@@ -138,7 +139,8 @@ export default {
 
     initialize () {
       // Load tests
-      this.tests = new TestFactory().load()
+      this.testFactory = TestFactory.instance();
+      this.tests = this.testFactory.load()
 
       this.tests.forEach((test) => {
         switch (test.id) {
@@ -159,12 +161,57 @@ export default {
     onFileChanged($event) {
       const target = $event.target;
       if (target && target.files && target.files[0]) {
-        const file = target.files[0];
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          console.log(e.target.result);
-        };
-        reader.readAsText(file);
+        const files = {};
+
+        for (const file of target.files) {
+          files[file.webkitRelativePath.split('/').slice(1).join('/')] = file;
+        }
+
+        const manifest = files['imsmanifest.xml'];
+
+        console.log(files);
+
+        const loadText = (file) => new Promise(resolve => {
+          const reader = new FileReader();
+          reader.onload = e => resolve(e.target.result);
+          reader.readAsText(file);
+        })
+        const loadDataURL = (file) => new Promise(resolve => {
+          const reader = new FileReader();
+          reader.onload = e => resolve(e.target.result);
+          reader.readAsDataURL(file);
+        })
+
+        const itemFactory = ItemFactory.instance();
+        const that = this;
+
+        const parser = new DOMParser();
+        loadText(manifest).then(manifestXML => {
+          const manifestDoc = parser.parseFromString(manifestXML, "application/xml");
+         
+          const items = [];
+
+          Promise.all(Array.from(manifestDoc.querySelectorAll('resource[type="imsqti_item_xmlv3p0"]')).map(resourceNode => {
+            const identifier = resourceNode.getAttribute('identifier');
+            const resourceHref = resourceNode.getAttribute('href');
+            items.push({identifier});
+           
+            return loadText(files[resourceHref]).then(itemXML => {
+
+              return Promise.all(Array.from(resourceNode.querySelectorAll(`file:not([href="${resourceHref}"])`)).map(fileNode => {
+                const fileHref = fileNode.getAttribute('href');
+                console.log(fileHref);
+                return loadDataURL(files[fileHref]).then(fileData => itemXML = itemXML.replace(fileHref, fileData));
+              })).then(() => {
+                itemFactory.pushItem(identifier, itemXML);
+              });
+            });
+          })).then(() => {
+            that.testFactory.pushTest(`Test Upload ${new Date().toISOString()}`, '', items);
+            that.tests = this.testFactory.load();
+            console.log('done');
+          });
+        });
       }
     }
 

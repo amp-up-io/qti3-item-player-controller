@@ -1556,6 +1556,12 @@ const tests = [
 
 /* eslint-enable */
 export class TestFactory {
+  static _instance;
+
+  static instance () {
+    return TestFactory._instance ??= new TestFactory();
+  }
+
 
   constructor () {
     this.tests = tests
@@ -1570,10 +1576,10 @@ export class TestFactory {
     return this.tests.find(test => test.id === id)
   }
 
-  pushNewTest (title, description, items) {
+  pushTest (title, description, items) {
     const id = Math.random().toString(16).slice(2);
 
-    tests.push({
+    this.tests.push({
       id,
       title,
       description,
@@ -1582,7 +1588,7 @@ export class TestFactory {
         "sessionControl": item.sessionControl || {
           "showFeedback": true,
           "validateResponses": false,
-          "submissionMode": "individual"
+          "submissionMode": "simultaneous"
         }
       })),
       count: items.length.toString()
