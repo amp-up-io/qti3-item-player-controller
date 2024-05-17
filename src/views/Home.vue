@@ -92,6 +92,26 @@
               </div>
               
               <div class="tab-pane" id="tab3" role="tabpanel">
+                <table class="table table-sm w-100">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="th-no-top text-muted">Title</th>
+                      <th scope="col" class="th-no-top text-muted">Items</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="test in uploadsTab" v-bind:key="test.id">
+                      <td class="table-cell router-link">
+                        <router-link :to="{ name: 'Start', params: { id: test.id } }">
+                          {{ test.title }}
+                        </router-link>
+                      </td>
+                      <td>
+                        {{ test.count }}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
                 <label>
                   Upload an .xml file containing a qti-assessment-item
                   <input
@@ -131,7 +151,8 @@ export default {
     return {
       tests: null,
       examplesTab: [],
-      conformanceTab: []
+      conformanceTab: [],
+      uploadsTab: [],
     }
   },
 
@@ -143,6 +164,10 @@ export default {
       this.tests = this.testFactory.load()
 
       this.tests.forEach((test) => {
+        if ('category' in test && `${test.category}Tab` in this) {
+          this[`${test.category}Tab`].push(test)
+          return;
+        }
         switch (test.id) {
           case "1":
           case "2":
@@ -168,14 +193,16 @@ export default {
         }
 
         const manifest = files['imsmanifest.xml'];
-
-        console.log(files);
+        const assessment = files['assessment.xml'];
 
         const loadText = (file) => new Promise(resolve => {
           const reader = new FileReader();
           reader.onload = e => resolve(e.target.result);
           reader.readAsText(file);
         })
+        const loadXML = (file) => loadText(file).then(
+          text => parser.parseFromString(text, "application/xml")
+        )
         const loadDataURL = (file) => new Promise(resolve => {
           const reader = new FileReader();
           reader.onload = e => resolve(e.target.result);
@@ -183,38 +210,36 @@ export default {
         })
 
         const itemFactory = ItemFactory.instance();
-        const that = this;
+        const vm = this;
 
         const parser = new DOMParser();
-        loadText(manifest).then(manifestXML => {
-          const manifestDoc = parser.parseFromString(manifestXML, "application/xml");
-         
-          const items = [];
+        const serializer = new XMLSerializer();
+        Promise.all([loadXML(manifest), assessment ? loadXML(assessment) : undefined]).then(([manifestDoc, assessmentDoc]) => {
+          const submissionMode = assessmentDoc?.querySelector('[submission-mode]')?.getAttribute('submission-mode') || 'individual'
 
           Promise.all(Array.from(manifestDoc.querySelectorAll('resource[type="imsqti_item_xmlv3p0"]')).map(resourceNode => {
             const identifier = resourceNode.getAttribute('identifier');
             const resourceHref = resourceNode.getAttribute('href');
-            items.push({identifier});
            
-            return loadText(files[resourceHref]).then(itemXML => {
+            return loadXML(files[resourceHref]).then(itemDOC => {
 
               return Promise.all(Array.from(resourceNode.querySelectorAll(`file:not([href="${resourceHref}"])`)).map(fileNode => {
                 const fileHref = fileNode.getAttribute('href');
-                console.log(fileHref);
-                return loadDataURL(files[fileHref]).then(fileData => itemXML = itemXML.replace(fileHref, fileData));
+                loadDataURL(files[fileHref]).then(fileData => {
+                  itemDOC.querySelectorAll(`[src="${fileHref}"]`).forEach(thing => thing.setAttribute('src', fileData));
+                });
               })).then(() => {
-                itemFactory.pushItem(identifier, itemXML);
+                return itemFactory.pushItem(identifier, submissionMode, serializer.serializeToString(itemDOC));
               });
             });
-          })).then(() => {
-            that.testFactory.pushTest(`Test Upload ${new Date().toISOString()}`, '', items);
-            that.tests = this.testFactory.load();
-            console.log('done');
+          })).then(items => {
+            const test = vm.testFactory.pushTest(`Test Upload ${new Date().toISOString()}`, '', submissionMode, items);
+            vm.tests = vm.testFactory.load();
+            this.uploadsTab.push(test);
           });
         });
       }
     }
-
   },
 
   created () {

@@ -342,7 +342,7 @@ export default {
       // Inject report into End Panel
       this.$refs.endpanel.setUnanswered(report.unanswered)
       this.$refs.endpanel.setItemSummary(report.summary)
-  
+ 
       // Show the End page
       this.currentPanel = 'end'
 

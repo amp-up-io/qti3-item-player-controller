@@ -1576,24 +1576,27 @@ export class TestFactory {
     return this.tests.find(test => test.id === id)
   }
 
-  pushTest (title, description, items) {
-    const id = Math.random().toString(16).slice(2);
+  pushTest (title, description, submissionMode, items) {
+    const id = Math.random().toString(16).slice(2)
 
-    this.tests.push({
+    const test = {
       id,
+      category: 'uploads',
       title,
       description,
       items: items.map(item => ({
-        "identifier": item.identifier,
-        "sessionControl": item.sessionControl || {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "simultaneous"
+        identifier: item.identifier,
+        sessionControl: item.sessionControl || {
+          showFeedback: true,
+          validateResponses: submissionMode === 'individual',
+          submissionMode
         }
       })),
       count: items.length.toString()
-    })
+    }
 
-    return id;
+    this.tests.push(test)
+
+    return test;
   }
 }
