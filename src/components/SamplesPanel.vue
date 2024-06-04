@@ -392,6 +392,8 @@
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <Sample identifier="shakespeare-biography" title="Shakespeare Biography" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="stooges-match" title="Categorize Stooges" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="unattended-luggage-full" title="Unattended Luggage - Full" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="composition-water-full" title="Composition Water - Full" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
           </li>

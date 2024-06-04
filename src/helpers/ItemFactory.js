@@ -8271,6 +8271,105 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
 </qti-item-body>
 <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
 </qti-assessment-item>`
+  },
+  {
+    "identifier": "unattended-luggage-full",
+    "guid": "0000-unattended-full",
+    "submissionMode": "individual",    
+    xml: `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"identifier="q2-choice-interaction-single-sv-1" title="Choice Interaction - Single (SV 1)" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+      <qti-correct-response><qti-value>ChoiceA</qti-value></qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+      <qti-default-value><qti-value>0</qti-value></qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+      <p>Look at the text in the picture.</p>
+      <p>
+        <img src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/a8c5bf34-f8fd-4a87-a098-0d7213292cb6/images/sign.png" alt="NEVER LEAVE LUGGAGE UNATTENDED"/>
+      </p>
+
+      <qti-choice-interaction max-choices="1" response-identifier="RESPONSE">
+        <qti-prompt>What does it say?</qti-prompt>
+        <qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+        <qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+      </qti-choice-interaction>
+    </qti-item-body>
+    
+    <!-- XML equivalent to match_correct RP template -->
+    <qti-response-processing>
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-match>
+            <qti-variable identifier="RESPONSE"/>
+            <qti-correct identifier="RESPONSE"/>
+          </qti-match>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-base-value base-type="float">1</qti-base-value>
+          </qti-set-outcome-value>
+        </qti-response-if>
+        <qti-response-else>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-base-value base-type="float">0</qti-base-value>
+          </qti-set-outcome-value>
+        </qti-response-else>
+      </qti-response-condition>
+    </qti-response-processing>
+  </qti-assessment-item>`
+  },
+  {
+    "identifier": "composition-water-full",
+    "guid": "0000-composition-full",
+    "submissionMode": "individual",
+    xml: `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+    identifier="q2-choice-interaction-multiple-sv-1" title="Choice Interaction - Multiple (SV 1)" 
+    adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="identifier">
+      <qti-correct-response>
+        <qti-value>H</qti-value>
+        <qti-value>O</qti-value>
+      </qti-correct-response> 
+      <qti-mapping lower-bound="0" upper-bound="2" default-value="-2">
+        <qti-map-entry map-key="H" mapped-value="1"/>
+        <qti-map-entry map-key="O" mapped-value="1"/>
+        <qti-map-entry map-key="Cl" mapped-value="-1"/>
+      </qti-mapping>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+      <qti-choice-interaction response-identifier="RESPONSE" max-choices="0">
+        <qti-prompt>Which of the following elements are used to form water?</qti-prompt>
+        <qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+        <qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+        <qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+        <qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+        <qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+        <qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+      </qti-choice-interaction>
+    </qti-item-body>
+
+    <!-- XML equivalent to map_response RP template -->
+    <qti-response-processing> 
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-is-null>
+            <qti-variable identifier="RESPONSE"/>
+          </qti-is-null>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-base-value base-type="float">0.0</qti-base-value>
+          </qti-set-outcome-value>
+        </qti-response-if>
+        <qti-response-else>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-map-response identifier="RESPONSE"/>
+          </qti-set-outcome-value>
+        </qti-response-else>
+      </qti-response-condition>
+    </qti-response-processing>
+  </qti-assessment-item>`
   }
 ]
 
