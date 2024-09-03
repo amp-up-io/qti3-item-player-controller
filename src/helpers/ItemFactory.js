@@ -8066,23 +8066,41 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
       <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
         <qti-default-value>
-         <qti-value>1.0</qti-value>
+         <qti-value>0</qti-value>
         </qti-default-value>
       </qti-outcome-declaration>
       <qti-item-body>
         <div>
-          <qti-portable-custom-interaction custom-interaction-type-identifier="HelloWorld" data-height="200" data-question="What percentage is colored green?" data-title="Percentages" data-width="200" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/faa19061-13bf-40eb-8156-0788de4d4469/">
+          <qti-portable-custom-interaction custom-interaction-type-identifier="HelloWorld" data-height="200" data-question="What percentage is colored green?" data-title="Percentages" data-width="200" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/4f67a174-dbd7-41d8-af0b-d9f96a53c3a2/">
             <qti-interaction-modules primary-configuration="modules/module_resolution.json">
-              <qti-interaction-module id="vanilla" primary-path="modules/vanilla2.js"></qti-interaction-module>
+              <qti-interaction-module id="vanilla" primary-path="modules/vanilla2.js"/>
             </qti-interaction-modules>
             <qti-interaction-markup>
               <div class="qti-hidden assets">
-                <img alt="procenten" id="pctn" src="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/faa19061-13bf-40eb-8156-0788de4d4469/assets/procenten.png"/>
+                <img alt="procenten" id="pctn" src="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/4f67a174-dbd7-41d8-af0b-d9f96a53c3a2/assets/procenten.png"/>
               </div>
             </qti-interaction-markup>
           </qti-portable-custom-interaction>
         </div>
       </qti-item-body>
+      <qti-response-processing>
+        <qti-response-condition>
+          <qti-response-if>
+            <qti-match>
+              <qti-variable identifier="RESPONSE"/>
+              <qti-base-value base-type="string">30</qti-base-value>
+            </qti-match>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">1</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-if>
+          <qti-response-else>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">0</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-else>
+        </qti-response-condition>
+      </qti-response-processing>
     </qti-assessment-item>`
   },
   {
