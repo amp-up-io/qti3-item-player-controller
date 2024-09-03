@@ -361,6 +361,7 @@
                 <Sample identifier="fractions-no-dependencies" title="HMH - Fractions" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="measuringPh" title="HMH - Measuring Ph" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="edmentum-pci-graphing" title="Edmentum - Simple Drawing" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="cito-pci-vanilla" title="Cito - Percentages" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="likert-OAT-PCI" title="OAT - Likert" @sampleSelected="handleSampleSelected"/> 
               </ul>
             </div>
