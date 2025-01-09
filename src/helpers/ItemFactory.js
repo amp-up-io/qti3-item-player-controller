@@ -8277,7 +8277,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "guid": "0000-0023-0002",
     "submissionMode": "individual",
     "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="media-interaction-audio" time-dependent="false" title="Media Interaction - Audio" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
-    <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE_VIDEO"/>
+    <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE_AUDIO"/>
     <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
       <qti-correct-response>
         <qti-value>i3</qti-value>
@@ -8291,11 +8291,11 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     <qti-item-body>
       <div class="qti-layout-row">
         <div class="qti-layout-col6">
-          <qti-media-interaction response-identifier="RESPONSE_VIDEO" autostart="false" min-plays="1" max-plays="2" loop="false">
+          <qti-media-interaction response-identifier="RESPONSE_AUDIO" autostart="false" min-plays="1" max-plays="2" loop="false">
             <qti-prompt>
               <p>Listen to the Korean expression below before answering the question.  At most, you may listen to the expression twice.</p>
             </qti-prompt>
-            <audio crossorigin="anonymous">
+            <audio>
               <source src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/395362d7-242f-421f-bbef-da3958d28497/sbac-200-51246/glossary/item_51246_skate-park_16_korean.ogg" type="audio/ogg"/>
               <source src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/395362d7-242f-421f-bbef-da3958d28497/sbac-200-51246/glossary/item_51246_skate-park_16_korean.m4a" type="audio/mp4"/>
             </audio>
