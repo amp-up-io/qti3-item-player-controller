@@ -8104,7 +8104,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "likert-OAT-PCI",
+    "identifier": "OAT-pci-likert",
     "guid": "0000-0022-0004",
     "submissionMode": "individual",
     "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="likert-OAT-PCI" label="PCI likert" time-dependent="false" title="PCI likert" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
@@ -8136,10 +8136,190 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
+    "identifier": "cito-pci-color-proportions",
+    "guid": "0000-0022-0005",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="cito-pci-color-proportions" label="pci 1" time-dependent="false" title="pci 1" tool-name="TAO" tool-version="3.4.0-sprint121" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"> 
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"> 
+      <qti-correct-response>
+        <qti-value>[{"color":" blue","percentage":25},{"color":" yellow","percentage":25},{"color":"red","percentage":50}]</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration> 
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"></qti-outcome-declaration> 
+    <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/d66d982b-9e77-49b9-a1d2-76a6e371d5f6/i66de9c8bb137c1019233d5572ae51e0/style/custom/tao-user-styles.css" media="all" title="" type="text/css"/> 
+    <qti-item-body>
+    <div class="qti-layout-row">
+      <div class="qti-layout-col12">
+        <p>Color 50% red, 25% blue and 25% yellow.</p>
+      </div> 
+    </div> 
+    <div class="qti-layout-row">
+      <div class="qti-layout-col12">
+        <qti-portable-custom-interaction custom-interaction-type-identifier="colorProportions" 
+          data-colors="red, blue, yellow" 
+          data-height="400" 
+          data-version="1.0.1" 
+          data-width="400" 
+          module="colorProportions" 
+          response-identifier="RESPONSE" 
+          data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/d66d982b-9e77-49b9-a1d2-76a6e371d5f6/i66de9c8bb137c1019233d5572ae51e0/">
+          <qti-interaction-modules>
+            <qti-interaction-module id="colorProportions" primary-path="../interaction/runtime/js/index.js"/>
+          </qti-interaction-modules>
+          <qti-interaction-markup>
+            <div class="pciInteraction">
+              <div class="prompt"></div>
+              <ul class="pci"></ul>
+            </div>
+          </qti-interaction-markup>
+        </qti-portable-custom-interaction>
+      </div>
+    </div>
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "OAT-pci-audio-recorder",
+    "guid": "0000-0022-0006",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="audioRecorder-OAT-PCI" label="PCI audio recorder" time-dependent="false" title="PCI audio recorder" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd">
+      <qti-response-declaration base-type="file" cardinality="single" identifier="RESPONSE"/>
+      <qti-item-body>
+        <div class="qti-layout-row">
+          <div class="qti-layout-col12">
+            <p>OAT Audio Recorder PCI [maxRecords=2, maxRecordingTime=20, autoStart=false]</p>
+            <qti-portable-custom-interaction custom-interaction-type-identifier="urn:oat:pci:audioRecordingInteraction"
+              data-allowPlayback="true"
+              data-autoPlayback=""
+              data-autoStart=""
+              data-delayMinutes="0"
+              data-delaySeconds="0"
+              data-displayDownloadLink=""
+              data-hideRecordButton=""
+              data-hideStopButton=""
+              data-maxRecordingTime="20"
+              data-maxRecords="2"
+              data-media="{}"
+              data-playSound="true"
+              data-updateResponsePartially="true"
+              response-identifier="RESPONSE"
+              data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7af7720d-ac0d-4b8d-97f9-fb35fd5990d7/items/item-1/">
+            <qti-interaction-modules primary-configuration="oat-pci.json">
+              <qti-interaction-module id="audioRecordingInteraction_runtime_audioRecorder" primary-path="runtime/js/audioInteraction"/>
+            </qti-interaction-modules>
+            <qti-interaction-markup>
+              <div class="audioRecordingInteraction">
+                <div class="audio-rec">
+                  <div class="input-meter">
+                    <div class="countdown-pie-chart"></div>
+                    <div class="leds"></div>
+                    <div class="mic"></div>
+                  </div>
+                  <div class="progress"></div>
+                  <div class="controls"></div>
+                </div>
+              </div>
+            </qti-interaction-markup>
+            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7af7720d-ac0d-4b8d-97f9-fb35fd5990d7/items/item-1/runtime/css/styles.css" type="text/css"/>
+          </qti-portable-custom-interaction>
+        </div>
+      </div>
+    </qti-item-body> 
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "media-interaction-video",
+    "guid": "0000-0023-0001",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="media-interaction-video" time-dependent="false" title="Media Interaction - Video" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+    <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE_VIDEO"/>
+    <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>i2</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+      <qti-default-value>
+        <qti-value>1</qti-value>
+      </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col6">
+          <qti-media-interaction autostart="false" loop="false" max-plays="2" min-plays="1" response-identifier="RESPONSE_VIDEO">
+            <qti-prompt>
+              <p>Watch the video below before answering the question. At most, you may watch it twice because max-plays is set to 2.</p>
+            </qti-prompt>
+            <video crossorigin="anonymous">
+              <source src="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/d4f2bfb9-2327-40b5-80ac-84908d9842d5/media/QTI2018.mp4" type="video/mp4"/>
+              <source src="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/d4f2bfb9-2327-40b5-80ac-84908d9842d5/media/QTI2018.ogg" type="video/ogg"/>
+              <track kind="captions" label="English" src="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/d4f2bfb9-2327-40b5-80ac-84908d9842d5/media/QTI2018captions.vtt" srclang="en"/>
+            </video>
+          </qti-media-interaction>
+        </div>
+        <div class="qti-layout-col6">
+          <qti-choice-interaction max-choices="1" min-choices="1" response-identifier="RESPONSE">
+            <qti-prompt>The letters on the man's sweatshirt are an acronym for which institution?</qti-prompt>
+            <qti-simple-choice identifier="i1"><p>Question and Test Interoperability Standard</p></qti-simple-choice>
+            <qti-simple-choice identifier="i2"><p>Rhode Island School of Design</p></qti-simple-choice>
+            <qti-simple-choice identifier="i3"><p>Region 1 Storage Device</p></qti-simple-choice>
+            <qti-simple-choice identifier="i4"><p>Learning Impact Leadership Institute</p></qti-simple-choice>
+          </qti-choice-interaction>
+        </div>
+      </div>
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "media-interaction-audio",
+    "guid": "0000-0023-0002",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="media-interaction-audio" time-dependent="false" title="Media Interaction - Audio" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+    <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE_VIDEO"/>
+    <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>i3</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+      <qti-default-value>
+        <qti-value>1</qti-value>
+      </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col6">
+          <qti-media-interaction response-identifier="RESPONSE_VIDEO" autostart="false" min-plays="1" max-plays="2" loop="false">
+            <qti-prompt>
+              <p>Listen to the Korean expression below before answering the question.  At most, you may listen to the expression twice.</p>
+            </qti-prompt>
+            <audio crossorigin="anonymous">
+              <source src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/395362d7-242f-421f-bbef-da3958d28497/sbac-200-51246/glossary/item_51246_skate-park_16_korean.ogg" type="audio/ogg"/>
+              <source src="https://s3.amazonaws.com/grud-amp-bucket-1/items/1/395362d7-242f-421f-bbef-da3958d28497/sbac-200-51246/glossary/item_51246_skate-park_16_korean.m4a" type="audio/mp4"/>
+            </audio>
+          </qti-media-interaction>
+        </div>
+        <div class="qti-layout-col6">
+          <qti-choice-interaction class="qti-labels-none" shuffle="true" max-choices="1" min-choices="1" response-identifier="RESPONSE">
+            <qti-prompt>What is the English translation of the Korean expression?</qti-prompt>
+            <qti-simple-choice identifier="i1">ramps</qti-simple-choice>
+            <qti-simple-choice identifier="i2">chosen</qti-simple-choice>
+            <qti-simple-choice identifier="i3">skate park</qti-simple-choice>
+            <qti-simple-choice identifier="i4">requires</qti-simple-choice>
+          </qti-choice-interaction>
+        </div>
+      </div>
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>`
+  },
+  {
     "identifier": "shakespeare-biography",
     "guid": "0000-shake-bio1",
     "submissionMode": "individual",
-    xml: `<qti-assessment-item 
+    "xml": `<qti-assessment-item 
       xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
@@ -8263,7 +8443,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "identifier": "stooges-match",
     "guid": "0000-stooges-0001",
     "submissionMode": "individual",    
-    xml: `<qti-assessment-item 
+    "xml": `<qti-assessment-item 
     xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
@@ -8294,7 +8474,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "identifier": "unattended-luggage-full",
     "guid": "0000-unattended-full",
     "submissionMode": "individual",    
-    xml: `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"identifier="q2-choice-interaction-single-sv-1" title="Choice Interaction - Single (SV 1)" adaptive="false" time-dependent="false">
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"identifier="q2-choice-interaction-single-sv-1" title="Choice Interaction - Single (SV 1)" adaptive="false" time-dependent="false">
     <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
       <qti-correct-response><qti-value>ChoiceA</qti-value></qti-correct-response>
     </qti-response-declaration>
@@ -8340,7 +8520,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "identifier": "composition-water-full",
     "guid": "0000-composition-full",
     "submissionMode": "individual",
-    xml: `<qti-assessment-item 
+    "xml": `<qti-assessment-item 
     xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
     identifier="q2-choice-interaction-multiple-sv-1" title="Choice Interaction - Multiple (SV 1)" 

@@ -342,6 +342,18 @@
 
           <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#catalog-collapse" aria-expanded="false">
+              Media
+            </button>
+            <div class="collapse mt-1" id="catalog-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="media-interaction-video" title="Media Interaction - Video" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="media-interaction-audio" title="Media Interaction - Audio" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#catalog-collapse" aria-expanded="false">
               Catalog - Glossary & Keyword
             </button>
             <div class="collapse mt-1" id="catalog-collapse">
@@ -362,7 +374,9 @@
                 <Sample identifier="measuringPh" title="HMH - Measuring Ph" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="edmentum-pci-graphing" title="Edmentum - Simple Drawing" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="cito-pci-vanilla" title="Cito - Percentages" @sampleSelected="handleSampleSelected"/>
-                <Sample identifier="likert-OAT-PCI" title="OAT - Likert" @sampleSelected="handleSampleSelected"/> 
+                <Sample identifier="cito-pci-color-proportions" title="Cito - Color Proportions" @sampleSelected="handleSampleSelected"/> 
+                <Sample identifier="OAT-pci-likert" title="OAT - Likert" @sampleSelected="handleSampleSelected"/> 
+                <Sample identifier="OAT-pci-audio-recorder" title="OAT - Audio Recorder" @sampleSelected="handleSampleSelected"/> 
               </ul>
             </div>
           </li>

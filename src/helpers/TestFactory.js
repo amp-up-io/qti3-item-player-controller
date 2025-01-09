@@ -1452,7 +1452,7 @@ const tests = [
     "id": "20",
     "title": "Example QTI3 Portable Custom Interactions",
     "description": "<p>Demonstrates QTI3 Player support for Portable Custom Interactions (PCI's).  With QTI3, PCI's are now promoted to first-class interactions with the <code>&lt;qti-portable-custom-interaction&gt;</code> element.</p>",
-    "count": "5",
+    "count": "7",
     "items": [
       {
         "identifier": "edmentum-pci-graphing",
@@ -1487,7 +1487,23 @@ const tests = [
         }
       },
       {
-        "identifier": "likert-OAT-PCI",
+        "identifier": "cito-pci-color-proportions",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "OAT-pci-likert",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": false,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "OAT-pci-audio-recorder",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": false,
