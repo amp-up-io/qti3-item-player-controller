@@ -341,13 +341,25 @@
           </li>
 
           <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#catalog-collapse" aria-expanded="false">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#media-collapse" aria-expanded="false">
               Media
             </button>
-            <div class="collapse mt-1" id="catalog-collapse">
+            <div class="collapse mt-1" id="media-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <Sample identifier="media-interaction-video" title="Media Interaction - Video" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="media-interaction-audio" title="Media Interaction - Audio" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#sp-collapse" aria-expanded="false">
+              Select Point
+            </button>
+            <div class="collapse mt-1" id="sp-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="select-point-1" title="Where is Edinburgh?" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="select-point-2" title="Select Point - Responsive" @sampleSelected="handleSampleSelected"/>
               </ul>
             </div>
           </li>

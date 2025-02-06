@@ -8316,6 +8316,75 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
+    "identifier": "select-point-1",
+    "guid": "0000-0024-0001",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" 
+    identifier="select-point-1" time-dependent="false" title="Classic Where is Edinburgh Example"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+      <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE">
+        <qti-correct-response>
+          <qti-value>93 111</qti-value>
+        </qti-correct-response>
+        <qti-area-mapping default-value="0">
+          <qti-area-map-entry coords="93,111,16" mapped-value="1" shape="circle"/>
+        </qti-area-mapping>
+      </qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+      <qti-item-body>
+        <p>
+          The picture below illustrates four of the most popular destinations for air travelers arriving in the United Kingdom: London, Manchester, Edinburgh and Glasgow.
+        </p>
+        <qti-select-point-interaction class="" max-choices="2" response-identifier="RESPONSE">
+          <qti-prompt>
+            <p>Mark Edinburgh on this map of the United Kingdom.</p>
+          </qti-prompt>
+          <img alt="Map of the United Kingdom" height="280" src="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c73eca1b-59b4-4731-8ff7-3985cb8be19d/images/ukair.png" width="206"/>
+        </qti-select-point-interaction>
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response_point"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "select-point-2",
+    "guid": "0000-0024-0002",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" 
+    identifier="select-point-2" time-dependent="false" title="Select Point Interaction - shapes" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+    <qti-response-declaration base-type="point" cardinality="single" identifier="RESPONSE"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-item-body>
+      <p>In the following image, which part of the plant is the rhizome?</p>
+      <p>Select a highlighted part of the image to indicate your answer.</p>
+      <qti-select-point-interaction class="responsive" 
+        max-choices="1" min-choices="1" 
+        data-min-selections-message="You have not made a selection.  You must make one selection."
+        data-max-selections-message="Only one selection.  Click your selection to remove it before adding a new selection."
+        response-identifier="RESPONSE">
+        <img alt="A diagram of a flowering water lily showing parts above the water, parts below the water, and parts under the ground." height="680" src="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/e8390678-f4b7-4162-b3cc-37c3b9f261f9/images/plants.svg" width="680"/>
+        </qti-select-point-interaction>
+      </qti-item-body>
+      <qti-response-processing>
+        <qti-response-condition>
+          <qti-response-if>
+            <qti-inside coords="337,493,194,591,360,531,337,493" shape="poly">
+              <qti-variable identifier="RESPONSE"/>
+            </qti-inside>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">1</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-if>
+          <qti-response-else>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">0</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-else>
+        </qti-response-condition>
+      </qti-response-processing>
+    </qti-assessment-item>`
+  },
+  {
     "identifier": "shakespeare-biography",
     "guid": "0000-shake-bio1",
     "submissionMode": "individual",
