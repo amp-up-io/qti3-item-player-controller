@@ -8340,7 +8340,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
           <qti-prompt>
             <p>Mark Edinburgh on this map of the United Kingdom.</p>
           </qti-prompt>
-          <img alt="Map of the United Kingdom" width="206" height="280" src="images/ukair.png" />
+          <img alt="Map of the United Kingdom" width="206" height="280" src="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c73eca1b-59b4-4731-8ff7-3985cb8be19d/images/ukair.png"/>
         </qti-select-point-interaction>
       </qti-item-body>
       <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response_point.xml"/>
