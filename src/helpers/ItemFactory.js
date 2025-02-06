@@ -8319,15 +8319,16 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "identifier": "select-point-1",
     "guid": "0000-0024-0001",
     "submissionMode": "individual",
-    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" 
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" 
     identifier="select-point-1" time-dependent="false" title="Classic Where is Edinburgh Example"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
-      <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE">
+      <qti-response-declaration base-type="point" cardinality="single" identifier="RESPONSE">
         <qti-correct-response>
-          <qti-value>93 111</qti-value>
+          <qti-value>96 114</qti-value>
         </qti-correct-response>
         <qti-area-mapping default-value="0">
-          <qti-area-map-entry coords="93,111,16" mapped-value="1" shape="circle"/>
+          <qti-area-map-entry coords="96,114,16" mapped-value="1" shape="circle"/>
         </qti-area-mapping>
       </qti-response-declaration>
       <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
@@ -8335,14 +8336,14 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
         <p>
           The picture below illustrates four of the most popular destinations for air travelers arriving in the United Kingdom: London, Manchester, Edinburgh and Glasgow.
         </p>
-        <qti-select-point-interaction class="" max-choices="2" response-identifier="RESPONSE">
+        <qti-select-point-interaction max-choices="1" response-identifier="RESPONSE">
           <qti-prompt>
             <p>Mark Edinburgh on this map of the United Kingdom.</p>
           </qti-prompt>
-          <img alt="Map of the United Kingdom" height="280" src="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c73eca1b-59b4-4731-8ff7-3985cb8be19d/images/ukair.png" width="206"/>
+          <img alt="Map of the United Kingdom" width="206" height="280" src="images/ukair.png" />
         </qti-select-point-interaction>
       </qti-item-body>
-      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response_point"/>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response_point.xml"/>
     </qti-assessment-item>`
   },
   {
