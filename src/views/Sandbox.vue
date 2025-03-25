@@ -373,6 +373,10 @@ export default {
       this.qti3Player.cssColorClass = this.colorClass = colorClass
       // Set pnp to this textAppearance color style
       this.pnp.setColorStyle(colorClass)
+      // Persist the PNP in the store
+      this.qti3Player.setItemContextPnp(this.pnp.getPnp())
+      // Force PCI setRenderingProperties
+      this.qti3Player.pciSetRenderingProperties()
     },
 
     /**

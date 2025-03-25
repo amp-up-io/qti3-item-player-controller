@@ -384,7 +384,8 @@
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <Sample identifier="fractions-no-dependencies" title="HMH - Fractions" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="measuringPh" title="HMH - Measuring Ph" @sampleSelected="handleSampleSelected"/>
-                <Sample identifier="edmentum-pci-graphing" title="Edmentum - Simple Drawing" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="pci-graphing-interaction-1" title="Amp-up Graphing - ScatterPlot" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="pci-graphing-interaction-2" title="Amp-up Graphing - Line" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="cito-pci-vanilla" title="Cito - Percentages" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="cito-pci-color-proportions" title="Cito - Color Proportions" @sampleSelected="handleSampleSelected"/> 
                 <Sample identifier="OAT-pci-likert" title="OAT - Likert" @sampleSelected="handleSampleSelected"/> 

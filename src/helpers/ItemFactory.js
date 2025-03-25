@@ -7939,30 +7939,107 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "edmentum-pci-graphing",
-    "guid": "0000-0022-0000",
+    "identifier": "pci-graphing-interaction-1",
+    "guid": "0000-0022-000a",
     "submissionMode": "individual",
-    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="edmentum-pci-graphing" time-dependent="false" title="Edmentum PCI Graphing" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
-     <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
-     <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
-     <qti-item-body>
-        <div class="qti-layout-row">
-          <div class="qti-layout-col12">
-            <qti-portable-custom-interaction custom-interaction-type-identifier="urn:edmentum.com:pci:2019:graphInteraction" data-height="360" data-prompt="Use the drawing tool(s) to form the correct answer on the provided graph." data-show-axes="true" data-width="360" data-x="-10,10" data-x-step="1" data-y="-10,10" data-y-step="1" module="graphInteraction" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/d3132852-d6af-400d-9d17-7e4edbde51ca/ab6d4b58-5e0f-4ac9-83bc-67d1b4bc7ac5/48b563e3-dc61-48b1-8833-2569a93d7e0d/">
-              <qti-interaction-markup>
-                <div class="qti-padding-2">
-                  <div class="graphInteraction">
-                    <div class="graph-interaction">
-                      <div class="graph-interaction__prompt"></div>
-                      <div class="graph-interaction__canvas"></div>
-                    </div>
-                  </div>
-                </div>
-              </qti-interaction-markup>
-            </qti-portable-custom-interaction>
-          </div>
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="pci-graphing-interaction-1" time-dependent="false" title="PCI Graphing Interaction 1" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"> 
+    <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>1 -3</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-item-body>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col12">
+          <p>The graph shows point <em>L</em>. What is the location of a point 5 units down and 2 units to the left of point <em>L</em>? </p>
+          <qti-portable-custom-interaction 
+            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction" 
+            data-id="graph-container" 
+            data-graphtype="scatter"
+            data-planetype="default"
+            data-title="" 
+            data-axislinewidth="3" 
+            data-borderlinewidth="3"
+            data-steplinewidth="1"
+            data-height="420" 
+            data-width="420" 
+            data-hlines="10" 
+            data-vlines="10" 
+            data-maxpoints="1" 
+            data-minpoints="1" 
+            data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+            data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;y&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+            data-fixedpoints="{ &quot;points&quot;: [{ &quot;x&quot;: 3, &quot;y&quot;: 2, &quot;label&quot;: &quot;L&quot; }]}"
+            module="Graphing"
+            response-identifier="RESPONSE" 
+            data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/490fb232-3f99-430e-b589-4c9d8618e666/items/item-1/">
+            <qti-prompt>Plot the point on the coordinate grid.</qti-prompt>
+            <qti-interaction-markup>
+              <div id="graph-container"></div>
+            </qti-interaction-markup>
+            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/490fb232-3f99-430e-b589-4c9d8618e666/items/item-1/css/styles.css" type="text/css"/>
+          </qti-portable-custom-interaction> 
         </div>
-      </qti-item-body>
+      </div>
+    </qti-item-body> 
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "pci-graphing-interaction-2",
+    "guid": "0000-0022-000b",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="pci-graphing-interaction-2" time-dependent="false" title="PCI Graphing Interaction 2" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd">
+    <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>-3 0</qti-value>
+        <qti-value>0 -2</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-item-body>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col12">
+          <p>Draw the graph of the inverse of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mfrac bevelled="false"><mi>3</mi><mi>2</mi></mfrac><mo>⁢</mo><mi>x</mi><mo>-</mo><mi>3</mi></mrow></math> on the coordinate grid below. </p>
+          <qti-portable-custom-interaction 
+            module="GraphingInteraction" 
+            response-identifier="RESPONSE" 
+            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction" 
+            data-axislinewidth="3" 
+            data-borderlinewidth="3" 
+            data-graphtype="line" 
+            data-height="400"
+            data-width="400"
+            data-hlines="12"
+            data-vlines="12"
+            data-id="graph-container"
+            data-maxpoints="2"
+            data-minpoints="2"
+            data-planetype="default"
+            data-steplinewidth="1"
+            data-title=""
+            data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+            data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+            data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c28e46e1-f438-4041-aaac-8ab9d07faf7a/items/item-2/"
+            >
+            <qti-interaction-modules primary-configuration="../../pci/module_resolution.js">
+              <qti-interaction-module id="PlottedPoint"/>
+              <qti-interaction-module id="FullPlane"/>
+              <qti-interaction-module id="CoordinatePlaneFactory"/>
+              <qti-interaction-module id="Graph"/>
+              <qti-interaction-module id="GraphingModule"/>
+              <qti-interaction-module id="GraphingInteraction"/>
+              <qti-interaction-module id="bignumber"/>
+              <qti-interaction-module id="raphael"/>
+            </qti-interaction-modules>
+            <qti-interaction-markup>
+              <div id="graph-container"></div> 
+            </qti-interaction-markup>
+            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c28e46e1-f438-4041-aaac-8ab9d07faf7a/pci/css/styles.css" type="text/css"/> 
+          </qti-portable-custom-interaction>
+        </div>
+      </div>
+    </qti-item-body> 
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
     </qti-assessment-item>`
   },
   {
