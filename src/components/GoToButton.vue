@@ -13,8 +13,9 @@
       class="btn btn-sm btn-secondary dropdown-toggle" 
       data-bs-toggle="dropdown"
       :disabled="isGotoDisabled"
+      aria-label="Open options"
       aria-expanded="false">
-      <i class="mdi mdi-chevron-up"></i>
+      <i class="mdi mdi-chevron-up" aria-hidden="true"></i>
     </button>
     <ul class="dropdown-menu">
       <li 
