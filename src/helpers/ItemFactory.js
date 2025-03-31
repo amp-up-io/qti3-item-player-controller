@@ -7961,8 +7961,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-axislinewidth="3" 
             data-borderlinewidth="3"
             data-steplinewidth="1"
-            data-height="420" 
-            data-width="420" 
+            data-height="400" 
+            data-width="400" 
             data-hlines="10" 
             data-vlines="10" 
             data-maxpoints="1" 
@@ -8009,11 +8009,12 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-graphtype="line" 
             data-height="400"
             data-width="400"
-            data-hlines="12"
-            data-vlines="12"
+            data-hlines="10"
+            data-vlines="10"
             data-id="graph-container"
             data-maxpoints="2"
             data-minpoints="2"
+            data-min-selections-message="More Points Please!"
             data-planetype="default"
             data-steplinewidth="1"
             data-title=""
@@ -8040,6 +8041,122 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       </div>
     </qti-item-body> 
     <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "pci-graphing-interaction-variables",
+    "guid": "0000-0022-000c",
+    "xml": `<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    adaptive="false" identifier="pci-graphing-interaction-variables" time-dependent="false" title="PCI Graphing Interaction - variables" xml:lang="en-US" 
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd">
+    <qti-context-declaration cardinality="record" identifier="QTI_CONTEXT">
+      <qti-default-value>
+        <qti-value base-type="string" field-identifier="environmentIdentifier">CONFORMANCE</qti-value>
+      </qti-default-value>
+    </qti-context-declaration>
+    <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>-3 0</qti-value><qti-value>0 -2</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE1">
+      <qti-correct-response>
+        <qti-value>-3 0</qti-value><qti-value>0 -2</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-template-declaration base-type="string" cardinality="multiple" identifier="SECONDARY-FIXED-POINTS">
+      <qti-default-value>
+        <qti-value>{ "x":2, "y":2, "label":"T" }</qti-value>
+      </qti-default-value>
+    </qti-template-declaration>
+    <qti-item-body>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col12">
+        <p>Draw the graph of the inverse of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mfrac bevelled="false"><mi>3</mi><mi>2</mi></mfrac><mo>⁢</mo><mi>x</mi><mo>-</mo><mi>3</mi></mrow></math> on the coordinate grids below.</p>
+        </div>
+      </div>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col6">            
+        <p>
+          The presentation of the GraphingInteraction PCI below is altered in two ways:
+        </p>
+        <ul>
+          <li>Graph should have a fixed point plotted at [2,2] with label "T" injected via a template variable.</li>
+          <li>The coordinate plane should have thin blue axes and a 1px black border because of context variable injection.</li>
+        </ul>
+        </div>
+        <div class="qti-layout-col6">            
+        <p>
+          The presentation of the GraphingInteraction PCI below should be its default presentation:
+        </p>
+        <ul>
+          <li>Graph should not have any fixed points.</li>
+          <li>The coordinate plane should have a 3px blue border and 3px red axes.</li>
+        </ul>
+        </div> 
+      </div>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col6">            
+        <qti-portable-custom-interaction 
+        custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction" 
+        data-axislinewidth="3" 
+        data-borderlinewidth="3" 
+        data-graphtype="line" 
+        data-height="360" 
+        data-hlines="10" 
+        data-id="graph-container" 
+        data-maxpoints="2"
+        data-minpoints="2" 
+        data-planetype="default" 
+        data-steplinewidth="1" 
+        data-title="" 
+        data-vlines="8" 
+        data-width="360"
+        data-min-selections-message="More Points Please!"
+        data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+        data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+         module="GraphingInteraction" 
+         response-identifier="RESPONSE" 
+         data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/">
+         <qti-interaction-markup>
+          <div id="graph-container"></div>
+        </qti-interaction-markup>
+        <qti-template-variable template-identifier="SECONDARY-FIXED-POINTS"/>
+        <qti-context-variable identifier="QTI_CONTEXT"/>
+        <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/css/styles.css" type="text/css"/>
+        </qti-portable-custom-interaction>
+      </div>
+      <div class="qti-layout-col6">            
+        <qti-portable-custom-interaction 
+        custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction" 
+        data-axislinewidth="3" 
+        data-borderlinewidth="3" 
+        data-graphtype="line" 
+        data-height="360" 
+        data-hlines="10" 
+        data-id="graph-container" 
+        data-maxpoints="2"
+        data-minpoints="2" 
+        data-planetype="default" 
+        data-steplinewidth="1" 
+        data-title="" 
+        data-vlines="8" 
+        data-width="360" 
+        data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+        data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+         module="GraphingInteraction" 
+         response-identifier="RESPONSE1" 
+         data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/">
+         <qti-interaction-markup>
+          <div id="graph-container"></div>
+        </qti-interaction-markup>
+        <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/css/styles.css" type="text/css"/>
+        </qti-portable-custom-interaction>
+      </div>
+      </div> 
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/> 
     </qti-assessment-item>`
   },
   {
