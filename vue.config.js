@@ -2,6 +2,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   runtimeCompiler: true,
+  parallel: false,
 
   publicPath: process.env.NODE_ENV === 'production'
     ? '/testrunner/'
