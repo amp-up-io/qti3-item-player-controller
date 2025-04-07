@@ -1452,7 +1452,7 @@ const tests = [
     "id": "20",
     "title": "Example QTI3 Portable Custom Interactions",
     "description": "<p>Demonstrates QTI3 Player support for Portable Custom Interactions (PCI's).  With QTI3, PCI's are now promoted to first-class interactions with the <code>&lt;qti-portable-custom-interaction&gt;</code> element.</p>",
-    "count": "9",
+    "count": "10",
     "items": [
       {
         "identifier": "pci-graphing-interaction-1",
@@ -1472,6 +1472,14 @@ const tests = [
       },
       {
         "identifier": "pci-graphing-interaction-variables",
+        "sessionControl": {
+          "showFeedback": true,
+          "validateResponses": true,
+          "submissionMode": "individual"
+        }
+      },
+      {
+        "identifier": "pci-graphing-interaction-altconfig",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": true,

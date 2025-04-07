@@ -7952,37 +7952,36 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       <div class="qti-layout-row">
         <div class="qti-layout-col12">
           <p>The graph shows point <em>L</em>. What is the location of a point 5 units down and 2 units to the left of point <em>L</em>? </p>
-          <qti-portable-custom-interaction 
-            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction" 
-            data-id="graph-container" 
+          <qti-portable-custom-interaction response-identifier="RESPONSE"
+            module="GraphingInteraction"
+            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction"
             data-graphtype="scatter"
             data-planetype="default"
-            data-title="" 
+            data-id="graph"
+            data-title=""
             data-axislinewidth="3" 
             data-borderlinewidth="3"
             data-steplinewidth="1"
-            data-height="400" 
-            data-width="400" 
-            data-hlines="10" 
-            data-vlines="10" 
-            data-maxpoints="1" 
+            data-height="400"
+            data-width="400"
+            data-hlines="10"
+            data-vlines="10"
+            data-maxpoints="1"
             data-minpoints="1"
             data-min-selections-message="You must plot one point to answer this question."
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;y&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-fixedpoints="{ &quot;points&quot;: [{ &quot;x&quot;: 3, &quot;y&quot;: 2, &quot;label&quot;: &quot;L&quot; }]}"
-            module="Graphing"
-            response-identifier="RESPONSE" 
             data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/490fb232-3f99-430e-b589-4c9d8618e666/items/item-1/">
             <qti-prompt>Plot the point on the coordinate grid.</qti-prompt>
             <qti-interaction-markup>
-              <div id="graph-container"></div>
+              <div class="graph-container" id="graph"></div>
             </qti-interaction-markup>
             <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/490fb232-3f99-430e-b589-4c9d8618e666/items/item-1/css/styles.css" type="text/css"/>
-          </qti-portable-custom-interaction> 
+          </qti-portable-custom-interaction>
         </div>
       </div>
-    </qti-item-body> 
+    </qti-item-body>
     <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
     </qti-assessment-item>`
   },
@@ -8001,46 +8000,35 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       <div class="qti-layout-row">
         <div class="qti-layout-col12">
           <p>Draw the graph of the inverse of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mfrac bevelled="false"><mi>3</mi><mi>2</mi></mfrac><mo>⁢</mo><mi>x</mi><mo>-</mo><mi>3</mi></mrow></math> on the coordinate grid below. </p>
-          <qti-portable-custom-interaction 
-            module="GraphingInteraction" 
-            response-identifier="RESPONSE" 
-            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction" 
-            data-axislinewidth="3" 
-            data-borderlinewidth="3" 
-            data-graphtype="line" 
+          <qti-portable-custom-interaction response-identifier="RESPONSE"
+            module="GraphingInteraction"
+            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction"
+            data-graphtype="line"
+            data-planetype="default"
+            data-id="graph"
+            data-title=""
             data-height="400"
             data-width="400"
             data-hlines="10"
             data-vlines="10"
-            data-id="graph-container"
+            data-axislinewidth="3"
+            data-borderlinewidth="3"
+            data-steplinewidth="1"
             data-maxpoints="2"
             data-minpoints="2"
             data-min-selections-message="You must plot two points to answer this question."
-            data-planetype="default"
-            data-steplinewidth="1"
-            data-title=""
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c28e46e1-f438-4041-aaac-8ab9d07faf7a/items/item-2/"
             >
-            <qti-interaction-modules primary-configuration="../../pci/module_resolution.js">
-              <qti-interaction-module id="PlottedPoint"/>
-              <qti-interaction-module id="FullPlane"/>
-              <qti-interaction-module id="CoordinatePlaneFactory"/>
-              <qti-interaction-module id="Graph"/>
-              <qti-interaction-module id="GraphingModule"/>
-              <qti-interaction-module id="GraphingInteraction"/>
-              <qti-interaction-module id="bignumber"/>
-              <qti-interaction-module id="raphael"/>
-            </qti-interaction-modules>
             <qti-interaction-markup>
-              <div id="graph-container"></div> 
+              <div class="graph-container" id="graph"></div> 
             </qti-interaction-markup>
-            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c28e46e1-f438-4041-aaac-8ab9d07faf7a/pci/css/styles.css" type="text/css"/> 
+            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c28e46e1-f438-4041-aaac-8ab9d07faf7a/items/item-2/css/styles.css" type="text/css"/> 
           </qti-portable-custom-interaction>
         </div>
       </div>
-    </qti-item-body> 
+    </qti-item-body>
     <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
     </qti-assessment-item>`
   },
@@ -8049,7 +8037,8 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "guid": "0000-0022-000c",
     "xml": `<qti-assessment-item 
     xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    adaptive="false" identifier="pci-graphing-interaction-variables" time-dependent="false" title="PCI Graphing Interaction - variables" xml:lang="en-US" 
+    adaptive="false" identifier="pci-graphing-interaction-variables" time-dependent="false" 
+    title="PCI Graphing Interaction - variables" xml:lang="en-US" 
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd">
     <qti-context-declaration cardinality="record" identifier="QTI_CONTEXT">
       <qti-default-value>
@@ -8058,12 +8047,14 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-context-declaration>
     <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE">
       <qti-correct-response>
-        <qti-value>-3 0</qti-value><qti-value>0 -2</qti-value>
+        <qti-value>-3 0</qti-value>
+        <qti-value>0 -2</qti-value>
       </qti-correct-response>
     </qti-response-declaration>
     <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE1">
       <qti-correct-response>
-        <qti-value>-3 0</qti-value><qti-value>0 -2</qti-value>
+        <qti-value>-3 0</qti-value>
+        <qti-value>0 -2</qti-value>
       </qti-correct-response>
     </qti-response-declaration>
     <qti-template-declaration base-type="string" cardinality="multiple" identifier="SECONDARY-FIXED-POINTS">
@@ -8074,90 +8065,154 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     <qti-item-body>
       <div class="qti-layout-row">
         <div class="qti-layout-col12">
-        <p>Draw the graph of the inverse of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mfrac bevelled="false"><mi>3</mi><mi>2</mi></mfrac><mo>⁢</mo><mi>x</mi><mo>-</mo><mi>3</mi></mrow></math> on the coordinate grids below.</p>
+          <p>Draw the graph of the inverse of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mfrac bevelled="false"><mi>3</mi><mi>2</mi></mfrac><mo>⁢</mo><mi>x</mi><mo>-</mo><mi>3</mi></mrow></math> on the coordinate grid below.</p>
         </div>
       </div>
       <div class="qti-layout-row">
-        <div class="qti-layout-col6">            
-        <p>
-          The presentation of the GraphingInteraction PCI below is altered in two ways:
-        </p>
-        <ul>
-          <li>Graph should have a fixed point plotted at [2,2] with label "T" injected via a template variable.</li>
-          <li>The coordinate plane should have thin blue axes and a 1px black border because of context variable injection.</li>
-        </ul>
+        <div class="qti-layout-col6">
+          <p>The presentation of the GraphingInteraction PCI below is altered in two ways:</p>
+          <ul>
+            <li>Graph should have a fixed point plotted at [2,2] with label "T" injected via a template variable.</li>
+            <li>The coordinate plane should have thin blue axes and a 1px black border because of context variable injection.</li>
+          </ul>
         </div>
-        <div class="qti-layout-col6">            
-        <p>
-          The presentation of the GraphingInteraction PCI below should be its default presentation:
-        </p>
-        <ul>
-          <li>Graph should not have any fixed points.</li>
-          <li>The coordinate plane should have a 3px blue border and 3px red axes.</li>
-        </ul>
-        </div> 
+        <div class="qti-layout-col6">
+          <p>The presentation of the GraphingInteraction PCI below should be its <em>default</em> presentation:</p>
+          <ul>
+            <li>Graph should not have any fixed points.</li>
+            <li>The coordinate plane should have a 3px blue border and 3px red axes.</li>
+          </ul>
+        </div>
       </div>
       <div class="qti-layout-row">
-        <div class="qti-layout-col6">            
-        <qti-portable-custom-interaction 
-        custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction" 
-        data-axislinewidth="3" 
-        data-borderlinewidth="3" 
-        data-graphtype="line" 
-        data-height="360" 
-        data-hlines="10" 
-        data-id="graph-container" 
-        data-maxpoints="2"
-        data-minpoints="2" 
-        data-planetype="default" 
-        data-steplinewidth="1" 
-        data-title="" 
-        data-vlines="8" 
-        data-width="360"
-        data-min-selections-message="More Points Please!"
-        data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
-        data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
-         module="GraphingInteraction" 
-         response-identifier="RESPONSE" 
-         data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/">
-         <qti-interaction-markup>
-          <div id="graph-container"></div>
-        </qti-interaction-markup>
-        <qti-template-variable template-identifier="SECONDARY-FIXED-POINTS"/>
-        <qti-context-variable identifier="QTI_CONTEXT"/>
-        <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/css/styles.css" type="text/css"/>
-        </qti-portable-custom-interaction>
+        <div class="qti-layout-col6">
+          <qti-portable-custom-interaction response-identifier="RESPONSE" 
+            module="GraphingInteraction" 
+            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction"
+            data-graphtype="line"
+            data-planetype="default"
+            data-title=""
+            data-height="320"
+            data-width="320"
+            data-vlines="8"
+            data-hlines="10"
+            data-id="graph-1"
+            data-axislinewidth="3"
+            data-borderlinewidth="3"
+            data-steplinewidth="1"
+            data-maxpoints="2"
+            data-minpoints="2"
+            data-min-selections-message="More Points Please!"
+            data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
+            data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }"
+            data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/"
+            >
+            <qti-interaction-markup>
+              <div class="graph-container" id="graph-1"></div>
+            </qti-interaction-markup>
+            <qti-template-variable template-identifier="SECONDARY-FIXED-POINTS"/>
+            <qti-context-variable identifier="QTI_CONTEXT"/>
+            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/css/styles.css" type="text/css"/>
+          </qti-portable-custom-interaction>
+        </div>
+        <div class="qti-layout-col6">
+          <qti-portable-custom-interaction response-identifier="RESPONSE1"
+            module="GraphingInteraction"
+            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction"
+            data-graphtype="line"
+            data-planetype="default"
+            data-title=""
+            data-height="320"
+            data-width="320"
+            data-vlines="8"
+            data-hlines="10" 
+            data-id="graph-2"
+            data-axislinewidth="3"
+            data-borderlinewidth="3"
+            data-steplinewidth="1"
+            data-maxpoints="2"
+            data-minpoints="2"
+            data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }"
+            data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }"
+            data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/">
+            <qti-interaction-markup>
+              <div class="graph-container" id="graph-2"></div>
+            </qti-interaction-markup>
+            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/css/styles.css" type="text/css"/>
+          </qti-portable-custom-interaction>
+        </div>
       </div>
-      <div class="qti-layout-col6">            
-        <qti-portable-custom-interaction 
-        custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction" 
-        data-axislinewidth="3" 
-        data-borderlinewidth="3" 
-        data-graphtype="line" 
-        data-height="360" 
-        data-hlines="10" 
-        data-id="graph-container" 
-        data-maxpoints="2"
-        data-minpoints="2" 
-        data-planetype="default" 
-        data-steplinewidth="1" 
-        data-title="" 
-        data-vlines="8" 
-        data-width="360" 
-        data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
-        data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
-         module="GraphingInteraction" 
-         response-identifier="RESPONSE1" 
-         data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/">
-         <qti-interaction-markup>
-          <div id="graph-container"></div>
-        </qti-interaction-markup>
-        <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/css/styles.css" type="text/css"/>
-        </qti-portable-custom-interaction>
-      </div>
-      </div> 
     </qti-item-body>
-    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/> 
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"></qti-response-processing> 
+    </qti-assessment-item>`
+  },
+  {
+    "identifier": "pci-graphing-interaction-altconfig",
+    "guid": "0000-0022-000d",
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    adaptive="false" identifier="pci-graphing-interaction-altconfig" time-dependent="false" title="PCI Graphing Interaction - altconfig"
+    xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd">
+    <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>0.5 2</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-item-body>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col12">
+          <p>The graph shows a point <em>L</em> at (2,3) and a point <em>M</em> at (-1,1).</p>
+          <qti-portable-custom-interaction response-identifier="RESPONSE"
+            module="GraphingInteraction"
+            custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction"
+            data-graphtype="scatter"
+            data-planetype="default"
+            data-id="graph"
+            data-title=""
+            data-height="360"
+            data-width="360"
+            data-vlines="8"
+            data-hlines="8"
+            data-axislinewidth="3"
+            data-borderlinewidth="3"
+            data-steplinewidth="1"
+            data-maxpoints="1"
+            data-minpoints="1"
+            data-min-selections-message="You have not answered this question. Please plot the midpoint."
+            data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
+            data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;y&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
+            data-fixedpoints="{ &quot;points&quot;: [{ &quot;x&quot;: 2, &quot;y&quot;: 3, &quot;label&quot;: &quot;L&quot; },{ &quot;x&quot;: -1, &quot;y&quot;: 1, &quot;label&quot;: &quot;M&quot; }]}"
+            data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/eb88acca-d711-4129-abc4-c91d1a2605b1/items/item-4/">
+            <qti-interaction-modules primary-configuration="config.json">
+              <qti-interaction-module id="PlottedPoint"/>
+              <qti-interaction-module id="FullPlane"/>
+              <qti-interaction-module id="CoordinatePlaneFactory"/>
+              <qti-interaction-module id="Graph"/>
+              <qti-interaction-module id="GraphingModule"/>
+              <qti-interaction-module id="GraphingInteraction"/>
+              <qti-interaction-module id="bignumber"/>
+              <qti-interaction-module id="raphael"/>
+            </qti-interaction-modules>
+            <qti-interaction-markup>
+              <div class="qti-layout-row">
+                <div class="qti-layout-col8">
+                  <div class="graph-container" id="graph"></div>
+                </div>
+                <div class="qti-layout-col4">
+                  <div class="qti-well qti-padding-5">
+                    <p>Look at me! I am in a "well" with padding 5 because I use QTI 3 shared css classes.</p>
+                    <p>I'm in a PCI that uses a primary-configuration file: "config.json" to locate my modules and dependencies.</p>
+                    <p>Now <strong>plot a point at the midpoint</strong> between <em>L</em> and <em>M</em>.</p>
+                  </div>
+                </div>
+              </div>
+            </qti-interaction-markup> 
+            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/eb88acca-d711-4129-abc4-c91d1a2605b1/items/item-4/css/styles.css" type="text/css"/>
+          </qti-portable-custom-interaction>
+        </div>
+      </div>
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
     </qti-assessment-item>`
   },
   {
