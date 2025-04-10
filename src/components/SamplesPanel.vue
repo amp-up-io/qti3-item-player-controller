@@ -388,7 +388,7 @@
                 <Sample identifier="pci-graphing-interaction-2" title="Amp-up Graphing - Line" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="pci-graphing-interaction-variables" title="Amp-up Graphing - Variables" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="pci-graphing-interaction-altconfig" title="Amp-up Graphing - Alt Config" @sampleSelected="handleSampleSelected"/>
-                <Sample identifier="pci-graphing-interaction-altconfig-override" title="Amp-up Graphing - Alt Config Override" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="pci-graphing-interaction-altconfig-modules" title="Amp-up Graphing - Alt Config Modules" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="pci-graphing-interaction-fallback-mr" title="Amp-up Graphing - Fallback MR" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="cito-pci-vanilla" title="Cito - Percentages" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="cito-pci-color-proportions" title="Cito - Color Proportions" @sampleSelected="handleSampleSelected"/> 

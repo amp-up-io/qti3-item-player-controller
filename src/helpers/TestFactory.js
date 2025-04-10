@@ -1487,7 +1487,7 @@ const tests = [
         }
       },
       {
-        "identifier": "pci-graphing-interaction-altconfig-override",
+        "identifier": "pci-graphing-interaction-altconfig-modules",
         "sessionControl": {
           "showFeedback": true,
           "validateResponses": true,

@@ -8216,11 +8216,11 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     </qti-assessment-item>`
   },
   {
-    "identifier": "pci-graphing-interaction-altconfig-override",
+    "identifier": "pci-graphing-interaction-altconfig-modules",
     "guid": "0000-0022-000e",
     "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    adaptive="false" identifier="pci-graphing-interaction-altconfig-override" time-dependent="false" 
-    title="PCI Graphing Interaction - altconfig override" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd">
+    adaptive="false" identifier="pci-graphing-interaction-altconfig-modules" time-dependent="false" 
+    title="PCI Graphing Interaction - altconfig modules" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd">
     <qti-response-declaration base-type="point" cardinality="multiple" identifier="RESPONSE">
       <qti-correct-response>
         <qti-value>0.5 2</qti-value>
@@ -8250,7 +8250,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;y&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
             data-fixedpoints="{ &quot;points&quot;: [{ &quot;x&quot;: 2, &quot;y&quot;: 3, &quot;label&quot;: &quot;L&quot; },{ &quot;x&quot;: -1, &quot;y&quot;: 1, &quot;label&quot;: &quot;M&quot; }]}"
-            data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/27d66053-bf7e-4951-b01b-58237ca1e30f/items/item-5/">
+            data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/73e04d9e-f5d6-48c5-80da-f1ddfaa72281/items/item-5/">
             <!-- config.json only has 2 of the dependencies -->
             <qti-interaction-modules primary-configuration="config.json">
               <!-- Use qti-interaction-module elements to resolve all 7 of the remaining module dependencies -->
@@ -8276,7 +8276,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
                 </div>
               </div>
             </qti-interaction-markup>
-            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/27d66053-bf7e-4951-b01b-58237ca1e30f/items/item-5/css/styles.css" type="text/css"/>
+            <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/73e04d9e-f5d6-48c5-80da-f1ddfaa72281/items/item-5/css/styles.css" type="text/css"/>
           </qti-portable-custom-interaction>
         </div>
       </div>
