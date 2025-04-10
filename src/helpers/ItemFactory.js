@@ -8264,19 +8264,6 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             </qti-interaction-modules>
             <qti-interaction-markup>
               <div class="qti-layout-row">
-                <div class="qti-layout-col8">
-           	      <div id="graph" class="graph-container"></div>
-                </div>
-                <div class="qti-layout-col4">
-                  <div class="qti-well qti-padding-5">
-                    <p>I'm in a PCI that uses a primary-configuration file: "config.json" to locate 2 of my dependencies (Raphael and BigNumber).</p>
-                    <p>The remaining 7 dependencies are located by using qti-interaction-module elements with primary-path attributes.</p>
-                    <p>Now <strong>plot a point at the midpoint</strong> between <em>L</em> and <em>M</em>.</p>
-                  </div>
-                </div>
-              </div>
-            </qti-interaction-markup>
-              <div class="qti-layout-row">
                 <div class="qti-layout-col6">
            	      <div id="graph" class="graph-container"></div>
                 </div>
