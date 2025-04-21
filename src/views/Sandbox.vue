@@ -538,6 +538,8 @@ export default {
         // Set validate responses off, and show feedback on
         this.toggleSwitchChecked(document.getElementById('switchValidateResponses'), false)
         this.toggleSwitchChecked(document.getElementById('switchShowFeedback'), true)
+        this.sessionControl.setValidateResponses(false)
+        this.sessionControl.setShowFeedback(true)
       }
     },
 
