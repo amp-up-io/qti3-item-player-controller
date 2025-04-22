@@ -540,6 +540,7 @@ export default {
         this.toggleSwitchChecked(document.getElementById('switchShowFeedback'), true)
         this.sessionControl.setValidateResponses(false)
         this.sessionControl.setShowFeedback(true)
+        this.qti3Player.loadItemContextFromConfiguration(this.getConfiguration())
       }
     },
 
