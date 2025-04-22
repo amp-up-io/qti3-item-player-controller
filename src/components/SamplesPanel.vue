@@ -150,6 +150,7 @@
                       <Sample identifier="card-08a-baseline" title="Find The Sales Tax" @sampleSelected="handleSampleSelected"/>
                       <Sample identifier="template_image" title="Mick's Travels" @sampleSelected="handleSampleSelected"/>
                       <Sample identifier="sbac-choice-templated-qti3" title="MS Choice Templated MathML" @sampleSelected="handleSampleSelected"/>
+                      <Sample identifier="feedback-solution-random" title="Feedback Templated Exponent" @sampleSelected="handleSampleSelected"/>
                     </ul>
                   </div>
                 </li>

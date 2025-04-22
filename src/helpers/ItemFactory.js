@@ -333,7 +333,7 @@ const items = [
   {
     "identifier": "Example03-feedbackBlock-solution-qti3",
     "guid": "0000-0009-0004",
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item   xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\"   xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" adaptive=\"true\" identifier=\"Example03-feedbackBlock-solution-qti3\" time-dependent=\"false\" title=\"Example 3 - Using feedbackBlock to show a solution (random)\" tool-name=\"Mathqurate\" tool-version=\"0.9.7b\"><qti-response-declaration base-type=\"float\" cardinality=\"single\" identifier=\"RESPONSE\"/><qti-response-declaration base-type=\"boolean\" cardinality=\"single\" identifier=\"SOLREQUEST\"/><qti-response-declaration base-type=\"boolean\" cardinality=\"single\" identifier=\"EndAttempt\"/>    <qti-outcome-declaration base-type=\"identifier\" cardinality=\"multiple\" identifier=\"FEEDBACK\"/><qti-outcome-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"EMPTY\"/><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\" normal-maximum=\"10.0\" normal-minimum=\"0.0\"><qti-default-value><qti-value>0.0</qti-value></qti-default-value></qti-outcome-declaration><qti-outcome-declaration base-type=\"boolean\" cardinality=\"single\" identifier=\"seenSolution\"><qti-default-value><qti-value>false</qti-value></qti-default-value></qti-outcome-declaration><qti-outcome-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"ASKSOLUTION\"><qti-default-value><qti-value>asksolution</qti-value></qti-default-value></qti-outcome-declaration><qti-template-declaration base-type=\"integer\" cardinality=\"single\" identifier=\"iA\" math-variable=\"true\" param-variable=\"false\"/><qti-template-declaration base-type=\"float\" cardinality=\"single\" identifier=\"fAns\" math-variable=\"true\" param-variable=\"false\"/><qti-template-declaration base-type=\"float\" cardinality=\"single\" identifier=\"fR\" math-variable=\"true\" param-variable=\"false\"/><qti-template-processing><qti-set-template-value identifier=\"iA\"><qti-random-integer max=\"4\" min=\"1\"/></qti-set-template-value><qti-set-template-value identifier=\"fAns\"><qti-math-operator name=\"exp\"><qti-variable identifier=\"iA\"/></qti-math-operator></qti-set-template-value><qti-set-template-value identifier=\"fR\"><qti-round-to figures=\"3\" rounding-mode=\"decimalPlaces\"><qti-variable identifier=\"fAns\"/></qti-round-to></qti-set-template-value></qti-template-processing><qti-item-body><div class=\"qti-layout-row\"><div class=\"qti-layout-col8\"><div class=\"qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded\"><div class=\"qti3-player-item-card-body qti-padding-2\"><p class=\"\">Find the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" id=\"mathML0\"><semantics><mrow><msup><mn>e</mn><mi>iA</mi></msup></mrow><annotation encoding=\"LaTeX\">\\[\\e^\\qv{iA}\\]</annotation></semantics></math> to 3 decimal places.</p><p><qti-text-entry-interaction class=\"qti-input-width-10\" pattern-mask=\"([0-9.\\-]{0,10})\" id=\"textEntryInteraction0\" label=\"mathInput\" response-identifier=\"RESPONSE\"/><qti-feedback-inline id=\"feedbackInline0\" identifier=\"CORRECT\" outcome-identifier=\"FEEDBACK\" show-hide=\"show\"> Correct </qti-feedback-inline><qti-feedback-inline id=\"feedbackInline1\" identifier=\"INCORRECT\" outcome-identifier=\"FEEDBACK\" show-hide=\"show\"> No, that is not the correct answer</qti-feedback-inline></p><!-- this feedbackBlock contains the solution --><qti-feedback-block class=\"\" id=\"feedbackBlock2\" identifier=\"SOLUTION\" outcome-identifier=\"FEEDBACK\" show-hide=\"show\"><qti-content-body><div class=\"qti-well\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" id=\"mathML1\"><semantics><mtable><mtr><mtd columnalign=\"right\"><msup><mi>e</mi><mi>iA</mi></msup></mtd><mtd columnalign=\"center\"><mo>=</mo></mtd><mtd columnalign=\"left\"><mi>exp</mi><mfenced close=\")\" ><mi>iA</mi></mfenced></mtd></mtr><mtr><mtd columnalign=\"right\"/><mtd columnalign=\"center\"><mo>=</mo></mtd><mtd columnalign=\"left\"><mi>fR</mi></mtd></mtr></mtable><annotation encoding=\"SnuggleTeX\">\\begin{eqnarray*}e^\\qv{iA}         &amp;=&amp; \\exp(\\qv{iA})\\\\ &amp;=&amp;         \\qv{fR}\\end{eqnarray*}</annotation> </semantics></math></div></qti-content-body></qti-feedback-block><!-- Explain why the score is zero (after viewing solution) --><qti-feedback-block id=\"feedbackBlock4\" identifier=\"SEEN-SOLUTION\" outcome-identifier=\"FEEDBACK\" show-hide=\"show\"><qti-content-body><p> Since you have viewed the solution, your score for this question will be 0. </p></qti-content-body></qti-feedback-block><!-- show the solution button --><qti-feedback-block id=\"feedbackBlock7\" identifier=\"asksolution\" outcome-identifier=\"ASKSOLUTION\" show-hide=\"show\"><qti-content-body><p></p><p><qti-end-attempt-interaction id=\"endAttemptInteraction2\" response-identifier=\"SOLREQUEST\" title=\"Show Solution\"/></p></qti-content-body></qti-feedback-block></div><!-- /card-body --><div class=\"qti3-player-item-card-footer qti-height-14 qti-padding-2\"><qti-end-attempt-interaction title=\"Check Answer\" class=\"endattempt-controller-bar\" response-identifier=\"EndAttempt\" data-hideprogress=\"true\" data-steps=\"1\" data-hastemplates=\"true\" /></div> <!-- /card-footer --></div> <!-- /card --></div><div class=\"qti-layout-col4\"><div class=\"qti-well qti-margin-b-0\"><strong>About This Item</strong><p><small>Template processing is used to randomly compute 1 of 4 permutations of this item.  The computed template variable values are then \"stamped\" (using QTI's math variable templating capability) into the MathML expressions in the prompt and in the provided solution which can then be revealed by clicking the <strong>Show Solution</strong> button.  Upon clicking the <strong>Check Answer</strong> button, QTI 3 Player ends the attempt, scores the response, and displays inline feedback.</small></p><p class=\"qti-margin-b-0\"><small>The template variables - and the new correct answer - are re-computed each time you click the <strong>New Question</strong> button.</small></p></div></div></div><!-- /row --></qti-item-body><qti-response-processing><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-variable identifier=\"EMPTY\"/></qti-multiple></qti-set-outcome-value><qti-response-condition><qti-response-if><qti-variable identifier=\"SOLREQUEST\"/><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple> <qti-base-value base-type=\"identifier\">SOLUTION</qti-base-value></qti-multiple></qti-set-outcome-value><qti-set-outcome-value identifier=\"seenSolution\"><qti-base-value base-type=\"boolean\">true</qti-base-value></qti-set-outcome-value><qti-set-outcome-value identifier=\"completionStatus\"><qti-base-value base-type=\"identifier\">completed</qti-base-value></qti-set-outcome-value><qti-set-outcome-value identifier=\"ASKSOLUTION\"><qti-base-value base-type=\"identifier\">null</qti-base-value></qti-set-outcome-value></qti-response-if><qti-response-else><qti-response-condition><qti-response-if> <qti-is-null><qti-variable identifier=\"RESPONSE\"/> </qti-is-null> <qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-base-value base-type=\"identifier\">INCORRECT</qti-base-value></qti-multiple></qti-set-outcome-value> <qti-set-outcome-value identifier=\"SCORE\"><qti-base-value base-type=\"float\">0</qti-base-value> </qti-set-outcome-value></qti-response-if><qti-response-else> <qti-response-condition><qti-response-if><qti-equal-rounded figures=\"3\" rounding-mode=\"decimalPlaces\"><qti-variable identifier=\"RESPONSE\"/><qti-variable identifier=\"fAns\"/></qti-equal-rounded><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-base-value base-type=\"identifier\">CORRECT</qti-base-value></qti-multiple></qti-set-outcome-value><qti-set-outcome-value identifier=\"SCORE\"><qti-base-value base-type=\"float\">2</qti-base-value></qti-set-outcome-value></qti-response-if><qti-response-else><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-base-value base-type=\"identifier\">INCORRECT</qti-base-value></qti-multiple></qti-set-outcome-value><qti-set-outcome-value identifier=\"SCORE\"><qti-base-value base-type=\"float\">0</qti-base-value></qti-set-outcome-value></qti-response-else></qti-response-condition><qti-set-outcome-value identifier=\"completionStatus\"><qti-base-value base-type=\"identifier\">completed</qti-base-value></qti-set-outcome-value> <qti-set-outcome-value identifier=\"ASKSOLUTION\"><qti-base-value base-type=\"identifier\">null</qti-base-value></qti-set-outcome-value><qti-response-condition><qti-response-if><qti-variable identifier=\"seenSolution\"/><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-variable identifier=\"FEEDBACK\"/><qti-base-value base-type=\"identifier\">SEEN-SOLUTION</qti-base-value></qti-multiple></qti-set-outcome-value><qti-set-outcome-value identifier=\"SCORE\"><qti-base-value base-type=\"float\">0.0</qti-base-value></qti-set-outcome-value></qti-response-if></qti-response-condition></qti-response-else></qti-response-condition></qti-response-else></qti-response-condition></qti-response-processing></qti-assessment-item>"
+    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><qti-assessment-item   xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0\"   xsi:schemaLocation=\"http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd\" adaptive=\"true\" identifier=\"Example03-feedbackBlock-solution-qti3\" time-dependent=\"false\" title=\"Example 3 - Using feedbackBlock to show a solution (random)\" tool-name=\"Mathqurate\" tool-version=\"0.9.7b\"><qti-response-declaration base-type=\"float\" cardinality=\"single\" identifier=\"RESPONSE\"/><qti-response-declaration base-type=\"boolean\" cardinality=\"single\" identifier=\"SOLREQUEST\"/><qti-response-declaration base-type=\"boolean\" cardinality=\"single\" identifier=\"EndAttempt\"/>    <qti-outcome-declaration base-type=\"identifier\" cardinality=\"multiple\" identifier=\"FEEDBACK\"/><qti-outcome-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"EMPTY\"/><qti-outcome-declaration base-type=\"float\" cardinality=\"single\" identifier=\"SCORE\" normal-maximum=\"10.0\" normal-minimum=\"0.0\"><qti-default-value><qti-value>0.0</qti-value></qti-default-value></qti-outcome-declaration><qti-outcome-declaration base-type=\"boolean\" cardinality=\"single\" identifier=\"seenSolution\"><qti-default-value><qti-value>false</qti-value></qti-default-value></qti-outcome-declaration><qti-outcome-declaration base-type=\"identifier\" cardinality=\"single\" identifier=\"ASKSOLUTION\"><qti-default-value><qti-value>asksolution</qti-value></qti-default-value></qti-outcome-declaration><qti-template-declaration base-type=\"integer\" cardinality=\"single\" identifier=\"iA\" math-variable=\"true\" param-variable=\"false\"/><qti-template-declaration base-type=\"float\" cardinality=\"single\" identifier=\"fAns\" math-variable=\"true\" param-variable=\"false\"/><qti-template-declaration base-type=\"float\" cardinality=\"single\" identifier=\"fR\" math-variable=\"true\" param-variable=\"false\"/><qti-template-processing><qti-set-template-value identifier=\"iA\"><qti-random-integer max=\"4\" min=\"1\"/></qti-set-template-value><qti-set-template-value identifier=\"fAns\"><qti-math-operator name=\"exp\"><qti-variable identifier=\"iA\"/></qti-math-operator></qti-set-template-value><qti-set-template-value identifier=\"fR\"><qti-round-to figures=\"3\" rounding-mode=\"decimalPlaces\"><qti-variable identifier=\"fAns\"/></qti-round-to></qti-set-template-value></qti-template-processing><qti-item-body><div class=\"qti-layout-row\"><div class=\"qti-layout-col8\"><div class=\"qti3-player-item-card-bordered-rounded qti3-player-item-card-raised-rounded\"><div class=\"qti3-player-item-card-body qti-padding-2\"><p class=\"\">Find the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" id=\"mathML0\"><semantics><mrow><msup><mn>e</mn><mi>iA</mi></msup></mrow><annotation encoding=\"LaTeX\">\\[\\e^\\qv{iA}\\]</annotation></semantics></math> to 3 decimal places.</p><p><qti-text-entry-interaction class=\"qti-input-width-10 qti-margin-e-2\" pattern-mask=\"([0-9.\\-]{0,10})\" id=\"textEntryInteraction0\" label=\"mathInput\" response-identifier=\"RESPONSE\"/><qti-feedback-inline id=\"feedbackInline0\" identifier=\"CORRECT\" outcome-identifier=\"FEEDBACK\" show-hide=\"show\">Correct</qti-feedback-inline><qti-feedback-inline id=\"feedbackInline1\" identifier=\"INCORRECT\" outcome-identifier=\"FEEDBACK\" show-hide=\"show\">No, that is not the correct answer</qti-feedback-inline></p><!-- this feedbackBlock contains the solution --><qti-feedback-block class=\"\" id=\"feedbackBlock2\" identifier=\"SOLUTION\" outcome-identifier=\"FEEDBACK\" show-hide=\"show\"><qti-content-body><div class=\"qti-well\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" id=\"mathML1\"><semantics><mtable><mtr><mtd columnalign=\"right\"><msup><mi>e</mi><mi>iA</mi></msup></mtd><mtd columnalign=\"center\"><mo>=</mo></mtd><mtd columnalign=\"left\"><mi>exp</mi><mfenced close=\")\" ><mi>iA</mi></mfenced></mtd></mtr><mtr><mtd columnalign=\"right\"/><mtd columnalign=\"center\"><mo>=</mo></mtd><mtd columnalign=\"left\"><mi>fR</mi></mtd></mtr></mtable><annotation encoding=\"SnuggleTeX\">\\begin{eqnarray*}e^\\qv{iA}         &amp;=&amp; \\exp(\\qv{iA})\\\\ &amp;=&amp;         \\qv{fR}\\end{eqnarray*}</annotation> </semantics></math></div></qti-content-body></qti-feedback-block><!-- Explain why the score is zero (after viewing solution) --><qti-feedback-block id=\"feedbackBlock4\" identifier=\"SEEN-SOLUTION\" outcome-identifier=\"FEEDBACK\" show-hide=\"show\"><qti-content-body><p> Since you have viewed the solution, your score for this question will be 0. </p></qti-content-body></qti-feedback-block><!-- show the solution button --><qti-feedback-block id=\"feedbackBlock7\" identifier=\"asksolution\" outcome-identifier=\"ASKSOLUTION\" show-hide=\"show\"><qti-content-body><p></p><p><qti-end-attempt-interaction id=\"endAttemptInteraction2\" response-identifier=\"SOLREQUEST\" title=\"Show Solution\"/></p></qti-content-body></qti-feedback-block></div><!-- /card-body --><div class=\"qti3-player-item-card-footer qti-height-14 qti-padding-2\"><qti-end-attempt-interaction title=\"Check Answer\" class=\"endattempt-controller-bar\" response-identifier=\"EndAttempt\" data-hideprogress=\"true\" data-steps=\"1\" data-hastemplates=\"true\" /></div> <!-- /card-footer --></div> <!-- /card --></div><div class=\"qti-layout-col4\"><div class=\"qti-well qti-margin-b-0\"><strong>About This Item</strong><p><small>Template processing is used to randomly compute 1 of 4 permutations of this item.  The computed template variable values are then \"stamped\" (using QTI's math variable templating capability) into the MathML expressions in the prompt and in the provided solution which can then be revealed by clicking the <strong>Show Solution</strong> button.  Upon clicking the <strong>Check Answer</strong> button, QTI 3 Player ends the attempt, scores the response, and displays inline feedback.</small></p><p class=\"qti-margin-b-0\"><small>The template variables - and the new correct answer - are re-computed each time you click the <strong>New Question</strong> button.</small></p></div></div></div><!-- /row --></qti-item-body><qti-response-processing><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-variable identifier=\"EMPTY\"/></qti-multiple></qti-set-outcome-value><qti-response-condition><qti-response-if><qti-variable identifier=\"SOLREQUEST\"/><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple> <qti-base-value base-type=\"identifier\">SOLUTION</qti-base-value></qti-multiple></qti-set-outcome-value><qti-set-outcome-value identifier=\"seenSolution\"><qti-base-value base-type=\"boolean\">true</qti-base-value></qti-set-outcome-value><qti-set-outcome-value identifier=\"completionStatus\"><qti-base-value base-type=\"identifier\">completed</qti-base-value></qti-set-outcome-value><qti-set-outcome-value identifier=\"ASKSOLUTION\"><qti-base-value base-type=\"identifier\">null</qti-base-value></qti-set-outcome-value></qti-response-if><qti-response-else><qti-response-condition><qti-response-if> <qti-is-null><qti-variable identifier=\"RESPONSE\"/> </qti-is-null> <qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-base-value base-type=\"identifier\">INCORRECT</qti-base-value></qti-multiple></qti-set-outcome-value> <qti-set-outcome-value identifier=\"SCORE\"><qti-base-value base-type=\"float\">0</qti-base-value> </qti-set-outcome-value></qti-response-if><qti-response-else> <qti-response-condition><qti-response-if><qti-equal-rounded figures=\"3\" rounding-mode=\"decimalPlaces\"><qti-variable identifier=\"RESPONSE\"/><qti-variable identifier=\"fAns\"/></qti-equal-rounded><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-base-value base-type=\"identifier\">CORRECT</qti-base-value></qti-multiple></qti-set-outcome-value><qti-set-outcome-value identifier=\"SCORE\"><qti-base-value base-type=\"float\">2</qti-base-value></qti-set-outcome-value></qti-response-if><qti-response-else><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-base-value base-type=\"identifier\">INCORRECT</qti-base-value></qti-multiple></qti-set-outcome-value><qti-set-outcome-value identifier=\"SCORE\"><qti-base-value base-type=\"float\">0</qti-base-value></qti-set-outcome-value></qti-response-else></qti-response-condition><qti-set-outcome-value identifier=\"completionStatus\"><qti-base-value base-type=\"identifier\">completed</qti-base-value></qti-set-outcome-value> <qti-set-outcome-value identifier=\"ASKSOLUTION\"><qti-base-value base-type=\"identifier\">null</qti-base-value></qti-set-outcome-value></qti-response-else></qti-response-condition></qti-response-else></qti-response-condition><qti-response-condition><qti-response-if><qti-variable identifier=\"seenSolution\"/><qti-set-outcome-value identifier=\"FEEDBACK\"><qti-multiple><qti-variable identifier=\"FEEDBACK\"/><qti-base-value base-type=\"identifier\">SEEN-SOLUTION</qti-base-value></qti-multiple></qti-set-outcome-value><qti-set-outcome-value identifier=\"SCORE\"><qti-base-value base-type=\"float\">0.0</qti-base-value></qti-set-outcome-value></qti-response-if></qti-response-condition></qti-response-processing></qti-assessment-item>"
   },
   {
     "identifier": "ms-choice-templated-qti3",
@@ -9028,6 +9028,170 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
       </qti-response-condition>
     </qti-response-processing>
   </qti-assessment-item>`
+  },
+  {
+    "identifier": "feedback-solution-random",
+    "guid": "0000-feedback-template",
+    "submissionMode": "individual",
+    "xml": `<qti-assessment-item 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+  adaptive="true" identifier="feedback-solution-random" time-dependent="false" title="Using qti-feedback-block to show a solution (random)" tool-name="Mathqurate" tool-version="0.9.7b">
+  <qti-response-declaration base-type="float" cardinality="single" identifier="RESPONSE"/>
+  <qti-response-declaration base-type="boolean" cardinality="single" identifier="SOLREQUEST"/>
+  <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="FEEDBACK"/>
+  <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="EMPTY"/>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE" normal-maximum="10.0" normal-minimum="0.0">
+    <qti-default-value><qti-value>0.0</qti-value></qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration base-type="boolean" cardinality="single" identifier="seenSolution">
+    <qti-default-value><qti-value>false</qti-value></qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="ASKSOLUTION">
+    <qti-default-value><qti-value>asksolution</qti-value></qti-default-value>
+  </qti-outcome-declaration>
+  <qti-template-declaration base-type="integer" cardinality="single" identifier="iA" math-variable="true" param-variable="false"/>
+  <qti-template-declaration base-type="float" cardinality="single" identifier="fAns" math-variable="true" param-variable="false"/>
+  <qti-template-declaration base-type="float" cardinality="single" identifier="fR" math-variable="true" param-variable="false"/>
+  <qti-template-processing>
+    <qti-set-template-value identifier="iA">
+      <qti-random-integer max="4" min="1"/>
+    </qti-set-template-value>
+    <qti-set-template-value identifier="fAns">
+      <qti-math-operator name="exp">
+        <qti-variable identifier="iA"/>
+      </qti-math-operator>
+    </qti-set-template-value>
+    <qti-set-template-value identifier="fR">
+      <qti-round-to figures="3" rounding-mode="decimalPlaces">
+        <qti-variable identifier="fAns"/>
+      </qti-round-to>
+    </qti-set-template-value>
+  </qti-template-processing>
+  <qti-item-body>
+    <div class="qti-layout-row">
+      <div class="qti-layout-col12">
+        <p>Find the value of <math xmlns="http://www.w3.org/1998/Math/MathML" id="mathML0"><semantics><mrow><msup><mn>e</mn><mi>iA</mi></msup></mrow><annotation encoding="LaTeX">\\[\\e^\\qv{iA}\\]</annotation></semantics></math> to 3 decimal places.</p>
+        <p class="qti-margin-b-2"><qti-text-entry-interaction class="qti-input-width-10" pattern-mask="([0-9.\\-]{0,10})" id="textEntryInteraction0" label="mathInput" response-identifier="RESPONSE"/>
+          <qti-feedback-inline id="feedbackInline0" identifier="CORRECT" outcome-identifier="FEEDBACK" show-hide="show"> Correct </qti-feedback-inline>
+          <qti-feedback-inline id="feedbackInline1" identifier="INCORRECT" outcome-identifier="FEEDBACK" show-hide="show"> No, that is not the correct answer</qti-feedback-inline>
+        </p>
+        <!-- this feedbackBlock contains the solution -->
+        <qti-feedback-block class="" id="feedbackBlock2" identifier="SOLUTION" outcome-identifier="FEEDBACK" show-hide="show">
+          <qti-content-body>
+            <div class="qti-well"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" id="mathML1"><semantics><mtable><mtr><mtd columnalign="right"><msup><mi>e</mi><mi>iA</mi></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>exp</mi><mfenced close=")" ><mi>iA</mi></mfenced></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>fR</mi></mtd></mtr></mtable><annotation encoding="SnuggleTeX">\\begin{eqnarray*}e^\\qv{iA}         &amp;=&amp; \\exp(\\qv{iA})\\\\ &amp;=&amp;         \\qv{fR}\\end{eqnarray*}</annotation> </semantics></math></div>
+          </qti-content-body>
+        </qti-feedback-block>
+        <!-- Explain why the score is zero (after viewing solution) -->
+        <qti-feedback-block id="feedbackBlock4" identifier="SEEN-SOLUTION" outcome-identifier="FEEDBACK" show-hide="show">
+          <qti-content-body>
+            <p>Since you have viewed the solution, your score for this question will be 0.</p>
+          </qti-content-body>
+        </qti-feedback-block>
+        <!-- show the solution button -->
+        <qti-feedback-block id="feedbackBlock7" identifier="asksolution" outcome-identifier="ASKSOLUTION" show-hide="show">
+          <qti-content-body>
+            <p><qti-end-attempt-interaction id="endAttemptInteraction2" response-identifier="SOLREQUEST" title="Show Solution"/></p>
+          </qti-content-body>
+        </qti-feedback-block>
+      </div>
+    </div>
+  </qti-item-body>
+  <qti-response-processing>
+    <qti-set-outcome-value identifier="FEEDBACK">
+      <qti-multiple>
+        <qti-variable identifier="EMPTY"/>
+      </qti-multiple>
+    </qti-set-outcome-value>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-variable identifier="SOLREQUEST"/>
+        <qti-set-outcome-value identifier="FEEDBACK">
+          <qti-multiple>
+            <qti-base-value base-type="identifier">SOLUTION</qti-base-value>
+          </qti-multiple>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="seenSolution">
+          <qti-base-value base-type="boolean">true</qti-base-value>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="completionStatus">
+          <qti-base-value base-type="identifier">completed</qti-base-value>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="ASKSOLUTION">
+          <qti-base-value base-type="identifier">null</qti-base-value>
+        </qti-set-outcome-value>
+      </qti-response-if>
+      <qti-response-else>
+        <qti-response-condition>
+          <qti-response-if>
+            <qti-is-null>
+              <qti-variable identifier="RESPONSE"/>
+            </qti-is-null>
+            <qti-set-outcome-value identifier="FEEDBACK">
+              <qti-multiple>
+                <qti-base-value base-type="identifier">INCORRECT</qti-base-value>
+              </qti-multiple>
+            </qti-set-outcome-value>
+            <qti-set-outcome-value identifier="SCORE">
+              <qti-base-value base-type="float">0</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-if>
+          <qti-response-else>
+            <qti-response-condition>
+              <qti-response-if>
+                <qti-equal-rounded figures="3" rounding-mode="decimalPlaces">
+                  <qti-variable identifier="RESPONSE"/>
+                  <qti-variable identifier="fAns"/>
+                </qti-equal-rounded>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                  <qti-multiple>
+                    <qti-base-value base-type="identifier">CORRECT</qti-base-value>
+                  </qti-multiple>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                  <qti-base-value base-type="float">2</qti-base-value>
+                </qti-set-outcome-value>
+              </qti-response-if>
+              <qti-response-else>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                  <qti-multiple>
+                    <qti-base-value base-type="identifier">INCORRECT</qti-base-value>
+                  </qti-multiple>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                  <qti-base-value base-type="float">0</qti-base-value>
+                </qti-set-outcome-value>
+              </qti-response-else>
+            </qti-response-condition>
+            <qti-set-outcome-value identifier="completionStatus">
+              <qti-base-value base-type="identifier">completed</qti-base-value>
+            </qti-set-outcome-value>
+            <qti-set-outcome-value identifier="ASKSOLUTION">
+              <qti-base-value base-type="identifier">null</qti-base-value>
+            </qti-set-outcome-value>
+          </qti-response-else>
+        </qti-response-condition>
+      </qti-response-else>
+    </qti-response-condition>
+    <!-- When an answer has been submitted, if the solution has been displayed, 
+         the message about the score is added to the FEEDBACK, and SCORE is set to 0.0 -->
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-variable identifier="seenSolution"/>
+        <qti-set-outcome-value identifier="FEEDBACK">
+          <qti-multiple>
+            <qti-variable identifier="FEEDBACK"/>
+            <qti-base-value base-type="identifier">SEEN-SOLUTION</qti-base-value>
+          </qti-multiple>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="SCORE">
+          <qti-base-value base-type="float">0.0</qti-base-value>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+  </qti-response-processing>
+</qti-assessment-item>`
   }
 ]
 
