@@ -393,6 +393,7 @@
                 <Sample identifier="pci-graphing-interaction-fallback-mr" title="Amp-up Graphing - Fallback MR" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="cito-pci-vanilla" title="Cito - Percentages" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="cito-pci-color-proportions" title="Cito - Color Proportions" @sampleSelected="handleSampleSelected"/> 
+                <Sample identifier="cito-pci-color-proportions-new" title="Cito - Color Proportions New" @sampleSelected="handleSampleSelected"/>
                 <Sample identifier="OAT-pci-likert" title="OAT - Likert" @sampleSelected="handleSampleSelected"/> 
                 <Sample identifier="OAT-pci-audio-recorder" title="OAT - Audio Recorder" @sampleSelected="handleSampleSelected"/> 
               </ul>
