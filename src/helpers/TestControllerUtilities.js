@@ -25,8 +25,8 @@ export class TestControllerUtilities {
   navigateItemData = null
 
   constructor () {
-    this.testFactory = new TestFactory()
-    this.itemFactory = new ItemFactory()
+    this.testFactory = TestFactory.instance()
+    this.itemFactory = ItemFactory.instance()
     return this
   }
 

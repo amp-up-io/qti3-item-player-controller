@@ -9203,6 +9203,11 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
 
 /* eslint-enable */
 export class ItemFactory {
+  static _instance;
+
+  static instance () {
+    return ItemFactory._instance ??= new ItemFactory();
+  }
 
   constructor () {
     this.items = items
@@ -9235,4 +9240,14 @@ export class ItemFactory {
     return items
   }
 
+  pushItem (identifier, submissionMode, xml) {
+    const guid = Math.random().toString(16).slice(2)
+
+    // identifier collisions can cause the wrong state or submissionMode to be used
+    identifier += `-${guid}`
+
+    this.items.push({identifier, guid, submissionMode, xml})
+
+    return {identifier};
+  }
 }
