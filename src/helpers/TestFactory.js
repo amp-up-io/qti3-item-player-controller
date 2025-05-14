@@ -1451,8 +1451,8 @@ const tests = [
   {
     "id": "20",
     "title": "Example QTI3 Portable Custom Interactions",
-    "description": "<p>Demonstrates QTI3 Player support for Portable Custom Interactions (PCI's).  With QTI3, PCI's are now promoted to first-class interactions with the <code>&lt;qti-portable-custom-interaction&gt;</code> element.</p>",
-    "count": "13",
+    "description": "<p>Demonstrates QTI3 Player support for Portable Custom Interactions (PCI's).  With QTI3, PCI's are now promoted to first-class interactions with the <code>&lt;qti-portable-custom-interaction&gt;</code> element.</p><p><strong>Note:</strong> The first 6 items in this collection are from the proposed QTI 3 Elective PCI Conformance test.",
+    "count": "12",
     "items": [
       {
         "identifier": "pci-graphing-interaction-1",
@@ -1534,14 +1534,14 @@ const tests = [
           "submissionMode": "individual"
         }
       },
-      {
-        "identifier": "cito-pci-color-proportions-new",
-        "sessionControl": {
-          "showFeedback": true,
-          "validateResponses": false,
-          "submissionMode": "individual"
-        }
-      },
+      //{
+      //  "identifier": "cito-pci-color-proportions-new",
+      // "sessionControl": {
+      //    "showFeedback": true,
+      //    "validateResponses": false,
+      //    "submissionMode": "individual"
+      //  }
+      //},
       {
         "identifier": "OAT-pci-likert",
         "sessionControl": {

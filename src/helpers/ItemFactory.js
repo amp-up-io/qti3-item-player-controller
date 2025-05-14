@@ -8528,52 +8528,54 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     "identifier": "cito-pci-color-proportions",
     "guid": "0000-0022-0005a",
     "submissionMode": "individual",
-    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="cito-pci-color-proportions" label="pci 1" time-dependent="false" title="pci 1" tool-name="TAO" tool-version="3.4.0-sprint121" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"> 
-    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"> 
+    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="cito-pci-color-proportions" label="pci 1" time-dependent="false" title="pci 1" tool-name="TAO" tool-version="3.4.0-sprint121" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+    <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE">
       <qti-correct-response>
-        <qti-value>[{"color":" blue","percentage":25},{"color":" yellow","percentage":25},{"color":"red","percentage":50}]</qti-value>
+        <qti-value>[{"color":"blue","percentage":25},{"color":"green","percentage":25},{"color":"red","percentage":50}]</qti-value>
       </qti-correct-response>
-    </qti-response-declaration> 
-    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"></qti-outcome-declaration> 
-    <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/d66d982b-9e77-49b9-a1d2-76a6e371d5f6/i66de9c8bb137c1019233d5572ae51e0/style/custom/tao-user-styles.css" media="all" title="" type="text/css"/> 
+    </qti-response-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/de70596e-32d7-4001-99a0-569242f4396e/items/i67a0dfca446508820f6286cf78feea/style/custom/tao-user-styles.css" media="all" title="" type="text/css"/>
     <qti-item-body>
-    <div class="qti-layout-row">
-      <div class="qti-layout-col12">
-        <p>Color 50% red, 25% blue and 25% yellow.</p>
-      </div> 
-    </div> 
-    <div class="qti-layout-row">
-      <div class="qti-layout-col12">
-        <qti-portable-custom-interaction custom-interaction-type-identifier="colorProportions" 
-          data-colors="red, blue, yellow" 
-          data-height="400" 
-          data-version="1.0.1" 
-          data-width="400" 
-          module="colorProportions" 
-          response-identifier="RESPONSE" 
-          data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/d66d982b-9e77-49b9-a1d2-76a6e371d5f6/i66de9c8bb137c1019233d5572ae51e0/">
-          <qti-interaction-modules>
-            <qti-interaction-module id="colorProportions" primary-path="../interaction/runtime/js/index.js"/>
-          </qti-interaction-modules>
-          <qti-interaction-markup>
-            <div class="pciInteraction">
-              <div class="prompt"></div>
-              <ul class="pci"></ul>
-            </div>
-          </qti-interaction-markup>
-        </qti-portable-custom-interaction>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col12">
+          <p>Color the square in the following proportions:</p>
+          <ul><li>50% red</li> <li>25% blue</li><li>25% green</li></ul>
+        </div>
       </div>
-    </div>
+      <div class="qti-layout-row">
+        <div class="qti-layout-col12">
+          <qti-portable-custom-interaction
+            response-identifier="RESPONSE"
+            custom-interaction-type-identifier="colorProportions"
+            module="colorProportions"
+            data-colors="red, blue, green"
+            data-height="400"
+            data-version="1.0.1"
+            data-width="400"
+            data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/de70596e-32d7-4001-99a0-569242f4396e/items/i67a0dfca446508820f6286cf78feea/">
+            <qti-interaction-modules>
+              <qti-interaction-module id="colorProportions" primary-path="../../interaction/runtime/js/index.js"/>
+            </qti-interaction-modules>
+            <qti-interaction-markup>
+              <div class="pciInteraction">
+                <div class="prompt"></div>
+                <ul class="pci"></ul>
+              </div>
+            </qti-interaction-markup>
+          </qti-portable-custom-interaction>
+        </div>
+      </div>
     </qti-item-body>
     <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
     </qti-assessment-item>`
   },
-  {
-    "identifier": "cito-pci-color-proportions-new",
-    "guid": "0000-0022-0005b",
-    "submissionMode": "individual",
-    "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="verhoudingen" label="verhoudingen" time-dependent="false" title="verhoudingen" tool-name="TAO" tool-version="3.4.0-sprint121" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"> <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"> <qti-correct-response> <qti-value>[{"color":"blue","percentage":25},{"color":"green","percentage":25},{"color":"red","percentage":50}]</qti-value> </qti-correct-response> </qti-response-declaration> <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"></qti-outcome-declaration> <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/985906af-6d46-49f2-a8cc-1f7c2a008e30/items/i67a0dfca446508820f6286cf78feea/style/custom/tao-user-styles.css" media="all" title="" type="text/css"/> <qti-item-body> <div class="grid-row"> <div class="col-12"> <p>Color the square in the following proportions:</p> <ul> <li>50% red</li> <li>25% blue</li> <li>25% green</li> </ul> </div> </div> <div class="grid-row"> <div class="col-12"> <qti-portable-custom-interaction custom-interaction-type-identifier="colorProportions" data-colors="red, blue, green" data-height="400" data-version="1.0.1" data-width="400" module="colorProportions" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/985906af-6d46-49f2-a8cc-1f7c2a008e30/items/i67a0dfca446508820f6286cf78feea/"> <qti-interaction-modules> <qti-interaction-module id="colorProportions" primary-path="../../interaction/runtime/js/index.js"></qti-interaction-module> </qti-interaction-modules> <qti-interaction-markup> <div class="pciInteraction"> <div class="prompt"></div> <ul class="pci"></ul> </div> </qti-interaction-markup> </qti-portable-custom-interaction> </div> </div> </qti-item-body> <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"></qti-response-processing> </qti-assessment-item>`
-  },
+  //{
+  //  "identifier": "cito-pci-color-proportions-new",
+  //  "guid": "0000-0022-0005b",
+  //  "submissionMode": "individual",
+  //  "xml": `<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="verhoudingen" label="verhoudingen" time-dependent="false" title="verhoudingen" tool-name="TAO" tool-version="3.4.0-sprint121" xml:lang="en-US" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"> <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"> <qti-correct-response> <qti-value>[{"color":"blue","percentage":25},{"color":"green","percentage":25},{"color":"red","percentage":50}]</qti-value> </qti-correct-response> </qti-response-declaration> <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"></qti-outcome-declaration> <qti-stylesheet href="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/985906af-6d46-49f2-a8cc-1f7c2a008e30/items/i67a0dfca446508820f6286cf78feea/style/custom/tao-user-styles.css" media="all" title="" type="text/css"/> <qti-item-body> <div class="grid-row"> <div class="col-12"> <p>Color the square in the following proportions:</p> <ul> <li>50% red</li> <li>25% blue</li> <li>25% green</li> </ul> </div> </div> <div class="grid-row"> <div class="col-12"> <qti-portable-custom-interaction custom-interaction-type-identifier="colorProportions" data-colors="red, blue, green" data-height="400" data-version="1.0.1" data-width="400" module="colorProportions" response-identifier="RESPONSE" data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/985906af-6d46-49f2-a8cc-1f7c2a008e30/items/i67a0dfca446508820f6286cf78feea/"> <qti-interaction-modules> <qti-interaction-module id="colorProportions" primary-path="../../interaction/runtime/js/index.js"></qti-interaction-module> </qti-interaction-modules> <qti-interaction-markup> <div class="pciInteraction"> <div class="prompt"></div> <ul class="pci"></ul> </div> </qti-interaction-markup> </qti-portable-custom-interaction> </div> </div> </qti-item-body> <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"></qti-response-processing> </qti-assessment-item>`
+  //},
   {
     "identifier": "OAT-pci-audio-recorder",
     "guid": "0000-0022-0006",
