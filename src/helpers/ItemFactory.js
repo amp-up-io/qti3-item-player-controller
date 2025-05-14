@@ -7951,7 +7951,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     <qti-item-body>
       <div class="qti-layout-row">
         <div class="qti-layout-col12">
-          <p>The graph shows point <em>L</em>. What is the location of a point 5 units down and 2 units to the left of point <em>L</em>? </p>
+          <p>The graph shows point <em>L</em>. What is the location of a point 5 units down and 2 units to the left of point <em>L</em>?</p>
           <qti-portable-custom-interaction response-identifier="RESPONSE"
             module="GraphingInteraction"
             custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction"
@@ -7968,7 +7968,6 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-vlines="10"
             data-maxpoints="1"
             data-minpoints="1"
-            data-min-selections-message="You must plot one point to answer this question."
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;y&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-fixedpoints="{ &quot;points&quot;: [{ &quot;x&quot;: 3, &quot;y&quot;: 2, &quot;label&quot;: &quot;L&quot; }]}"
@@ -7999,7 +7998,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
     <qti-item-body>
       <div class="qti-layout-row">
         <div class="qti-layout-col12">
-          <p>Draw the graph of the inverse of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mfrac bevelled="false"><mi>3</mi><mi>2</mi></mfrac><mo>⁢</mo><mi>x</mi><mo>-</mo><mi>3</mi></mrow></math> on the coordinate grid below. </p>
+          <p>Draw the graph of the inverse of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mfrac bevelled="false"><mi>3</mi><mi>2</mi></mfrac><mo>⁢</mo><mi>x</mi><mo>-</mo><mi>3</mi></mrow></math> on the coordinate grid below.</p>
           <qti-portable-custom-interaction response-identifier="RESPONSE"
             module="GraphingInteraction"
             custom-interaction-type-identifier="urn:ampup:pci:2025:graphingInteraction"
@@ -8016,7 +8015,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-steplinewidth="1"
             data-maxpoints="2"
             data-minpoints="2"
-            data-min-selections-message="You must plot two points to answer this question."
+            data-invalidresponsemessage="You must plot two points to answer this question."
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/c28e46e1-f438-4041-aaac-8ab9d07faf7a/items/item-2/"
@@ -8102,7 +8101,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-steplinewidth="1"
             data-maxpoints="2"
             data-minpoints="2"
-            data-min-selections-message="More Points Please!"
+            data-invalidresponsemessage="More Points Please!"
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }" 
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 1, &quot;label&quot;: &quot;f(x)&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 0 }"
             data-item-path-uri="https://storage.googleapis.com/bank-dev-ampup/c/54393195-3146-417d-ba1f-eb80dc5a30e8/43894675-a8cb-4846-b594-29fcd130bc7f/7bc02854-7aa3-4a58-903b-48601fdc1a89/items/item-3/"
@@ -8178,7 +8177,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-steplinewidth="1"
             data-maxpoints="1"
             data-minpoints="1"
-            data-min-selections-message="You have not answered this question. Please plot the midpoint."
+            data-invalidresponsemessage="You have not answered this question. Please plot the midpoint."
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;y&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
             data-fixedpoints="{ &quot;points&quot;: [{ &quot;x&quot;: 2, &quot;y&quot;: 3, &quot;label&quot;: &quot;L&quot; },{ &quot;x&quot;: -1, &quot;y&quot;: 1, &quot;label&quot;: &quot;M&quot; }]}"
@@ -8246,7 +8245,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-steplinewidth="1"
             data-maxpoints="1"
             data-minpoints="1"
-            data-min-selections-message="You have not answered this question. Please plot the midpoint."
+            data-invalidresponsemessage="You have not answered this question. Please plot the midpoint."
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;y&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
             data-fixedpoints="{ &quot;points&quot;: [{ &quot;x&quot;: 2, &quot;y&quot;: 3, &quot;label&quot;: &quot;L&quot; },{ &quot;x&quot;: -1, &quot;y&quot;: 1, &quot;label&quot;: &quot;M&quot; }]}"
@@ -8318,7 +8317,7 @@ identifier="Ch5_Modeling_3" title="Ch5_Modeling_3">
             data-steplinewidth="1"
             data-maxpoints="1"
             data-minpoints="1"
-            data-min-selections-message="You have not answered this question. Please plot the midpoint."
+            data-invalidresponsemessage="You have not answered this question. Please plot the midpoint."
             data-xaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;x&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
             data-yaxis="{ &quot;step&quot;: 1, &quot;substeps&quot;: 2, &quot;label&quot;: &quot;y&quot;, &quot;labelprecision&quot;: 0, &quot;precision&quot;: 1 }"
             data-fixedpoints="{ &quot;points&quot;: [{ &quot;x&quot;: 2, &quot;y&quot;: 3, &quot;label&quot;: &quot;L&quot; },{ &quot;x&quot;: -1, &quot;y&quot;: 1, &quot;label&quot;: &quot;M&quot; }]}"
