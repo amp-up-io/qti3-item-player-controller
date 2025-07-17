@@ -127,6 +127,7 @@ export default {
           case "16":
           case "20":
           case "50":
+          case "51":
             this.examplesTab.push(test)
             break
           default:
