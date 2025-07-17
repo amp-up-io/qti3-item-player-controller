@@ -1,8 +1,8 @@
 <template>
 <div class="home">
-  <section class="bg-gray">
+  <section class="test-controller-wrapper bg-gray">
     <SkipNav skipid="#main" />
-    <header>
+    <header class="test-controller-header">
       <TopBarApp
         ref="topbar"
       />
@@ -155,7 +155,7 @@ body {
   padding: 0;
 }
 
-section {
+section.test-controller-wrapper {
   display: -webkit-flex;
   display: flex;
   /* Set flex axis to vertical */
@@ -164,14 +164,14 @@ section {
   min-height: 100vh;
 }
 
-header {
+header.test-controller-header {
   /* no flex rules, it will grow */
 }
 
 main.test-controller-container {
   flex: 1 1 auto;
   overflow: auto;
-  height: 5em;
+  min-height: 5em;
   width: 100%;
 }
 

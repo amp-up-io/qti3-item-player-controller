@@ -1,8 +1,8 @@
 <template>
   <div class="start">
-    <section class="bg-gray">
+    <section class="test-controller-wrapper bg-gray">
       <SkipNav skipid="#main" />
-      <header>
+      <header class="test-controller-header">
         <TopBarApp
           ref="topbar"
         />
@@ -76,3 +76,18 @@ export default {
   }
 }
 </script>
+
+<style>
+section.test-controller-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  /* Set flex axis to vertical */
+  flex-direction: column;
+  /* Height = viewport height */
+  min-height: 100vh;
+}
+
+header.test-controller-header {
+  /* no flex rules, it will grow */
+}
+</style>
