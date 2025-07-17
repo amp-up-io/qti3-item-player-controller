@@ -419,6 +419,20 @@
           </li>
 
           <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#yqti-collapse" aria-expanded="false">
+              YasashiQTI
+            </button>
+            <div class="collapse mt-1" id="yqti-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <Sample identifier="murata-alice-1" title="Alice" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="murata-meta-2" title="Metamorphosis" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="murata-metajp-2" title="完全変態 (Metamorphosis)" @sampleSelected="handleSampleSelected"/>
+                <Sample identifier="murata-bronze-1" title="青銅の魔人 (Bronze Demon)" @sampleSelected="handleSampleSelected"/>
+              </ul>
+            </div>
+          </li>
+
+          <li class="mb-1">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#comp-collapse" aria-expanded="false">
               Bootcamp Exercises
             </button>
