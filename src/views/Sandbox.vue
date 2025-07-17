@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <section class="test-controller-wrapper">
     <SkipNav skipid="#main" />
-    <header>
+    <header class="test-controller-header">
       <TopBarSandbox
         ref="topbar"
       />
@@ -600,7 +600,7 @@ body {
   padding: 0;
 }
 
-section {
+section.test-controller-wrapper {
   display: -webkit-flex;
   display: flex;
   /* Set flex axis to vertical */
@@ -610,7 +610,7 @@ section {
   background: var(--bs-gray-300);
 }
 
-header {
+header.test-controller-header {
   /* no flex rules, it will grow */
 }
 
@@ -626,12 +626,6 @@ main.test-controller-container {
   margin: 10px 0;
   background: var(--bs-gray-300);
   /*border: 1px solid #2196F3; */
-}
-
-footer {
-  padding: 1em;
-  /* Make sure the foot always displays at bottom of the viewport */
-  min-height: 3em;
 }
 
 /* raised card panel borders and shadows */

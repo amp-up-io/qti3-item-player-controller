@@ -1,13 +1,13 @@
 <template>
-  <section>
+  <section class="test-controller-wrapper">
     <SkipNav skipid="#main" />
-    <header v-show="currentPanel == 'item'">
+    <header class="test-controller-header" v-show="currentPanel == 'item'">
       <TopBar
         ref="topbar"
       />
     </header>
 
-    <header v-show="currentPanel == 'end'">
+    <header class="test-controller-header" v-show="currentPanel == 'end'">
       <TopBarApp
         ref="topbarapp"
       />
@@ -712,7 +712,7 @@ body {
   padding: 0;
 }
 
-section {
+section.test-controller-wrapper {
   display: -webkit-flex;
   display: flex;
   /* Set flex axis to vertical */
@@ -722,7 +722,7 @@ section {
   background: var(--bs-gray-300);
 }
 
-header {
+header.test-controller-header {
   /* no flex rules, it will grow */
 }
 
